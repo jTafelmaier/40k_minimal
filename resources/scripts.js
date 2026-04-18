@@ -196,20 +196,26 @@ function set_text_bar(
 
 function hide_preview_attack() {
 
-    document
+    const element_army_lists = document
         .getElementById("army_lists")
+
+    if (!element_army_lists.classList.contains("attack_in_progress")) {
+        return;
+    }
+
+    element_army_lists
         .classList
         .remove("attack_in_progress")
 
-    Array.from(document
+    Array.from(element_army_lists
         .getElementsByClassName("unit_army_list"))
         .forEach(element => element.classList.remove("attacked"))
 
-    const element_unit_attacking = document
+    const element_unit_attacking = element_army_lists
         .getElementsByClassName("attacking")[0]
 
     Array.from(element_unit_attacking
-        .getElementsByClassName("attack"))
+        .getElementsByClassName("selected"))
         .forEach(element => element.classList.remove("selected"))
 
     element_unit_attacking
@@ -343,35 +349,41 @@ function toggle_select_attack(
             .add("attacked")
     }
 
-    if (element_unit_attacking.classList.contains("attacking")) {
-        hide_preview_attack()
-    } else {
-        if (document.getElementById("army_lists").classList.contains("attack_in_progress")) return;
+    const element_attack = element_unit_attacking
+        .getElementsByClassName("attack")[index_attack]
 
-        document
-            .getElementById("army_lists")
-            .classList
-            .add("attack_in_progress")
+    const bool_already_selected = element_attack
+        .classList
+        .contains("selected")
 
-        element_unit_attacking
-            .parentElement
-            .classList
-            .add("attacking_side")
+    hide_preview_attack()
 
-        element_unit_attacking
-            .classList
-            .add("attacking")
-
-        element_unit_attacking
-            .getElementsByClassName("attack")[index_attack]
-            .classList
-            .add("selected")
-
-        Array.from(document
-            .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
-            .getElementsByClassName("unit_army_list"))
-            .forEach(show_preview_attack)
+    if (bool_already_selected) {
+        return;
     }
+
+    document
+        .getElementById("army_lists")
+        .classList
+        .add("attack_in_progress")
+
+    element_unit_attacking
+        .parentElement
+        .classList
+        .add("attacking_side")
+
+    element_unit_attacking
+        .classList
+        .add("attacking")
+
+    element_attack
+        .classList
+        .add("selected")
+
+    Array.from(document
+        .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
+        .getElementsByClassName("unit_army_list"))
+        .forEach(show_preview_attack)
 }
 
 
