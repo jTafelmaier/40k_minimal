@@ -237,7 +237,7 @@ a.image_faction {
 .skillbar > div {
     display: block;
     height: 6px;
-    background: linear-gradient(0.25turn, var(--grey_main), var(--grey_text));
+    background: linear-gradient(0.25turn, var(--grey_main), var(--grey_bright));
     border-radius: 2px;
 }
 
@@ -357,7 +357,7 @@ a.image_faction {
 }
 
 .health_bar .health {
-    background: linear-gradient(to top, var(--grey_main), #828daf 185px);
+    background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
     border-radius: 1px;
 }
 
