@@ -307,7 +307,7 @@ def generate_htmls():
                         md_shared.get_text_path_images_faction(name_faction),
                         "faction.png"])
 
-            return "<div id=\"" \
+            return "<div><div id=\"" \
                 + text_side \
                 + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
@@ -336,7 +336,7 @@ def generate_htmls():
                             enumerate(
                                 dict_army_list \
                                     ["units"]))) \
-                + "</div>"
+                + "</div></div>"
 
         return get_html_army_list("left") \
             + get_html_army_list("right")

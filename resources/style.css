@@ -235,8 +235,7 @@ a.image_faction {
 }
 
 #army_lists {
-    display: grid;
-    grid-template-columns: 550px 550px;
+    display: flex;
     gap: 0px 80px;
 }
 
