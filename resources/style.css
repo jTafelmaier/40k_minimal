@@ -375,10 +375,6 @@ a.image_faction {
     opacity: 0.25;
 }
 
-.in_cover {
-    max-height: 125px;
-}
-
 .attacked .health_bar {
     width: 18px;
 }

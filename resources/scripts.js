@@ -307,6 +307,16 @@ function toggle_select_attack(
         const element_difference_no_cover = element_unit_attacked
             .getElementsByClassName("difference no_cover")[0]
 
+        if (int_damage_added_in_cover === int_damage_added_no_cover) {
+            element_difference_no_cover
+                .classList
+                .add("invisible")
+        } else {
+            element_difference_no_cover
+                .classList
+                .remove("invisible")
+        }
+
         set_height_bar(
                 element_difference_in_cover,
                 int_damage_added_in_cover,
