@@ -1,0 +1,1233 @@
+{
+    "data": [
+        {
+            "name": "Space Marines",
+            "units": [
+                {
+                    "name": "Captain Titus",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Terminator captain",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Terminator squad",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Captain with jump pack",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Jump pack intercessors",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Bladeguard lieutenant",
+                    "points_per_model": 75,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "shielded",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Bladeguard veterans",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Sternguard veterans",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Captain in gravis armour",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy intercessors",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Eradicators",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Gladiator lancer",
+                    "points_per_model": 250,
+                    "armor": 7,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 4,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "single",
+                            "strength": 6,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Belial",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwing strikemaster",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 10,
+                    "type_armor": "shielded",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathwing knights",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 10,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Castellan",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Sword brethren",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Crusader squad",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Aethon Shaan",
+                    "points_per_model": 125,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "stealth",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Castellan Crowe",
+                    "points_per_model": 100,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Astra Militarum",
+            "units": [
+                {
+                    "name": "Marshal dreir",
+                    "points_per_model": 100,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 0,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 2,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Death riders",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 0,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 2,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Command squad",
+                    "points_per_model": 10,
+                    "armor": 1,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 0,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Shock troops",
+                    "points_per_model": 10,
+                    "armor": 1,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "H",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 0,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Combat engineers",
+                    "points_per_model": 10,
+                    "armor": 1,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy weapon squad [autocannon]",
+                    "points_per_model": 25,
+                    "armor": 3,
+                    "move": 10,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Artillery team [siege]",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 0,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "single",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Artillery team [mortar]",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 0,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Artillery team [quad]",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 0,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Rogal Dorn battle tank",
+                    "points_per_model": 250,
+                    "armor": 7,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "single",
+                            "strength": 6,
+                            "heavy": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "World Eaters",
+            "units": [
+                {
+                    "name": "Angron",
+                    "points_per_model": 400,
+                    "armor": 7,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Lord Invocatus",
+                    "points_per_model": 125,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Slaughterbound",
+                    "points_per_model": 75,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Exalted Eightbound",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Eightbound",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Khorne Berzerkers",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Jakhals",
+                    "points_per_model": 5,
+                    "armor": 1,
+                    "move": 10,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 1,
+                            "heavy": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Emperor's children",
+            "units": [
+                {
+                    "name": "Fulgrim",
+                    "points_per_model": 400,
+                    "armor": 7,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Lucius the eternal",
+                    "points_per_model": 75,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Lord Exultant",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Flawless blades",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Infractors",
+                    "points_per_model": 25,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Noise marines",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 3,
+                            "heavy": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necrons",
+            "units": [
+                {
+                    "name": "Nekrosor Ammentar",
+                    "points_per_model": 250,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Hexmark destroyer",
+                    "points_per_model": 150,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "stealth",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Skorpekh destroyer",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Ophydian destroyer",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy lokhust destroyer [gauss]",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "single",
+                            "strength": 6,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy lokhust destroyer [enmitic]",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 5,
+                            "heavy": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tyranids",
+            "units": [
+                {
+                    "name": "The red terror",
+                    "points_per_model": 200,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Prime with lash whip",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Winged prime",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Lictor",
+                    "points_per_model": 50,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "stealth",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Deathleaper",
+                    "points_per_model": 100,
+                    "armor": 6,
+                    "move": 20,
+                    "type_armor": "stealth",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Von Ryans leapers",
+                    "points_per_model": 25,
+                    "armor": 3,
+                    "move": 20,
+                    "type_armor": "stealth",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Hormagaunts",
+                    "points_per_model": 10,
+                    "armor": 2,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "H",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 1,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Biovore",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "strength": 3,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Pyrovore",
+                    "points_per_model": 100,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "shielded",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "volume",
+                            "strength": 4,
+                            "heavy": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Norn Assimilator",
+                    "points_per_model": 250,
+                    "armor": 7,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "T'au empire",
+            "units": [
+                {
+                    "name": "Sunsear",
+                    "points_per_model": 150,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Scatterflare",
+                    "points_per_model": 150,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Stealth suits [r]",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 10,
+                    "type_armor": "stealth",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 2,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Stealth suits [f]",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 10,
+                    "type_armor": "stealth",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "strength": 4,
+                            "heavy": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

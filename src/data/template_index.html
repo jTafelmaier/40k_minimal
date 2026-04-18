@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="resources/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+        <script src="resources/scripts.js"></script>
+    </head>
+    <body onload="initialise()">
+        <div id="main">
+            <div class="header_document" style="background-image: url('resources/general/image_cover.jpg');">
+                <img class="logo_warhammer" src="resources/general/logo_warhammer.png"/>
+            </div>
+            <h2 class="chapter">
+                Core rules
+            </h2>
+            <div id="core_rules">
+                <div class="game_structure">
+                    <div>
+                        <div class="definition">
+                            <div class="name">
+                                Distance
+                            </div>
+                            <div class="description">
+                                Shortest distance between any base points of two models.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
+                                Unit
+                            </div>
+                            <div class="description">
+                                A collection of one or more identical models that act as one entity.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
+                                Unit:
+                                <br/>
+                                Visibility
+                            </div>
+                            <div class="description">
+                                A unit is visible when any of the surface points of its models are visible.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
+                                Unit:
+                                <br/>
+                                In cover
+                            </div>
+                            <div class="description">
+                                A model is in cover if it is within a cover object, and the attacking model is not within the same object.
+                                <br/>
+                                While all models in a unit are in cover, the unit <div class="icon">⛊</div>armor</b> is increased by 1.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
+                                Unit:
+                                <br/>
+                                Coherency
+                            </div>
+                            <div class="description">
+                                When every model is within 5 cm of another model in the unit.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
+                                Unit:
+                                <br/>
+                                Destroy model
+                            </div>
+                            <div class="description">
+                                The controlling player must remove one model from the board space such that unit coherency is still given.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            [C] Character
+                        </div>
+                        <div class="description">
+                            Unit model limit: 1
+                            <br/>
+                            Can be attached to another friendly <b>non-character</b> unit with <b>equal armor and movement profiles</b> and <b>without any attached units</b>, causing its model to be included in that unit.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            [E] Elite
+                        </div>
+                        <div class="description">
+                            Unit model limit: 10
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            [H] Horde
+                        </div>
+                        <div class="description">
+                            Unit model limit: 20
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            Range: ⛶
+                        </div>
+                        <div class="description">
+                            Can only be used against targets within 20 cm.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            Range: ⚔
+                        </div>
+                        <div class="description">
+                            Can only be used against targets within 5 cm.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            <b>stealth</b>
+                        </div>
+                        <div class="description">
+                            This unit is not elegible to be targeted when in cover.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            <b>shielded</b>
+                        </div>
+                        <div class="description">
+                            Damage received during an attack is reduced by 0.25.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            <b>heavy</b>
+                        </div>
+                        <div class="description">
+                            Can only use this weapon if this is the first action for this unit, this turn.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            <b>volume</b>
+                        </div>
+                        <div class="description">
+                            While targeting a unit including only one model, the weapon strength is decreased by 1.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            <b>single</b>
+                        </div>
+                        <div class="description">
+                            The maximum final damage of an attack is the number of models in the attacking unit.
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="turn_structure">
+                    <div class="definition">
+                        <div class="name">
+                            Action [2AT]
+                            <br/>
+                            Deploy
+                        </div>
+                        <div class="description">
+                            This action can only be performed when this unit is in reserves.
+                            <br/>
+                            This unit may be placed anywhere in the owner's deployment zone.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            Action [2AT]
+                            <br/>
+                            Setup deepstrike
+                        </div>
+                        <div class="description">
+                            Set up a deepstrike token on the board space.
+                            <br/>
+                            When this unit performs the "Deploy" action: May place the unit as close as possible to the placed deepstrike token, and then remove that token.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            Action [1AT]
+                            <br/>
+                            Move
+                        </div>
+                        <div class="description">
+                            Every model in the unit may move up to its <div class="icon">🡆</div> value in centimeters, without moving over enemy models, such that unit coherency is still given.
+                        </div>
+                    </div>
+                    <div class="definition">
+                        <div class="name">
+                            Action [1AT]
+                            <br/>
+                            Attack
+                        </div>
+                        <div class="description">
+                            If possible, select one attack and one visible elegible enemy unit as "target unit", otherwise end the action.
+                            <br/>
+                            <br/>
+                            Target unit: <b>health</b> is reduced by:
+                            <br/>
+                            <b>#models</b> * (2 ^ (<b>strength</b> - target unit:<b><div class="icon">⛊</div>armor</b>)).
+                            <br/>
+                            <br/>
+                            Models in the target unit have to be destroyed until their count is equal to ceil(<b>health</b>).
+                        </div>
+                    </div>
+                    <br/>
+                    To start a match, players agree on:
+                    <ul>
+                        <li>
+                            the board space (including special zones like cover)
+                        </li>
+                        <li>
+                            a starting player
+                        </li>
+                        <li>
+                            a total army cost limit (example: 1000 points)
+                        </li>
+                        <li>
+                            a game duration limit (number of turns).
+                        </li>
+                    </ul>
+                    Then, every player chooses unit instances of one faction, with a total points cost not exceeding the agreed limit.
+                    Only one unit per unit type can include less models than its model count limit.
+                    <br/>
+                    <br/>
+                    Every unit starts the game in reserves (separate area, not on the board space).
+                    Every turn, each unit can once sequentially spend 2 AT to perform different actions, alternating between sides.
+                    All units including a model of type "character" may perform their actions before any other units.
+                    <br/>
+                    <br/>
+                    At the end of all turns, a winning player is determined by the total points cost of units on the board space.
+                </div>
+            </div>
+            <h2 class="chapter">
+                Faction rules
+            </h2>
+            <div id="div_factions">
+                <placeholder id="id_factions" />
+            </div>
+            <h2 class="chapter">
+                Match data
+                <div id="turn_information">
+                    turn
+                    <span id="turn_counter">1</span>
+                </div>
+            </h2>
+            <div id="army_lists">
+                <placeholder id="id_army_lists"/>
+            </div>
+        </div>
+    </body>
+</html>
