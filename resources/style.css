@@ -371,8 +371,13 @@ a.image_faction {
     color: white;
 }
 
-.inactive .model {
-    opacity: 0.25;
+.inactive .movement,
+.inactive .attack {
+    display: none;
+}
+
+.attacking_side .unit_army_list:not(.attacking) {
+    opacity: 0.2;
 }
 
 .attacked .health_bar {
