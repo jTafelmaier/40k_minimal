@@ -111,6 +111,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-size: cover;
+    border-radius: 4px;
     clip-path: polygon(
         0 0,
         100% 0,
@@ -127,7 +128,6 @@ a.image_faction {
     text-decoration: none;
     border-top: 2px solid var(--grey_bright);
     border-right: 4px solid var(--grey_main);
-    border-radius: 4px;
     box-shadow: inset 0 -50px 50px -20px var(--grey_dark);
 }
 
@@ -138,11 +138,15 @@ a.image_faction {
     box-shadow: inset 0 -50px 50px -20px #9e59ff;
 }
 
+.faction_rules {
+    display: flex;
+    gap: 50px;
+}
+
 .faction_rules .image_faction {
     width: 490px;
-    margin-bottom: 40px;
+    margin: 5px;
     padding: 250px 0px 20px 20px;
-    border-radius: 2px;
     background-size: cover;
     text-align: left;
     box-shadow: inset 0 -100px 100px -20px var(--grey_dark);

@@ -160,11 +160,11 @@ def generate_htmls():
                         dict_faction \
                             ["units"]))
 
-            text_html = "<div class=\"faction_rules\"><div class=\"image_faction\" style=\"background-image: url('" \
+            text_html = "<div class=\"faction_rules\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
                 + "')\">" \
                 + name_faction \
-                + "</div><div>" \
+                + "</div></div><div>" \
                 + text_html_faction \
                 + "</div></div>"
 
