@@ -297,7 +297,7 @@ a.image_faction {
 
 .unit_state {
     display: flex;
-    padding: 5px;
+    padding: 10px 0px 10px 5px;
     user-select: none;
 }
 
@@ -384,7 +384,7 @@ a.image_faction {
 }
 
 .attacking_side .unit_army_list:not(.attacking) {
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .attacked .section {

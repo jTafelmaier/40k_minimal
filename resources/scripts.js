@@ -181,17 +181,25 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit) {
 
+        int_health_initial = get_int_attribute(
+                element_unit,
+                "initial_health")
+
         int_health_current = get_int_attribute(
                 element_unit,
                 "current_health")
 
         set_height_bar(
                 element_unit
+                    .getElementsByClassName("section remaining")[0],
+                int_health_current,
+                int_health_initial)
+
+        set_height_bar(
+                element_unit
                     .getElementsByClassName("coordinate remaining")[0],
                 int_health_current,
-                get_int_attribute(
-                    element_unit,
-                    "initial_health"))
+                int_health_initial)
 
         set_text_bar(
                 element_unit
