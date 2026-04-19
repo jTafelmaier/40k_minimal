@@ -339,8 +339,7 @@ function toggle_select_attack(
 
         set_text_bar(
                 element_difference_in_cover,
-                int_health_current
-                    - int_damage_added_in_cover)
+                int_health_current)
 
         set_height_bar(
                 element_difference_no_cover,
@@ -351,7 +350,7 @@ function toggle_select_attack(
         set_text_bar(
                 element_difference_no_cover,
                 int_health_current
-                    - int_damage_added_no_cover)
+                    - int_damage_added_in_cover)
 
         set_text_bar(
                 element_unit_attacked

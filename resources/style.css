@@ -361,7 +361,6 @@ a.image_faction {
 
 .health_bar .section {
     display: none;
-    align-items: flex-end;
 }
 
 .health_bar .section.difference {
@@ -391,7 +390,7 @@ a.image_faction {
     width: 18px;
 }
 
-.attacked .section.difference {
+.attacked .section {
     display: flex;
 }
 
@@ -402,6 +401,6 @@ a.image_faction {
 
 .section.difference:hover .value,
 .section.difference.hover_below .value {
-    color: var(--grey_text);
+    color: #394154;
 }
 
