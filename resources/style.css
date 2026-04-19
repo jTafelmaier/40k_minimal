@@ -297,7 +297,7 @@ a.image_faction {
 
 .unit_state {
     display: flex;
-    margin-top: 10px;
+    padding: 5px;
     user-select: none;
 }
 
@@ -307,8 +307,6 @@ a.image_faction {
     width: 20px;
     justify-content: flex-end;
     flex-direction: column;
-    height: 142px;
-    padding-left: 2px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
@@ -358,13 +356,11 @@ a.image_faction {
     width: 5px;
     justify-content: flex-end;
     flex-direction: column;
-    height: 142px;
     padding: 2px;
     background-color: var(--grey_dark);
     border: 1px solid var(--grey_main);
     border-radius: 1px;
     margin-left: auto;
-    margin-right: 5px;
 }
 
 .health_bar .health {

@@ -82,7 +82,6 @@ function set_inactive(
 
 
 const INT_HEALTH_POINTS = 100
-const INT_HEIGHT_HEALTH_BAR = 140
 
 
 function get_int_count_models(
@@ -144,12 +143,11 @@ function set_height_bar(
         .setAttribute(
             "style",
             "height: "
-                + Math.floor(((INT_HEIGHT_HEALTH_BAR
+                + Math.floor((100
                     * int_steps)
                     / int_steps_total)
-                    - 1)
                     .toString()
-                + "px;")
+                + "%;")
 }
 
 
