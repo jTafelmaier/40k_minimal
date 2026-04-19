@@ -358,7 +358,7 @@ a.image_faction {
 }
 
 .attacking_side .unit_army_list:not(.attacking),
-.attacking_side .attack:not(.selected) {
+.attacking_side .attacking .attack:not(.selected) {
     opacity: 0.15;
 }
 
