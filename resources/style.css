@@ -290,7 +290,7 @@ a.image_faction {
 .coordinates {
     flex: 1;
     display: flex;
-    width: 25px;
+    width: 35px;
     justify-content: flex-end;
     flex-direction: column;
 }

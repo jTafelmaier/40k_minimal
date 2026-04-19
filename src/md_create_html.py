@@ -257,7 +257,7 @@ def generate_htmls():
                 assert int_count_models <= int_limit
 
                 text_health_points_initial = (int_count_models 
-                    * 100) \
+                    * 8) \
                     .__str__()
 
                 return "<div class=\"unit_army_list\" initial_health=\"" \
@@ -279,7 +279,7 @@ def generate_htmls():
                     + ", false)\">" \
                     + int_count_models \
                         .__str__() \
-                    + "</div></div><div class=\"health_bar\"><div class=\"section difference in_cover\"></div><div class=\"section difference no_cover\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
+                    + ".00</div></div><div class=\"health_bar\"><div class=\"section difference in_cover\"></div><div class=\"section difference no_cover\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction,

@@ -141,7 +141,7 @@ function set_inactive(
 }
 
 
-const INT_HEALTH_POINTS = 100
+const INT_HEALTH_POINTS = 8
 
 
 function get_int_count_models(
@@ -218,10 +218,7 @@ function set_text_bar(
     element_bar
         .textContent = (int_health_new
             / INT_HEALTH_POINTS)
-            .toString()
-            .replace(
-                "0.",
-                ".")
+            .toFixed(2)
 }
 
 
@@ -417,8 +414,8 @@ function toggle_select_attack(
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate no_cover")[0],
-                int_health_current
-                    - int_damage_added_in_cover)
+                int_damage_added_in_cover
+                    * -1)
 
         set_height_bar(
                 element_unit_attacked
@@ -437,8 +434,8 @@ function toggle_select_attack(
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate remaining")[0],
-                int_health_current
-                    - int_damage_added_no_cover)
+                int_damage_added_no_cover
+                    * -1)
 
         element_unit_attacked
             .classList
