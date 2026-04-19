@@ -1103,7 +1103,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -1119,7 +1119,7 @@
                     "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
