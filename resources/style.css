@@ -256,7 +256,8 @@ a.image_faction {
 }
 
 .points_unit {
-    width: 40px;
+    display: inline-block;
+    width: 60px;
 }
 
 .points_total {
