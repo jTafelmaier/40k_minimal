@@ -25,14 +25,13 @@ body {
 #main {
     width: 1250px;
     margin-top: 50px;
-    margin-bottom: 500px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .header_document {
     background-size: cover;
-    height: 200px;
     padding: 200px;
     clip-path: polygon(
         20px 0,
@@ -53,10 +52,10 @@ body {
 .chapter {
     margin-top: 100px;
     margin-bottom: 50px;
-    color: white;
-    background-color: var(--grey_dark);
     border-bottom: 4px solid var(--grey_main);;
     padding: 2px 15px;
+    color: white;
+    background-color: var(--grey_dark);
     clip-path: polygon(
         0 0,
         calc(100% - 10px) 0,
@@ -66,23 +65,13 @@ body {
         0 0);
 }
 
-.indented {
-    border-left: 1px solid var(--grey_bright);
-    padding-left: 10px;
-}
-
-r {
-    color: rgb(210, 45, 45);
-    font-weight: bold;
-}
-
 #core_rules {
     display: flex;
+    gap: 20px;
 }
 
 #core_rules > div {
     flex: 1;
-    margin: 0px 10px;
 }
 
 .definition {
@@ -94,14 +83,15 @@ r {
 
 .definition .name {
     width: 100px;
-    color: white;
-    background-color: var(--grey_dark);
     padding: 5px;
+    color: white;
+    background-color: var(--grey_blue);
 }
 
 .definition .description {
     flex: 1;
     padding: 5px 10px;
+    background-color: var(--grey_dark);
 }
 
 .selection_factions {
@@ -147,11 +137,8 @@ a.image_faction {
     box-shadow: inset 0 -50px 50px -20px #9e59ff;
 }
 
-.faction_rules {
-    display: grid;
-    margin-top: 40px;
-    grid-template-columns: 700px;
-    gap: 20px;
+.unit_faction {
+    margin-top: 20px;
 }
 
 .model {
@@ -177,15 +164,19 @@ a.image_faction {
 }
 
 .model_property {
+    display: flex;
+    width: fit-content;
+    line-height: 16px;
     padding: 2px;
     padding-right: 10px;
-    width: fit-content;
     border: 2px solid transparent;
-    line-height: 16px;
+}
+
+.model_property > div {
+    margin-right: 5px;
 }
 
 .icon {
-    display: inline-block;
     width: 18px;
     font-size: 12px;
     line-height: 18px;
@@ -199,23 +190,15 @@ a.image_faction {
 
 .attack .icon {
     font-size: 14px;
-    background: radial-gradient(#bd282f 10%, #6a1d26);
     border-right: 2px solid #cc1e27;
     border-top: 1px solid #dc1a24;
-}
-
-.unit_faction {
-    display: flex;
-}
-
-.model_statistics {
-    padding: 0px 5px;
+    background: radial-gradient(#bd282f 10%, #6a1d26);
 }
 
 .skillbar {
-    display: inline-block;
     width: 72px;
     padding: 2px;
+    margin: 4px 0px;
     background-color: var(--grey_dark);
     border: 1px solid var(--grey_main);
     border-radius: 2px;
@@ -223,7 +206,7 @@ a.image_faction {
 
 .skillbar > div {
     display: block;
-    height: 6px;
+    height: 100%;
     background: linear-gradient(0.25turn, var(--grey_main), var(--grey_bright));
     border-radius: 2px;
 }
@@ -254,7 +237,7 @@ a.image_faction {
 }
 
 .header_list .image_faction {
-    flex-basis: 250px;
+    flex-basis: 200px;
     background-size: cover;
     border: 1px solid var(--grey_main);
     border-radius: 2px;

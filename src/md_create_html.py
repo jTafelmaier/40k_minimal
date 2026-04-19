@@ -43,15 +43,15 @@ def generate_htmls():
                         ["strength"]
                         * 8) \
                     .__str__() \
-                + "px;\"/></div><span class=\"value\">" \
+                + "px;\"/></div><div class=\"value\">" \
                 + dict_attack \
                     ["strength"] \
                     .__str__() \
-                + "</span> <span class=\"type\">" \
+                + "</div><div class=\"type\">" \
                 + dict_attack \
                     ["type"] \
                 + (" heavy" if dict_attack["heavy"] else "") \
-                + "</span></div>"
+                + "</div></div>"
 
         path_image_unit = "/" \
             .join(
@@ -89,25 +89,25 @@ def generate_htmls():
                     ["armor"]
                     * 8) \
                 .__str__() \
-            + "px;\"/></div><span class=\"value\">" \
+            + "px;\"/></div><div class=\"value\">" \
             + dict_unit \
                 ["armor"] \
                 .__str__() \
-            + "</span> <span class=\"type\">" \
+            + "</div><div class=\"type\">" \
             + dict_unit \
                 ["type_armor"] \
-            + "</span></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+            + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
             + text_parameters_functions \
             + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
             +  (dict_unit \
                     ["move"]
                     * 1.5) \
                 .__str__() \
-            + "px;\"/></div><span class=\"value\">" \
+            + "px;\"/></div><div class=\"value\">" \
             + dict_unit \
                 ["move"] \
                 .__str__() \
-            + "</span></div>" \
+            + "</div></div>" \
             + text_html_rows_attacks \
             + "</div></div></div>"
 
@@ -144,32 +144,11 @@ def generate_htmls():
             def get_text_html_unit(
                 dict_unit:typing.Dict):
 
-                int_effective_armor = 2 \
-                    ** (dict_unit \
-                        ["armor"])
-
-                int_effective_armor_per_100_points = int((int_effective_armor \
-                    * 100) \
-                    / (dict_unit \
-                        ["points_per_model"]))
-
                 return "<div class=\"unit_faction\">" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction) \
-                    + "<div class=\"model_statistics\">" \
-                    + dict_unit \
-                        ["points_per_model"] \
-                        .__str__() \
-                    + " points per model" \
-                    + "<br /><br />Per 100 points:<br /><div class=\"icon\">⛊</div><div class=\"skillbar\"><div style=\"width: " \
-                    +  (int_effective_armor_per_100_points
-                        / 2) \
-                        .__str__() \
-                    + "px;\"/></div>" \
-                    + int_effective_armor_per_100_points \
-                        .__str__() \
-                    + "</div></div>"
+                    + "</div>"
 
             text_html_faction = "" \
                 .join(
