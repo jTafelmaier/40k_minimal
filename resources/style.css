@@ -298,14 +298,14 @@ a.image_faction {
 
 .unit_state {
     display: flex;
-    padding: 10px 0px 10px 5px;
+    padding: 10px 0px 10px 2px;
     user-select: none;
 }
 
 .coordinates {
     flex: 1;
     display: flex;
-    width: 20px;
+    width: 25px;
     justify-content: flex-end;
     flex-direction: column;
 }
@@ -317,10 +317,6 @@ a.image_faction {
     padding-right: 2px;
     text-align: right;
     color: var(--grey_text);
-}
-
-.coordinate.difference {
-    border-bottom: 2px solid var(--grey_dark);
 }
 
 .coordinate.in_cover,
