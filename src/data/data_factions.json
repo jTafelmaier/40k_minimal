@@ -235,7 +235,7 @@
                 },
                 {
                     "name": "Gladiator lancer",
-                    "points_per_model": 250,
+                    "points_per_model": 400,
                     "armor": 7,
                     "move": 40,
                     "type_armor": "",
@@ -1100,7 +1100,7 @@
                 },
                 {
                     "name": "Biovore",
-                    "points_per_model": 100,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "shielded",
@@ -1116,7 +1116,7 @@
                 },
                 {
                     "name": "Pyrovore",
-                    "points_per_model": 100,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "shielded",
