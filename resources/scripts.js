@@ -432,6 +432,12 @@ function apply_preview(
                 .getElementsByClassName("coordinate remaining")[0],
             int_health_points_new)
 
+    set_height_bar(
+            element_unit
+                .getElementsByClassName("coordinate current")[0],
+            int_health_points_new,
+            int_health_initial)
+
     if (int_health_points_new <= 0) {
         element_unit
             .classList

@@ -303,6 +303,7 @@ a.image_faction {
 
 .coordinates {
     flex: 1;
+    display: flex;
     width: 20px;
     justify-content: flex-end;
     flex-direction: column;
