@@ -288,24 +288,7 @@ def generate_htmls():
 
             return "<div><div id=\"" \
                 + text_side \
-                + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"summary\">" \
-                + "<br/>" \
-                    .join(
-                        map(
-                            lambda dict_unit: "<span class=\"points_unit\">"
-                                + (dict_unit["count_models"]
-                                    * dict_units
-                                        [dict_unit["name"]]
-                                        ["points_per_model"])
-                                    .__str__()
-                                + "pts: </span>"
-                                + dict_unit["count_models"]
-                                    .__str__()
-                                + "x "
-                                + dict_unit["name"],
-                            dict_army_list \
-                                ["units"])) \
-                + "</div><div class=\"points_total\"></div></div>" \
+                + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\"></div></div>" \
                 + "" \
                     .join(
                         map(
