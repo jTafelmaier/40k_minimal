@@ -12,7 +12,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -78,7 +78,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -100,7 +100,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -122,7 +122,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -144,7 +144,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -166,7 +166,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 3,
                             "heavy": false
@@ -182,7 +182,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -204,7 +204,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -220,7 +220,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -242,7 +242,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -318,7 +318,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -340,7 +340,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -362,7 +362,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -433,7 +433,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 0,
                             "heavy": false
@@ -455,7 +455,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 0,
                             "heavy": false
@@ -477,7 +477,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 0,
                             "heavy": false
@@ -493,7 +493,7 @@
                     "type_unit": "H",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 0,
                             "heavy": false
@@ -525,7 +525,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -541,7 +541,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "single",
                             "strength": 5,
                             "heavy": false
@@ -573,7 +573,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -589,13 +589,13 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "volume",
                             "strength": 5,
                             "heavy": false
                         },
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "single",
                             "strength": 6,
                             "heavy": true
@@ -702,7 +702,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -783,7 +783,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -827,7 +827,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 1,
                             "heavy": false
@@ -956,7 +956,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "volume",
                             "strength": 5,
                             "heavy": true
@@ -1166,7 +1166,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 3,
                             "heavy": false
@@ -1188,7 +1188,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 5,
                             "heavy": false
@@ -1204,7 +1204,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "✖",
                             "type": "",
                             "strength": 2,
                             "heavy": false

@@ -12,61 +12,27 @@ function get_int_attribute(
 }
 
 
-function mouseenter_in_cover(
+function mouseenter_attack(
     text_side,
     index_unit) {
 
     get_element_unit_army_list(
             text_side,
             index_unit)
-        .getElementsByClassName("section in_cover")[0]
+        .getElementsByClassName("section difference")[0]
         .classList
         .add("invisible")
 }
 
 
-function mouseleave_in_cover(
+function mouseleave_attack(
     text_side,
     index_unit) {
 
     get_element_unit_army_list(
             text_side,
             index_unit)
-        .getElementsByClassName("section in_cover")[0]
-        .classList
-        .remove("invisible")
-}
-
-
-function mouseenter_no_cover(
-    text_side,
-    index_unit) {
-
-    mouseenter_in_cover(
-            text_side,
-            index_unit)
-
-    get_element_unit_army_list(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section no_cover")[0]
-        .classList
-        .add("invisible")
-}
-
-
-function mouseleave_no_cover(
-    text_side,
-    index_unit) {
-
-    mouseleave_in_cover(
-            text_side,
-            index_unit)
-
-    get_element_unit_army_list(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section no_cover")[0]
+        .getElementsByClassName("section difference")[0]
         .classList
         .remove("invisible")
 }
@@ -330,16 +296,6 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        function get_int_damage_apply_type_armor(
-            int_damage) {
-
-            if (text_type_armor === "stealth" && bool_in_cover) {
-                return 0
-            } else {
-                return int_damage
-            }
-        }
-
         function get_int_damage_single(
             int_damage) {
 
@@ -355,86 +311,44 @@ function toggle_select_attack(
                 element_unit_attacked,
                 "current_health")
 
-        function get_int_damage_added(
-            bool_in_cover){
+        const int_damage_added = Math.min(
+                int_health_current,
+                get_int_damage_single(
+                    Math.floor(
+                        INT_HEALTH_POINTS
+                            * int_count_models_attacking
+                            * Math.pow(
+                                2,
+                                int_strength
+                                    - int_armor
+                                    - (text_type_attack.includes("volume") && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0)))))
 
-            return Math.min(
-                    int_health_current,
-                    get_int_damage_single(
-                        get_int_damage_apply_type_armor(
-                            Math.floor(
-                                INT_HEALTH_POINTS
-                                    * int_count_models_attacking
-                                    * Math.pow(
-                                        2,
-                                        int_strength
-                                            - int_armor
-                                            - (bool_in_cover ? 1 : 0)
-                                            - (text_type_attack.includes("volume") && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0))))))
-        }
-
-        const int_damage_added_in_cover = get_int_damage_added(true)
-
-        const int_damage_added_no_cover = get_int_damage_added(false)
-
-        const element_difference_in_cover = element_unit_attacked
-            .getElementsByClassName("section in_cover")[0]
-
-        const element_difference_no_cover = element_unit_attacked
-            .getElementsByClassName("section no_cover")[0]
-
-        if (int_damage_added_in_cover === int_damage_added_no_cover) {
-            element_difference_no_cover
-                .classList
-                .add("invisible")
-        } else {
-            element_difference_no_cover
-                .classList
-                .remove("invisible")
-        }
+        const element_difference = element_unit_attacked
+            .getElementsByClassName("section difference")[0]
 
         set_height_bar(
-                element_difference_in_cover,
-                int_damage_added_in_cover,
+                element_difference,
+                int_damage_added,
                 int_health_initial)
-
-        set_height_bar(
-                element_difference_no_cover,
-                int_damage_added_no_cover
-                    - int_damage_added_in_cover,
-                int_health_initial)
-
-        set_height_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate no_cover")[0],
-                int_damage_added_no_cover
-                    - int_damage_added_in_cover,
-                int_health_initial)
-
-        set_text_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate no_cover")[0],
-                int_damage_added_in_cover
-                    * -1)
 
         set_height_bar(
                 element_unit_attacked
                     .getElementsByClassName("section remaining")[0],
                 int_health_current
-                    - int_damage_added_no_cover,
+                    - int_damage_added,
                 int_health_initial)
 
         set_height_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate remaining")[0],
                 int_health_current
-                    - int_damage_added_no_cover,
+                    - int_damage_added,
                 int_health_initial)
 
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate remaining")[0],
-                int_damage_added_no_cover
+                int_damage_added
                     * -1)
 
         element_unit_attacked
@@ -479,8 +393,7 @@ function toggle_select_attack(
 
 function apply_preview(
     text_side,
-    index_unit,
-    bool_in_cover) {
+    index_unit) {
 
     const element_unit = get_element_unit_army_list(
             text_side,
@@ -495,12 +408,8 @@ function apply_preview(
             "current_health")
         - get_int_attribute(
             element_unit
-                .getElementsByClassName("section in_cover")[0],
+                .getElementsByClassName("section difference")[0],
             "value")
-        - (bool_in_cover ? 0 : get_int_attribute(
-            element_unit
-                .getElementsByClassName("section no_cover")[0],
-            "value"))
 
     element_unit
         .setAttribute(

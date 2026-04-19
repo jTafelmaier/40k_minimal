@@ -304,11 +304,6 @@ a.image_faction {
     color: var(--grey_text);
 }
 
-.coordinate.in_cover,
-.coordinate.no_cover {
-    display: none;
-}
-
 .unit_army_list.destroyed {
     display: none;
 }
@@ -371,11 +366,6 @@ a.image_faction {
     display: flex;
 }
 
-.attacked .coordinate {
-    display: block;
-}
-
-.attacked .coordinate.no_cover:hover,
 .attacked .coordinate.remaining:hover {
     color: white;
 }

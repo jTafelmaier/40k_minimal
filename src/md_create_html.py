@@ -264,22 +264,16 @@ def generate_htmls():
                     + text_health_points_initial \
                     + "\" current_health=\"" \
                     + text_health_points_initial \
-                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate difference no_cover\" onclick=\"apply_preview(" \
+                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
                     + text_parameters_functions \
-                    + ", true)\" onmouseenter=\"mouseenter_in_cover(" \
-                    + text_parameters_functions \
-                    + ")\" onmouseleave=\"mouseleave_in_cover(" \
-                    + text_parameters_functions \
-                    + ")\"></div><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_no_cover(" \
-                    + text_parameters_functions \
-                    + ")\" onmouseleave=\"mouseleave_no_cover(" \
+                    + ")\" onmouseleave=\"mouseleave_attack(" \
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ", false)\">" \
+                    + ")\">" \
                     + int_count_models \
                         .__str__() \
-                    + ".00</div></div><div class=\"health_bar\"><div class=\"section difference in_cover\"></div><div class=\"section difference no_cover\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
+                    + ".00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction,
