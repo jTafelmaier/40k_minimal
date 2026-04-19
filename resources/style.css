@@ -177,26 +177,28 @@ a.image_faction {
 }
 
 .model_property {
-    padding-left: 4px;
+    padding: 1px;
     padding-right: 10px;
     width: fit-content;
+    border: 2px solid transparent;
+    line-height: 16px;
 }
 
 .icon {
     display: inline-block;
-    text-align: center;
-    font-size: 14px;
     width: 20px;
-    color: var(--grey_brightest);
-    background: linear-gradient(0.125turn, var(--grey_text), var(--grey_main));
+    font-size: 14px;
+    line-height: 20px;
     border-top: 1px solid var(--grey_bright);
     border-right: 2px solid var(--grey_text);
     border-radius: 2px;
+    color: var(--grey_brightest);
+    background: linear-gradient(0.125turn, var(--grey_text), var(--grey_main));
+    text-align: center;
 }
 
 .attack .icon {
     font-size: 16px;
-    line-height: 20px;
     background: radial-gradient(#bd282f 10%, #6a1d26);
     border-right: 2px solid #cc1e27;
     border-top: 1px solid #dc1a24;
@@ -342,6 +344,7 @@ a.image_faction {
 
 .attack:hover,
 .attack.selected {
+    border: 2px solid var(--grey_blue);
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
