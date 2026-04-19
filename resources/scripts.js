@@ -475,6 +475,7 @@ function apply_preview(
             + element_unit
                 .getElementsByClassName("name")[0]
                 .textContent
+                .trim()
             + "\n2^("
             + text_strength
             + "-"

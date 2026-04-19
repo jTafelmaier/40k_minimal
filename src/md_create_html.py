@@ -138,6 +138,12 @@ def generate_htmls():
             name_faction = dict_faction \
                 ["name"]
 
+            path_image_faction = "/" \
+                .join(
+                    [
+                        md_shared.get_text_path_images_faction(name_faction),
+                        "faction.png"])
+
             def get_text_html_unit(
                 dict_unit:typing.Dict):
 
@@ -154,11 +160,13 @@ def generate_htmls():
                         dict_faction \
                             ["units"]))
 
-            text_html = "<div class=\"faction_rules " \
+            text_html = "<div class=\"faction_rules\"><div class=\"image_faction\" style=\"background-image: url('" \
+                + path_image_faction \
+                + "')\">" \
                 + name_faction \
-                + "\">" \
+                + "</div><div>" \
                 + text_html_faction \
-                + "</div>"
+                + "</div></div>"
 
             soup_faction = md_shared.get_soup(text_html)
 
@@ -286,26 +294,24 @@ def generate_htmls():
 
             return "<div><div id=\"" \
                 + text_side \
-                + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"image_faction\" style=\"background-image: url('" \
-                + path_image_faction \
-                + "')\"></div><div class=\"match_data\"><div class=\"summary\">" \
+                + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"summary\">" \
                 + "<br/>" \
                     .join(
                         map(
-                            lambda dict_unit: "<div class=\"points_unit\">"
+                            lambda dict_unit: "<span class=\"points_unit\">"
                                 + (dict_unit["count_models"]
                                     * dict_units
                                         [dict_unit["name"]]
                                         ["points_per_model"])
                                     .__str__()
-                                + "pts: </div>"
+                                + "pts: </span>"
                                 + dict_unit["count_models"]
                                     .__str__()
                                 + "x "
                                 + dict_unit["name"],
                             dict_army_list \
                                 ["units"])) \
-                + "</div><div class=\"points_total\"></div></div></div>" \
+                + "</div><div class=\"points_total\"></div></div>" \
                 + "" \
                     .join(
                         map(
