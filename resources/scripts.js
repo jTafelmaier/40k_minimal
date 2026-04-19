@@ -248,16 +248,16 @@ function toggle_select_attack(
             .innerText
             .trim())
 
+        const text_type_attack = element_attack
+            .getElementsByClassName("type")[0]
+            .innerText
+            .trim()
+
         const int_armor = parseInt(element_unit_attacked
             .getElementsByClassName("armor")[0]
             .getElementsByClassName("value")[0]
             .innerText
             .trim())
-
-        const text_type_attack = element_attack
-            .getElementsByClassName("type")[0]
-            .innerText
-            .trim()
 
         const text_type_armor = element_unit_attacked
             .getElementsByClassName("armor")[0]
@@ -278,7 +278,7 @@ function toggle_select_attack(
         function get_int_damage_single(
             int_damage) {
 
-            if (text_type_attack === "single") return Math.min(int_damage, INT_HEALTH_POINTS * int_count_models_attacking)
+            if (text_type_attack.includes("single")) return Math.min(int_damage, INT_HEALTH_POINTS * int_count_models_attacking)
             else return int_damage
         }
 
@@ -305,7 +305,7 @@ function toggle_select_attack(
                                         int_strength
                                             - int_armor
                                             - (bool_in_cover ? 1 : 0)
-                                            - (text_type_attack === "volume" && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0))))))
+                                            - (text_type_attack.includes("volume") && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0))))))
         }
 
         const int_damage_added_in_cover = get_int_damage_added(true)
