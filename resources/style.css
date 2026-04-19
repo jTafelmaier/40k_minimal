@@ -177,7 +177,7 @@ a.image_faction {
 }
 
 .model_property {
-    padding: 1px;
+    padding: 2px;
     padding-right: 10px;
     width: fit-content;
     border: 2px solid transparent;
