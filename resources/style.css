@@ -169,8 +169,7 @@ a.image_faction {
 }
 
 .data_unit {
-    width: 280px;
-    padding: 8px 5px;
+    padding: 5px;
 }
 
 .data_unit .name {
@@ -178,7 +177,9 @@ a.image_faction {
 }
 
 .model_property {
-    padding-left: 2px;
+    padding-left: 4px;
+    padding-right: 10px;
+    width: fit-content;
 }
 
 .icon {
@@ -307,8 +308,6 @@ a.image_faction {
     width: 20px;
     justify-content: flex-end;
     flex-direction: column;
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
 }
 
 .coordinate {
@@ -347,7 +346,7 @@ a.image_faction {
 
 .attack:hover,
 .attack.selected {
-    background: linear-gradient(to right, #f60f0f8d 185px, transparent);
+    background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
 .attack_in_progress .model_property:not(.selected) {
@@ -383,7 +382,8 @@ a.image_faction {
     display: none;
 }
 
-.attacking_side .unit_army_list:not(.attacking) {
+.attacking_side .unit_army_list:not(.attacking),
+.attacking_side .attack:not(.selected) {
     opacity: 0.15;
 }
 
