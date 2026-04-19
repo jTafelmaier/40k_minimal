@@ -183,12 +183,22 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit) {
 
+        int_health_current = get_int_attribute(
+                element_unit,
+                "current_health")
+
+        set_height_bar(
+                element_unit
+                    .getElementsByClassName("coordinate remaining")[0],
+                int_health_current,
+                get_int_attribute(
+                    element_unit,
+                    "initial_health"))
+
         set_text_bar(
                 element_unit
                     .getElementsByClassName("coordinate remaining")[0],
-                get_int_attribute(
-                    element_unit,
-                    "current_health"))
+                int_health_current)
 
         element_unit
             .classList
@@ -325,6 +335,12 @@ function toggle_select_attack(
                 int_damage_added_in_cover,
                 int_health_initial)
 
+        set_height_bar(
+                element_unit_attacked
+                    .getElementsByClassName("coordinate in_cover")[0],
+                int_damage_added_in_cover,
+                int_health_initial)
+
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate in_cover")[0],
@@ -336,11 +352,25 @@ function toggle_select_attack(
                     - int_damage_added_in_cover,
                 int_health_initial)
 
+        set_height_bar(
+                element_unit_attacked
+                    .getElementsByClassName("coordinate no_cover")[0],
+                int_damage_added_no_cover
+                    - int_damage_added_in_cover,
+                int_health_initial)
+
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate no_cover")[0],
                 int_health_current
                     - int_damage_added_in_cover)
+
+        set_height_bar(
+                element_unit_attacked
+                    .getElementsByClassName("coordinate remaining")[0],
+                int_health_current
+                    - int_damage_added_no_cover,
+                int_health_initial)
 
         set_text_bar(
                 element_unit_attacked
