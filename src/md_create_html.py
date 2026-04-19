@@ -286,12 +286,6 @@ def generate_htmls():
                         int_index_unit=int_index_unit) \
                     + "</div>"
 
-            path_image_faction = "/" \
-                .join(
-                    [
-                        md_shared.get_text_path_images_faction(name_faction),
-                        "faction.png"])
-
             return "<div><div id=\"" \
                 + text_side \
                 + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"summary\">" \
