@@ -65,6 +65,7 @@ function set_hover_below(
     get_element_unit_army_list(
             text_side,
             index_unit)
+        .getElementsByClassName("health")[0]
         .getElementsByClassName("difference in_cover")[0]
         .classList
         .add("hover_below")
@@ -78,6 +79,7 @@ function unset_hover_below(
     get_element_unit_army_list(
             text_side,
             index_unit)
+        .getElementsByClassName("health")[0]
         .getElementsByClassName("difference in_cover")[0]
         .classList
         .remove("hover_below")
@@ -317,9 +319,11 @@ function toggle_select_attack(
         const int_damage_added_no_cover = get_int_damage_added(false)
 
         const element_difference_in_cover = element_unit_attacked
+            .getElementsByClassName("health")[0]
             .getElementsByClassName("difference in_cover")[0]
 
         const element_difference_no_cover = element_unit_attacked
+            .getElementsByClassName("health")[0]
             .getElementsByClassName("difference no_cover")[0]
 
         if (int_damage_added_in_cover === int_damage_added_no_cover) {
@@ -411,10 +415,12 @@ function apply_preview(
             "current_health")
         - get_int_attribute(
             element_unit
+                .getElementsByClassName("health")[0]
                 .getElementsByClassName("in_cover")[0],
             "value")
         - (bool_in_cover ? 0 : get_int_attribute(
             element_unit
+                .getElementsByClassName("health")[0]
                 .getElementsByClassName("no_cover")[0],
             "value"))
 
