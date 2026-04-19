@@ -184,7 +184,7 @@
                         {
                             "range": "✖",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         },
                         {
@@ -1125,7 +1125,7 @@
                         {
                             "range": "⛶",
                             "type": "volume",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": true
                         }
                     ]
