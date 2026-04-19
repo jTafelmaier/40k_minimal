@@ -402,17 +402,6 @@ function toggle_select_attack(
                 int_health_initial)
 
         set_height_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate in_cover")[0],
-                int_damage_added_in_cover,
-                int_health_initial)
-
-        set_text_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate in_cover")[0],
-                int_health_current)
-
-        set_height_bar(
                 element_difference_no_cover,
                 int_damage_added_no_cover
                     - int_damage_added_in_cover,

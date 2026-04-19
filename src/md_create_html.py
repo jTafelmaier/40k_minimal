@@ -264,7 +264,7 @@ def generate_htmls():
                     + text_health_points_initial \
                     + "\" current_health=\"" \
                     + text_health_points_initial \
-                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate difference in_cover\"></div><div class=\"coordinate difference no_cover\" onclick=\"apply_preview(" \
+                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate difference no_cover\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ", true)\" onmouseenter=\"mouseenter_in_cover(" \
                     + text_parameters_functions \
