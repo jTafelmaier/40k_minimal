@@ -314,10 +314,14 @@ a.image_faction {
 .coordinate {
     font-size: 12px;
     line-height: 14px;
+    min-height: 12px;
     padding-right: 2px;
-    border-top: 2px solid var(--grey_main);
     text-align: right;
     color: var(--grey_text);
+}
+
+.coordinate.difference {
+    border-bottom: 2px solid var(--grey_dark);
 }
 
 .coordinate.in_cover,
@@ -363,19 +367,15 @@ a.image_faction {
     margin-left: auto;
 }
 
-.health_bar .health {
-    background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
-    border-radius: 1px;
-}
-
-.health_bar .section {
+.section.difference {
     display: none;
-}
-
-.health_bar .section.difference {
-    min-height: 12px;
     border-bottom: 2px solid var(--grey_dark);
     background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
+}
+
+.section.remaining {
+    background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
+    border-radius: 1px;
 }
 
 .inactive .movement,

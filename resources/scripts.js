@@ -365,6 +365,13 @@ function toggle_select_attack(
 
         set_height_bar(
                 element_unit_attacked
+                    .getElementsByClassName("section remaining")[0],
+                int_health_current
+                    - int_damage_added_no_cover,
+                int_health_initial)
+
+        set_height_bar(
+                element_unit_attacked
                     .getElementsByClassName("coordinate remaining")[0],
                 int_health_current
                     - int_damage_added_no_cover,
@@ -434,13 +441,11 @@ function apply_preview(
             "current_health")
         - get_int_attribute(
             element_unit
-                .getElementsByClassName("health")[0]
-                .getElementsByClassName("in_cover")[0],
+                .getElementsByClassName("section in_cover")[0],
             "value")
         - (bool_in_cover ? 0 : get_int_attribute(
             element_unit
-                .getElementsByClassName("health")[0]
-                .getElementsByClassName("no_cover")[0],
+                .getElementsByClassName("section no_cover")[0],
             "value"))
 
     element_unit
@@ -451,7 +456,13 @@ function apply_preview(
 
     set_height_bar(
             element_unit
-                .getElementsByClassName("health")[0],
+                .getElementsByClassName("section remaining")[0],
+            int_health_points_new,
+            int_health_initial)
+
+    set_height_bar(
+            element_unit
+                .getElementsByClassName("coordinate remaining")[0],
             int_health_points_new,
             int_health_initial)
 
@@ -459,12 +470,6 @@ function apply_preview(
             element_unit
                 .getElementsByClassName("coordinate remaining")[0],
             int_health_points_new)
-
-    set_height_bar(
-            element_unit
-                .getElementsByClassName("coordinate remaining")[0],
-            int_health_points_new,
-            int_health_initial)
 
     if (int_health_points_new <= 0) {
         element_unit
