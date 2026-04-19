@@ -169,7 +169,7 @@ a.image_faction {
 }
 
 .data_unit {
-    padding: 5px;
+    padding: 10px 5px;
 }
 
 .data_unit .name {
@@ -186,9 +186,9 @@ a.image_faction {
 
 .icon {
     display: inline-block;
-    width: 20px;
-    font-size: 14px;
-    line-height: 20px;
+    width: 18px;
+    font-size: 12px;
+    line-height: 18px;
     border-top: 1px solid var(--grey_bright);
     border-right: 2px solid var(--grey_text);
     border-radius: 2px;
@@ -198,7 +198,7 @@ a.image_faction {
 }
 
 .attack .icon {
-    font-size: 16px;
+    font-size: 14px;
     background: radial-gradient(#bd282f 10%, #6a1d26);
     border-right: 2px solid #cc1e27;
     border-top: 1px solid #dc1a24;
