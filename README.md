@@ -8,6 +8,7 @@ Run "md_create_documents.py" with Python 3.11 or higher to generate HTML documen
 ## Faction examples
 ![Missing image](resources/screenshots/faction_example_1.png "Faction example 1")
 ![Missing image](resources/screenshots/faction_example_2.png "Faction example 2")
+![Missing image](resources/screenshots/faction_example_3.png "Faction example 3")
 
 ## Match data examples
 ![Missing image](resources/screenshots/match_data_1.png "Match data 1")
