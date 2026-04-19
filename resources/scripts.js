@@ -132,10 +132,8 @@ function update_points_total(
                 element_unit
                     .getElementsByClassName("model")[0]
                     .getAttribute("title")
-                    .split("\n")
-                    .at(1)
                     .split(" ")
-                    .at(0))
+                    .at(1))
     }
 
     const element_side = document

@@ -72,10 +72,7 @@ def generate_htmls():
 
         return "<div class=\"model\" title=\"[" \
             + dict_unit["type_unit"] \
-            + "] " \
-            + dict_unit \
-                ["name"] \
-            + ":\n" \
+            + "], " \
             + dict_unit \
                 ["points_per_model"] \
                 .__str__() \
