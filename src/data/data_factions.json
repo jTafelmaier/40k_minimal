@@ -584,7 +584,7 @@
                     "name": "Rogal Dorn battle tank",
                     "points_per_model": 250,
                     "armor": 7,
-                    "move": 40,
+                    "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
