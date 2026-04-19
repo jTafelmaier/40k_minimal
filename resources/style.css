@@ -290,6 +290,7 @@ a.image_faction {
     margin-top: 8px;
     border: 2px solid var(--grey_main);
     border-radius: 4px;
+    background-color: #343b4e;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -300,9 +301,19 @@ a.image_faction {
 }
 
 .unit_state {
-    user-select: none;
+    display: flex;
     width: 40px;
-    background-color: #343b4e;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.coordinates {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 142px;
+    padding: 2px;
+    border: 1px solid transparent;
 }
 
 .unit_army_list.destroyed {
@@ -342,7 +353,6 @@ a.image_faction {
     border-radius: 1px;
     margin-left: auto;
     margin-right: 5px;
-    margin-top: 10px;
 }
 
 .health_bar {

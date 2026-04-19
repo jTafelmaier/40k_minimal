@@ -285,7 +285,7 @@ def generate_htmls():
                     + text_health_points_initial \
                     + "\" current_health=\"" \
                     + text_health_points_initial \
-                    + "\"><div class=\"unit_state\"><div class=\"health_bar\"><div class=\"health\" style=\"height: 140px;\"><div class=\"difference in_cover\" style=\"height: 0px;\" onclick=\"apply_preview(" \
+                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"></div><div class=\"health_bar\"><div class=\"health\" style=\"height: 140px;\"><div class=\"difference in_cover\" style=\"height: 0px;\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ", true)\"><div class=\"value\" /></div><div class=\"difference no_cover\" style=\"height: 0px;\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
