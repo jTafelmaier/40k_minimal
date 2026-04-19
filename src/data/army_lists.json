@@ -11,8 +11,8 @@
                 "count_models": 10
             },
             {
-                "name": "Gladiator lancer",
-                "count_models": 1
+                "name": "Eradicators",
+                "count_models": 4
             }
         ]
     },
@@ -29,7 +29,7 @@
             },
             {
                 "name": "Pyrovore",
-                "count_models": 3
+                "count_models": 2
             }
         ]
     }
