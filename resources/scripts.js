@@ -333,11 +333,11 @@ function toggle_select_attack(
         function get_int_damage_apply_type_armor(
             int_damage) {
 
-            if (text_type_armor === "shielded") return Math.max(
-                    0,
-                    int_damage - Math.floor(INT_HEALTH_POINTS * 0.25))
-            else if (text_type_armor === "stealth" && bool_in_cover) return 0
-            else return int_damage
+            if (text_type_armor === "stealth" && bool_in_cover) {
+                return 0
+            } else {
+                return int_damage
+            }
         }
 
         function get_int_damage_single(
