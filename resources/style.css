@@ -194,8 +194,8 @@ a.image_faction {
 
 .icon {
     width: 18px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 18px;
     border-top: 1px solid var(--grey_bright);
     border-right: 2px solid var(--grey_text);
     border-radius: 2px;
@@ -205,7 +205,7 @@ a.image_faction {
 }
 
 .attack .icon {
-    font-size: 14px;
+    font-size: 18px;
     border-right: 2px solid #cc1e27;
     border-top: 1px solid #dc1a24;
     background: radial-gradient(#bd282f 10%, #6a1d26);
