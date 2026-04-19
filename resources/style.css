@@ -391,3 +391,8 @@ a.image_faction {
     display: block;
 }
 
+.attacked .coordinate.no_cover:hover,
+.attacked .coordinate.remaining:hover {
+    color: white;
+}
+

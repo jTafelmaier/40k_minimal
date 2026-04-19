@@ -12,6 +12,66 @@ function get_int_attribute(
 }
 
 
+function mouseenter_in_cover(
+    text_side,
+    index_unit) {
+
+    get_element_unit_army_list(
+            text_side,
+            index_unit)
+        .getElementsByClassName("section in_cover")[0]
+        .classList
+        .add("invisible")
+}
+
+
+function mouseleave_in_cover(
+    text_side,
+    index_unit) {
+
+    get_element_unit_army_list(
+            text_side,
+            index_unit)
+        .getElementsByClassName("section in_cover")[0]
+        .classList
+        .remove("invisible")
+}
+
+
+function mouseenter_no_cover(
+    text_side,
+    index_unit) {
+
+    mouseenter_in_cover(
+            text_side,
+            index_unit)
+
+    get_element_unit_army_list(
+            text_side,
+            index_unit)
+        .getElementsByClassName("section no_cover")[0]
+        .classList
+        .add("invisible")
+}
+
+
+function mouseleave_no_cover(
+    text_side,
+    index_unit) {
+
+    mouseleave_in_cover(
+            text_side,
+            index_unit)
+
+    get_element_unit_army_list(
+            text_side,
+            index_unit)
+        .getElementsByClassName("section no_cover")[0]
+        .classList
+        .remove("invisible")
+}
+
+
 function finish_action(
     text_side,
     text_message) {
