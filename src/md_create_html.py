@@ -288,15 +288,15 @@ def generate_htmls():
                     + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate current\">" \
                     + int_count_models \
                         .__str__() \
-                    + "</div><div class=\"coordinate in_cover\"></div><div class=\"coordinate no_cover\"></div></div><div class=\"health_bar\"><div class=\"health\" style=\"height: 100%;\"><div class=\"difference in_cover\" onclick=\"apply_preview(" \
+                    + "</div><div class=\"coordinate in_cover\"></div><div class=\"coordinate no_cover\"></div></div><div class=\"health_bar\"><div class=\"health\" style=\"height: 100%;\"><div class=\"section difference in_cover\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ", true)\"><div class=\"value\" /></div><div class=\"difference no_cover\" onclick=\"apply_preview(" \
+                    + ", true)\"><div class=\"value\" /></div><div class=\"section difference no_cover\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ", false)\" onmouseenter=\"set_hover_below(" \
                     + text_parameters_functions \
                     + ")\" onmouseleave=\"unset_hover_below(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"value\" /></div></div></div></div>" \
+                    + ")\"><div class=\"value\" /></div><div class=\"section remaining\"><div class=\"value\" /></div></div></div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction,

@@ -66,11 +66,6 @@ body {
         0 0);
 }
 
-.section {
-    margin-top: 0px;
-    border-bottom: 2px solid var(--grey_dark);
-}
-
 .indented {
     border-left: 1px solid var(--grey_bright);
     padding-left: 10px;
@@ -364,15 +359,15 @@ a.image_faction {
     border-radius: 1px;
 }
 
-.health_bar .difference {
+.health_bar .section.difference {
     display: none;
-    align-items: flex-end;
     min-height: 12px;
-    background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
     border-bottom: 2px solid var(--grey_dark);
+    align-items: flex-end;
+    background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
 }
 
-.difference .value {
+.section .value {
     width: 100%;
     font-size: 12px;
     line-height: 12px;
@@ -393,17 +388,17 @@ a.image_faction {
     width: 18px;
 }
 
-.attacked .difference {
+.attacked .section.difference {
     display: flex;
 }
 
-.difference:hover,
-.difference.hover_below  {
+.section.difference:hover,
+.section.difference.hover_below  {
     background: var(--grey_dark);
 }
 
-.difference:hover .value,
-.difference.hover_below .value {
+.section.difference:hover .value,
+.section.difference.hover_below .value {
     color: var(--grey_text);
 }
 
