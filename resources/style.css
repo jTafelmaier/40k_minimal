@@ -5,7 +5,7 @@
     --grey_dark: #2e3544;
     --grey_main: #4a5266;
     --grey_blue: #535f79;
-    --grey_text: #a8b4d2;
+    --grey_text: #8d97b0;
     --grey_bright: #919eba;
     --grey_brightest: #d4daedbf;
 }
@@ -156,18 +156,19 @@ a.image_faction {
 }
 
 .data_unit {
-    padding: 10px 5px;
+    padding: 8px 5px;
+    font-size: 16px;
 }
 
 .data_unit .name {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .model_property {
     display: flex;
     width: fit-content;
-    line-height: 16px;
-    padding: 2px;
+    line-height: 18px;
+    padding: 1px;
     padding-right: 10px;
     border: 2px solid transparent;
 }
@@ -179,7 +180,7 @@ a.image_faction {
 .icon {
     width: 18px;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     border-top: 1px solid var(--grey_bright);
     border-right: 2px solid var(--grey_text);
     border-radius: 2px;
@@ -350,7 +351,7 @@ a.image_faction {
 
 .section.difference {
     display: none;
-    background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
+    background: linear-gradient(to right, #8b4dfe, #6f30f8);
 }
 
 .section.remaining {
