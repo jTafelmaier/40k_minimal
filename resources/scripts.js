@@ -58,32 +58,6 @@ function get_element_unit_army_list(
 }
 
 
-function set_hover_below(
-    text_side,
-    index_unit) {
-
-    get_element_unit_army_list(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section in_cover")[0]
-        .classList
-        .add("hover_below")
-}
-
-
-function unset_hover_below(
-    text_side,
-    index_unit) {
-
-    get_element_unit_army_list(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section in_cover")[0]
-        .classList
-        .remove("hover_below")
-}
-
-
 function set_inactive(
     text_side,
     index_unit) {
@@ -184,7 +158,6 @@ function set_text_bar(
     int_health_new) {
 
     element_bar
-        .getElementsByClassName("value")[0]
         .textContent = (int_health_new
             / INT_HEALTH_POINTS)
             .toString()
@@ -207,9 +180,24 @@ function hide_preview_attack() {
         .classList
         .remove("attack_in_progress")
 
+    function unset_attacked(
+        element_unit) {
+
+        set_text_bar(
+                element_unit
+                    .getElementsByClassName("coordinate remaining")[0],
+                get_int_attribute(
+                    element_unit,
+                    "current_health"))
+
+        element_unit
+            .classList
+            .remove("attacked")
+    }
+
     Array.from(element_army_lists
         .getElementsByClassName("unit_army_list"))
-        .forEach(element => element.classList.remove("attacked"))
+        .forEach(unset_attacked)
 
     const element_unit_attacking = element_army_lists
         .getElementsByClassName("attacking")[0]
@@ -338,7 +326,8 @@ function toggle_select_attack(
                 int_health_initial)
 
         set_text_bar(
-                element_difference_in_cover,
+                element_unit_attacked
+                    .getElementsByClassName("coordinate in_cover")[0],
                 int_health_current)
 
         set_height_bar(
@@ -348,13 +337,14 @@ function toggle_select_attack(
                 int_health_initial)
 
         set_text_bar(
-                element_difference_no_cover,
+                element_unit_attacked
+                    .getElementsByClassName("coordinate no_cover")[0],
                 int_health_current
                     - int_damage_added_in_cover)
 
         set_text_bar(
                 element_unit_attacked
-                    .getElementsByClassName("section remaining")[0],
+                    .getElementsByClassName("coordinate remaining")[0],
                 int_health_current
                     - int_damage_added_no_cover)
 
@@ -436,6 +426,11 @@ function apply_preview(
                 .getElementsByClassName("health")[0],
             int_health_points_new,
             int_health_initial)
+
+    set_text_bar(
+            element_unit
+                .getElementsByClassName("coordinate remaining")[0],
+            int_health_points_new)
 
     if (int_health_points_new <= 0) {
         element_unit

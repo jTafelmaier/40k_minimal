@@ -297,18 +297,35 @@ a.image_faction {
 
 .unit_state {
     display: flex;
-    width: 40px;
     margin-top: 10px;
     user-select: none;
 }
 
 .coordinates {
-    display: none !important;
+    flex: 1;
+    width: 20px;
     justify-content: flex-end;
     flex-direction: column;
     height: 142px;
     padding: 2px;
     border: 1px solid transparent;
+}
+
+.coordinate {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+    color: white;
+}
+
+.coordinate .in_cover,
+.coordinate .no_cover {
+    display: none;
+}
+
+.coordinate .no_cover:hover,
+.coordinate .remaining:hover {
+    background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
 }
 
 .unit_army_list.destroyed {
@@ -339,6 +356,7 @@ a.image_faction {
 
 .health_bar {
     display: flex;
+    width: 5px;
     justify-content: flex-end;
     flex-direction: column;
     height: 142px;
@@ -348,10 +366,6 @@ a.image_faction {
     border-radius: 1px;
     margin-left: auto;
     margin-right: 5px;
-}
-
-.health_bar {
-    width: 5px;
 }
 
 .health_bar .health {
@@ -369,14 +383,6 @@ a.image_faction {
     background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
 }
 
-.section .value {
-    width: 100%;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    color: white;
-}
-
 .inactive .movement,
 .inactive .attack {
     display: none;
@@ -386,21 +392,11 @@ a.image_faction {
     opacity: 0.2;
 }
 
-.attacked .health_bar {
-    width: 18px;
-}
-
 .attacked .section {
     display: flex;
 }
 
-.section.difference:hover,
-.section.difference.hover_below  {
-    background: var(--grey_dark);
-}
-
-.section.difference:hover .value,
-.section.difference.hover_below .value {
-    color: #394154;
+.attacked .coordinate {
+    display: block;
 }
 
