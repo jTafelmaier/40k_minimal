@@ -359,11 +359,14 @@ a.image_faction {
     border-radius: 1px;
 }
 
-.health_bar .section.difference {
+.health_bar .section {
     display: none;
+    align-items: flex-end;
+}
+
+.health_bar .section.difference {
     min-height: 12px;
     border-bottom: 2px solid var(--grey_dark);
-    align-items: flex-end;
     background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
 }
 
