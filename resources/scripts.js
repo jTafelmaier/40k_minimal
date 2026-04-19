@@ -238,27 +238,35 @@ function toggle_select_attack(
             text_side_unit_attacking,
             index_unit_attacking)
 
+    const element_attack = element_unit_attacking
+        .getElementsByClassName("attack")[index_attack]
+
     function show_preview_attack(
         element_unit_attacked) {
 
         const int_count_models_attacking = get_int_count_models(element_unit_attacking)
 
-        const [
-            text_strength,
-            text_type_attack] = Array.from(element_unit_attacking
-            .getElementsByClassName("attack"))
-            .find(element => element.classList.contains("selected"))
+        const int_strength = parseInt(element_attack
+            .getElementsByClassName("value")[0]
             .innerText
-            .split(" ")
-            .slice(2, 4)
+            .trim())
 
-        const [
-            text_armor,
-            text_type_armor] = element_unit_attacked
+        const int_armor = parseInt(element_unit_attacked
             .getElementsByClassName("armor")[0]
+            .getElementsByClassName("value")[0]
             .innerText
-            .split(" ")
-            .slice(2, 4)
+            .trim())
+
+        const text_type_attack = element_attack
+            .getElementsByClassName("type")[0]
+            .innerText
+            .trim()
+
+        const text_type_armor = element_unit_attacked
+            .getElementsByClassName("armor")[0]
+            .getElementsByClassName("type")[0]
+            .innerText
+            .trim()
 
         function get_int_damage_apply_type_armor(
             int_damage) {
@@ -297,8 +305,8 @@ function toggle_select_attack(
                                     * int_count_models_attacking
                                     * Math.pow(
                                         2,
-                                        parseInt(text_strength)
-                                            - parseInt(text_armor)
+                                        int_strength
+                                            - int_armor
                                             - (bool_in_cover ? 1 : 0)
                                             - (text_type_attack === "volume" && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0))))))
         }
@@ -348,9 +356,6 @@ function toggle_select_attack(
             .classList
             .add("attacked")
     }
-
-    const element_attack = element_unit_attacking
-        .getElementsByClassName("attack")[index_attack]
 
     const bool_already_selected = element_attack
         .classList
@@ -441,17 +446,17 @@ function apply_preview(
 
     const text_armor = element_unit
         .getElementsByClassName("armor")[0]
+        .getElementsByClassName("value")[0]
         .innerText
-        .split(" ")
-        .at(2)
+        .trim()
 
     const int_count_models_attacking = get_int_count_models(element_unit_attacking)
 
     const text_strength = element_unit_attacking
         .getElementsByClassName("selected")[0]
+        .getElementsByClassName("value")[0]
         .innerText
-        .split(" ")
-        .at(2)
+        .trim()
 
     const float_damage_per_model = Math.pow(
         2,

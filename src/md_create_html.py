@@ -43,15 +43,15 @@ def generate_htmls():
                         ["strength"]
                         * 8) \
                     .__str__() \
-                + "px;\"/></div>" \
+                + "px;\"/></div><span class=\"value\">" \
                 + dict_attack \
                     ["strength"] \
                     .__str__() \
-                + " " \
+                + "</span> <span class=\"type\">" \
                 + dict_attack \
                     ["type"] \
                 + (" heavy" if dict_attack["heavy"] else "") \
-                + "</div>"
+                + "</span></div>"
 
         path_image_unit = "/" \
             .join(
@@ -89,25 +89,25 @@ def generate_htmls():
                     ["armor"]
                     * 8) \
                 .__str__() \
-            + "px;\"/></div>" \
+            + "px;\"/></div><span class=\"value\">" \
             + dict_unit \
                 ["armor"] \
                 .__str__() \
-            + " " \
+            + "</span> <span class=\"type\">" \
             + dict_unit \
                 ["type_armor"] \
-            + "</div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+            + "</span></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
             + text_parameters_functions \
             + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
             +  (dict_unit \
                     ["move"]
                     * 1.5) \
                 .__str__() \
-            + "px;\"/></div>" \
+            + "px;\"/></div><span class=\"value\">" \
             + dict_unit \
                 ["move"] \
                 .__str__() \
-            + "</div>" \
+            + "</span></div>" \
             + text_html_rows_attacks \
             + "</div></div></div>"
 
