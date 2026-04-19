@@ -234,7 +234,6 @@ a.image_faction {
 .header_list {
     display: flex;
     margin-bottom: 10px;
-    height: 150px;
 }
 
 .header_list .image_faction {
@@ -250,8 +249,8 @@ a.image_faction {
 }
 
 .summary {
+    height: 110px;
     font-size: 14px;
-    margin-top: 10px;
 }
 
 .points_unit {

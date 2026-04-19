@@ -297,7 +297,7 @@ def generate_htmls():
                 + text_side \
                 + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
-                + "')\"></div><div class=\"match_data\"><div class=\"points_total\"></div><div class=\"summary\">" \
+                + "')\"></div><div class=\"match_data\"><div class=\"summary\">" \
                 + "<br/>" \
                     .join(
                         map(
@@ -314,7 +314,7 @@ def generate_htmls():
                                 + dict_unit["name"],
                             dict_army_list \
                                 ["units"])) \
-                + "</div></div></div>" \
+                + "</div><div class=\"points_total\"></div></div></div>" \
                 + "" \
                     .join(
                         map(
