@@ -214,9 +214,10 @@ function hide_preview_attack() {
     const element_unit_attacking = element_army_lists
         .getElementsByClassName("attacking")[0]
 
-    Array.from(element_unit_attacking
-        .getElementsByClassName("selected"))
-        .forEach(element => element.classList.remove("selected"))
+    element_unit_attacking
+        .getElementsByClassName("selected")[0]
+        .classList
+        .remove("selected")
 
     element_unit_attacking
         .classList
