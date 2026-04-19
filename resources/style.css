@@ -308,25 +308,23 @@ a.image_faction {
     justify-content: flex-end;
     flex-direction: column;
     height: 142px;
-    padding: 2px;
-    border: 1px solid transparent;
+    padding-left: 2px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .coordinate {
     font-size: 12px;
-    line-height: 12px;
+    line-height: 14px;
+    padding-right: 2px;
+    border-top: 2px solid var(--grey_main);
     text-align: right;
-    color: white;
+    color: var(--grey_text);
 }
 
-.coordinate .in_cover,
-.coordinate .no_cover {
+.coordinate.in_cover,
+.coordinate.no_cover {
     display: none;
-}
-
-.coordinate .no_cover:hover,
-.coordinate .remaining:hover {
-    background: linear-gradient(0.25turn, #8b4dfe, #6f30f8);
 }
 
 .unit_army_list.destroyed {
