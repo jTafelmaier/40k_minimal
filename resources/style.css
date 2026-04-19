@@ -308,7 +308,7 @@ a.image_faction {
 }
 
 .coordinates {
-    display: flex;
+    display: none !important;
     justify-content: flex-end;
     flex-direction: column;
     height: 142px;
