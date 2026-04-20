@@ -152,6 +152,10 @@ a.image_faction {
     box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
 }
 
+.army_list_faction {
+    margin: 20px 5px;
+}
+
 .unit_faction {
     width: fit-content;
 }
