@@ -940,7 +940,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "single",
                             "strength": 6,
                             "heavy": true
