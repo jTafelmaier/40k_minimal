@@ -153,7 +153,7 @@ function finish_action(
     const array_elements_units = Array.from(document
         .querySelectorAll(".unit_faction:not(.unselected)"))
 
-    if (!array_elements_units.every(element => element.classList.contains("inactive") || element.classList.contains("destroyed")))
+    if (!array_elements_units.every(element => element.classList.contains("inactive")))
         return
 
     array_elements_units
@@ -530,7 +530,7 @@ function apply_preview(
     if (int_health_points_new <= 0) {
         element_unit
             .classList
-            .add("destroyed")
+            .add("unselected")
     }
 
     const text_other_side = text_side === "left" ? "right" : "left"

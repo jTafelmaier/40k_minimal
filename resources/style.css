@@ -399,10 +399,6 @@ body {
     color: var(--grey_text);
 }
 
-.unit_faction.destroyed {
-    display: none;
-}
-
 .movement:hover,
 .attack:hover,
 .selected  {
