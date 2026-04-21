@@ -151,7 +151,7 @@ def generate_htmls():
                 int_index_unit, \
                 dict_unit = pair_unit
 
-                return "<div class=\"unit_faction unselected\"><div class=\"unit_count\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                return "<div class=\"unit_faction unselected\"><div class=\"unit_state\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
                     + int_index_unit \
                         .__str__() \
                     + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
@@ -177,7 +177,7 @@ def generate_htmls():
                             dict_faction \
                                 ["units"])))
 
-            return "<div class=\"faction_rules invisible " \
+            return "<div class=\"army_list_constructor invisible " \
                 + name_faction \
                 + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
@@ -193,7 +193,7 @@ def generate_htmls():
                     map(
                         get_text_html_button_show_faction,
                         list_dicts_factions)) \
-            + "</div><div class=\"army_list_constructor\">" \
+            + "</div><div class=\"army_list_constructors\">" \
             + "" \
                 .join(
                     map(
@@ -260,7 +260,7 @@ def generate_htmls():
                     * 8) \
                     .__str__()
 
-                return "<div class=\"unit_army_list\" initial_health=\"" \
+                return "<div class=\"unit_faction\" initial_health=\"" \
                     + text_health_points_initial \
                     + "\" current_health=\"" \
                     + text_health_points_initial \

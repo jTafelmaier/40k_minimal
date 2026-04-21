@@ -29,7 +29,7 @@ function display_faction(
 
 function return_to_faction_selection() {
 
-    Array.from(document.getElementsByClassName("faction_rules"))
+    Array.from(document.getElementsByClassName("army_list_constructor"))
         .forEach(element => element.classList.add("invisible"))
 
     document
@@ -44,7 +44,7 @@ function modify_count_models(
     int_change) {
 
     const element_unit = document
-        .querySelectorAll(".faction_rules:not(.invisible)")[0]
+        .querySelectorAll(".army_list_constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 
     const element_count = element_unit
@@ -77,6 +77,16 @@ function modify_count_models(
 
 function toggle_state_army_list() {
 
+    const element_side = document
+        .getElementsByClassName("army_list_constructor")[0]
+
+    element_side
+        .classList
+        .toggle("army_list_constructor")
+
+    element_side
+        .classList
+        .toggle("army_list")
 }
 
 
@@ -122,8 +132,9 @@ function finish_action(
         .getElementsByClassName("summary")[0]
         .innerText = ""
 
+    // TODO filter
     const array_elements_units = Array.from(document
-        .getElementsByClassName("unit_army_list"))
+        .getElementsByClassName("unit_faction"))
 
     if (!array_elements_units.every(element => element.classList.contains("inactive") || element.classList.contains("destroyed")))
         return
@@ -146,9 +157,10 @@ function get_element_unit_army_list(
     text_side,
     index_unit) {
 
+    // TODO
     return document
         .getElementById(text_side)
-        .getElementsByClassName("unit_army_list")[index_unit]
+        .getElementsByClassName("unit_faction")[index_unit]
 }
 
 
@@ -208,7 +220,7 @@ function update_points_total(
         .getElementById(text_side)
 
     const int_points_total = Array.from(element_side
-        .getElementsByClassName("unit_army_list"))
+        .getElementsByClassName("unit_faction"))
         .map(get_int_points_cost_unit)
         .reduce((a, b) => a + b)
 
@@ -301,7 +313,7 @@ function hide_preview_attack() {
     }
 
     Array.from(element_army_lists
-        .getElementsByClassName("unit_army_list"))
+        .getElementsByClassName("unit_faction"))
         .forEach(unset_attacked)
 
     const element_unit_attacking = element_army_lists
@@ -452,7 +464,7 @@ function toggle_select_attack(
 
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
-        .getElementsByClassName("unit_army_list"))
+        .getElementsByClassName("unit_faction"))
         .forEach(show_preview_attack)
 }
 

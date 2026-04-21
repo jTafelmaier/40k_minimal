@@ -126,7 +126,7 @@ body {
         0 calc(100% - 10px));
 }
 
-.faction_rules .image_faction {
+.army_list_constructor .image_faction {
     width: 520px;
     margin: 5px;
     padding: 10px;
@@ -172,12 +172,12 @@ body {
     width: fit-content;
 }
 
-.unit_faction .unit_state {
+.army_list_constructor .unit_state {
     padding: 18px 5px;
     background-color: var(--grey_dark_blue);
 }
 
-.unit_faction .unit_state > div {
+.army_list_constructor .unit_state > div {
     width: 20px;
     padding: 2px 2px;
     border-radius: 4px;
@@ -340,8 +340,7 @@ body {
     background-color: var(--grey_dark_blue);
 }
 
-.unit_faction,
-.unit_army_list {
+.unit_faction {
     display: flex;
     margin: 5px 4px;
     border: 2px solid var(--grey_main);
@@ -355,7 +354,7 @@ body {
         0 0);
 }
 
-.unit_army_list .unit_state {
+.army_list .unit_state {
     display: flex;
     padding: 10px 0px 10px 2px;
     user-select: none;
@@ -379,7 +378,7 @@ body {
     color: var(--grey_text);
 }
 
-.unit_army_list.destroyed {
+.unit_faction.destroyed {
     display: none;
 }
 
@@ -432,7 +431,7 @@ body {
     display: none;
 }
 
-.attacking_side .unit_army_list:not(.attacking),
+.attacking_side .unit_faction:not(.attacking),
 .attacking_side .attacking .attack:not(.selected) {
     opacity: 0.15;
 }
