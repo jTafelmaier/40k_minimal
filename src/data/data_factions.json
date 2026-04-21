@@ -1158,6 +1158,22 @@
             "name": "T'au empire",
             "units": [
                 {
+                    "name": "Scatterflare",
+                    "points_per_model": 150,
+                    "armor": 6,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
                     "name": "Sunsear",
                     "points_per_model": 150,
                     "armor": 6,
@@ -1175,22 +1191,6 @@
                             "range": "⛶",
                             "type": "single",
                             "strength": 6,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Scatterflare",
-                    "points_per_model": 150,
-                    "armor": 6,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "C",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 5,
                             "heavy": false
                         }
                     ]
