@@ -46,18 +46,24 @@ function return_to_faction_selection(
 }
 
 
-function toggle_state_army_list(
+function toggle_mode_army_list(
     text_side) {
 
-    const element_side = document
+    const element_list = document
         .getElementsByClassName(text_side)[0]
         .querySelectorAll(".army_list:not(.invisible)")[0]
 
-    element_side
+    if (element_list.classList.contains("constructor")) {
+        Array.from(element_list
+            .querySelectorAll(".unit_faction"))
+            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = element.querySelectorAll(".count_models")[0].textContent.trim() + ".00")
+    }
+
+    element_list
         .classList
         .toggle("constructor")
 
-    element_side
+    element_list
         .classList
         .toggle("match")
 }

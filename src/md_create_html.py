@@ -208,7 +208,7 @@ def generate_htmls():
                 + text_side \
                 + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
-                + "</div><div class=\"interactive toggle_state_army_list\" onclick=\"toggle_state_army_list('" \
+                + "</div><div class=\"interactive toggle_mode_army_list\" onclick=\"toggle_mode_army_list('" \
                 + text_side \
                 + "')\">switch mode</div></div></div></div><div class=\"units_faction\">" \
                 + text_html_units \

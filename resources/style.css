@@ -175,12 +175,12 @@ body {
     font-weight: bold;
 }
 
-.toggle_state_army_list {
+.toggle_mode_army_list {
     width: 100px;
     margin: 2px 0px;
 }
 
-.match .toggle_state_army_list {
+.match .toggle_mode_army_list {
     border: 2px solid transparent;
 }
 
