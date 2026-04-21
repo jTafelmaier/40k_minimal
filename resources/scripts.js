@@ -29,7 +29,7 @@ function display_faction(
 
 function return_to_faction_selection() {
 
-    Array.from(document.getElementsByClassName("army_list_constructor"))
+    Array.from(document.getElementsByClassName("army_list"))
         .forEach(element => element.classList.add("invisible"))
 
     document
@@ -43,15 +43,16 @@ function toggle_state_army_list(
     text_side) {
 
     const element_side = document
-        .getElementsByClassName("army_list_constructor")[0]
+        .getElementsByClassName(text_side)[0]
+        .querySelectorAll(".army_list:not(.invisible)")[0]
 
     element_side
         .classList
-        .toggle("army_list_constructor")
+        .toggle("constructor")
 
     element_side
         .classList
-        .toggle("army_list")
+        .toggle("match")
 }
 
 
@@ -60,7 +61,7 @@ function modify_count_models(
     int_change) {
 
     const element_unit = document
-        .querySelectorAll(".army_list_constructor:not(.invisible)")[0]
+        .querySelectorAll(".constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 
     const element_count = element_unit

@@ -178,15 +178,15 @@ def generate_htmls():
                             dict_faction \
                                 ["units"])))
 
-            return "<div class=\"army_list_constructor invisible " \
+            return "<div class=\"army_list constructor invisible " \
                 + name_faction \
                 + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
                 + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection()\">✖</div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
-                + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list(" \
+                + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list('" \
                 + text_side \
-                + ")\">switch mode</div></div></div><div class=\"army_list_faction\"></div></div><div>" \
+                + "')\">switch mode</div></div></div><div class=\"army_list_faction\"></div></div><div>" \
                 + text_html_units \
                 + "</div></div>"
 
@@ -288,7 +288,7 @@ def generate_htmls():
 
             return "<div><div id=\"" \
                 + text_side \
-                + "\" class=\"army_list\"><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\"></div></div>" \
+                + "\" class=\"army_list match\"><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\"></div></div>" \
                 + "" \
                     .join(
                         map(
