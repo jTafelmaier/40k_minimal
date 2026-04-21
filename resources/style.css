@@ -198,6 +198,7 @@ body {
 
 .unit_count_modifier {
     padding: 18px 10px;
+    width: 24px;
     background-color: var(--grey_dark_blue);
 }
 
@@ -228,7 +229,9 @@ body {
 }
 
  .unit_state {
-    display: none
+    display: none;
+    width: 40px;
+    padding: 10px 2px;
  }
 
 .unit_faction:hover .count_models {
@@ -252,7 +255,6 @@ body {
 
 .match .unit_state {
     display: flex;
-    padding: 10px 0px 10px 2px;
     user-select: none;
     background-color: var(--grey_dark_blue);
 }

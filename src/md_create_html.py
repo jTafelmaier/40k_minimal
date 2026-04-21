@@ -334,7 +334,7 @@ def generate_htmls():
     soup_full = md_shared.get_soup(text_html_template)
 
     dict_replacements = {
-        "id_factions": md_shared.get_soup("<div class=\"army_constructors\">" + get_text_html_faction_rules("left") + get_text_html_faction_rules("right") + "</div>"),
+        "id_factions": md_shared.get_soup("<div class=\"army_constructors\">" + get_text_html_faction_rules("left") + "</div>"),
         "id_army_lists": md_shared.get_soup(get_text_html_army_lists())}
 
     for id_placeholder, soup_replacement in dict_replacements.items():
