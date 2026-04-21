@@ -12,6 +12,19 @@ function get_int_attribute(
 }
 
 
+function display_faction(
+    id_faction){
+
+    Array.from(document.getElementsByClassName("faction_rules"))
+        .forEach(element => element.classList.add("invisible"))
+
+    document
+        .getElementById(id_faction)
+        .classList
+        .remove("invisible")
+}
+
+
 function add_unit_to_army_list(
     name_unit) {
 

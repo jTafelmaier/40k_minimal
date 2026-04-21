@@ -125,15 +125,18 @@ def generate_htmls():
 
             return "<div class=\"container_faction_button " \
                 + name_faction \
-                + "\"><a class=\"image_faction preview_faction_button\" href=\"index_" \
+                + "\"><div class=\"image_faction preview_faction_button\" onclick=\"display_faction('" \
                 + name_faction \
-                + ".html\" style=\"background-image: url('" \
+                    .replace(
+                        "'",
+                        "\\'") \
+                + "')\" style=\"background-image: url('" \
                 + path_image_faction \
                 + "')\">" \
                 + name_faction \
-                + "</a></div>"
+                + "</div></div>"
 
-        def create_html_faction(
+        def get_html_army_constructor(
             dict_faction:typing.Dict):
 
             name_faction = dict_faction \
@@ -164,7 +167,9 @@ def generate_htmls():
                         dict_faction \
                             ["units"]))
 
-            text_html = "<div class=\"faction_rules\"><div><div class=\"image_faction\" style=\"background-image: url('" \
+            return "<div id=\"" \
+                + name_faction \
+                + "\" class=\"faction_rules invisible\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
                 + "')\">" \
                 + name_faction \
@@ -178,41 +183,17 @@ def generate_htmls():
                 + text_html_faction \
                 + "</div></div>"
 
-            soup_faction = md_shared.get_soup(text_html)
-
-            text_html_template = md_shared.get_text_file(
-                [
-                    "src",
-                    "data",
-                    "template_faction.html"])
-
-            soup_full = md_shared.get_soup(text_html_template)
-
-            soup_full \
-                .find(
-                    name="placeholder",
-                    id="id_faction") \
-                .replace_with(soup_faction)
-
-            with open("index_" + name_faction + ".html", mode="w", encoding="utf-8") as file_html:
-                file_html \
-                    .write(
-                        soup_full \
-                            .prettify())
-
-            return
-
-        # TODO refactor
-        list(
-            map(
-                create_html_faction,
-                list_dicts_factions))
-
         return "<div class=\"selection_factions\">" \
             + "" \
                 .join(
                     map(
                         get_text_html_button_show_faction,
+                        list_dicts_factions)) \
+            + "</div><div class=\"army_list_constructor\">" \
+            + "" \
+                .join(
+                    map(
+                        get_html_army_constructor,
                         list_dicts_factions)) \
             + "</div>"
 
