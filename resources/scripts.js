@@ -26,9 +26,13 @@ function display_faction(
 
 
 function add_unit_to_army_list(
+    id_faction,
     name_unit) {
 
-    const dict_new = JSON.parse(document
+    const element_faction = document
+        .getElementById(id_faction)
+
+    const dict_new = JSON.parse(element_faction
         .getElementsByClassName("json_object")[0]
         .textContent)
 
@@ -48,7 +52,7 @@ function add_unit_to_army_list(
                 "count_models": 1})
     }
 
-    document
+    element_faction
         .getElementsByClassName("json_object")[0]
         .innerText = JSON.stringify(
             dict_new,
@@ -74,9 +78,9 @@ function add_unit_to_army_list(
 
     }
 
-    document
+    element_faction
         .getElementsByClassName("points_total")[0]
-        .innerText = Array.from(document
+        .innerText = Array.from(element_faction
             .getElementsByClassName("model"))
             .map(get_int_points_cost)
             .reduce((a, b) => a + b)

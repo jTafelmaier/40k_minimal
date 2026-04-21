@@ -152,6 +152,12 @@ def generate_htmls():
                 dict_unit:typing.Dict):
 
                 return "<div class=\"unit_faction\" onclick=\"add_unit_to_army_list('" \
+                    + dict_faction \
+                        ["name"] \
+                        .replace(
+                            "'",
+                            "\\'") \
+                    + "', '" \
                     + dict_unit \
                         ["name"] \
                     + "')\">" \
