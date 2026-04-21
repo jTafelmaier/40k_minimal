@@ -111,6 +111,28 @@ def generate_htmls():
     def get_text_html_faction_rules(
         text_side):
 
+        dict_army_lists = md_shared.get_dict_setting("army_lists.json")
+
+        dict_army_list = dict_army_lists \
+            [text_side]
+
+        name_faction = dict_army_list \
+            ["faction"]
+
+        dict_faction = next(
+                filter(
+                    lambda dict_faction: dict_faction["name"] == name_faction,
+                    list_dicts_factions))
+
+        dict_units = dict(
+                map(
+                    lambda dict_unit: (
+                        dict_unit \
+                            ["name"],
+                        dict_unit),
+                    dict_faction \
+                        ["units"]))
+
         def get_text_html_button_show_faction(
             dict_faction:typing.Dict):
 
@@ -149,10 +171,10 @@ def generate_htmls():
                         "faction.png"])
 
             def get_text_html_unit(
-                pair_unit:typing.Tuple[int, typing.Dict]):
+                pair_dict_unit:typing.Tuple[int, typing.Dict]):
 
                 int_index_unit, \
-                dict_unit = pair_unit
+                dict_unit = pair_dict_unit
 
                 text_parameters_functions = "'" \
                     + text_side \
@@ -160,7 +182,7 @@ def generate_htmls():
                     + int_index_unit \
                         .__str__()
 
-                return "<div class=\"unit_faction unselected\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
@@ -210,11 +232,11 @@ def generate_htmls():
                 + name_faction \
                 + "</div><div class=\"interactive toggle_mode_army_list\" onclick=\"toggle_mode_army_list('" \
                 + text_side \
-                + "')\">switch mode</div></div></div></div><div class=\"units_faction\">" \
+                + "')\">switch mode</div></div></div><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\">0 points</div></div></div><div class=\"units_faction\">" \
                 + text_html_units \
                 + "</div></div>"
 
-        return "<div class=\"" \
+        return "<div id=\"" \
             + text_side \
             + "\"><div class=\"selection_factions\">" \
             + "" \
@@ -230,101 +252,6 @@ def generate_htmls():
                         list_dicts_factions)) \
             + "</div></div>"
 
-    def get_text_html_army_lists():
-
-        dict_army_lists = md_shared.get_dict_setting("army_lists.json")
-
-        def get_html_army_list(
-            text_side:str):
-
-            dict_army_list = dict_army_lists \
-                [text_side]
-
-            name_faction = dict_army_list \
-                ["faction"]
-
-            dict_faction = next(
-                    filter(
-                        lambda dict_faction: dict_faction["name"] == name_faction,
-                        list_dicts_factions))
-
-            dict_units = dict(
-                    map(
-                        lambda dict_unit: (
-                            dict_unit \
-                                ["name"],
-                            dict_unit),
-                        dict_faction \
-                            ["units"]))
-
-            def get_text_html_unit(
-                pair_dict_unit_army_list:typing.Tuple[int, typing.Dict]):
-
-                int_index_unit, \
-                dict_unit_army_list = pair_dict_unit_army_list
-
-                dict_unit = dict_units \
-                    [
-                        dict_unit_army_list \
-                            ["name"]]
-
-                text_parameters_functions = "'" \
-                    + text_side \
-                    + "', " \
-                    + int_index_unit \
-                        .__str__()
-
-                int_count_models = dict_unit_army_list \
-                    ["count_models"]
-
-                int_limit = {
-                    "C": 1,
-                    "E": 10,
-                    "H": 20} \
-                    [dict_unit["type_unit"]]
-
-                assert int_count_models <= int_limit
-
-                text_health_points_initial = (int_count_models 
-                    * 8) \
-                    .__str__()
-
-                return "<div class=\"unit_faction\" initial_health=\"" \
-                    + text_health_points_initial \
-                    + "\" current_health=\"" \
-                    + text_health_points_initial \
-                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
-                    + text_parameters_functions \
-                    + ")\" onmouseleave=\"mouseleave_attack(" \
-                    + text_parameters_functions \
-                    + ")\" onclick=\"apply_preview(" \
-                    + text_parameters_functions \
-                    + ")\">" \
-                    + int_count_models \
-                        .__str__() \
-                    + ".00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
-                    + get_text_html_data_unit(
-                        dict_unit=dict_unit,
-                        name_faction=name_faction,
-                        text_side=text_side,
-                        int_index_unit=int_index_unit) \
-                    + "</div>"
-
-            return "<div><div id=\"" \
-                + text_side \
-                + "\" class=\"army_list match\"><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\"></div></div>" \
-                + "" \
-                    .join(
-                        map(
-                            get_text_html_unit,
-                            enumerate(
-                                dict_army_list \
-                                    ["units"]))) \
-                + "</div></div>"
-
-        return get_html_army_list("left") \
-            + get_html_army_list("right")
-
     text_html_template = md_shared.get_text_file(
         [
             "src",
@@ -333,16 +260,15 @@ def generate_htmls():
 
     soup_full = md_shared.get_soup(text_html_template)
 
-    dict_replacements = {
-        "id_factions": md_shared.get_soup("<div class=\"army_constructors\">" + get_text_html_faction_rules("left") + "</div>"),
-        "id_army_lists": md_shared.get_soup(get_text_html_army_lists())}
-
-    for id_placeholder, soup_replacement in dict_replacements.items():
-        soup_full \
-            .find(
-                name="placeholder",
-                id=id_placeholder) \
-            .replace_with(soup_replacement)
+    soup_full \
+        .find(
+            name="placeholder",
+            id="id_factions") \
+        .replace_with(
+            md_shared.get_soup("<div class=\"army_constructors\">"
+                + get_text_html_faction_rules("left")
+                + get_text_html_faction_rules("right")
+                + "</div>"))
 
     with open("index.html", mode="w", encoding="utf-8") as file_html:
         file_html \

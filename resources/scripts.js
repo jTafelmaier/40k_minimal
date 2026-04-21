@@ -17,13 +17,13 @@ function display_faction(
     name_faction){
 
     document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("selection_factions")[0]
         .classList
         .add("invisible")
 
     document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName(name_faction)[0]
         .classList
         .remove("invisible")
@@ -34,12 +34,12 @@ function return_to_faction_selection(
     text_side) {
 
     Array.from(document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("army_list"))
         .forEach(element => element.classList.add("invisible"))
 
     document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .getElementsByClassName("selection_factions")[0]
         .classList
         .remove("invisible")
@@ -50,7 +50,7 @@ function toggle_mode_army_list(
     text_side) {
 
     const element_list = document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .querySelectorAll(".army_list:not(.invisible)")[0]
 
     if (element_list.classList.contains("constructor")) {
@@ -75,7 +75,7 @@ function modify_count_models(
     int_change) {
 
     const element_unit = document
-        .getElementsByClassName(text_side)[0]
+        .getElementById(text_side)
         .querySelectorAll(".constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 
@@ -104,6 +104,20 @@ function modify_count_models(
     element_count
         .textContent = int_count_new
             .toString()
+
+    element_unit
+        .setAttribute(
+            "initial_health",
+            int_count_new
+                * INT_HEALTH_POINTS)
+
+    element_unit
+        .setAttribute(
+            "current_health",
+            int_count_new
+                * INT_HEALTH_POINTS)
+
+    update_points_total(text_side)
 }
 
 
@@ -218,6 +232,7 @@ function get_int_count_models(
 }
 
 
+// TODO move above
 function update_points_total(
     text_side) {
 
@@ -235,6 +250,7 @@ function update_points_total(
 
     const element_side = document
         .getElementById(text_side)
+        .querySelectorAll(".army_list:not(.invisible)")[0]
 
     const int_points_total = Array.from(element_side
         .getElementsByClassName("unit_faction"))
@@ -591,12 +607,5 @@ function apply_preview(
 
     hide_preview_attack()
     update_points_total(text_side)
-}
-
-
-function initialise() {
-
-    update_points_total("left")
-    update_points_total("right")
 }
 
