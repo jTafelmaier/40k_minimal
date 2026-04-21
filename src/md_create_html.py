@@ -112,28 +112,6 @@ def generate_htmls():
     def get_text_html_faction_rules(
         text_side):
 
-        dict_army_lists = md_shared.get_dict_setting("army_lists.json")
-
-        dict_army_list = dict_army_lists \
-            [text_side]
-
-        name_faction = dict_army_list \
-            ["faction"]
-
-        dict_faction = next(
-                filter(
-                    lambda dict_faction: dict_faction["name"] == name_faction,
-                    list_dicts_factions))
-
-        dict_units = dict(
-                map(
-                    lambda dict_unit: (
-                        dict_unit \
-                            ["name"],
-                        dict_unit),
-                    dict_faction \
-                        ["units"]))
-
         def get_text_html_button_show_faction(
             dict_faction:typing.Dict):
 
