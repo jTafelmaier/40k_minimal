@@ -185,12 +185,18 @@ function set_inactive(
     text_side,
     index_unit) {
 
-    if (document.getElementById("factions").classList.contains("attack_in_progress")) return
+    if (document.getElementById("factions").classList.contains("attack_in_progress")) {
+        return
+    }
 
     const element_unit = get_element_unit(
             text_side,
             index_unit)
     
+    if (element_unit.parentElement.parentElement.classList.contains("constructor")) {
+        return
+    }
+
     element_unit
         .classList
         .add("inactive")
@@ -357,6 +363,10 @@ function toggle_select_attack(
     const element_unit_attacking = get_element_unit(
             text_side_unit_attacking,
             index_unit_attacking)
+
+    if (element_unit_attacking.parentElement.parentElement.classList.contains("constructor")) {
+        return
+    }
 
     const element_attack = element_unit_attacking
         .getElementsByClassName("attack")[index_attack]

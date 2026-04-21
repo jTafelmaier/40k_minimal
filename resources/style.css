@@ -399,20 +399,20 @@ body {
     color: var(--grey_text);
 }
 
-.movement:hover,
-.attack:hover,
-.selected  {
+.match .movement:hover,
+.match .attack:hover,
+.match .selected  {
     color: white;
     border-radius: 4px;
     user-select: none;
 }
 
-.movement:hover {
+.match .movement:hover {
     background: linear-gradient(to right, var(--grey_main) 185px, transparent);
 }
 
-.attack:hover,
-.attack.selected {
+.match .attack:hover,
+.match .attack.selected {
     border: 2px solid var(--grey_blue);
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
