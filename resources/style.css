@@ -173,13 +173,13 @@ body {
 }
 
 .unit_count {
-    padding: 8px;
+    padding: 8px 5px;
     background-color: var(--grey_dark_blue);
 }
 
 .unit_count > div {
     width: 20px;
-    padding: 2px 5px;
+    padding: 2px 2px;
     border-radius: 4px;
     user-select: none;
     text-align: center;
@@ -198,7 +198,11 @@ body {
     background-color: var(--grey_main);
 }
 
-.unit_count .count_models {
+.unit_faction .count_models {
+    border: 2px solid var(--grey_main);
+}
+
+.unit_faction:not(.unselected) .count_models {
     border: 2px solid white;
     color: white;
     background-color: #8b4dfe;
