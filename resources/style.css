@@ -127,7 +127,7 @@ body {
 }
 
 .faction_rules .image_faction {
-    width: 540px;
+    width: 520px;
     margin: 5px;
     padding: 10px;
     background-size: cover;
@@ -172,12 +172,12 @@ body {
     width: fit-content;
 }
 
-.unit_count {
-    padding: 8px 5px;
+.unit_faction .unit_state {
+    padding: 18px 5px;
     background-color: var(--grey_dark_blue);
 }
 
-.unit_count > div {
+.unit_faction .unit_state > div {
     width: 20px;
     padding: 2px 2px;
     border-radius: 4px;
@@ -186,6 +186,7 @@ body {
 }
 
 .modify_count {
+    font-size: 14px;
     opacity: 0.0;
 }
 
@@ -195,11 +196,12 @@ body {
 
 .modify_count:hover {
     color: white;
-    background-color: var(--grey_main);
 }
 
 .unit_faction .count_models {
-    border: 2px solid var(--grey_main);
+    border: 2px solid var(--grey_blue);
+    color: var(--grey_blue);
+    background-color: var(--grey_dark);
 }
 
 .unit_faction:not(.unselected) .count_models {
@@ -210,6 +212,19 @@ body {
 
 .unselected .model {
     opacity: 0.2;
+}
+
+.toggle_state_army_list {
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    background-color: #8b4dfe;
+    text-align: center;
+}
+
+.toggle_state_army_list:hover {
+    color: var(--grey_dark);
+    background-color: white;
 }
 
 .model {
@@ -340,7 +355,7 @@ body {
         0 0);
 }
 
-.unit_state {
+.unit_army_list .unit_state {
     display: flex;
     padding: 10px 0px 10px 2px;
     user-select: none;

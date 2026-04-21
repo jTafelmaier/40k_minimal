@@ -13,7 +13,7 @@ function get_int_attribute(
 
 
 function display_faction(
-    id_faction){
+    name_faction){
 
     document
         .getElementById("selection_factions")
@@ -21,7 +21,7 @@ function display_faction(
         .add("invisible")
 
     document
-        .getElementById(id_faction)
+        .getElementsByClassName(name_faction)[0]
         .classList
         .remove("invisible")
 }
@@ -72,6 +72,11 @@ function modify_count_models(
     element_count
         .textContent = int_count_new
             .toString()
+}
+
+
+function toggle_state_army_list() {
+
 }
 
 

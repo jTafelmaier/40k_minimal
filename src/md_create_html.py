@@ -122,9 +122,7 @@ def generate_htmls():
                         md_shared.get_text_path_images_faction(name_faction),
                         "faction.png"])
 
-            return "<div class=\"container_faction_button " \
-                + name_faction \
-                + "\"><div class=\"image_faction preview_faction_button\" onclick=\"display_faction('" \
+            return "<div class=\"container_faction_button\"><div class=\"image_faction preview_faction_button\" onclick=\"display_faction('" \
                 + name_faction \
                     .replace(
                         "'",
@@ -171,7 +169,7 @@ def generate_htmls():
                         name_faction=name_faction) \
                     + "</div>"
 
-            text_html_faction = "" \
+            text_html_units = "" \
                 .join(
                     map(
                         get_text_html_unit,
@@ -179,15 +177,15 @@ def generate_htmls():
                             dict_faction \
                                 ["units"])))
 
-            return "<div id=\"" \
+            return "<div class=\"faction_rules invisible " \
                 + name_faction \
-                + "\" class=\"faction_rules invisible\"><div><div class=\"image_faction\" style=\"background-image: url('" \
+                + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
                 + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection()\">✖</div><div class=\"name\">" \
                 + name_faction \
                 + "</div></div><div class=\"army_list_faction\"></div></div><div>" \
-                + text_html_faction \
-                + "</div></div>"
+                + text_html_units \
+                + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list()\">done</div></div>"
 
         return "<div id=\"selection_factions\">" \
             + "" \
