@@ -247,7 +247,7 @@ body {
 }
 
 .unselected .model {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .match .unselected {
@@ -360,7 +360,7 @@ body {
 }
 
 .points_total {
-    width: 120px;
+    width: 100px;
     padding: 2px;
     border: 1px solid var(--grey_main);
     border-radius: 2px;
