@@ -213,10 +213,11 @@ def generate_htmls():
                 + name_faction \
                 + "</div><div class=\"interactive toggle_mode_army_list\" onclick=\"toggle_mode_army_list('" \
                 + text_side \
-                + "')\">switch mode</div></div></div><div class=\"header_list\"><div class=\"summary\"></div><div class=\"points_total\">0 points</div></div></div><div class=\"units_faction\">" \
+                + "')\">switch mode</div></div></div><div class=\"header_list\"><div class=\"points_total\">0 points</div></div></div><div class=\"units_faction\">" \
                 + text_html_units \
                 + "</div></div>"
 
+        # TODO refactor
         return "<div id=\"" \
             + text_side \
             + "\"><div class=\"selection_factions\">" \

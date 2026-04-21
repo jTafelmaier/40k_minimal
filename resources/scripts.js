@@ -148,22 +148,7 @@ function mouseleave_attack(
 
 
 function finish_action(
-    text_side,
-    text_message) {
-
-    const text_other_side = text_side === "left" ? "right" : "left"
-
-    document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("summary")[0]
-        .innerText = text_message
-
-    document
-        .getElementById(text_other_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("summary")[0]
-        .innerText = ""
+    text_side) {
 
     const array_elements_units = Array.from(document
         .querySelectorAll(".unit_faction:not(.unselected)"))
@@ -210,12 +195,7 @@ function set_inactive(
         .classList
         .add("inactive")
 
-    finish_action(
-        text_side,
-        "Moved unit: "
-            + element_unit
-                .getElementsByClassName("name")[0]
-                .textContent)
+    finish_action(text_side)
 }
 
 
@@ -584,30 +564,10 @@ function apply_preview(
     const text_damage_per_model = float_damage_per_model
         .toString()
 
-    finish_action(
-        text_other_side,
-        "Attacked unit: "
-            + element_unit
-                .getElementsByClassName("name")[0]
-                .textContent
-                .trim()
-            + "\n2^("
-            + text_strength
-            + "-"
-            + text_armor
-            + ") == "
-            + text_damage_per_model
-            + " damage per model\n"
-            + int_count_models_attacking
-                .toString()
-            + " * "
-            + text_damage_per_model
-            + " == " 
-            + (int_count_models_attacking
-                * float_damage_per_model)
-            + " damage total")
+    finish_action(text_other_side)
 
     hide_preview_attack()
+
     update_points_total(text_side)
 }
 
