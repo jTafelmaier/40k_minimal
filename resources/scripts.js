@@ -27,12 +27,16 @@ function display_faction(
 }
 
 
-function return_to_faction_selection() {
+function return_to_faction_selection(
+    text_side) {
 
-    Array.from(document.getElementsByClassName("army_list"))
+    Array.from(document
+        .getElementsByClassName(text_side)[0]
+        .getElementsByClassName("army_list"))
         .forEach(element => element.classList.add("invisible"))
 
     document
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("selection_factions")[0]
         .classList
         .remove("invisible")
