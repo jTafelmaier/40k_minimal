@@ -12,10 +12,11 @@ def generate_htmls():
     list_dicts_factions = md_shared.get_dict_setting("data_factions.json") \
         ["data"]
 
+    # TODO integrate
     def get_text_html_data_unit(
         dict_unit:typing.Dict,
         name_faction:str,
-        text_side:str = "left",
+        text_side:str,
         int_index_unit:int = 0):
 
         text_parameters_functions = "'" \
@@ -211,7 +212,9 @@ def generate_htmls():
                     + ")\">0.00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
-                        name_faction=name_faction) \
+                        name_faction=name_faction,
+                        text_side=text_side,
+                        int_index_unit=int_index_unit) \
                     + "</div>"
 
             text_html_units = "" \
@@ -222,7 +225,7 @@ def generate_htmls():
                             dict_faction \
                                 ["units"])))
 
-            return "<div class=\"army_list constructor invisible " \
+            return "<div class=\"faction constructor invisible " \
                 + name_faction \
                 + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \

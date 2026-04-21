@@ -35,7 +35,7 @@ function return_to_faction_selection(
 
     Array.from(document
         .getElementById(text_side)
-        .getElementsByClassName("army_list"))
+        .getElementsByClassName("faction"))
         .forEach(element => element.classList.add("invisible"))
 
     document
@@ -51,7 +51,7 @@ function toggle_mode_army_list(
 
     const element_list = document
         .getElementById(text_side)
-        .querySelectorAll(".army_list:not(.invisible)")[0]
+        .querySelectorAll(".faction:not(.invisible)")[0]
 
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
@@ -125,7 +125,7 @@ function mouseenter_attack(
     text_side,
     index_unit) {
 
-    get_element_unit_army_list(
+    get_element_unit(
             text_side,
             index_unit)
         .getElementsByClassName("section difference")[0]
@@ -138,7 +138,7 @@ function mouseleave_attack(
     text_side,
     index_unit) {
 
-    get_element_unit_army_list(
+    get_element_unit(
             text_side,
             index_unit)
         .getElementsByClassName("section difference")[0]
@@ -155,17 +155,18 @@ function finish_action(
 
     document
         .getElementById(text_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
         .getElementsByClassName("summary")[0]
         .innerText = text_message
 
     document
         .getElementById(text_other_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
         .getElementsByClassName("summary")[0]
         .innerText = ""
 
-    // TODO filter
     const array_elements_units = Array.from(document
-        .getElementsByClassName("unit_faction"))
+        .querySelectorAll(".unit_faction:not(.unselected)"))
 
     if (!array_elements_units.every(element => element.classList.contains("inactive") || element.classList.contains("destroyed")))
         return
@@ -184,13 +185,13 @@ function finish_action(
 }
 
 
-function get_element_unit_army_list(
+function get_element_unit(
     text_side,
     index_unit) {
 
-    // TODO
     return document
         .getElementById(text_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 }
 
@@ -199,9 +200,9 @@ function set_inactive(
     text_side,
     index_unit) {
 
-    if (document.getElementById("army_lists").classList.contains("attack_in_progress")) return
+    if (document.getElementById("factions").classList.contains("attack_in_progress")) return
 
-    const element_unit = get_element_unit_army_list(
+    const element_unit = get_element_unit(
             text_side,
             index_unit)
     
@@ -248,16 +249,16 @@ function update_points_total(
                     .at(1))
     }
 
-    const element_side = document
+    const element_faction = document
         .getElementById(text_side)
-        .querySelectorAll(".army_list:not(.invisible)")[0]
+        .querySelectorAll(".faction:not(.invisible)")[0]
 
-    const int_points_total = Array.from(element_side
+    const int_points_total = Array.from(element_faction
         .getElementsByClassName("unit_faction"))
         .map(get_int_points_cost_unit)
         .reduce((a, b) => a + b)
 
-    element_side
+    element_faction
         .getElementsByClassName("points_total")[0]
         .textContent = int_points_total
             .toString()
@@ -302,7 +303,7 @@ function set_text_bar(
 function hide_preview_attack() {
 
     const element_army_lists = document
-        .getElementById("army_lists")
+        .getElementById("factions")
 
     if (!element_army_lists.classList.contains("attack_in_progress")) {
         return
@@ -373,7 +374,7 @@ function toggle_select_attack(
     index_unit_attacking,
     index_attack) {
 
-    const element_unit_attacking = get_element_unit_army_list(
+    const element_unit_attacking = get_element_unit(
             text_side_unit_attacking,
             index_unit_attacking)
 
@@ -478,7 +479,7 @@ function toggle_select_attack(
     }
 
     document
-        .getElementById("army_lists")
+        .getElementById("factions")
         .classList
         .add("attack_in_progress")
 
@@ -497,7 +498,8 @@ function toggle_select_attack(
 
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
-        .getElementsByClassName("unit_faction"))
+        .querySelectorAll(".faction:not(.invisible)")[0]
+        .querySelectorAll(".unit_faction:not(.unselected)"))
         .forEach(show_preview_attack)
 }
 
@@ -506,7 +508,7 @@ function apply_preview(
     text_side,
     index_unit) {
 
-    const element_unit = get_element_unit_army_list(
+    const element_unit = get_element_unit(
             text_side,
             index_unit)
 

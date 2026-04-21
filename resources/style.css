@@ -199,7 +199,7 @@ body {
 
 .unit_count_modifier {
     padding: 18px 10px;
-    width: 24px;
+    width: 28px;
     background-color: var(--grey_dark_blue);
 }
 
@@ -231,7 +231,7 @@ body {
 
  .unit_state {
     display: none;
-    width: 40px;
+    width: 44px;
     padding: 10px 2px;
  }
 
@@ -335,16 +335,11 @@ body {
     background: linear-gradient(0.25turn, #771a1a8d, #f60f0f8d);
 }
 
-#army_lists {
-    display: flex;
-    gap: 0px 80px;
-}
-
 #turn_information {
     float: right;
 }
 
-.army_list {
+.faction {
     border: 4px solid #212632;
     border-radius: 4px;
     font-size: 14px;
