@@ -123,7 +123,6 @@ body {
 }
 
 .selection_factions .image_faction {
-    /* width: calc(100% - 5px); */
     padding-top: 75px;
     padding-bottom: 5px;
     border-top: 2px solid var(--grey_bright);
@@ -139,18 +138,28 @@ body {
     box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
 }
 
-.return_to_faction_selection {
+.image_upper {
+    height: 25px;
+}
+
+.interactive {
     width: 20px;
     border: 2px solid var(--grey_main);
     border-radius: 2px;
     color: var(--grey_main);
     background-color: var(--grey_dark);
     text-align: center;
+    line-height: 20px;
 }
 
-.return_to_faction_selection:hover {
+.interactive:hover {
+    border: 2px solid white;
     color: white;
-    background-color: #bd282f;
+    background-color: #8b4dfe;
+}
+
+.match .interactive.return_to_faction_selection {
+    display: none;
 }
 
 .image_lower {
@@ -166,24 +175,11 @@ body {
 
 .toggle_state_army_list {
     width: 100px;
-    margin: 5px;
-    border: 2px solid white;
-    border-radius: 2px;
-    color: white;
-    background-color: #8b4dfe;
-    text-align: center;
-    user-select: none;
-}
-
-.toggle_state_army_list:hover {
-    color: var(--grey_dark);
-    background-color: white;
+    margin: 2px 0px;
 }
 
 .match .toggle_state_army_list {
-    border: 2px solid var(--grey_text);
-    color: var(--grey_text);
-    background-color: var(--grey_dark);
+    border: 2px solid transparent;
 }
 
 .preview_faction_button:hover {

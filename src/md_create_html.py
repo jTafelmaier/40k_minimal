@@ -182,11 +182,11 @@ def generate_htmls():
                 + name_faction \
                 + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
-                + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
+                + "')\"><div class=\"image_upper\"><div class=\"interactive return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
                 + text_side \
-                + "')\">✖</div><div class=\"image_lower\"><div class=\"name\">" \
+                + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
-                + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list('" \
+                + "</div><div class=\"interactive toggle_state_army_list\" onclick=\"toggle_state_army_list('" \
                 + text_side \
                 + "')\">switch mode</div></div></div><div class=\"army_list_faction\"></div></div><div>" \
                 + text_html_units \
