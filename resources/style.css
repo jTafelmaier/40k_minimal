@@ -220,9 +220,13 @@ body {
     color: white;
 }
 
-.unit_faction .count_models {
-    border: 2px solid var(--grey_blue);
+.count_models {
+    border: 2px solid var(--grey_dark_blue);
     color: var(--grey_blue);
+}
+
+.unit_faction:hover .count_models {
+    border: 2px solid var(--grey_blue);
     background-color: var(--grey_dark);
 }
 
