@@ -151,11 +151,31 @@ body {
     background-color: #bd282f;
 }
 
-.image_faction .name {
+.image_lower {
+    display: flex;
     margin-top: 250px;
-    padding: 10px;
+}
+
+.image_faction .name {
+    flex: 1;
     font-size: 24px;
     font-weight: bold;
+}
+
+.toggle_state_army_list {
+    width: 100px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    background-color: #8b4dfe;
+    text-align: center;
+    user-select: none;
+}
+
+.toggle_state_army_list:hover {
+    color: var(--grey_dark);
+    background-color: white;
 }
 
 .preview_faction_button:hover {
@@ -214,20 +234,6 @@ body {
 
 .unselected .model {
     opacity: 0.2;
-}
-
-.toggle_state_army_list {
-    margin-top: 20px;
-    border: 2px solid white;
-    border-radius: 2px;
-    color: white;
-    background-color: #8b4dfe;
-    text-align: center;
-}
-
-.toggle_state_army_list:hover {
-    color: var(--grey_dark);
-    background-color: white;
 }
 
 .model {
