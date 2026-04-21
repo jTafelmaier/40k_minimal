@@ -4,10 +4,6 @@ import json
 import os
 import typing
 
-from lib.unary import _dicts
-from lib.unary import _iters
-from lib.unary.main import unary
-
 from src import md_shared
 
 
@@ -15,71 +11,58 @@ from src import md_shared
 
 def main():
 
-    def re_add_property(
-        dictionary:typing.Dict,
-        name_property:str):
+    def modify_faction(
+        dict_faction:typing.Dict):
 
-        t = dictionary[name_property]
+        def re_add_property(
+            dictionary:typing.Dict,
+            name_property:str):
 
-        del dictionary[name_property]
+            t = dictionary[name_property]
 
-        dictionary[name_property] = t
+            del dictionary[name_property]
 
-    def modify_data(
-        dict_factions:typing.Dict):
+            dictionary[name_property] = t
 
-        @unary()
-        def modify_faction(
-            dict_faction:typing.Dict):
+        def modify_unit(
+            dict_unit:typing.Dict):
 
-            def modify_unit(
-                dict_unit:typing.Dict):
-
-                def modify_attack(
-                    dict_attack:typing.Dict):
-
-                    return None
-
-                list(
-                        map(
-                            modify_attack,
-                            dict_unit \
-                                ["attacks"]))
+            def modify_attack(
+                dict_attack:typing.Dict):
 
                 return None
 
             list(
                     map(
-                        modify_unit,
-                        dict_faction \
-                            ["units"]))
+                        modify_attack,
+                        dict_unit \
+                            ["attacks"]))
 
             return None
 
-        dict_factions \
-            >> _dicts.to_iterable_values() \
-            >> _iters.to_iterable_chained() \
-            >> _iters.to_iterable_for_each_eager(modify_faction)
+        list(
+                map(
+                    modify_unit,
+                    dict_faction \
+                        ["units"]))
 
-        return None
+    list_texts_path = [
+        "src",
+        "data",
+        "data_factions.json"]
 
-    dict_factions = md_shared.get_dict_setting("data_factions.json")
+    dict_factions = md_shared.get_dict_json(list_texts_path)
 
-    modify_data(dict_factions)
+    for dict_faction in dict_factions["data"]:
+        modify_faction(dict_faction)
 
-    path_data = os.path.join(
-            "src",
-            "data",
-            "data_factions.json")
-
-    text_json = json.dumps(
-            obj=dict_factions,
-            indent=4,
-            ensure_ascii=False)
-
-    with open(path_data, mode="w", encoding="utf-8") as file:
+    with open(os.path.join(*list_texts_path), mode="w", encoding="utf-8") as file:
         file \
-            .write(text_json)
+            .write(
+                json.dumps(
+                    obj=dict_factions,
+                    indent=4,
+                    ensure_ascii=False))
 
     return None
 

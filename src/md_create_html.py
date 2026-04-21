@@ -234,13 +234,12 @@ def generate_htmls():
                         list_dicts_factions)) \
             + "</div></div>"
 
-    text_html_template = md_shared.get_text_file(
-        [
-            "src",
-            "data",
-            "template_index.html"])
-
-    soup_full = md_shared.get_soup(text_html_template)
+    soup_full = md_shared.get_soup(
+        md_shared.get_text_file(
+            [
+                "src",
+                "data",
+                "template_index.html"]))
 
     soup_full \
         .find(
