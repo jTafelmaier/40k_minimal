@@ -1,6 +1,5 @@
 
 
-import json
 import typing
 
 from src import md_shared
@@ -149,18 +148,24 @@ def generate_htmls():
                         "faction.png"])
 
             def get_text_html_unit(
-                dict_unit:typing.Dict):
+                pair_unit:typing.Tuple[int, typing.Dict]):
 
-                return "<div class=\"unit_faction\" onclick=\"add_unit_to_army_list('" \
-                    + dict_faction \
-                        ["name"] \
-                        .replace(
-                            "'",
-                            "\\'") \
-                    + "', '" \
-                    + dict_unit \
-                        ["name"] \
-                    + "')\">" \
+                int_index_unit, \
+                dict_unit = pair_unit
+
+                return "<div class=\"unit_faction unselected\"><div class=\"unit_count\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + int_index_unit \
+                        .__str__() \
+                    + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + int_index_unit \
+                        .__str__() \
+                    + ", 1)\">+1</div><div class=\"count_models\">0</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + int_index_unit \
+                        .__str__() \
+                    + ", -1)\">-1</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + int_index_unit \
+                        .__str__() \
+                    + ", -5)\">-5</div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction) \
@@ -170,8 +175,9 @@ def generate_htmls():
                 .join(
                     map(
                         get_text_html_unit,
-                        dict_faction \
-                            ["units"]))
+                        enumerate(
+                            dict_faction \
+                                ["units"])))
 
             return "<div id=\"" \
                 + name_faction \
@@ -179,13 +185,7 @@ def generate_htmls():
                 + path_image_faction \
                 + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection()\">✖</div><div class=\"name\">" \
                 + name_faction \
-                + "</div></div><div class=\"army_list_faction\"><div class=\"points_total\">0 points</div><div class=\"json_object\">" \
-                + json.dumps(
-                    obj={
-                        "faction": name_faction,
-                        "units": []},
-                    indent=4) \
-                + "</div></div></div><div>" \
+                + "</div></div><div class=\"army_list_faction\"></div></div><div>" \
                 + text_html_faction \
                 + "</div></div>"
 

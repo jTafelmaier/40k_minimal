@@ -39,67 +39,39 @@ function return_to_faction_selection() {
 }
 
 
-function add_unit_to_army_list(
-    id_faction,
-    name_unit) {
+function modify_count_models(
+    index_unit,
+    int_change) {
 
-    const element_faction = document
-        .getElementById(id_faction)
+    const element_unit = document
+        .querySelectorAll(".faction_rules:not(.invisible)")[0]
+        .getElementsByClassName("unit_faction")[index_unit]
 
-    const dict_new = JSON.parse(element_faction
-        .getElementsByClassName("json_object")[0]
-        .textContent)
+    const element_count = element_unit
+        .getElementsByClassName("count_models")[0]
 
-    const object_unit = Array.from(dict_new["units"])
-        .find(dict_unit => dict_unit["name"] === name_unit)
+    const int_count_new = parseInt(
+            element_count
+                .textContent)
+            + int_change
 
-    if (object_unit != undefined) {
-        object_unit
-            ["count_models"] = object_unit
-                ["count_models"] 
-                + 1
+    if (int_count_new < 0) {
+       return
+    }
+
+    if (int_count_new == 0) {
+        element_unit
+            .classList
+            .add("unselected")
     } else {
-        dict_new
-            ["units"]
-            .push({
-                "name": name_unit,
-                "count_models": 1})
+        element_unit
+            .classList
+            .remove("unselected")
     }
 
-    element_faction
-        .getElementsByClassName("json_object")[0]
-        .innerText = JSON.stringify(
-            dict_new,
-            null,
-            "    ")
-
-    function get_int_points_cost(
-        element) {
-
-        const object_unit_selected = Array.from(dict_new["units"])
-            .find(object_unit => object_unit["name"] == element.getElementsByClassName("name")[0].textContent.trim())
-
-        if (object_unit_selected != undefined) {
-            return parseInt(element
-                .getAttribute("title")
-                .split(" ")
-                .at(1))
-                * object_unit_selected
-                    ["count_models"]
-        } else {
-            return 0
-        }
-
-    }
-
-    element_faction
-        .getElementsByClassName("points_total")[0]
-        .innerText = Array.from(element_faction
-            .getElementsByClassName("model"))
-            .map(get_int_points_cost)
-            .reduce((a, b) => a + b)
+    element_count
+        .textContent = int_count_new
             .toString()
-            + " points"
 }
 
 
