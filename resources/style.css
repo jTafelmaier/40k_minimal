@@ -95,36 +95,64 @@ body {
     background-color: var(--grey_dark);
 }
 
-.selection_factions {
+#selection_factions {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    gap: 10px 10px;
-    margin-bottom: 50px;
+    grid-template-columns: 125px 125px 125px 125px;
+    gap: 5px 5px;
 }
 
 .container_faction_button  {
-    height: 200px;
+    height: 100px;
 }
 
 .image_faction {
-    width: 270px;
-    padding-top: 150px;
-    padding-bottom: 10px;
+    width: calc(100% - 5px);
+    padding-top: 75px;
+    padding-bottom: 5px;
     border-top: 2px solid var(--grey_bright);
     border-right: 4px solid var(--grey_main);
     border-radius: 4px;
+    font-size: 14px;
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     background-size: cover;
-    box-shadow: inset 0 -50px 50px -20px var(--grey_dark);
+    box-shadow: inset 0 -25px 25px -10px var(--grey_dark);
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         10px 100%,
         0 calc(100% - 10px));
+}
+
+.faction_rules .image_faction {
+    width: 490px;
+    margin: 5px;
+    padding: 10px;
+    background-size: cover;
+    text-align: left;
+    box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
+}
+
+.return_to_faction_selection {
+    width: 20px;
+    border: 2px solid var(--grey_main);
+    border-radius: 2px;
+    color: var(--grey_main);
+    background-color: var(--grey_dark);
+    text-align: center;
+}
+
+.return_to_faction_selection:hover {
+    color: white;
+    background-color: #bd282f;
+}
+
+.image_faction .name {
+    margin-top: 200px;
+    padding: 10px;
 }
 
 .preview_faction_button:hover {
@@ -134,24 +162,8 @@ body {
     box-shadow: inset 0 -50px 50px -20px #9e59ff;
 }
 
-.faction_rules {
-    display: flex;
-    gap: 50px;
-}
-
-.faction_rules .image_faction {
-    width: 490px;
-    margin: 5px;
-    padding: 250px 0px 20px 20px;
-    background-size: cover;
-    text-align: left;
-    box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
-}
-
 .army_list_faction {
     margin: 20px 5px;
-    position: sticky;
-    top: 20px;
 }
 
 .unit_faction {

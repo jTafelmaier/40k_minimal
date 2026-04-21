@@ -177,9 +177,9 @@ def generate_htmls():
                 + name_faction \
                 + "\" class=\"faction_rules invisible\"><div><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
-                + "')\">" \
+                + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection()\">✖</div><div class=\"name\">" \
                 + name_faction \
-                + "</div><div class=\"army_list_faction\"><div class=\"points_total\">0 points</div><div class=\"json_object\">" \
+                + "</div></div><div class=\"army_list_faction\"><div class=\"points_total\">0 points</div><div class=\"json_object\">" \
                 + json.dumps(
                     obj={
                         "faction": name_faction,
@@ -189,7 +189,7 @@ def generate_htmls():
                 + text_html_faction \
                 + "</div></div>"
 
-        return "<div class=\"selection_factions\">" \
+        return "<div id=\"selection_factions\">" \
             + "" \
                 .join(
                     map(

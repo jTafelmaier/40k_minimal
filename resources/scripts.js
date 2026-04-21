@@ -15,11 +15,25 @@ function get_int_attribute(
 function display_faction(
     id_faction){
 
+    document
+        .getElementById("selection_factions")
+        .classList
+        .add("invisible")
+
+    document
+        .getElementById(id_faction)
+        .classList
+        .remove("invisible")
+}
+
+
+function return_to_faction_selection() {
+
     Array.from(document.getElementsByClassName("faction_rules"))
         .forEach(element => element.classList.add("invisible"))
 
     document
-        .getElementById(id_faction)
+        .getElementById("selection_factions")
         .classList
         .remove("invisible")
 }
