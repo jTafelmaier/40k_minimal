@@ -13,14 +13,17 @@ function get_int_attribute(
 
 
 function display_faction(
+    text_side,
     name_faction){
 
     document
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName("selection_factions")[0]
         .classList
         .add("invisible")
 
     document
+        .getElementsByClassName(text_side)[0]
         .getElementsByClassName(name_faction)[0]
         .classList
         .remove("invisible")
@@ -61,10 +64,12 @@ function toggle_state_army_list(
 
 
 function modify_count_models(
+    text_side,
     index_unit,
     int_change) {
 
     const element_unit = document
+        .getElementsByClassName(text_side)[0]
         .querySelectorAll(".constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 

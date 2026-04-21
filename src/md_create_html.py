@@ -124,6 +124,8 @@ def generate_htmls():
                         "faction.png"])
 
             return "<div class=\"container_faction_button\"><div class=\"image_faction preview_faction_button\" onclick=\"display_faction('" \
+                + text_side \
+                + "', '" \
                 + name_faction \
                     .replace(
                         "'",
@@ -152,19 +154,39 @@ def generate_htmls():
                 int_index_unit, \
                 dict_unit = pair_unit
 
-                return "<div class=\"unit_faction unselected\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                text_parameters_functions = "'" \
+                    + text_side \
+                    + "', " \
+                    + int_index_unit \
+                        .__str__()
+
+                return "<div class=\"unit_faction unselected\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                    + text_side \
+                    + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                    + text_side \
+                    + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", 1)\">+1</div><div class=\"count_models\">0</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + ", 1)\">+1</div><div class=\"count_models\">0</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                    + text_side \
+                    + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", -1)\">-1</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                    + ", -1)\">-1</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                    + text_side \
+                    + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", -5)\">-5</div></div>" \
+                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
+                    + text_parameters_functions \
+                    + ")\" onmouseleave=\"mouseleave_attack(" \
+                    + text_parameters_functions \
+                    + ")\" onclick=\"apply_preview(" \
+                    + text_parameters_functions \
+                    + ")\">0.00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div>" \
                     + get_text_html_data_unit(
                         dict_unit=dict_unit,
                         name_faction=name_faction) \
@@ -188,7 +210,7 @@ def generate_htmls():
                 + name_faction \
                 + "</div><div class=\"interactive toggle_state_army_list\" onclick=\"toggle_state_army_list('" \
                 + text_side \
-                + "')\">switch mode</div></div></div><div class=\"army_list_faction\"></div></div><div>" \
+                + "')\">switch mode</div></div></div></div><div class=\"units_faction\">" \
                 + text_html_units \
                 + "</div></div>"
 
@@ -312,7 +334,7 @@ def generate_htmls():
     soup_full = md_shared.get_soup(text_html_template)
 
     dict_replacements = {
-        "id_factions": md_shared.get_soup(get_text_html_faction_rules("left")),
+        "id_factions": md_shared.get_soup("<div class=\"army_constructors\">" + get_text_html_faction_rules("left") + get_text_html_faction_rules("right") + "</div>"),
         "id_army_lists": md_shared.get_soup(get_text_html_army_lists())}
 
     for id_placeholder, soup_replacement in dict_replacements.items():
