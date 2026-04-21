@@ -95,6 +95,10 @@ body {
     background-color: var(--grey_dark);
 }
 
+.left {
+    width: 570px
+}
+
 .selection_factions {
     display: grid;
     grid-template-columns: 125px 125px 125px 125px;
@@ -127,8 +131,6 @@ body {
 }
 
 .army_list_constructor .image_faction {
-    width: 520px;
-    margin: 5px;
     padding: 10px;
     background-size: cover;
     text-align: left;
@@ -172,12 +174,12 @@ body {
     width: fit-content;
 }
 
-.army_list_constructor .unit_state {
+.unit_count_modifier {
     padding: 18px 5px;
     background-color: var(--grey_dark_blue);
 }
 
-.army_list_constructor .unit_state > div {
+.unit_count_modifier > div {
     width: 20px;
     padding: 2px 2px;
     border-radius: 4px;
@@ -215,6 +217,7 @@ body {
 }
 
 .toggle_state_army_list {
+    margin-top: 20px;
     border: 2px solid white;
     border-radius: 2px;
     color: white;
@@ -315,6 +318,10 @@ body {
     border: 4px solid #212632;
     border-radius: 4px;
     font-size: 14px;
+}
+
+.army_list .unit_count_modifier {
+    display: none;
 }
 
 .header_list {

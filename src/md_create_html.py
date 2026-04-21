@@ -152,7 +152,7 @@ def generate_htmls():
                 int_index_unit, \
                 dict_unit = pair_unit
 
-                return "<div class=\"unit_faction unselected\"><div class=\"unit_state\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
+                return "<div class=\"unit_faction unselected\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models(" \
                     + int_index_unit \
                         .__str__() \
                     + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models(" \
@@ -184,9 +184,11 @@ def generate_htmls():
                 + path_image_faction \
                 + "')\"><div class=\"return_to_faction_selection\" onclick=\"return_to_faction_selection()\">✖</div><div class=\"name\">" \
                 + name_faction \
-                + "</div></div><div class=\"army_list_faction\"></div></div><div>" \
+                + "</div></div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list(" \
+                + text_side \
+                + ")\">done</div><div class=\"army_list_faction\"></div></div><div>" \
                 + text_html_units \
-                + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list()\">done</div></div>"
+                + "</div></div>"
 
         return "<div class=\"" \
             + text_side \

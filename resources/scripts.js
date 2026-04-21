@@ -39,6 +39,22 @@ function return_to_faction_selection() {
 }
 
 
+function toggle_state_army_list(
+    text_side) {
+
+    const element_side = document
+        .getElementsByClassName("army_list_constructor")[0]
+
+    element_side
+        .classList
+        .toggle("army_list_constructor")
+
+    element_side
+        .classList
+        .toggle("army_list")
+}
+
+
 function modify_count_models(
     index_unit,
     int_change) {
@@ -72,21 +88,6 @@ function modify_count_models(
     element_count
         .textContent = int_count_new
             .toString()
-}
-
-
-function toggle_state_army_list() {
-
-    const element_side = document
-        .getElementsByClassName("army_list_constructor")[0]
-
-    element_side
-        .classList
-        .toggle("army_list_constructor")
-
-    element_side
-        .classList
-        .toggle("army_list")
 }
 
 
