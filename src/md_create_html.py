@@ -108,7 +108,8 @@ def generate_htmls():
             + text_html_rows_attacks \
             + "</div></div></div>"
 
-    def get_text_html_faction_rules():
+    def get_text_html_faction_rules(
+        text_side):
 
         def get_text_html_button_show_faction(
             dict_faction:typing.Dict):
@@ -187,7 +188,9 @@ def generate_htmls():
                 + text_html_units \
                 + "</div><div class=\"toggle_state_army_list\" onclick=\"toggle_state_army_list()\">done</div></div>"
 
-        return "<div id=\"selection_factions\">" \
+        return "<div class=\"" \
+            + text_side \
+            + "\"><div class=\"selection_factions\">" \
             + "" \
                 .join(
                     map(
@@ -199,7 +202,7 @@ def generate_htmls():
                     map(
                         get_html_army_constructor,
                         list_dicts_factions)) \
-            + "</div>"
+            + "</div></div>"
 
     def get_text_html_army_lists():
 
@@ -305,7 +308,7 @@ def generate_htmls():
     soup_full = md_shared.get_soup(text_html_template)
 
     dict_replacements = {
-        "id_factions": md_shared.get_soup(get_text_html_faction_rules()),
+        "id_factions": md_shared.get_soup(get_text_html_faction_rules("left")),
         "id_army_lists": md_shared.get_soup(get_text_html_army_lists())}
 
     for id_placeholder, soup_replacement in dict_replacements.items():

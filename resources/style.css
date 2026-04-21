@@ -95,7 +95,7 @@ body {
     background-color: var(--grey_dark);
 }
 
-#selection_factions {
+.selection_factions {
     display: grid;
     grid-template-columns: 125px 125px 125px 125px;
     gap: 5px 5px;

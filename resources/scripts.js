@@ -16,7 +16,7 @@ function display_faction(
     name_faction){
 
     document
-        .getElementById("selection_factions")
+        .getElementsByClassName("selection_factions")[0]
         .classList
         .add("invisible")
 
@@ -33,7 +33,7 @@ function return_to_faction_selection() {
         .forEach(element => element.classList.add("invisible"))
 
     document
-        .getElementById("selection_factions")
+        .getElementsByClassName("selection_factions")[0]
         .classList
         .remove("invisible")
 }
