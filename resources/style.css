@@ -127,7 +127,7 @@ body {
 }
 
 .faction_rules .image_faction {
-    width: 490px;
+    width: 540px;
     margin: 5px;
     padding: 10px;
     background-size: cover;
@@ -150,8 +150,10 @@ body {
 }
 
 .image_faction .name {
-    margin-top: 200px;
+    margin-top: 250px;
     padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .preview_faction_button:hover {
@@ -176,6 +178,7 @@ body {
 }
 
 .unit_count > div {
+    width: 20px;
     padding: 2px 5px;
     border-radius: 4px;
     user-select: none;
