@@ -86,13 +86,13 @@ body {
     width: 100px;
     padding: 5px;
     color: white;
-    background-color: var(--grey_blue);
+    background-color: var(--grey_dark);
 }
 
 .definition .description {
     flex: 1;
     padding: 5px 10px;
-    background-color: var(--grey_dark);
+    background-color: #212632;
 }
 
 .army_constructors {
