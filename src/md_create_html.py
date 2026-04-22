@@ -137,7 +137,7 @@ def generate_htmls():
                 + name_faction \
                 + "</div></div>"
 
-        def get_html_army_constructor(
+        def get_html_list_constructor(
             dict_faction:typing.Dict):
 
             name_faction = dict_faction \
@@ -211,7 +211,7 @@ def generate_htmls():
                 + text_side \
                 + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
-                + "</div><div class=\"interactive toggle_mode_army_list\" onclick=\"toggle_mode_army_list('" \
+                + "</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
                 + text_side \
                 + "')\">switch mode</div></div></div><div class=\"header_list\"><div class=\"points_total\">0 points</div></div></div><div class=\"units_faction\">" \
                 + text_html_units \
@@ -226,11 +226,11 @@ def generate_htmls():
                     map(
                         get_text_html_button_show_faction,
                         list_dicts_factions)) \
-            + "</div><div class=\"army_list_constructors\">" \
+            + "</div><div class=\"list_constructors\">" \
             + "" \
                 .join(
                     map(
-                        get_html_army_constructor,
+                        get_html_list_constructor,
                         list_dicts_factions)) \
             + "</div></div>"
 

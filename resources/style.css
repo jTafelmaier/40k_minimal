@@ -134,7 +134,7 @@ body {
     box-shadow: inset 0 -25px 25px -10px var(--grey_dark);
 }
 
-.army_list_constructors .image_faction {
+.list_constructors .image_faction {
     padding: 10px;
     text-align: left;
     box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
@@ -176,12 +176,12 @@ body {
     font-weight: bold;
 }
 
-.toggle_mode_army_list {
+.toggle_mode_list {
     width: 100px;
     margin: 2px 0px;
 }
 
-.match .toggle_mode_army_list {
+.match .toggle_mode_list {
     border: 2px solid transparent;
 }
 

@@ -46,7 +46,7 @@ function return_to_faction_selection(
 }
 
 
-function toggle_mode_army_list(
+function toggle_mode_list(
     text_side) {
 
     const element_list = document
