@@ -195,26 +195,24 @@ def generate_htmls():
                         int_index_unit=int_index_unit) \
                     + "</div>"
 
-            text_html_units = "" \
-                .join(
-                    map(
-                        get_text_html_unit,
-                        enumerate(
-                            dict_faction \
-                                ["units"])))
-
             return "<div class=\"faction constructor invisible " \
                 + name_faction \
-                + "\"><div><div class=\"image_faction\" style=\"background-image: url('" \
+                + "\"><div class=\"header_list\"><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
-                + "')\"><div class=\"image_upper\"><div class=\"interactive return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
-                + text_side \
-                + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
+                + "')\"><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
                 + "</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
                 + text_side \
-                + "')\">switch mode</div></div></div><div class=\"header_list\"><div class=\"points_total\">0 points</div></div></div><div class=\"units_faction\">" \
-                + text_html_units \
+                + "')\">switch mode</div><div class=\"interactive return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
+                + text_side \
+                + "')\">✖</div></div></div><div class=\"points_total\">0 points</div></div><div class=\"units_faction\">" \
+                + "" \
+                    .join(
+                        map(
+                            get_text_html_unit,
+                            enumerate(
+                                dict_faction \
+                                    ["units"]))) \
                 + "</div></div>"
 
         # TODO refactor
