@@ -64,7 +64,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -228,7 +228,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -244,13 +244,13 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "strength": 2,
+                            "strength": 1,
                             "heavy": false
                         },
                         {
                             "range": "⯐",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
@@ -392,7 +392,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -446,7 +446,7 @@
                     "health_points": 2,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "H",
+                    "type_unit": "E",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -499,7 +499,7 @@
                         {
                             "range": "⊹",
                             "type": "single",
-                            "strength": 8,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]
@@ -515,7 +515,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "strength": 4,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]
@@ -547,13 +547,13 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "strength": 4,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
                             "range": "⊹",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
@@ -590,7 +590,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -606,7 +606,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -628,7 +628,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -666,7 +666,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -677,12 +677,12 @@
                     "health_points": 2,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "H",
+                    "type_unit": "E",
                     "attacks": [
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 2,
+                            "strength": 1,
                             "heavy": false
                         }
                     ]
@@ -717,15 +717,9 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⛶",
-                            "type": "single",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 8,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]
@@ -747,7 +741,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -785,7 +779,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
@@ -812,7 +806,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -844,7 +838,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 16,
+                            "strength": 8,
                             "heavy": false
                         }
                     ]
@@ -860,7 +854,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 8,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -876,7 +870,7 @@
                         {
                             "range": "⯐",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
@@ -892,7 +886,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "strength": 4,
+                            "strength": 2,
                             "heavy": true
                         }
                     ]
@@ -913,7 +907,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 16,
+                            "strength": 8,
                             "heavy": false
                         }
                     ]
@@ -929,7 +923,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
@@ -973,7 +967,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 4,
+                            "strength": 1,
                             "heavy": false
                         }
                     ]
@@ -995,7 +989,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "strength": 8,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]
@@ -1022,7 +1016,7 @@
                     "health_points": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "H",
+                    "type_unit": "E",
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1043,7 +1037,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "strength": 2,
+                            "strength": 1,
                             "heavy": true
                         }
                     ]
@@ -1059,7 +1053,7 @@
                         {
                             "range": "⛶",
                             "type": "volume",
-                            "strength": 4,
+                            "strength": 2,
                             "heavy": true
                         }
                     ]
@@ -1075,7 +1069,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
@@ -1124,7 +1118,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -1156,7 +1150,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 8,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]

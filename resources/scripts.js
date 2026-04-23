@@ -334,6 +334,12 @@ function toggle_select_attack(
             .innerText
             .trim()
 
+        const text_type_unit = element_unit_attacked
+            .getElementsByClassName("unit_card")[0]
+            .getAttribute("title")
+            .split(",")
+            .at(0)
+
         const int_health_initial = get_int_attribute(
                 element_unit_attacked,
                 "initial_health")
@@ -342,10 +348,21 @@ function toggle_select_attack(
                 element_unit_attacked,
                 "current_health")
 
-        // TODO re-implement single and volume
+        function get_int_damage_keywords() {
+
+            // TODO re-implement shielded?
+            if (text_type_attack == "volume" && text_type_unit == "[E]") {
+                return int_strength * 2
+            } else if (text_type_attack == "single" && text_type_unit == "[C]") {
+                return int_strength * 4
+            } else {
+                return int_strength
+            }
+        }
+
         const int_damage_added = Math.min(
                 int_health_current,
-                int_strength)
+                get_int_damage_keywords())
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]
@@ -372,8 +389,8 @@ function toggle_select_attack(
         set_text_bar(
                 element_unit_attacked
                     .getElementsByClassName("coordinate remaining")[0],
-                int_damage_added
-                    * -1)
+                int_health_current
+                    - int_damage_added)
 
         element_unit_attacked
             .classList
