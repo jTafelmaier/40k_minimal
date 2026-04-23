@@ -73,7 +73,7 @@
                             Move
                         </div>
                         <div class="description">
-                            Every model in the unit may move up to its <div class="icon">🡆</div> value in centimeters, without moving over enemy models, such that unit coherency is still given.
+                            Every model in the unit may move up to its movement characteristic in centimeters, without moving over enemy models, such that unit coherency is still given.
                         </div>
                     </div>
                     <div class="definition">
@@ -88,7 +88,7 @@
                             <br/>
                             Target unit: <b>health</b> is reduced by:
                             <br/>
-                            <b>#models</b> * (2 ^ (<b>strength</b> - target unit:<b><div class="icon">⛊</div>armor</b>)).
+                            <b>#models</b> * (2 ^ (<b>strength</b> - target unit:<b>armor</b>)).
                             <br/>
                             <br/>
                             Models in the target unit have to be destroyed until their count is equal to ceil(<b>health</b>).
@@ -107,8 +107,14 @@
                         </div>
                         <div class="definition">
                             <div class="name">
-                                Unit:
-                                <br/>
+                                Unit coherency
+                            </div>
+                            <div class="description">
+                                When every model is within 5 cm of another model in the unit.
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <div class="name">
                                 In cover
                             </div>
                             <div class="description">
@@ -117,18 +123,6 @@
                         </div>
                         <div class="definition">
                             <div class="name">
-                                Unit:
-                                <br/>
-                                Coherency
-                            </div>
-                            <div class="description">
-                                When every model is within 5 cm of another model in the unit.
-                            </div>
-                        </div>
-                        <div class="definition">
-                            <div class="name">
-                                Unit:
-                                <br/>
                                 Destroy model
                             </div>
                             <div class="description">
