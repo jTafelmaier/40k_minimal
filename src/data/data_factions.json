@@ -391,8 +391,8 @@
                         },
                         {
                             "range": "⚔",
-                            "type": "",
-                            "strength": 5,
+                            "type": "volume",
+                            "strength": 6,
                             "heavy": false
                         }
                     ]
@@ -413,7 +413,7 @@
                         },
                         {
                             "range": "⚔",
-                            "type": "volume",
+                            "type": "",
                             "strength": 6,
                             "heavy": false
                         }
