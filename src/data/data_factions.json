@@ -964,7 +964,7 @@
                 },
                 {
                     "name": "Prime with lash whip",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 6,
                     "move": 20,
                     "type_armor": "",
@@ -986,7 +986,7 @@
                 },
                 {
                     "name": "Winged prime",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 6,
                     "move": 40,
                     "type_armor": "",
