@@ -956,8 +956,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "",
-                            "strength": 6,
+                            "type": "volume",
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
