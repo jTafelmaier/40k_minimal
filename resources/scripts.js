@@ -75,6 +75,10 @@ function update_points_total(
     function get_int_points_cost_unit(
         element_unit){
 
+        if (element_unit.classList.contains("unselected")) {
+            return 0
+        }
+
         return parseInt(
                 element_unit
                     .getElementsByClassName("unit_card")[0]
@@ -88,7 +92,7 @@ function update_points_total(
         .querySelectorAll(".faction:not(.invisible)")[0]
 
     const int_points_total = Array.from(element_faction
-        .querySelectorAll(".unit_faction:not(.unselected)"))
+        .querySelectorAll(".unit_faction"))
         .map(get_int_points_cost_unit)
         .reduce((a, b) => a + b)
 
@@ -100,41 +104,16 @@ function update_points_total(
 }
 
 
-function modify_selection_unit(
+function toggle_selection_unit(
     text_side,
-    index_unit,
-    int_change) {
+    index_unit) {
 
     const element_unit = document
         .getElementById(text_side)
         .querySelectorAll(".constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
-
-    const element_selection = element_unit
-        .getElementsByClassName("selection_unit")[0]
-
-    const int_selection_new = parseInt(
-            element_selection
-                .textContent)
-            + int_change
-
-    if (int_selection_new < 0 || int_selection_new > 1) {
-       return
-    }
-
-    if (int_selection_new == 0) {
-        element_unit
-            .classList
-            .add("unselected")
-    } else {
-        element_unit
-            .classList
-            .remove("unselected")
-    }
-
-    element_selection
-        .textContent = int_selection_new
-            .toString()
+        .classList
+        .toggle("unselected")
 
     update_points_total(text_side)
 }

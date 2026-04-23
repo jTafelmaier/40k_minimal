@@ -101,30 +101,26 @@ def generate_htmls():
                     + dict_unit \
                         ["health_points"] \
                         .__str__() \
-                    + "\"><div class=\"unit_selection_modifier\"><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
-                    + text_side \
-                    + "', " \
-                    + int_index_unit \
-                        .__str__() \
-                    + ", 1)\">+1</div><div class=\"selection_unit\">0</div><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
-                    + text_side \
-                    + "', " \
-                    + int_index_unit \
-                        .__str__() \
-                    + ", -1)\">-1</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
+                    + "\"><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
                     + text_parameters_functions \
                     + ")\" onmouseleave=\"mouseleave_attack(" \
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\">0.00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"unit_card\" title=\"[" \
+                    + ")\">" \
+                    + dict_unit \
+                        ["health_points"] \
+                        .__str__() \
+                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"unit_card\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \
                     + dict_unit \
                         ["points_cost"] \
                         .__str__() \
-                    + " points.\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + " points.\" onclick=\"toggle_selection_unit(" \
+                    + text_parameters_functions \
+                    + ")\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
