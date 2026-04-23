@@ -320,7 +320,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         },
                         {
@@ -424,50 +424,6 @@
         {
             "name": "Astra Militarum",
             "units": [
-                {
-                    "name": "Marshal dreir",
-                    "points_cost": 100,
-                    "armor": 4,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "C",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "volume",
-                            "strength": 3,
-                            "heavy": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Death riders",
-                    "points_cost": 200,
-                    "armor": 6,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 3,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "volume",
-                            "strength": 4,
-                            "heavy": true
-                        }
-                    ]
-                },
                 {
                     "name": "Command squad",
                     "points_cost": 50,
