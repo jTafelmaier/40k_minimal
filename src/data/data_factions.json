@@ -14,13 +14,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
@@ -36,13 +36,13 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
@@ -58,7 +58,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         },
                         {
@@ -71,11 +71,33 @@
                 },
                 {
                     "name": "Captain with jump pack",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Jump pack intercessors",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -87,28 +109,6 @@
                             "range": "⚔",
                             "type": "",
                             "strength": 4,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Jump pack intercessors",
-                    "points_per_model": 25,
-                    "armor": 4,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "strength": 3,
                             "heavy": false
                         }
                     ]
@@ -124,7 +124,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         },
                         {
@@ -146,7 +146,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
@@ -175,7 +175,7 @@
                 },
                 {
                     "name": "Captain in gravis armour",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "",
@@ -184,20 +184,36 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
                 },
                 {
                     "name": "Heavy intercessors",
-                    "points_per_model": 25,
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "strength": 3,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Eradicators",
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 20,
                     "type_armor": "",
@@ -208,27 +224,11 @@
                             "type": "",
                             "strength": 2,
                             "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Eradicators",
-                    "points_per_model": 25,
-                    "armor": 4,
-                    "move": 20,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
                         },
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
@@ -266,7 +266,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         },
                         {
@@ -333,29 +333,7 @@
                 },
                 {
                     "name": "Sword brethren",
-                    "points_per_model": 25,
-                    "armor": 4,
-                    "move": 20,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "strength": 4,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Crusader squad",
-                    "points_per_model": 25,
+                    "points_per_model":50,
                     "armor": 4,
                     "move": 20,
                     "type_armor": "",
@@ -370,7 +348,29 @@
                         {
                             "range": "⚔",
                             "type": "",
+                            "strength": 5,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Crusader squad",
+                    "points_per_model": 50,
+                    "armor": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
                             "strength": 3,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -386,7 +386,7 @@
                         {
                             "range": "⯐",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         },
                         {
@@ -408,7 +408,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "strength": 2,
+                            "strength": 4,
                             "heavy": false
                         },
                         {
@@ -657,29 +657,7 @@
                 },
                 {
                     "name": "Exalted Eightbound",
-                    "points_per_model": 50,
-                    "armor": 5,
-                    "move": 20,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "strength": 3,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "single",
-                            "strength": 5,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Eightbound",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "",
@@ -690,12 +668,34 @@
                             "type": "",
                             "strength": 4,
                             "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 6,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Eightbound",
+                    "points_per_model": 75,
+                    "armor": 5,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 5,
+                            "heavy": false
                         }
                     ]
                 },
                 {
                     "name": "Khorne Berzerkers",
-                    "points_per_model": 25,
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 20,
                     "type_armor": "",
@@ -704,7 +704,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
@@ -798,7 +798,7 @@
                 },
                 {
                     "name": "Infractors",
-                    "points_per_model": 25,
+                    "points_per_model": 50,
                     "armor": 4,
                     "move": 20,
                     "type_armor": "",
@@ -807,20 +807,20 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
                 },
                 {
                     "name": "Noise marines",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "armor": 4,
                     "move": 20,
                     "type_armor": "",
@@ -829,7 +829,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
