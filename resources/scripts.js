@@ -56,7 +56,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = element.querySelectorAll(".count_units")[0].textContent.trim() + ".00")
+            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = "1.00")
     }
 
     element_list
@@ -72,25 +72,13 @@ function toggle_mode_list(
 const INT_HEALTH_POINTS = 8
 
 
-function get_int_count_units(
-    element_unit) {
-
-    return Math.ceil(
-            get_int_attribute(
-                element_unit,
-                "current_health")
-                / INT_HEALTH_POINTS)
-}
-
-
 function update_points_total(
     text_side) {
 
     function get_int_points_cost_unit(
         element_unit){
 
-        return get_int_count_units(element_unit)
-            * parseInt(
+        return parseInt(
                 element_unit
                     .getElementsByClassName("unit_card")[0]
                     .getAttribute("title")
@@ -103,7 +91,7 @@ function update_points_total(
         .querySelectorAll(".faction:not(.invisible)")[0]
 
     const int_points_total = Array.from(element_faction
-        .getElementsByClassName("unit_faction"))
+        .querySelectorAll(".unit_faction:not(.unselected)"))
         .map(get_int_points_cost_unit)
         .reduce((a, b) => a + b)
 
@@ -115,7 +103,7 @@ function update_points_total(
 }
 
 
-function modify_count_units(
+function modify_selection_unit(
     text_side,
     index_unit,
     int_change) {
@@ -125,19 +113,19 @@ function modify_count_units(
         .querySelectorAll(".constructor:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 
-    const element_count = element_unit
-        .getElementsByClassName("count_units")[0]
+    const element_selection = element_unit
+        .getElementsByClassName("selection_unit")[0]
 
-    const int_count_new = parseInt(
-            element_count
+    const int_selection_new = parseInt(
+            element_selection
                 .textContent)
             + int_change
 
-    if (int_count_new < 0) {
+    if (int_selection_new < 0 || int_selection_new > 1) {
        return
     }
 
-    if (int_count_new == 0) {
+    if (int_selection_new == 0) {
         element_unit
             .classList
             .add("unselected")
@@ -147,20 +135,20 @@ function modify_count_units(
             .remove("unselected")
     }
 
-    element_count
-        .textContent = int_count_new
+    element_selection
+        .textContent = int_selection_new
             .toString()
 
     element_unit
         .setAttribute(
             "initial_health",
-            int_count_new
+            int_selection_new
                 * INT_HEALTH_POINTS)
 
     element_unit
         .setAttribute(
             "current_health",
-            int_count_new
+            int_selection_new
                 * INT_HEALTH_POINTS)
 
     update_points_total(text_side)
@@ -373,8 +361,6 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        const int_count_units_attacking = get_int_count_units(element_unit_attacking)
-
         const int_strength = parseInt(element_attack
             .getElementsByClassName("value")[0]
             .innerText
@@ -397,15 +383,6 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        function get_int_damage_single(
-            int_damage) {
-
-            // TODO re-implement
-            // if (text_type_attack.includes("single")) return Math.min(int_damage, INT_HEALTH_POINTS * int_count_units_attacking)
-            // else
-            return int_damage
-        }
-
         const int_health_initial = get_int_attribute(
                 element_unit_attacked,
                 "initial_health")
@@ -414,17 +391,15 @@ function toggle_select_attack(
                 element_unit_attacked,
                 "current_health")
 
+        // TODO re-implement single and volume
         const int_damage_added = Math.min(
                 int_health_current,
-                get_int_damage_single(
-                    Math.floor(
-                        INT_HEALTH_POINTS
-                            * int_count_units_attacking
-                            * Math.pow(
-                                2,
-                                int_strength
-                                    - int_armor
-                                    - (text_type_attack.includes("volume") && get_int_count_units(element_unit_attacked) === 1 ? 1 : 0)))))
+                Math.floor(
+                    INT_HEALTH_POINTS
+                        * Math.pow(
+                            2,
+                            int_strength
+                                - int_armor)))
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]

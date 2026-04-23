@@ -93,12 +93,12 @@ def generate_htmls():
                         + (" heavy" if dict_attack["heavy"] else "") \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_units('" \
+                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_selection_modifier\"><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", 1)\">+1</div><div class=\"count_units\">0</div><div class=\"modify_count\" onclick=\"modify_count_units('" \
+                    + ", 1)\">+1</div><div class=\"selection_unit\">0</div><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
