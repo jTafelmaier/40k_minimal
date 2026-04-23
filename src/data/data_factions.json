@@ -457,7 +457,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 0,
+                            "strength": 1,
                             "heavy": false
                         },
                         {
@@ -479,7 +479,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 0,
+                            "strength": 1,
                             "heavy": false
                         }
                     ]
@@ -495,7 +495,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 0,
+                            "strength": 1,
                             "heavy": false
                         }
                     ]
@@ -511,7 +511,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "strength": 1,
+                            "strength": 2,
                             "heavy": false
                         }
                     ]
@@ -527,7 +527,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 2,
+                            "strength": 3,
                             "heavy": false
                         }
                     ]
