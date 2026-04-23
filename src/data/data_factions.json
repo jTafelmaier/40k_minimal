@@ -257,7 +257,7 @@
                 },
                 {
                     "name": "Belial",
-                    "points_per_model": 100,
+                    "points_per_model": 125,
                     "armor": 5,
                     "move": 10,
                     "type_armor": "",
@@ -272,7 +272,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
@@ -413,7 +413,7 @@
                         },
                         {
                             "range": "⚔",
-                            "type": "volume",
+                            "type": "",
                             "strength": 5,
                             "heavy": false
                         }
@@ -1078,7 +1078,7 @@
                 },
                 {
                     "name": "Biovore",
-                    "points_per_model": 75,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 20,
                     "type_armor": "",
@@ -1087,14 +1087,14 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": true
                         }
                     ]
                 },
                 {
                     "name": "Pyrovore",
-                    "points_per_model": 75,
+                    "points_per_model": 100,
                     "armor": 6,
                     "move": 20,
                     "type_armor": "",
