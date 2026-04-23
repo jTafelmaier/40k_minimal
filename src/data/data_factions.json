@@ -63,8 +63,8 @@
                         },
                         {
                             "range": "⚔",
-                            "type": "",
-                            "strength": 4,
+                            "type": "single",
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
