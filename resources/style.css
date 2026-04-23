@@ -213,6 +213,10 @@ body {
     background-color: var(--grey_dark_blue);
 }
 
+.text_select_unit_instances {
+    margin-top: 5px;
+}
+
 .unit_faction {
     display: flex;
     width: 550px;
@@ -375,6 +379,10 @@ body {
     padding-right: 2px;
     text-align: right;
     color: var(--grey_text);
+}
+
+.match .text_select_unit_instances {
+    display: none;
 }
 
 .match .unselected {

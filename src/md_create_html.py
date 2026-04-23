@@ -205,7 +205,7 @@ def generate_htmls():
                 + text_side \
                 + "')\">switch mode</div><div class=\"interactive return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
                 + text_side \
-                + "')\">✖</div></div></div><div class=\"points_total\">0 points</div></div><div class=\"units_faction\">" \
+                + "')\">✖</div></div></div><div class=\"points_total\">0 points</div><div class=\"text_select_unit_instances\">Select unit instances:</div></div><div class=\"units_faction\">" \
                 + "" \
                     .join(
                         map(
