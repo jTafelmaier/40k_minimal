@@ -542,38 +542,12 @@ function apply_preview(
             .add("unselected")
     }
 
-    const text_other_side = text_side === "left" ? "right" : "left"
-
-    const element_unit_attacking = document
+    document
         .getElementsByClassName("attacking")[0]
-
-    element_unit_attacking
         .classList
         .add("inactive")
 
-    const text_armor = element_unit
-        .getElementsByClassName("armor")[0]
-        .getElementsByClassName("value")[0]
-        .innerText
-        .trim()
-
-    const int_count_models_attacking = get_int_count_models(element_unit_attacking)
-
-    const text_strength = element_unit_attacking
-        .getElementsByClassName("selected")[0]
-        .getElementsByClassName("value")[0]
-        .innerText
-        .trim()
-
-    const float_damage_per_model = Math.pow(
-        2,
-        parseInt(text_strength)
-            - parseInt(text_armor))
-
-    const text_damage_per_model = float_damage_per_model
-        .toString()
-
-    finish_action(text_other_side)
+    finish_action(text_side === "left" ? "right" : "left")
 
     hide_preview_attack()
 
