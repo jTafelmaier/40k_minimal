@@ -236,7 +236,7 @@
                 {
                     "name": "Gladiator lancer",
                     "points_per_model": 400,
-                    "armor": 7,
+                    "armor": 8,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "E",
@@ -250,7 +250,7 @@
                         {
                             "range": "⯐",
                             "type": "single",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": true
                         }
                     ]
@@ -543,7 +543,7 @@
                         {
                             "range": "⊹",
                             "type": "single",
-                            "strength": 5,
+                            "strength": 6,
                             "heavy": false
                         }
                     ]
@@ -575,7 +575,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "strength": 4,
+                            "strength": 5,
                             "heavy": false
                         }
                     ]
@@ -583,7 +583,7 @@
                 {
                     "name": "Rogal Dorn battle tank",
                     "points_per_model": 250,
-                    "armor": 7,
+                    "armor": 8,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -597,7 +597,7 @@
                         {
                             "range": "⊹",
                             "type": "single",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": true
                         }
                     ]
@@ -610,7 +610,7 @@
                 {
                     "name": "Angron",
                     "points_per_model": 400,
-                    "armor": 7,
+                    "armor": 8,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -618,7 +618,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
@@ -739,7 +739,7 @@
                 {
                     "name": "Fulgrim",
                     "points_per_model": 400,
-                    "armor": 7,
+                    "armor": 8,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -747,7 +747,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
@@ -770,28 +770,6 @@
                             "range": "⚔",
                             "type": "single",
                             "strength": 5,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Lord Exultant",
-                    "points_per_model": 50,
-                    "armor": 4,
-                    "move": 20,
-                    "type_armor": "",
-                    "type_unit": "C",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -878,7 +856,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
@@ -934,15 +912,15 @@
                 {
                     "name": "Heavy lokhust destroyer [gauss]",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "⯐",
                             "type": "single",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": true
                         }
                     ]
@@ -950,7 +928,7 @@
                 {
                     "name": "Heavy lokhust destroyer [enmitic]",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -971,7 +949,7 @@
                 {
                     "name": "The red terror",
                     "points_per_model": 200,
-                    "armor": 6,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -1047,7 +1025,7 @@
                 {
                     "name": "Deathleaper",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "stealth",
                     "type_unit": "C",
@@ -1101,7 +1079,7 @@
                 {
                     "name": "Biovore",
                     "points_per_model": 75,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -1117,7 +1095,7 @@
                 {
                     "name": "Pyrovore",
                     "points_per_model": 75,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -1133,7 +1111,7 @@
                 {
                     "name": "Norn Assimilator",
                     "points_per_model": 250,
-                    "armor": 7,
+                    "armor": 8,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -1147,7 +1125,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
@@ -1190,7 +1168,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 6,
+                            "strength": 7,
                             "heavy": false
                         }
                     ]
