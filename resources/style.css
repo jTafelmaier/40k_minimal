@@ -203,10 +203,6 @@ body {
     width: 100px;
 }
 
-.points_unit {
-    width: 60px;
-}
-
 .points_total {
     width: 80px;
     padding: 2px;
@@ -247,8 +243,8 @@ body {
 }
 
 .modify_count {
-    font-size: 14px;
     opacity: 0.0;
+    font-size: 14px;
 }
 
 .unit_faction:hover .modify_count {
