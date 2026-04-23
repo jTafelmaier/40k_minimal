@@ -69,6 +69,52 @@ function toggle_mode_list(
 }
 
 
+const INT_HEALTH_POINTS = 8
+
+
+function get_int_count_models(
+    element_unit) {
+
+    return Math.ceil(
+            get_int_attribute(
+                element_unit,
+                "current_health")
+                / INT_HEALTH_POINTS)
+}
+
+
+function update_points_total(
+    text_side) {
+
+    function get_int_points_cost_unit(
+        element_unit){
+
+        return get_int_count_models(element_unit)
+            * parseInt(
+                element_unit
+                    .getElementsByClassName("model")[0]
+                    .getAttribute("title")
+                    .split(" ")
+                    .at(1))
+    }
+
+    const element_faction = document
+        .getElementById(text_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
+
+    const int_points_total = Array.from(element_faction
+        .getElementsByClassName("unit_faction"))
+        .map(get_int_points_cost_unit)
+        .reduce((a, b) => a + b)
+
+    element_faction
+        .getElementsByClassName("points_total")[0]
+        .textContent = int_points_total
+            .toString()
+            + " points"
+}
+
+
 function modify_count_models(
     text_side,
     index_unit,
@@ -121,6 +167,17 @@ function modify_count_models(
 }
 
 
+function get_element_unit(
+    text_side,
+    index_unit) {
+
+    return document
+        .getElementById(text_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
+        .getElementsByClassName("unit_faction")[index_unit]
+}
+
+
 function mouseenter_attack(
     text_side,
     index_unit) {
@@ -170,17 +227,6 @@ function finish_action(
 }
 
 
-function get_element_unit(
-    text_side,
-    index_unit) {
-
-    return document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("unit_faction")[index_unit]
-}
-
-
 function set_inactive(
     text_side,
     index_unit) {
@@ -202,53 +248,6 @@ function set_inactive(
         .add("inactive")
 
     finish_action(text_side)
-}
-
-
-const INT_HEALTH_POINTS = 8
-
-
-function get_int_count_models(
-    element_unit) {
-
-    return Math.ceil(
-            get_int_attribute(
-                element_unit,
-                "current_health")
-                / INT_HEALTH_POINTS)
-}
-
-
-// TODO move above
-function update_points_total(
-    text_side) {
-
-    function get_int_points_cost_unit(
-        element_unit){
-
-        return get_int_count_models(element_unit)
-            * parseInt(
-                element_unit
-                    .getElementsByClassName("model")[0]
-                    .getAttribute("title")
-                    .split(" ")
-                    .at(1))
-    }
-
-    const element_faction = document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-
-    const int_points_total = Array.from(element_faction
-        .getElementsByClassName("unit_faction"))
-        .map(get_int_points_cost_unit)
-        .reduce((a, b) => a + b)
-
-    element_faction
-        .getElementsByClassName("points_total")[0]
-        .textContent = int_points_total
-            .toString()
-            + " points"
 }
 
 
