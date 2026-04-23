@@ -56,7 +56,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = element.querySelectorAll(".count_models")[0].textContent.trim() + ".00")
+            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = element.querySelectorAll(".count_units")[0].textContent.trim() + ".00")
     }
 
     element_list
@@ -72,7 +72,7 @@ function toggle_mode_list(
 const INT_HEALTH_POINTS = 8
 
 
-function get_int_count_models(
+function get_int_count_units(
     element_unit) {
 
     return Math.ceil(
@@ -89,10 +89,10 @@ function update_points_total(
     function get_int_points_cost_unit(
         element_unit){
 
-        return get_int_count_models(element_unit)
+        return get_int_count_units(element_unit)
             * parseInt(
                 element_unit
-                    .getElementsByClassName("model")[0]
+                    .getElementsByClassName("unit_card")[0]
                     .getAttribute("title")
                     .split(" ")
                     .at(1))
@@ -115,7 +115,7 @@ function update_points_total(
 }
 
 
-function modify_count_models(
+function modify_count_units(
     text_side,
     index_unit,
     int_change) {
@@ -126,7 +126,7 @@ function modify_count_models(
         .getElementsByClassName("unit_faction")[index_unit]
 
     const element_count = element_unit
-        .getElementsByClassName("count_models")[0]
+        .getElementsByClassName("count_units")[0]
 
     const int_count_new = parseInt(
             element_count
@@ -373,7 +373,7 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        const int_count_models_attacking = get_int_count_models(element_unit_attacking)
+        const int_count_units_attacking = get_int_count_units(element_unit_attacking)
 
         const int_strength = parseInt(element_attack
             .getElementsByClassName("value")[0]
@@ -400,8 +400,10 @@ function toggle_select_attack(
         function get_int_damage_single(
             int_damage) {
 
-            if (text_type_attack.includes("single")) return Math.min(int_damage, INT_HEALTH_POINTS * int_count_models_attacking)
-            else return int_damage
+            // TODO re-implement
+            // if (text_type_attack.includes("single")) return Math.min(int_damage, INT_HEALTH_POINTS * int_count_units_attacking)
+            // else
+            return int_damage
         }
 
         const int_health_initial = get_int_attribute(
@@ -417,12 +419,12 @@ function toggle_select_attack(
                 get_int_damage_single(
                     Math.floor(
                         INT_HEALTH_POINTS
-                            * int_count_models_attacking
+                            * int_count_units_attacking
                             * Math.pow(
                                 2,
                                 int_strength
                                     - int_armor
-                                    - (text_type_attack.includes("volume") && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0)))))
+                                    - (text_type_attack.includes("volume") && get_int_count_units(element_unit_attacked) === 1 ? 1 : 0)))))
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]

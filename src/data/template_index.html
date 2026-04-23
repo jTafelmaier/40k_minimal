@@ -31,12 +31,11 @@
                         </li>
                     </ul>
                     Then, every player chooses unit instances of one faction, with a total points cost not exceeding the agreed limit.
-                    Only one unit per unit type can include less models than its model count limit.
                     <br/>
                     <br/>
                     Every unit starts the game in reserves (separate area, not on the board space).
                     Every turn, each unit can once sequentially spend 2 AT to perform different actions, alternating between sides.
-                    All units including a model of type "character" may perform their actions before any other units.
+                    Every unit of type "character" may perform their actions before any other units.
                     <br/>
                     <br/>
                     At the end of all turns, a winning player is determined by the total points cost of units on the board space.
@@ -73,7 +72,7 @@
                             Move
                         </div>
                         <div class="description">
-                            Every model in the unit may move up to its movement characteristic in centimeters, without moving over enemy models.
+                            The unit may move up to its movement characteristic in centimeters, without moving over enemy units.
                         </div>
                     </div>
                     <div class="definition">
@@ -88,10 +87,12 @@
                             <br/>
                             Target unit: <b>health</b> is reduced by:
                             <br/>
-                            <b>#models</b> * (2 ^ (<b>strength</b> - target unit:<b>armor</b>)).
+                            2 ^ (<b>strength</b> - target unit:<b>armor</b>).
                             <br/>
                             <br/>
-                            Models in the target unit have to be destroyed until their count is equal to ceil(<b>health</b>).
+                            If target unit: <b>health</b> <= 0:
+                            <br/>
+                            Destroy this unit.
                         </div>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
                             <div class="description">
                                 A collection of one or more identical models that act as one entity.
                                 <br/>
-                                When a unit contains more than 1 model, every model not within 5 cm of any other model is immediately destroyed.
+                                When a unit contains a model not within 5 cm of any other model, the unit is immediately destroyed.
                             </div>
                         </div>
                         <div class="definition">
@@ -117,40 +118,14 @@
                         </div>
                         <div class="definition">
                             <div class="name">
-                                Destroy model
+                                Destroy unit
                             </div>
                             <div class="description">
-                                The controlling player must remove the model from the board space.
+                                The controlling player must remove the unit from the board space.
                             </div>
                         </div>
                     </div>
                     <br/>
-                    <div class="definition">
-                        <div class="name">
-                            [C] Character
-                        </div>
-                        <div class="description">
-                            Unit model limit: 1
-                            <br/>
-                            Can be attached to another friendly <b>non-character</b> unit with an equal <b>movement characteristic</b>, an armor characteristic 1 below that of the character unit and <b>without any attached units</b>, causing its model to be included in that unit.
-                        </div>
-                    </div>
-                    <div class="definition">
-                        <div class="name">
-                            [E] Elite
-                        </div>
-                        <div class="description">
-                            Unit model limit: 10
-                        </div>
-                    </div>
-                    <div class="definition">
-                        <div class="name">
-                            [H] Horde
-                        </div>
-                        <div class="description">
-                            Unit model limit: 20
-                        </div>
-                    </div>
                     <div class="definition">
                         <div class="name">
                             <b>stealth</b>
@@ -197,7 +172,7 @@
                             <b>volume</b>
                         </div>
                         <div class="description">
-                            While targeting a unit including only one model, the weapon strength is decreased by 1.
+                            While targeting a unit of type [C], the weapon strength is decreased by 1.
                         </div>
                     </div>
                     <div class="definition">
@@ -205,8 +180,9 @@
                             <b>single</b>
                         </div>
                         <div class="description">
-                            The maximum final damage of an attack is the number of models in the attacking unit.
+                            While targeting a unit of type [E], the weapon strength is decreased by 2.
                             <br/>
+                            While targeting a unit of type [H], the weapon strength is decreased by 4.
                         </div>
                     </div>
                     <div class="definition">

@@ -70,7 +70,7 @@ def generate_htmls():
                     int_index_attack, \
                     dict_attack = pair_dict_attack
 
-                    return "<div class=\"model_property attack\" onclick=\"toggle_select_attack(" \
+                    return "<div class=\"unit_property attack\" onclick=\"toggle_select_attack(" \
                         + text_parameters_functions \
                         + ", " \
                         + int_index_attack \
@@ -93,40 +93,30 @@ def generate_htmls():
                         + (" heavy" if dict_attack["heavy"] else "") \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_units('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", +5)\">+5</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                    + ", 1)\">+1</div><div class=\"count_units\">0</div><div class=\"modify_count\" onclick=\"modify_count_units('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
                         .__str__() \
-                    + ", 1)\">+1</div><div class=\"count_models\">0</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
-                    + text_side \
-                    + "', " \
-                    + int_index_unit \
-                        .__str__() \
-                    + ", -1)\">-1</div><div class=\"modify_count\" onclick=\"modify_count_models('" \
-                    + text_side \
-                    + "', " \
-                    + int_index_unit \
-                        .__str__() \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
+                    + ", -1)\">-1</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
                     + text_parameters_functions \
                     + ")\" onmouseleave=\"mouseleave_attack(" \
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\">0.00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\" title=\"[" \
+                    + ")\">0.00</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"unit_card\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \
                     + dict_unit \
-                        ["points_per_model"] \
+                        ["points_cost"] \
                         .__str__() \
-                    + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + " points.\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
@@ -135,10 +125,13 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
+                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">[" \
+                    + dict_unit \
+                        ["type_unit"] \
+                    + "] " \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"model_property armor\"><div class=\"icon\">⛊</div><div class=\"skillbar\"><div style=\"width: " \
+                    + "</div><div class=\"unit_property armor\"><div class=\"icon\">⛊</div><div class=\"skillbar\"><div style=\"width: " \
                     +  (dict_unit \
                             ["armor"]
                             * 8) \
@@ -150,7 +143,7 @@ def generate_htmls():
                     + "</div><div class=\"type\">" \
                     + dict_unit \
                         ["type_armor"] \
-                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div></div><div class=\"unit_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
                     +  (dict_unit \

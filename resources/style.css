@@ -234,7 +234,7 @@ body {
 
 .unit_count_modifier {
     flex: 1;
-    padding: 18px 10px;
+    padding: 40px 10px;
     background-color: var(--grey_dark_blue);
 }
 
@@ -259,7 +259,7 @@ body {
     color: white;
 }
 
-.count_models {
+.count_units {
     border: 2px solid var(--grey_dark_blue);
     color: var(--grey_blue);
 }
@@ -270,22 +270,22 @@ body {
     padding: 10px 2px;
 }
 
-.unit_faction:hover .count_models {
+.unit_faction:hover .count_units {
     border: 2px solid var(--grey_blue);
     background-color: var(--grey_dark);
 }
 
-.unit_faction:not(.unselected) .count_models {
+.unit_faction:not(.unselected) .count_units {
     border: 2px solid white;
     color: white;
     background-color: #8b4dfe;
 }
 
-.unselected .model {
+.unselected .unit_card {
     opacity: 0.5;
 }
 
-.model {
+.unit_card {
     width: 500px;
     height: 165px;
     background-image: url("background.png");
@@ -308,7 +308,7 @@ body {
     margin-bottom: 2px;
 }
 
-.model_property {
+.unit_property {
     display: flex;
     width: fit-content;
     line-height: 18px;
@@ -317,7 +317,7 @@ body {
     border: 2px solid transparent;
 }
 
-.model_property > div {
+.unit_property > div {
     margin-right: 5px;
 }
 
@@ -360,7 +360,7 @@ body {
     background: linear-gradient(0.25turn, #771a1a8d, #f60f0f8d);
 }
 
-.model_property .value {
+.unit_property .value {
     width: 20px;
     text-align: right;
 }
@@ -430,7 +430,7 @@ body {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
-.attack_in_progress .model_property:not(.selected) {
+.attack_in_progress .unit_property:not(.selected) {
     color: inherit;
     background: none;
 }
