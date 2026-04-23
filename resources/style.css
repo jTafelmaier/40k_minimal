@@ -360,6 +360,11 @@ body {
     background: linear-gradient(0.25turn, #771a1a8d, #f60f0f8d);
 }
 
+.model_property .value {
+    width: 20px;
+    text-align: right;
+}
+
 #turn_information {
     float: right;
 }
