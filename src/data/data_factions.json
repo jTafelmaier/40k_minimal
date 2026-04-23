@@ -613,8 +613,30 @@
                 },
                 {
                     "name": "Exalted Eightbound",
-                    "points_cost": 300,
-                    "health_points": 16,
+                    "points_cost": 150,
+                    "health_points": 8,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "strength": 4,
+                            "heavy": false
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "strength": 16,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Eightbound",
+                    "points_cost": 150,
+                    "health_points": 8,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -623,28 +645,6 @@
                             "range": "⚔",
                             "type": "",
                             "strength": 8,
-                            "heavy": false
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "single",
-                            "strength": 32,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Eightbound",
-                    "points_cost": 300,
-                    "health_points": 16,
-                    "move": 20,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "strength": 16,
                             "heavy": false
                         }
                     ]

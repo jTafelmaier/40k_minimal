@@ -81,7 +81,7 @@ def generate_htmls():
                         + "</div><div class=\"skillbar\"><div style=\"width: " \
                         +  (dict_attack \
                                 ["strength"]
-                                * 2) \
+                                * 4) \
                             .__str__() \
                         + "px;\"/></div><div class=\"value\">" \
                         + dict_attack \
@@ -129,20 +129,12 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">[" \
-                    + dict_unit \
-                        ["type_unit"] \
-                    + "] " \
+                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">" \
                     + dict_unit \
                         ["name"] \
                     + "</div><div class=\"unit_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
-                    +  (dict_unit \
-                        ["move"]
-                        * 1.5) \
-                        .__str__() \
-                    + "px;\"/></div><div class=\"value\">" \
+                    + ")\"><div class=\"icon\">🡆</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
