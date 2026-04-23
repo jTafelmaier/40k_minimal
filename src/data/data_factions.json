@@ -6,7 +6,7 @@
                 {
                     "name": "Captain Titus",
                     "points_per_model": 50,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -28,7 +28,7 @@
                 {
                     "name": "Terminator captain",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 10,
                     "type_armor": "",
                     "type_unit": "C",
@@ -72,7 +72,7 @@
                 {
                     "name": "Captain with jump pack",
                     "points_per_model": 50,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -116,7 +116,7 @@
                 {
                     "name": "Bladeguard lieutenant",
                     "points_per_model": 75,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "shielded",
                     "type_unit": "C",
@@ -176,7 +176,7 @@
                 {
                     "name": "Captain in gravis armour",
                     "points_per_model": 50,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -258,7 +258,7 @@
                 {
                     "name": "Belial",
                     "points_per_model": 125,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 10,
                     "type_armor": "",
                     "type_unit": "C",
@@ -280,7 +280,7 @@
                 {
                     "name": "Deathwing strikemaster",
                     "points_per_model": 100,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 10,
                     "type_armor": "shielded",
                     "type_unit": "C",
@@ -312,7 +312,7 @@
                 {
                     "name": "Castellan",
                     "points_per_model": 50,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -378,7 +378,7 @@
                 {
                     "name": "Aethon Shaan",
                     "points_per_model": 125,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 40,
                     "type_armor": "stealth",
                     "type_unit": "C",
@@ -400,7 +400,7 @@
                 {
                     "name": "Castellan Crowe",
                     "points_per_model": 100,
-                    "armor": 4,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -642,7 +642,7 @@
                 {
                     "name": "Slaughterbound",
                     "points_per_model": 75,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -755,7 +755,7 @@
                 {
                     "name": "Lucius the eternal",
                     "points_per_model": 75,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -842,7 +842,7 @@
                 {
                     "name": "Nekrosor Ammentar",
                     "points_per_model": 250,
-                    "armor": 6,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -965,7 +965,7 @@
                 {
                     "name": "Prime with lash whip",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
@@ -987,7 +987,7 @@
                 {
                     "name": "Winged prime",
                     "points_per_model": 50,
-                    "armor": 5,
+                    "armor": 6,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -1137,8 +1137,8 @@
             "units": [
                 {
                     "name": "Scatterflare",
-                    "points_per_model": 150,
-                    "armor": 6,
+                    "points_per_model": 200,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -1153,8 +1153,8 @@
                 },
                 {
                     "name": "Sunsear",
-                    "points_per_model": 150,
-                    "armor": 6,
+                    "points_per_model": 200,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
