@@ -81,7 +81,7 @@ def generate_htmls():
                         + "</div><div class=\"skillbar\"><div style=\"width: " \
                         +  (dict_attack \
                                 ["strength"]
-                                * 8) \
+                                * 2) \
                             .__str__() \
                         + "px;\"/></div><div class=\"value\">" \
                         + dict_attack \
@@ -93,7 +93,15 @@ def generate_htmls():
                         + (" heavy" if dict_attack["heavy"] else "") \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_selection_modifier\"><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
+                return "<div class=\"unit_faction unselected\" initial_health=\"" \
+                    + dict_unit \
+                        ["health_points"] \
+                        .__str__() \
+                    + "\" current_health=\"" \
+                    + dict_unit \
+                        ["health_points"] \
+                        .__str__() \
+                    + "\"><div class=\"unit_selection_modifier\"><div class=\"modify_selection\" onclick=\"modify_selection_unit('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
@@ -131,19 +139,7 @@ def generate_htmls():
                     + "] " \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"unit_property armor\"><div class=\"icon\">⛊</div><div class=\"skillbar\"><div style=\"width: " \
-                    +  (dict_unit \
-                            ["armor"]
-                            * 8) \
-                        .__str__() \
-                    + "px;\"/></div><div class=\"value\">" \
-                    + dict_unit \
-                        ["armor"] \
-                        .__str__() \
-                    + "</div><div class=\"type\">" \
-                    + dict_unit \
-                        ["type_armor"] \
-                    + "</div></div><div class=\"unit_property movement\" onclick=\"set_inactive(" \
+                    + "</div><div class=\"unit_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
                     +  (dict_unit \

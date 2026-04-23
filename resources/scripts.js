@@ -56,7 +56,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = "1.00")
+            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = parseInt(element.getAttribute("initial_health")))
     }
 
     element_list
@@ -67,9 +67,6 @@ function toggle_mode_list(
         .classList
         .toggle("match")
 }
-
-
-const INT_HEALTH_POINTS = 8
 
 
 function update_points_total(
@@ -138,18 +135,6 @@ function modify_selection_unit(
     element_selection
         .textContent = int_selection_new
             .toString()
-
-    element_unit
-        .setAttribute(
-            "initial_health",
-            int_selection_new
-                * INT_HEALTH_POINTS)
-
-    element_unit
-        .setAttribute(
-            "current_health",
-            int_selection_new
-                * INT_HEALTH_POINTS)
 
     update_points_total(text_side)
 }
@@ -267,9 +252,8 @@ function set_text_bar(
     int_health_new) {
 
     element_bar
-        .textContent = (int_health_new
-            / INT_HEALTH_POINTS)
-            .toFixed(2)
+        .textContent = int_health_new
+            .toString()
 }
 
 
@@ -371,18 +355,6 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        const int_armor = parseInt(element_unit_attacked
-            .getElementsByClassName("armor")[0]
-            .getElementsByClassName("value")[0]
-            .innerText
-            .trim())
-
-        const text_type_armor = element_unit_attacked
-            .getElementsByClassName("armor")[0]
-            .getElementsByClassName("type")[0]
-            .innerText
-            .trim()
-
         const int_health_initial = get_int_attribute(
                 element_unit_attacked,
                 "initial_health")
@@ -394,12 +366,7 @@ function toggle_select_attack(
         // TODO re-implement single and volume
         const int_damage_added = Math.min(
                 int_health_current,
-                Math.floor(
-                    INT_HEALTH_POINTS
-                        * Math.pow(
-                            2,
-                            int_strength
-                                - int_armor)))
+                int_strength)
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]
