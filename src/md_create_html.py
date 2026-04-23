@@ -191,7 +191,6 @@ def generate_htmls():
                                     ["units"]))) \
                 + "</div></div>"
 
-        # TODO perhaps refactor
         return "<div id=\"" \
             + text_side \
             + "\"><div class=\"selection_factions\">Select a faction:<div>" \
