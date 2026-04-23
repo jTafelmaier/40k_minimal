@@ -610,7 +610,7 @@
                 {
                     "name": "Angron",
                     "points_per_model": 400,
-                    "armor": 8,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -739,7 +739,7 @@
                 {
                     "name": "Fulgrim",
                     "points_per_model": 400,
-                    "armor": 8,
+                    "armor": 7,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -841,8 +841,8 @@
             "units": [
                 {
                     "name": "Nekrosor Ammentar",
-                    "points_per_model": 250,
-                    "armor": 7,
+                    "points_per_model": 200,
+                    "armor": 6,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -856,14 +856,14 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 7,
+                            "strength": 6,
                             "heavy": false
                         }
                     ]
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "points_per_model": 150,
+                    "points_per_model": 100,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "stealth",
