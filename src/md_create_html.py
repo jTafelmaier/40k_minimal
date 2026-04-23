@@ -215,16 +215,16 @@ def generate_htmls():
                                     ["units"]))) \
                 + "</div></div>"
 
-        # TODO refactor
+        # TODO perhaps refactor
         return "<div id=\"" \
             + text_side \
-            + "\"><div class=\"selection_factions\">" \
+            + "\"><div class=\"selection_factions\">Select a faction:<div>" \
             + "" \
                 .join(
                     map(
                         get_text_html_button_show_faction,
                         list_dicts_factions)) \
-            + "</div><div class=\"list_constructors\">" \
+            + "</div></div><div class=\"list_constructors\">" \
             + "" \
                 .join(
                     map(
