@@ -470,7 +470,7 @@
                 },
                 {
                     "name": "Command squad",
-                    "points_cost": 40,
+                    "points_cost": 50,
                     "armor": 3,
                     "move": 10,
                     "type_armor": "",
@@ -486,7 +486,7 @@
                 },
                 {
                     "name": "Shock troops",
-                    "points_cost": 80,
+                    "points_cost": 100,
                     "armor": 4,
                     "move": 10,
                     "type_armor": "",
@@ -502,7 +502,7 @@
                 },
                 {
                     "name": "Combat engineers",
-                    "points_cost": 40,
+                    "points_cost": 50,
                     "armor": 3,
                     "move": 10,
                     "type_armor": "",
@@ -717,16 +717,16 @@
                 },
                 {
                     "name": "Jakhals",
-                    "points_cost": 20,
-                    "armor": 3,
+                    "points_cost": 50,
+                    "armor": 4,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "H",
                     "attacks": [
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "strength": 3,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
@@ -1062,7 +1062,7 @@
                 },
                 {
                     "name": "Hormagaunts",
-                    "points_cost": 80,
+                    "points_cost": 100,
                     "armor": 5,
                     "move": 20,
                     "type_armor": "",
