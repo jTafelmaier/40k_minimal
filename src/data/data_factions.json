@@ -755,7 +755,7 @@
                 {
                     "name": "Lucius the eternal",
                     "points_per_model": 100,
-                    "armor": 6,
+                    "armor": 5,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "C",
