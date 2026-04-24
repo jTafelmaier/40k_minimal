@@ -149,7 +149,7 @@ body {
 }
 
 .list_constructors .image_faction {
-    width: 534px;
+    width: 538px;
     padding: 8px;
     box-shadow: inset 0 -100px 100px -20px var(--grey_dark);
 }
@@ -189,6 +189,7 @@ body {
 
 .return_to_faction_selection {
     width: 22px;
+    height: 22px;
     font-size: 20px;
 }
 
@@ -314,7 +315,7 @@ body {
     display: none;
 }
 
-.match .interactive.return_to_faction_selection {
+.match .return_to_faction_selection .interactive {
     display: none;
 }
 
