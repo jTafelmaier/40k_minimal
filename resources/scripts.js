@@ -81,7 +81,6 @@ function update_points_total(
 
         return parseInt(
                 element_unit
-                    .getElementsByClassName("unit_background")[0]
                     .getAttribute("title")
                     .split(" ")
                     .at(1))
@@ -335,7 +334,6 @@ function toggle_select_attack(
             .trim()
 
         const text_type_unit_attacked = element_unit_attacked
-            .getElementsByClassName("unit_background")[0]
             .getAttribute("title")
             .split(",")
             .at(0)

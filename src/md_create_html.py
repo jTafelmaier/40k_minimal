@@ -88,7 +88,14 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" initial_health=\"" \
+                return "<div class=\"unit_faction unselected\" title=\"[" \
+                    + dict_unit \
+                        ["type_unit"] \
+                    + "], " \
+                    + dict_unit \
+                        ["points_cost"] \
+                        .__str__() \
+                    + " points.\" initial_health=\"" \
                     + dict_unit \
                         ["health_points"] \
                         .__str__() \
@@ -106,14 +113,7 @@ def generate_htmls():
                     + dict_unit \
                         ["health_points"] \
                         .__str__() \
-                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\" /><div class=\"section remaining\" style=\"height: 100%;\" /></div></div><div class=\"unit_background\" title=\"[" \
-                    + dict_unit \
-                        ["type_unit"] \
-                    + "], " \
-                    + dict_unit \
-                        ["points_cost"] \
-                        .__str__() \
-                    + " points.\" onclick=\"toggle_selection_unit(" \
+                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\" /><div class=\"section remaining\" style=\"height: 100%;\" /></div></div><div class=\"unit_background\" onclick=\"toggle_selection_unit(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
