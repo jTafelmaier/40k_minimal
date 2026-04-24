@@ -6,7 +6,7 @@
     --grey_dark_blue: #343b4e;
     --grey_main: #4a5266;
     --grey_blue: #535f79;
-    --grey_text: #8d97b089;
+    --grey_text: #8d97b0b3;
     --grey_bright: #919eba;
     --grey_brightest: #d4daedbf;
 }
@@ -269,50 +269,20 @@ body {
     border: 2px solid transparent;
 }
 
-.icon {
-    width: 18px;
-    font-size: 14px;
-    line-height: 18px;
-    border-top: 1px solid var(--grey_bright);
-    border-right: 2px solid var(--grey_text);
-    border-radius: 2px;
-    color: var(--grey_brightest);
-    background: linear-gradient(0.125turn, var(--grey_text), var(--grey_main));
-    text-align: center;
-}
-
-.attack .icon {
-    font-size: 18px;
-    border-right: 2px solid #cc1e27;
-    border-top: 1px solid #dc1a24;
-    background: radial-gradient(#bd282f 10%, #6a1d26);
-}
-
-.skillbar {
-    width: 72px;
-    padding: 2px;
-    margin: 4px 0px;
-    background-color: var(--grey_dark);
-    border: 1px solid var(--grey_main);
-    border-radius: 2px;
-}
-
-.skillbar > div {
-    display: block;
-    height: 100%;
-    background: linear-gradient(0.25turn, var(--grey_main), var(--grey_bright));
-    border-radius: 2px;
-}
-
-.attack .skillbar > div {
-    background: linear-gradient(0.25turn, #771a1a8d, #f60f0f8d);
+.unit_property .type {
+    width: 120px;
 }
 
 .unit_property .value {
     width: 20px;
     margin-right: 5px;
-    padding: 0px 2px;
+    border-radius: 2px;
     text-align: right;
+}
+
+.unit_property.name .value {
+    margin-left: 2px;
+    padding: 0px 2px;
     background-color: var(--grey_dark);
 }
 
