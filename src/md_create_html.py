@@ -106,7 +106,7 @@ def generate_htmls():
                     + dict_unit \
                         ["health_points"] \
                         .__str__() \
-                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\" /><div class=\"section remaining\" style=\"height: 100%;\" /></div></div><div class=\"unit_card\" title=\"[" \
+                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\" /><div class=\"section remaining\" style=\"height: 100%;\" /></div></div><div class=\"unit_background\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \
@@ -124,11 +124,7 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">H<div class=\"value\">" \
-                    + dict_unit \
-                        ["health_points"] \
-                        .__str__() \
-                    + "</div>M<div class=\"value\">" \
+                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">M<div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \

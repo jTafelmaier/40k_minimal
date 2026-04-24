@@ -26,7 +26,7 @@ body {
 #main {
     width: 1250px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -234,14 +234,14 @@ body {
     padding: 10px 2px;
 }
 
-.unit_card {
+.unit_background {
     width: 520px;
     height: 165px;
     background-image: url("background.png");
     background-size: cover;
 }
 
-.unselected .unit_card {
+.unselected .unit_background {
     opacity: 0.5;
 }
 
