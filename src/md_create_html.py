@@ -129,16 +129,20 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\">" \
+                    + "')\"><div class=\"data_unit\"><div class=\"unit_property name\"><div class=\"icon\">H</div><div class=\"value\">" \
                     + dict_unit \
-                        ["name"] \
-                    + "</div><div class=\"unit_property movement\" onclick=\"set_inactive(" \
+                        ["health_points"] \
+                        .__str__() \
+                    + "</div><div class=\"icon\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"icon\">🡆</div><div class=\"value\">" \
+                    + ")\">M</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div>" \
+                    + "</div>" \
+                    + dict_unit \
+                        ["name"] \
+                    + "</div>" \
                     + "" \
                         .join(
                             map(
