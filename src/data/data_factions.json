@@ -813,22 +813,22 @@
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "points_cost": 400,
-                    "health_points": 16,
+                    "points_cost": 100,
+                    "health_points": 4,
                     "move": 20,
                     "type_armor": "stealth",
-                    "type_unit": "E",
+                    "type_unit": "C",
                     "attacks": [
                         {
                             "range": "⯐",
                             "type": "",
-                            "strength": 16,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
                 },
                 {
-                    "name": "Skorpekh destroyer",
+                    "name": "Skorpekh destroyers",
                     "points_cost": 200,
                     "health_points": 16,
                     "move": 20,
@@ -844,7 +844,7 @@
                     ]
                 },
                 {
-                    "name": "Ophydian destroyer",
+                    "name": "Ophydian destroyers",
                     "points_cost": 200,
                     "health_points": 8,
                     "move": 40,
