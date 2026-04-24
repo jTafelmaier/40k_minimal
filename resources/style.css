@@ -182,20 +182,16 @@ body {
 
 .interactive {
     width: 20px;
-    border: 2px solid var(--grey_main);
     border-radius: 2px;
     line-height: 20px;
-    margin: 2px;
+    margin: 4px;
     text-align: center;
     user-select: none;
-    color: var(--grey_main);
-    background-color: var(--grey_dark);
+    color: var(--grey_text);
 }
 
 .interactive:hover {
-    border: 2px solid white;
     color: white;
-    background-color: #8b4dfe;
 }
 
 .toggle_mode_list {
@@ -354,10 +350,6 @@ body {
 
 .match .interactive.return_to_faction_selection {
     display: none;
-}
-
-.match .toggle_mode_list {
-    border: 2px solid transparent;
 }
 
 .match .movement:hover,

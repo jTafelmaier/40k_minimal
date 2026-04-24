@@ -154,6 +154,7 @@ def generate_htmls():
                 + path_image_faction \
                 + "')\"><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
+                    .upper() \
                 + "</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
                 + text_side \
                 + "')\">switch mode</div><div class=\"interactive return_to_faction_selection\" onclick=\"return_to_faction_selection('" \
