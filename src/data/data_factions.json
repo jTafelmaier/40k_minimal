@@ -18,7 +18,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -40,7 +40,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -62,7 +62,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 4,
                             "heavy": false
@@ -84,7 +84,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -106,7 +106,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -128,7 +128,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -150,7 +150,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -188,7 +188,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -270,7 +270,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -286,7 +286,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -302,7 +302,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -324,7 +324,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -346,7 +346,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 16,
                             "heavy": false
@@ -368,7 +368,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -390,7 +390,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -412,7 +412,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -572,7 +572,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 16,
                             "heavy": false
@@ -588,7 +588,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -604,7 +604,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -620,13 +620,13 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 4,
                             "heavy": false
@@ -642,7 +642,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -664,7 +664,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -680,7 +680,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 1,
                             "heavy": false
@@ -701,7 +701,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 16,
                             "heavy": false
@@ -717,7 +717,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 2,
                             "heavy": false
@@ -733,13 +733,13 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 4,
                             "heavy": false
@@ -761,7 +761,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 8,
                             "heavy": false
@@ -804,7 +804,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -836,7 +836,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 8,
                             "heavy": false
@@ -852,7 +852,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 4,
                             "heavy": false
@@ -905,7 +905,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "volume",
                             "strength": 8,
                             "heavy": false
@@ -927,7 +927,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -943,7 +943,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -959,13 +959,13 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 1,
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 1,
                             "heavy": false
@@ -981,13 +981,13 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 2,
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "single",
                             "strength": 2,
                             "heavy": false
@@ -1003,7 +1003,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 4,
                             "heavy": false
@@ -1019,7 +1019,7 @@
                     "type_unit": "E",
                     "attacks": [
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 2,
                             "heavy": false
@@ -1073,7 +1073,7 @@
                             "heavy": false
                         },
                         {
-                            "range": "⚔",
+                            "range": "melee",
                             "type": "",
                             "strength": 16,
                             "heavy": false
