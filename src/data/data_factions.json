@@ -1013,7 +1013,7 @@
                 {
                     "name": "Hormagaunts",
                     "points_cost": 100,
-                    "health_points": 4,
+                    "health_points": 8,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -1021,7 +1021,7 @@
                         {
                             "range": "melee",
                             "type": "",
-                            "strength": 2,
+                            "strength": 4,
                             "heavy": false
                         }
                     ]
