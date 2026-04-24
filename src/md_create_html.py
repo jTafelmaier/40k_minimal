@@ -111,7 +111,7 @@ def generate_htmls():
                     + dict_unit \
                         ["health_points"] \
                         .__str__() \
-                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"unit_card\" title=\"[" \
+                    + "</div></div><div class=\"health_bar\"><div class=\"section difference\" /><div class=\"section remaining\" style=\"height: 100%;\" /></div></div><div class=\"unit_card\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \

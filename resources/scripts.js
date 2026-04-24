@@ -441,6 +441,10 @@ function apply_preview(
             text_side,
             index_unit)
 
+    if (!element_unit.classList.contains("attacked")) {
+        return
+    }
+
     const int_health_initial = get_int_attribute(
             element_unit,
             "initial_health")
