@@ -334,7 +334,7 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        const text_type_unit = element_unit_attacked
+        const text_type_unit_attacked = element_unit_attacked
             .getElementsByClassName("unit_card")[0]
             .getAttribute("title")
             .split(",")
@@ -351,9 +351,9 @@ function toggle_select_attack(
         function get_int_damage_keywords() {
 
             // TODO re-implement shielded?
-            if (text_type_attack == "volume" && text_type_unit == "[E]") {
+            if (text_type_attack == "volume" && text_type_unit_attacked == "[E]") {
                 return int_strength * 2
-            } else if (text_type_attack == "single" && text_type_unit == "[C]") {
+            } else if (text_type_attack == "single" && text_type_unit_attacked == "[C]") {
                 return int_strength * 4
             } else {
                 return int_strength
