@@ -75,22 +75,17 @@ def generate_htmls():
                         + ", " \
                         + int_index_attack \
                             .__str__() \
-                        + ")\"><div class=\"icon\">" \
+                        + ")\"><div class=\"type\">" \
                         + dict_attack \
                             ["range"] \
-                        + "</div><div class=\"skillbar\"><div style=\"width: " \
-                        +  (dict_attack \
-                                ["strength"]
-                                * 8) \
-                            .__str__() \
-                        + "px;\"/></div><div class=\"value\">" \
-                        + dict_attack \
-                            ["strength"] \
-                            .__str__() \
-                        + "</div><div class=\"type\">" \
+                        + " " \
                         + dict_attack \
                             ["type"] \
                         + (" heavy" if dict_attack["heavy"] else "") \
+                        + "</div><div class=\"value\">" \
+                        + dict_attack \
+                            ["strength"] \
+                            .__str__() \
                         + "</div></div>"
 
                 return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
@@ -135,33 +130,23 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
-                    + dict_unit \
-                        ["name"] \
-                    + "</div><div class=\"model_property armor\"><div class=\"icon\">⛊</div><div class=\"skillbar\"><div style=\"width: " \
-                    +  (dict_unit \
-                            ["armor"]
-                            * 8) \
-                        .__str__() \
-                    + "px;\"/></div><div class=\"value\">" \
+                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">⛊<div class=\"armor\"><div class=\"value\">" \
                     + dict_unit \
                         ["armor"] \
                         .__str__() \
                     + "</div><div class=\"type\">" \
                     + dict_unit \
                         ["type_armor"] \
-                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div></div>M<div class=\"movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"icon\">🡆</div><div class=\"skillbar\"><div style=\"width: " \
-                    +  (dict_unit \
-                        ["move"]
-                        * 1.5) \
-                        .__str__() \
-                    + "px;\"/></div><div class=\"value\">" \
+                    + ")\"><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
                     + "</div></div>" \
+                    + dict_unit \
+                        ["name"] \
+                    + "</div>" \
                     + "" \
                         .join(
                             map(

@@ -157,7 +157,7 @@ body {
 
 .image_lower {
     display: flex;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .image_faction .name {
@@ -175,7 +175,7 @@ body {
 }
 
 .header_list {
-    padding: 4px;
+    padding: 5px;
     background-color: #212632;
 }
 
@@ -192,7 +192,6 @@ body {
     height: 20px;
 }
 
-
 .return_to_faction_selection .interactive {
     width: 20px;
     font-size: 20px;
@@ -205,7 +204,7 @@ body {
 .constructor_state {
     display: flex;
     margin-top: 15px;
-    padding: 0px 5px;
+    padding: 0px 2px;
 }
 
 .points_total {
@@ -311,9 +310,6 @@ body {
 .model_property {
     display: flex;
     width: fit-content;
-    line-height: 18px;
-    padding: 1px;
-    padding-right: 10px;
     border: 2px solid transparent;
 }
 
@@ -321,48 +317,13 @@ body {
     margin-right: 5px;
 }
 
-.icon {
-    width: 18px;
-    font-size: 14px;
-    line-height: 18px;
-    border-top: 1px solid var(--grey_bright);
-    border-right: 2px solid var(--grey_text);
-    border-radius: 2px;
-    color: var(--grey_brightest);
-    background: linear-gradient(0.125turn, var(--grey_text), var(--grey_main));
-    text-align: center;
-}
-
-.attack .icon {
-    font-size: 18px;
-    border-right: 2px solid #cc1e27;
-    border-top: 1px solid #dc1a24;
-    background: radial-gradient(#bd282f 10%, #6a1d26);
-}
-
-.skillbar {
-    width: 72px;
-    padding: 2px;
-    margin: 4px 0px;
-    background-color: var(--grey_dark);
-    border: 1px solid var(--grey_main);
-    border-radius: 2px;
-}
-
-.skillbar > div {
-    display: block;
-    height: 100%;
-    background: linear-gradient(0.25turn, var(--grey_main), var(--grey_bright));
-    border-radius: 2px;
-}
-
-.attack .skillbar > div {
-    background: linear-gradient(0.25turn, #771a1a8d, #f60f0f8d);
-}
-
 .model_property .value {
-    width: 20px;
+    margin-right: 5px;
     text-align: right;
+}
+
+.model_property.attack .type {
+    width: 120px;
 }
 
 #turn_information {
@@ -408,16 +369,11 @@ body {
     display: none;
 }
 
-.match .movement:hover,
 .match .attack:hover,
 .match .selected  {
     color: white;
     border-radius: 4px;
     user-select: none;
-}
-
-.match .movement:hover {
-    background: linear-gradient(to right, var(--grey_main) 185px, transparent);
 }
 
 .match .attack:hover,
@@ -452,7 +408,6 @@ body {
     background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
 }
 
-.inactive .movement,
 .inactive .attack {
     display: none;
 }
