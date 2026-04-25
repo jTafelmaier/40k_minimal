@@ -318,8 +318,15 @@ body {
 }
 
 .model_property .value {
+    margin-left: 2px;
     margin-right: 5px;
+    border-radius: 2px;
     text-align: right;
+}
+
+.model_property.name .value {
+    padding: 0px 2px;
+    background-color: var(--grey_dark);
 }
 
 .model_property.attack .type {
