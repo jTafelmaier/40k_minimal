@@ -1137,8 +1137,8 @@
             "units": [
                 {
                     "name": "Scatterflare",
-                    "points_per_model": 200,
-                    "armor": 7,
+                    "points_per_model": 150,
+                    "armor": 6,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -1153,8 +1153,8 @@
                 },
                 {
                     "name": "Sunsear",
-                    "points_per_model": 200,
-                    "armor": 7,
+                    "points_per_model": 150,
+                    "armor": 6,
                     "move": 40,
                     "type_armor": "",
                     "type_unit": "C",
@@ -1168,7 +1168,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "strength": 7,
+                            "strength": 6,
                             "heavy": false
                         }
                     ]
