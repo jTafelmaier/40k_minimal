@@ -86,12 +86,12 @@
                             If possible, select one attack and one visible elegible enemy unit as "target unit", otherwise end the action.
                             <br/>
                             <br/>
-                            Target unit: <b>health</b> is reduced by:
+                            Target unit: <b>health points total</b> are reduced by:
                             <br/>
-                            <b>#models</b> * (2 ^ (<b>strength</b> - target unit:<b>armor</b>)).
+                            <b>#models</b> * (<b>damage</b>).
                             <br/>
                             <br/>
-                            Models in the target unit have to be destroyed until their count is equal to ceil(<b>health</b>).
+                            Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).
                         </div>
                     </div>
                 </div>
@@ -131,8 +131,6 @@
                         </div>
                         <div class="description">
                             Unit model limit: 1
-                            <br/>
-                            Can be attached to another friendly <b>non-character</b> unit with an equal <b>movement characteristic</b>, an armor characteristic 1 below that of the character unit and <b>without any attached units</b>, causing its model to be included in that unit.
                         </div>
                     </div>
                     <div class="definition">
@@ -197,7 +195,7 @@
                             <b>volume</b>
                         </div>
                         <div class="description">
-                            While targeting a unit including only one model, the weapon strength is decreased by 1.
+                            While targeting a unit including only one model, weapon damage is halved.
                         </div>
                     </div>
                     <div class="definition">

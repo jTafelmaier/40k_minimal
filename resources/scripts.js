@@ -56,7 +56,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = element.querySelectorAll(".count_models")[0].textContent.trim() + ".00")
+            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = (parseInt(element.getElementsByClassName("health_per_model")[0].getElementsByClassName("value")[0].innerText.trim()) * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())).toString())
     }
 
     element_list
@@ -69,17 +69,20 @@ function toggle_mode_list(
 }
 
 
-const INT_HEALTH_POINTS = 8
-
-
 function get_int_count_models(
     element_unit) {
+
+    const int_health_per_model = parseInt(element_unit
+        .getElementsByClassName("health_per_model")[0]
+        .getElementsByClassName("value")[0]
+        .innerText
+        .trim())
 
     return Math.ceil(
             get_int_attribute(
                 element_unit,
                 "current_health")
-                / INT_HEALTH_POINTS)
+                / int_health_per_model)
 }
 
 
@@ -147,6 +150,12 @@ function modify_count_models(
             .remove("unselected")
     }
 
+    int_health_per_model = parseInt(element_unit
+        .getElementsByClassName("health_per_model")[0]
+        .getElementsByClassName("value")[0]
+        .innerText
+        .trim())
+
     element_count
         .textContent = int_count_new
             .toString()
@@ -155,13 +164,13 @@ function modify_count_models(
         .setAttribute(
             "initial_health",
             int_count_new
-                * INT_HEALTH_POINTS)
+                * int_health_per_model)
 
     element_unit
         .setAttribute(
             "current_health",
             int_count_new
-                * INT_HEALTH_POINTS)
+                * int_health_per_model)
 
     update_points_total(text_side)
 }
@@ -279,9 +288,8 @@ function set_text_bar(
     int_health_new) {
 
     element_bar
-        .textContent = (int_health_new
-            / INT_HEALTH_POINTS)
-            .toFixed(2)
+        .textContent = int_health_new
+            .toString()
 }
 
 
@@ -375,7 +383,7 @@ function toggle_select_attack(
 
         const int_count_models_attacking = get_int_count_models(element_unit_attacking)
 
-        const int_strength = parseInt(element_attack
+        const int_damage = parseInt(element_attack
             .getElementsByClassName("value")[0]
             .innerText
             .trim())
@@ -385,23 +393,24 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        const int_armor = parseInt(element_unit_attacked
-            .getElementsByClassName("armor")[0]
+        const int_health_per_model = parseInt(element_unit_attacked
+            .getElementsByClassName("health_per_model")[0]
             .getElementsByClassName("value")[0]
             .innerText
             .trim())
 
         const text_type_armor = element_unit_attacked
-            .getElementsByClassName("armor")[0]
+            .getElementsByClassName("health_per_model")[0]
             .getElementsByClassName("type")[0]
             .innerText
             .trim()
 
         function get_int_damage_single(
-            int_damage) {
+            int_damage_new) {
 
-            if (text_type_attack.includes("single")) return Math.min(int_damage, INT_HEALTH_POINTS * int_count_models_attacking)
-            else return int_damage
+            // TODO re-implement volume
+            if (text_type_attack.includes("single")) return Math.min(int_damage_new, int_health_per_model * int_count_models_attacking)
+            else return int_damage_new
         }
 
         const int_health_initial = get_int_attribute(
@@ -415,14 +424,8 @@ function toggle_select_attack(
         const int_damage_added = Math.min(
                 int_health_current,
                 get_int_damage_single(
-                    Math.floor(
-                        INT_HEALTH_POINTS
-                            * int_count_models_attacking
-                            * Math.pow(
-                                2,
-                                int_strength
-                                    - int_armor
-                                    - (text_type_attack.includes("volume") && get_int_count_models(element_unit_attacked) === 1 ? 1 : 0)))))
+                    int_count_models_attacking
+                        * int_damage))
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]
