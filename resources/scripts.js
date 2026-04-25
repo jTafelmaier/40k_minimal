@@ -46,6 +46,30 @@ function return_to_faction_selection(
 }
 
 
+function set_value_coordinate(
+    element_unit,
+    int_health_new) {
+
+    element_unit
+        .getElementsByClassName("coordinate remaining")[0]
+        .getElementsByClassName("value")[0]
+        .textContent = int_health_new
+            .toString()
+
+    element_unit
+        .getElementsByClassName("count_models_new")[0]
+        .textContent = "("
+            + Math.ceil(int_health_new
+                / parseInt(
+                    element_unit
+                        .getElementsByClassName("health_per_model")[0]
+                        .getElementsByClassName("value")[0]
+                        .textContent))
+                .toString()
+            + " M)"
+}
+
+
 function toggle_mode_list(
     text_side) {
 
@@ -56,7 +80,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => element.querySelectorAll(".remaining")[0].textContent = (parseInt(element.getElementsByClassName("health_per_model")[0].getElementsByClassName("value")[0].innerText.trim()) * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())).toString())
+            .forEach(element => set_value_coordinate(element, parseInt(element.getElementsByClassName("health_per_model")[0].getElementsByClassName("value")[0].innerText.trim()) * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())))
     }
 
     element_list
@@ -283,16 +307,6 @@ function set_height_bar(
 }
 
 
-function set_text_bar(
-    element_bar,
-    int_health_new) {
-
-    element_bar
-        .textContent = int_health_new
-            .toString()
-}
-
-
 function hide_preview_attack() {
 
     const element_army_lists = document
@@ -329,9 +343,8 @@ function hide_preview_attack() {
                 int_health_current,
                 int_health_initial)
 
-        set_text_bar(
-                element_unit
-                    .getElementsByClassName("coordinate remaining")[0],
+        set_value_coordinate(
+                element_unit,
                 int_health_current)
 
         element_unit
@@ -449,11 +462,10 @@ function toggle_select_attack(
                     - int_damage_added,
                 int_health_initial)
 
-        set_text_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate remaining")[0],
-                int_damage_added
-                    * -1)
+        set_value_coordinate(
+                element_unit_attacked,
+                int_health_current
+                    - int_damage_added)
 
         element_unit_attacked
             .classList
@@ -534,9 +546,8 @@ function apply_preview(
             int_health_points_new,
             int_health_initial)
 
-    set_text_bar(
-            element_unit
-                .getElementsByClassName("coordinate remaining")[0],
+    set_value_coordinate(
+            element_unit,
             int_health_points_new)
 
     if (int_health_points_new <= 0) {
