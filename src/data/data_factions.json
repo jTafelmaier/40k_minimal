@@ -878,7 +878,7 @@
                     ]
                 },
                 {
-                    "name": "Skorpekh destroyer",
+                    "name": "Skorpekh destroyers",
                     "points_per_model": 50,
                     "armor": 5,
                     "move": 20,
@@ -894,7 +894,7 @@
                     ]
                 },
                 {
-                    "name": "Ophydian destroyer",
+                    "name": "Ophydian destroyers",
                     "points_per_model": 50,
                     "armor": 4,
                     "move": 40,
