@@ -418,12 +418,28 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        function get_int_damage_single(
+        const int_count_models_attacked = Math.ceil(
+            parseInt(element_unit_attacked
+                .getElementsByClassName("coordinate remaining")[0]
+                .getElementsByClassName("value")[0]
+                .textContent)
+                / int_health_per_model)
+
+        function get_int_damage_type_attack(
             int_damage_new) {
 
-            // TODO re-implement volume
-            if (text_type_attack.includes("single")) return Math.min(int_damage_new, int_health_per_model * int_count_models_attacking)
-            else return int_damage_new
+            if (text_type_attack.includes("single")) {
+                return Math.min(
+                    int_damage_new,
+                    int_health_per_model
+                        * int_count_models_attacking)
+            } else if (text_type_attack.includes("volume") && int_count_models_attacked == 1) {
+                return Math.floor(
+                    int_damage_new
+                        / 2)
+            } else {
+                return int_damage_new
+            }
         }
 
         const int_health_initial = get_int_attribute(
@@ -436,7 +452,7 @@ function toggle_select_attack(
 
         const int_damage_added = Math.min(
                 int_health_current,
-                get_int_damage_single(
+                get_int_damage_type_attack(
                     int_count_models_attacking
                         * int_damage))
 
