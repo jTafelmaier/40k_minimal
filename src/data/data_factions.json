@@ -665,7 +665,7 @@
                         },
                         {
                             "range": "melee",
-                            "type": "volume",
+                            "type": "",
                             "damage": 8,
                             "heavy": false
                         }
