@@ -27,7 +27,7 @@ def generate_htmls():
                         md_shared.get_text_path_images_faction(name_faction),
                         "faction.png"])
 
-            return "<div class=\"container_faction_button\"><div class=\"image_faction preview_faction_button\" onclick=\"display_faction('" \
+            return "<div class=\"container_faction_button\"><div class=\"image_faction\" onclick=\"display_faction('" \
                 + text_side \
                 + "', '" \
                 + name_faction \
