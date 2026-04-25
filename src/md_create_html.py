@@ -130,7 +130,10 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">⛊<div class=\"armor\"><div class=\"value\">" \
+                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
+                    + dict_unit \
+                        ["name"] \
+                    + "</div><div class=\"model_property model_characteristics\">⛊<div class=\"armor\"><div class=\"value\">" \
                     + dict_unit \
                         ["armor"] \
                         .__str__() \
@@ -143,10 +146,7 @@ def generate_htmls():
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div>" \
-                    + dict_unit \
-                        ["name"] \
-                    + "</div>" \
+                    + "</div></div></div>" \
                     + "" \
                         .join(
                             map(

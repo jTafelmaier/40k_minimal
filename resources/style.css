@@ -301,8 +301,8 @@ body {
     font-size: 16px;
 }
 
-.data_unit .name {
-    margin-bottom: 2px;
+.data_unit .model_characteristics {
+    margin-bottom: 5px;
 }
 
 .model_property {
@@ -323,7 +323,7 @@ body {
     text-align: right;
 }
 
-.model_property.name .value {
+.model_property.model_characteristics .value {
     padding: 0px 2px;
     background-color: var(--grey_dark);
 }
