@@ -643,7 +643,7 @@
                     "attacks": [
                         {
                             "range": "melee",
-                            "type": "",
+                            "type": "volume",
                             "damage": 16,
                             "heavy": false
                         }
@@ -747,7 +747,7 @@
                         {
                             "range": "melee",
                             "type": "",
-                            "damage": 4,
+                            "damage": 8,
                             "heavy": false
                         },
                         {
