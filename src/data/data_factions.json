@@ -425,50 +425,6 @@
             "name": "Astra Militarum",
             "units": [
                 {
-                    "name": "Marshal dreir",
-                    "points_per_model": 100,
-                    "armor": 4,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "C",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "melee",
-                            "type": "volume",
-                            "strength": 3,
-                            "heavy": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Death riders",
-                    "points_per_model": 50,
-                    "armor": 4,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "strength": 1,
-                            "heavy": false
-                        },
-                        {
-                            "range": "melee",
-                            "type": "volume",
-                            "strength": 2,
-                            "heavy": true
-                        }
-                    ]
-                },
-                {
                     "name": "Command squad",
                     "points_per_model": 10,
                     "armor": 1,
