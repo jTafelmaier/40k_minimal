@@ -317,6 +317,7 @@ body {
 }
 
 .model_property .value {
+    width: 20px;
     margin-left: 2px;
     margin-right: 5px;
     border-radius: 2px;
