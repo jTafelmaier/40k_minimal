@@ -437,8 +437,7 @@ function toggle_select_attack(
             if (text_type_attack.includes("single")) {
                 return Math.min(
                     int_damage_new,
-                    int_health_per_model
-                        * int_count_models_attacking)
+                    int_health_per_model)
             } else if (text_type_attack.includes("volume") && int_count_models_attacked == 1) {
                 return Math.floor(
                     int_damage_new
@@ -458,12 +457,11 @@ function toggle_select_attack(
 
         const int_damage_added = Math.min(
                 int_health_current,
-                get_int_damage_type_attack(
-                    Math.max(
+                Math.max(
                         0,
-                        int_count_models_attacking
-                            * int_damage
-                            - int_damage_reduction)))
+                        get_int_damage_type_attack(int_damage)
+                            + int_damage_reduction)
+                    * int_count_models_attacking)
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]

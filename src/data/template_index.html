@@ -88,7 +88,7 @@
                             <br/>
                             Target unit: <b>health points total</b> are reduced by:
                             <br/>
-                            <b>max(0, (#models</b> * (<b>damage</b>)) - <b>damage reduction</b>).
+                            <b>max(0, (#models</b> * (<b>damage</b> - <b>damage reduction</b>))).
                             <br/>
                             <br/>
                             Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).
@@ -195,7 +195,7 @@
                             <b>volume</b>
                         </div>
                         <div class="description">
-                            While targeting a unit including only one model, weapon damage is halved.
+                            While targeting a unit including only one model, the weapon damage characteristic is halved.
                         </div>
                     </div>
                     <div class="definition">
