@@ -1012,29 +1012,6 @@
                     ]
                 },
                 {
-                    "name": "Lictor",
-                    "points_per_model": 75,
-                    "health_per_model": 8,
-                    "damage_reduction": 8,
-                    "move": 20,
-                    "type_armor": "stealth",
-                    "type_unit": "C",
-                    "attacks": [
-                        {
-                            "range": "melee",
-                            "type": "",
-                            "damage": 4,
-                            "heavy": false
-                        },
-                        {
-                            "range": "melee",
-                            "type": "single",
-                            "damage": 16,
-                            "heavy": false
-                        }
-                    ]
-                },
-                {
                     "name": "Deathleaper",
                     "points_per_model": 100,
                     "health_per_model": 8,
@@ -1053,6 +1030,29 @@
                             "range": "melee",
                             "type": "single",
                             "damage": 32,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Lictor",
+                    "points_per_model": 75,
+                    "health_per_model": 8,
+                    "damage_reduction": 8,
+                    "move": 20,
+                    "type_armor": "stealth",
+                    "type_unit": "C",
+                    "attacks": [
+                        {
+                            "range": "melee",
+                            "type": "",
+                            "damage": 4,
+                            "heavy": false
+                        },
+                        {
+                            "range": "melee",
+                            "type": "single",
+                            "damage": 16,
                             "heavy": false
                         }
                     ]
