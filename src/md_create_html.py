@@ -140,7 +140,7 @@ def generate_htmls():
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">" \
+                    + "</div></div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
