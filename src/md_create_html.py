@@ -88,7 +88,7 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" initial_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
+                return "<div class=\"unit_faction unselected\" maximum_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"modify_count\" onclick=\"modify_count_models('" \
                     + text_side \
                     + "', " \
                     + int_index_unit \

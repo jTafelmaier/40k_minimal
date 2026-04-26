@@ -186,7 +186,7 @@ function modify_count_models(
 
     element_unit
         .setAttribute(
-            "initial_health",
+            "maximum_health",
             int_count_new
                 * int_health_per_model)
 
@@ -325,7 +325,7 @@ function hide_preview_attack() {
 
         int_health_initial = get_int_attribute(
                 element_unit,
-                "initial_health")
+                "maximum_health")
 
         int_health_current = get_int_attribute(
                 element_unit,
@@ -444,7 +444,7 @@ function toggle_select_attack(
 
         const int_health_initial = get_int_attribute(
                 element_unit_attacked,
-                "initial_health")
+                "maximum_health")
 
         const int_health_current = get_int_attribute(
                 element_unit_attacked,
@@ -534,7 +534,7 @@ function apply_preview(
 
     const int_health_initial = get_int_attribute(
             element_unit,
-            "initial_health")
+            "maximum_health")
 
     const int_health_points_new = get_int_attribute(
             element_unit,
@@ -565,6 +565,20 @@ function apply_preview(
     set_value_coordinate(
             element_unit,
             int_health_points_new)
+
+    const int_health_per_model = parseInt(
+            element_unit
+                .getElementsByClassName("health_per_model")[0]
+                .getElementsByClassName("value")[0]
+                .textContent)
+
+    element_unit
+        .setAttribute(
+            "maximum_health",
+            (Math.ceil(int_health_points_new
+            / int_health_per_model)
+            * int_health_per_model)
+                .toString())
 
     if (int_health_points_new <= 0) {
         element_unit
