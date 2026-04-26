@@ -301,10 +301,6 @@ body {
     font-size: 16px;
 }
 
-.data_unit .model_characteristics {
-    margin-bottom: 5px;
-}
-
 .model_property {
     display: flex;
     width: fit-content;
@@ -324,12 +320,7 @@ body {
     text-align: right;
 }
 
-.model_property.model_characteristics .value {
-    padding: 0px 2px;
-    background-color: var(--grey_dark);
-}
-
-.model_property.attack .type {
+.model_property .type {
     width: 120px;
 }
 
