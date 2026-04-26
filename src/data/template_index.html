@@ -88,7 +88,7 @@
                             <br/>
                             Target unit: <b>health points total</b> are reduced by:
                             <br/>
-                            <b>#models</b> * (<b>damage</b>).
+                            <b>max(0, (#models</b> * (<b>damage</b>)) - <b>damage reduction</b>).
                             <br/>
                             <br/>
                             Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).

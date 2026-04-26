@@ -412,6 +412,12 @@ function toggle_select_attack(
             .innerText
             .trim())
 
+        const int_damage_reduction = parseInt(element_unit_attacked
+            .getElementsByClassName("damage_reduction")[0]
+            .getElementsByClassName("value")[0]
+            .innerText
+            .trim())
+
         const text_type_armor = element_unit_attacked
             .getElementsByClassName("health_per_model")[0]
             .getElementsByClassName("type")[0]
@@ -453,8 +459,11 @@ function toggle_select_attack(
         const int_damage_added = Math.min(
                 int_health_current,
                 get_int_damage_type_attack(
-                    int_count_models_attacking
-                        * int_damage))
+                    Math.max(
+                        0,
+                        int_count_models_attacking
+                            * int_damage
+                            - int_damage_reduction)))
 
         const element_difference = element_unit_attacked
             .getElementsByClassName("section difference")[0]
