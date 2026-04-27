@@ -418,12 +418,6 @@ function toggle_select_attack(
             .innerText
             .trim())
 
-        const text_type_armor = element_unit_attacked
-            .getElementsByClassName("health_per_model")[0]
-            .getElementsByClassName("type")[0]
-            .innerText
-            .trim()
-
         const int_count_models_attacked = Math.ceil(
             parseInt(element_unit_attacked
                 .getElementsByClassName("coordinate remaining")[0]

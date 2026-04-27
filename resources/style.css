@@ -297,8 +297,20 @@ body {
 }
 
 .data_unit {
-    padding: 8px 5px;
+    padding: 5px;
     font-size: 16px;
+}
+
+.model_characteristics {
+    display: flex;
+    gap: 15px;
+    padding: 0px 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.model_characteristic .type {
+    font-size: 8px;
 }
 
 .model_property {
