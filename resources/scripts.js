@@ -437,7 +437,8 @@ function toggle_select_attack(
             if (text_type_attack.includes("single")) {
                 return Math.min(
                     int_damage_new,
-                    int_health_per_model)
+                    int_health_per_model
+                        - int_damage_reduction)
             } else if (text_type_attack.includes("volume") && int_count_models_attacked == 1) {
                 return Math.floor(
                     int_damage_new
