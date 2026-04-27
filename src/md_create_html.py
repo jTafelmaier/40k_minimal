@@ -133,7 +133,7 @@ def generate_htmls():
                     + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"model_property health_per_model\"><div class=\"type\">H " \
+                    + "</div><div class=\"model_property health_per_model\"><div class=\"type\">HP " \
                     + dict_unit \
                         ["type_armor"] \
                     + "</div><div class=\"value\">" \
@@ -146,7 +146,7 @@ def generate_htmls():
                         .__str__() \
                     + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"type\">M</div><div class=\"value\">" \
+                    + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
