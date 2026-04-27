@@ -122,9 +122,9 @@
                     "name": "Bladeguard lieutenant",
                     "points_per_model": 100,
                     "health_per_model": 8,
-                    "damage_reduction": 8,
+                    "damage_reduction": 10,
                     "move": 20,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "C",
                     "attacks": [
                         {
@@ -143,11 +143,11 @@
                 },
                 {
                     "name": "Bladeguard veterans",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "health_per_model": 8,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -166,9 +166,9 @@
                 },
                 {
                     "name": "Sternguard veterans",
-                    "points_per_model": 50,
+                    "points_per_model": 75,
                     "health_per_model": 8,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
                     "type_unit": "E",
@@ -302,7 +302,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 12,
                     "move": 10,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "C",
                     "attacks": [
                         {
@@ -319,7 +319,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 8,
                     "move": 10,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -507,7 +507,7 @@
                     "health_per_model": 4,
                     "damage_reduction": 2,
                     "move": 10,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -524,7 +524,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 8,
                     "move": 0,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -541,7 +541,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 8,
                     "move": 0,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -558,7 +558,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 8,
                     "move": 0,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -893,7 +893,7 @@
                     "health_per_model": 16,
                     "damage_reduction": 8,
                     "move": 20,
-                    "type_armor": "shielded",
+                    "type_armor": "",
                     "type_unit": "E",
                     "attacks": [
                         {
