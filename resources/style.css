@@ -232,7 +232,8 @@ body {
 
 .unit_count_modifier {
     flex: 1;
-    padding: 18px 10px;
+    width: fit-content;
+    padding: 18px 4px;
     background-color: var(--grey_dark_blue);
 }
 
@@ -283,7 +284,7 @@ body {
 }
 
 .model {
-    width: 500px;
+    width: 515px;
     height: 165px;
     background-image: url("background.png");
     background-size: cover;
@@ -342,7 +343,6 @@ body {
 
 .coordinates {
     flex: 1;
-    width: 35px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
