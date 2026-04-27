@@ -142,6 +142,29 @@
                     ]
                 },
                 {
+                    "name": "Vanguard veterans",
+                    "points_per_model": 75,
+                    "health_per_model": 8,
+                    "damage_reduction": 4,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 2,
+                            "heavy": false
+                        },
+                        {
+                            "range": "melee",
+                            "type": "",
+                            "damage": 16,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
                     "name": "Bladeguard veterans",
                     "points_per_model": 75,
                     "health_per_model": 8,
@@ -246,6 +269,23 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 16,
+                            "heavy": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Intercessors",
+                    "points_per_model": 50,
+                    "health_per_model": 8,
+                    "damage_reduction": 4,
+                    "move": 20,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 4,
                             "heavy": false
                         }
                     ]
