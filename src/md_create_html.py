@@ -114,7 +114,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"value\">0</div><div class=\"count_models_new\">0</div></div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\" title=\"[" \
+                    + ")\"><div class=\"value\">0</div></div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \

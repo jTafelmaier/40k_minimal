@@ -53,20 +53,13 @@ function set_value_coordinate(
     element_unit
         .getElementsByClassName("coordinate remaining")[0]
         .getElementsByClassName("value")[0]
-        .textContent = int_health_new
+        .textContent = Math.ceil(int_health_new
+            / parseInt(
+                element_unit
+                    .getElementsByClassName("health_per_model")[0]
+                    .getElementsByClassName("value")[0]
+                    .textContent))
             .toString()
-
-    element_unit
-        .getElementsByClassName("count_models_new")[0]
-        .textContent = "("
-            + Math.ceil(int_health_new
-                / parseInt(
-                    element_unit
-                        .getElementsByClassName("health_per_model")[0]
-                        .getElementsByClassName("value")[0]
-                        .textContent))
-                .toString()
-            + " M)"
 }
 
 
@@ -418,12 +411,10 @@ function toggle_select_attack(
             .innerText
             .trim())
 
-        const int_count_models_attacked = Math.ceil(
-            parseInt(element_unit_attacked
-                .getElementsByClassName("coordinate remaining")[0]
-                .getElementsByClassName("value")[0]
-                .textContent)
-                / int_health_per_model)
+        const int_count_models_attacked = parseInt(element_unit_attacked
+            .getElementsByClassName("coordinate remaining")[0]
+            .getElementsByClassName("value")[0]
+            .textContent)
 
         function get_int_damage_type_attack(
             int_damage_new) {
