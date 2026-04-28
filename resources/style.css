@@ -6,7 +6,7 @@
     --grey_dark_blue: #343b4e;
     --grey_main: #4a5266;
     --grey_blue: #535f79;
-    --grey_text: #8d97b0b1;
+    --grey_text: #8d97b0d4;
     --grey_bright: #919eba;
     --grey_brightest: #d4daedbf;
 }
@@ -26,7 +26,7 @@ body {
 #main {
     width: 1250px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -109,13 +109,13 @@ body {
 
 .selection_factions > div {
     display: grid;
-    grid-template-columns: 120px 120px 120px 120px;
-    gap: 14px;
+    grid-template-columns: 170px 170px 170px;
+    gap: 15px;
     margin-top: 10px;
 }
 
 .container_faction_button  {
-    height: 100px;
+    height: 110px;
 }
 
 .image_faction {
@@ -126,10 +126,10 @@ body {
 }
 
 .selection_factions .image_faction {
-    padding-top: 80px;
+    padding-top: 90px;
     padding-bottom: 5px;
     border: 1px solid var(--grey_dark_blue);
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     color: transparent;
     box-shadow: inset 0 -25px 25px -10px var(--grey_dark);
@@ -145,7 +145,7 @@ body {
     scale: 110%;
     border: 1px solid white;
     color: white;
-    box-shadow: inset 0 -50px 50px -20px rgb(191, 194, 202);
+    box-shadow: inset 0 -20px 50px -20px rgb(191, 194, 202);
 }
 
 .list_constructors .image_faction {
@@ -304,10 +304,16 @@ body {
 
 .model_characteristics {
     display: flex;
-    gap: 15px;
-    padding: 0px 4px;
+    gap: 10px;
+    padding: 0px 2px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.model_characteristic {
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #252a376b;
 }
 
 .model_characteristic .type {

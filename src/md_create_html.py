@@ -121,6 +121,9 @@ def generate_htmls():
                     + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
                     + dict_unit \
                         ["name"] \
+                    + " " \
+                    + dict_unit \
+                        ["type_armor"] \
                     + "</div><div class=\"model_characteristics\"><div class=\"model_characteristic movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
@@ -135,9 +138,6 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_characteristic keywords\"><div class=\"type\">KW</div><div class=\"value\">" \
-                    + dict_unit \
-                        ["type_armor"] \
                     + "</div></div></div>" \
                     + "" \
                         .join(

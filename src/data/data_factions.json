@@ -445,7 +445,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 40,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "C",
                     "attacks": [
                         {
@@ -916,7 +916,7 @@
                     "health_per_model": 16,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -1063,7 +1063,7 @@
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "C",
                     "attacks": [
                         {
@@ -1086,7 +1086,7 @@
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "C",
                     "attacks": [
                         {
@@ -1109,7 +1109,7 @@
                     "health_per_model": 2,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -1245,7 +1245,7 @@
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 10,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "E",
                     "attacks": [
                         {
@@ -1262,7 +1262,7 @@
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 10,
-                    "type_armor": "stealth",
+                    "type_armor": "[stealth]",
                     "type_unit": "E",
                     "attacks": [
                         {
