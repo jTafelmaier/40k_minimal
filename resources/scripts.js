@@ -50,16 +50,23 @@ function set_value_coordinate(
     element_unit,
     int_health_new) {
 
-    element_unit
+    const element_coordinate = element_unit
         .getElementsByClassName("coordinate remaining")[0]
+
+    element_coordinate
         .getElementsByClassName("value")[0]
-        .textContent = Math.ceil(int_health_new
-            / parseInt(
-                element_unit
-                    .getElementsByClassName("health_per_model")[0]
-                    .getElementsByClassName("value")[0]
-                    .textContent))
+        .textContent = int_health_new
             .toString()
+
+    element_coordinate
+        .getElementsByClassName("count_models_new")[0]
+        .textContent = "("
+            + Math.ceil(int_health_new
+                / get_int_attribute(
+                    element_coordinate,
+                    "health_per_model"))
+                .toString()
+            + " M)"
 }
 
 
@@ -73,7 +80,7 @@ function toggle_mode_list(
     if (element_list.classList.contains("constructor")) {
         Array.from(element_list
             .querySelectorAll(".unit_faction"))
-            .forEach(element => set_value_coordinate(element, parseInt(element.getElementsByClassName("health_per_model")[0].getElementsByClassName("value")[0].innerText.trim()) * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())))
+            .forEach(element => set_value_coordinate(element, get_int_attribute(element.getElementsByClassName("coordinate remaining")[0], "health_per_model") * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())))
     }
 
     element_list
@@ -89,17 +96,13 @@ function toggle_mode_list(
 function get_int_count_models(
     element_unit) {
 
-    const int_health_per_model = parseInt(element_unit
-        .getElementsByClassName("health_per_model")[0]
-        .getElementsByClassName("value")[0]
-        .innerText
-        .trim())
-
-    return Math.ceil(
-            get_int_attribute(
-                element_unit,
-                "current_health")
-                / int_health_per_model)
+    return element_unit
+        .getElementsByClassName("coordinate remaining")[0]
+        .getElementsByClassName("count_models_new")[0]
+        .textContent
+        .slice(
+            1,
+            -3)
 }
 
 
@@ -167,11 +170,10 @@ function modify_count_models(
             .remove("unselected")
     }
 
-    int_health_per_model = parseInt(element_unit
-        .getElementsByClassName("health_per_model")[0]
-        .getElementsByClassName("value")[0]
-        .innerText
-        .trim())
+    const int_health_per_model = get_int_attribute(
+        element_unit
+            .getElementsByClassName("coordinate remaining")[0],
+        "health_per_model")
 
     element_count
         .textContent = int_count_new
@@ -399,11 +401,10 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        const int_health_per_model = parseInt(element_unit_attacked
-            .getElementsByClassName("health_per_model")[0]
-            .getElementsByClassName("value")[0]
-            .innerText
-            .trim())
+        const int_health_per_model = get_int_attribute(
+            element_unit_attacked
+                .getElementsByClassName("coordinate remaining")[0],
+            "health_per_model")
 
         const int_damage_reduction = parseInt(element_unit_attacked
             .getElementsByClassName("damage_reduction")[0]
@@ -411,10 +412,7 @@ function toggle_select_attack(
             .innerText
             .trim())
 
-        const int_count_models_attacked = parseInt(element_unit_attacked
-            .getElementsByClassName("coordinate remaining")[0]
-            .getElementsByClassName("value")[0]
-            .textContent)
+        const int_count_models_attacked = get_int_count_models(element_unit_attacked)
 
         function get_int_damage_type_attack(
             int_damage_new) {
@@ -559,11 +557,10 @@ function apply_preview(
             element_unit,
             int_health_points_new)
 
-    const int_health_per_model = parseInt(
+    const int_health_per_model = get_int_attribute(
             element_unit
-                .getElementsByClassName("health_per_model")[0]
-                .getElementsByClassName("value")[0]
-                .textContent)
+                .getElementsByClassName("coordinate remaining")[0],
+            "health_per_model")
 
     element_unit
         .setAttribute(

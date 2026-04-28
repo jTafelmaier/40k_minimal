@@ -363,6 +363,14 @@ body {
     color: var(--grey_text);
 }
 
+.count_models_new {
+    display: none;
+}
+
+.unit_faction:hover .count_models_new {
+    display: block;
+}
+
 .match .text_select_unit_instances {
     opacity: 0.0;
 }
