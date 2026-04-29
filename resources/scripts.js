@@ -96,13 +96,14 @@ function toggle_mode_list(
 function get_int_count_models(
     element_unit) {
 
-    return element_unit
+    return parseInt(element_unit
         .getElementsByClassName("coordinate remaining")[0]
         .getElementsByClassName("count_models_new")[0]
         .textContent
+        .trim()
         .slice(
             1,
-            -3)
+            -3))
 }
 
 
@@ -155,6 +156,13 @@ function modify_count_models(
             element_count
                 .textContent)
             + int_change
+
+    set_value_coordinate(
+        element_unit,
+        int_count_new
+            * get_int_attribute(
+                element_unit.getElementsByClassName("coordinate remaining")[0],
+                "health_per_model"))
 
     if (int_count_new < 0) {
        return
