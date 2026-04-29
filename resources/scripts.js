@@ -55,18 +55,11 @@ function set_value_coordinate(
 
     element_coordinate
         .getElementsByClassName("value")[0]
-        .textContent = int_health_new
-            .toString()
-
-    element_coordinate
-        .getElementsByClassName("count_models_new")[0]
-        .textContent = "("
-            + Math.ceil(int_health_new
-                / get_int_attribute(
-                    element_coordinate,
-                    "health_per_model"))
-                .toString()
-            + " M)"
+        .textContent = (int_health_new
+            / get_int_attribute(
+                element_coordinate,
+                "health_per_model"))
+            .toFixed(2)
 }
 
 
@@ -96,14 +89,12 @@ function toggle_mode_list(
 function get_int_count_models(
     element_unit) {
 
-    return parseInt(element_unit
-        .getElementsByClassName("coordinate remaining")[0]
-        .getElementsByClassName("count_models_new")[0]
-        .textContent
-        .trim()
-        .slice(
-            1,
-            -3))
+    return Math.ceil(
+        parseFloat(element_unit
+            .getElementsByClassName("coordinate remaining")[0]
+            .getElementsByClassName("value")[0]
+            .textContent
+            .trim()))
 }
 
 
