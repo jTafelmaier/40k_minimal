@@ -16,13 +16,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -39,13 +39,13 @@
                             "range": "⛶",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -62,13 +62,13 @@
                             "range": "⛶",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -85,13 +85,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -108,13 +108,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -131,13 +131,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -154,13 +154,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -177,13 +177,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -200,13 +200,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "⊹",
                             "type": "single",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -223,13 +223,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -246,7 +246,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -263,13 +263,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "⛶",
                             "type": "single",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -286,7 +286,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -303,13 +303,13 @@
                             "range": "⊹",
                             "type": "volume",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "⯐",
                             "type": "single",
                             "damage": 32,
-                            "heavy": true
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -326,13 +326,13 @@
                             "range": "⛶",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -349,7 +349,7 @@
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -366,7 +366,7 @@
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -383,13 +383,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -406,13 +406,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -429,13 +429,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -452,13 +452,13 @@
                             "range": "⯐",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "volume",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -475,13 +475,13 @@
                             "range": "⛶",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 }
@@ -503,7 +503,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 1,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -520,7 +520,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 1,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -537,7 +537,7 @@
                             "range": "⛶",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -554,7 +554,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -571,7 +571,7 @@
                             "range": "⊹",
                             "type": "single",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -588,7 +588,7 @@
                             "range": "⯐",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -605,7 +605,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -622,13 +622,13 @@
                             "range": "⊹",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "⊹",
                             "type": "single",
                             "damage": 32,
-                            "heavy": true
+                            "restrictions": "heavy"
                         }
                     ]
                 }
@@ -650,7 +650,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 64,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -667,7 +667,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -684,7 +684,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -701,13 +701,13 @@
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -724,7 +724,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -741,13 +741,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -764,7 +764,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 1,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 }
@@ -786,13 +786,13 @@
                             "range": "melee",
                             "type": "",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 64,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -809,13 +809,13 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -832,13 +832,13 @@
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -855,13 +855,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -878,7 +878,7 @@
                             "range": "⯐",
                             "type": "volume",
                             "damage": 8,
-                            "heavy": true
+                            "restrictions": "heavy"
                         }
                     ]
                 }
@@ -900,13 +900,13 @@
                             "range": "⯐",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "volume",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -923,7 +923,7 @@
                             "range": "⯐",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -940,7 +940,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -957,7 +957,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -974,7 +974,7 @@
                             "range": "⯐",
                             "type": "single",
                             "damage": 32,
-                            "heavy": true
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -991,7 +991,7 @@
                             "range": "⊹",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": true
+                            "restrictions": "heavy"
                         }
                     ]
                 }
@@ -1013,7 +1013,7 @@
                             "range": "melee",
                             "type": "volume",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1030,13 +1030,13 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1053,7 +1053,7 @@
                             "range": "melee",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1070,13 +1070,13 @@
                             "range": "melee",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1093,13 +1093,13 @@
                             "range": "melee",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "single",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1116,7 +1116,7 @@
                             "range": "melee",
                             "type": "",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1133,7 +1133,7 @@
                             "range": "melee",
                             "type": "",
                             "damage": 1,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1150,7 +1150,7 @@
                             "range": "⯐",
                             "type": "volume",
                             "damage": 8,
-                            "heavy": true
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -1167,7 +1167,7 @@
                             "range": "⛶",
                             "type": "volume",
                             "damage": 16,
-                            "heavy": true
+                            "restrictions": "static"
                         }
                     ]
                 },
@@ -1184,13 +1184,13 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 4,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "melee",
                             "type": "",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 }
@@ -1212,7 +1212,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 16,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1229,13 +1229,13 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         },
                         {
                             "range": "⛶",
                             "type": "single",
                             "damage": 32,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1252,7 +1252,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 },
@@ -1269,7 +1269,7 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 8,
-                            "heavy": false
+                            "restrictions": ""
                         }
                     ]
                 }

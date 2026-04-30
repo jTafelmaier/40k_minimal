@@ -81,7 +81,9 @@ def generate_htmls():
                         + " " \
                         + dict_attack \
                             ["type"] \
-                        + (" heavy" if dict_attack["heavy"] else "") \
+                        + " " \
+                        + dict_attack \
+                            ["restrictions"] \
                         + "</div><div class=\"value\">" \
                         + dict_attack \
                             ["damage"] \
