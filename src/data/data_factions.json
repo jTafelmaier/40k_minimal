@@ -222,8 +222,8 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 8,
-                            "restrictions": ""
+                            "damage": 10,
+                            "restrictions": "heavy"
                         },
                         {
                             "range": "melee",
@@ -245,8 +245,8 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 4,
-                            "restrictions": ""
+                            "damage": 6,
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -269,7 +269,7 @@
                             "range": "⛶",
                             "type": "single",
                             "damage": 16,
-                            "restrictions": ""
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -503,7 +503,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 1,
-                            "restrictions": ""
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -520,7 +520,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 1,
-                            "restrictions": ""
+                            "restrictions": "heavy"
                         }
                     ]
                 },
@@ -622,7 +622,7 @@
                             "range": "⊹",
                             "type": "volume",
                             "damage": 16,
-                            "restrictions": ""
+                            "restrictions": "heavy"
                         },
                         {
                             "range": "⊹",
@@ -878,7 +878,7 @@
                             "range": "⯐",
                             "type": "volume",
                             "damage": 8,
-                            "restrictions": "heavy"
+                            "restrictions": "static"
                         }
                     ]
                 }
@@ -1252,7 +1252,7 @@
                             "range": "⊹",
                             "type": "",
                             "damage": 2,
-                            "restrictions": ""
+                            "restrictions": "heavy"
                         }
                     ]
                 },
