@@ -279,10 +279,6 @@ body {
     color: white;
 }
 
-.unselected .model {
-    opacity: 0.5;
-}
-
 .model {
     width: 515px;
     height: 165px;
