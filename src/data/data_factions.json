@@ -1018,6 +1018,23 @@
                     ]
                 },
                 {
+                    "name": "Raveners",
+                    "points_per_model": 50,
+                    "health_per_model": 8,
+                    "damage_reduction": 1,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "melee",
+                            "type": "volume",
+                            "damage": 16,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
                     "name": "Prime with lash whip",
                     "points_per_model": 75,
                     "health_per_model": 16,
