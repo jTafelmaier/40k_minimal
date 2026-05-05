@@ -244,6 +244,11 @@ body {
 .models > div.active {
     height: 5px;
     margin: 1px;
+    background-color: transparent;
+}
+
+.unit_faction:hover .models > div.active,
+.attacked .models > div.active {
     background-color: var(--grey_text);
 }
 
