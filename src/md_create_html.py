@@ -94,9 +94,9 @@ def generate_htmls():
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
-                    + "\" maximum_health=\"0\" current_health=\"0\" points_per_model=\"" \
+                    + "\" maximum_health=\"0\" current_health=\"0\" requisition_per_model=\"" \
                     + dict_unit \
-                        ["points_per_model"] \
+                        ["requisition_per_model"] \
                         .__str__() \
                     + "\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
@@ -124,9 +124,9 @@ def generate_htmls():
                         .__str__() \
                     + " health\n" \
                     + dict_unit \
-                        ["points_per_model"] \
+                        ["requisition_per_model"] \
                         .__str__() \
-                    + " points cost\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + " requisition\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
@@ -170,7 +170,7 @@ def generate_htmls():
                 + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
                     .upper() \
-                + "</div></div></div><div class=\"constructor_state\"><div class=\"text_select_unit_instances\">Select unit instances:</div><div class=\"points_total\">0 points</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
+                + "</div></div></div><div class=\"constructor_state\"><div class=\"text_select_unit_instances\">Select unit instances:</div><div class=\"requisition_total\">0 requisition</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
                 + text_side \
                 + "')\">switch mode</div></div></div><div class=\"units_faction\">" \
                 + "" \

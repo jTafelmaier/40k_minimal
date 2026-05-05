@@ -5,7 +5,7 @@
             "units": [
                 {
                     "name": "Captain Titus",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 5,
                     "move": 20,
@@ -28,7 +28,7 @@
                 },
                 {
                     "name": "Terminator captain",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 5,
                     "move": 10,
@@ -51,7 +51,7 @@
                 },
                 {
                     "name": "Terminator squad",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 10,
@@ -74,7 +74,7 @@
                 },
                 {
                     "name": "Captain with jump pack",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 40,
@@ -97,7 +97,7 @@
                 },
                 {
                     "name": "Jump pack intercessors",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 40,
@@ -120,7 +120,7 @@
                 },
                 {
                     "name": "Bladeguard veterans",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -143,7 +143,7 @@
                 },
                 {
                     "name": "Sternguard veterans",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -166,7 +166,7 @@
                 },
                 {
                     "name": "Captain in gravis armour",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -189,7 +189,7 @@
                 },
                 {
                     "name": "Heavy intercessors",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -206,7 +206,7 @@
                 },
                 {
                     "name": "Eradicators",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -229,7 +229,7 @@
                 },
                 {
                     "name": "Gladiator lancer",
-                    "points_per_model": 400,
+                    "requisition_per_model": 400,
                     "health_per_model": 32,
                     "damage_reduction": 8,
                     "move": 40,
@@ -252,7 +252,7 @@
                 },
                 {
                     "name": "Belial",
-                    "points_per_model": 125,
+                    "requisition_per_model": 125,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 10,
@@ -275,7 +275,7 @@
                 },
                 {
                     "name": "Deathwing strikemaster",
-                    "points_per_model": 125,
+                    "requisition_per_model": 125,
                     "health_per_model": 8,
                     "damage_reduction": 5,
                     "move": 10,
@@ -292,7 +292,7 @@
                 },
                 {
                     "name": "Deathwing knights",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 10,
@@ -309,7 +309,7 @@
                 },
                 {
                     "name": "Castellan",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -332,7 +332,7 @@
                 },
                 {
                     "name": "Sword brethren",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -355,7 +355,7 @@
                 },
                 {
                     "name": "Crusader squad",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -378,7 +378,7 @@
                 },
                 {
                     "name": "Aethon Shaan",
-                    "points_per_model": 150,
+                    "requisition_per_model": 150,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 40,
@@ -401,7 +401,7 @@
                 },
                 {
                     "name": "Castellan Crowe",
-                    "points_per_model": 125,
+                    "requisition_per_model": 125,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -429,7 +429,7 @@
             "units": [
                 {
                     "name": "Command squad",
-                    "points_per_model": 10,
+                    "requisition_per_model": 10,
                     "health_per_model": 1,
                     "damage_reduction": 0,
                     "move": 10,
@@ -446,7 +446,7 @@
                 },
                 {
                     "name": "Shock troops",
-                    "points_per_model": 10,
+                    "requisition_per_model": 10,
                     "health_per_model": 1,
                     "damage_reduction": 0,
                     "move": 10,
@@ -463,7 +463,7 @@
                 },
                 {
                     "name": "Combat engineers",
-                    "points_per_model": 10,
+                    "requisition_per_model": 10,
                     "health_per_model": 1,
                     "damage_reduction": 0,
                     "move": 10,
@@ -480,7 +480,7 @@
                 },
                 {
                     "name": "Heavy weapon squad [autocannon]",
-                    "points_per_model": 25,
+                    "requisition_per_model": 25,
                     "health_per_model": 2,
                     "damage_reduction": 2,
                     "move": 10,
@@ -497,7 +497,7 @@
                 },
                 {
                     "name": "Artillery team [siege]",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 0,
@@ -514,7 +514,7 @@
                 },
                 {
                     "name": "Artillery team [mortar]",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 0,
@@ -531,7 +531,7 @@
                 },
                 {
                     "name": "Artillery team [quad]",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 0,
@@ -548,7 +548,7 @@
                 },
                 {
                     "name": "Rogal Dorn battle tank",
-                    "points_per_model": 250,
+                    "requisition_per_model": 250,
                     "health_per_model": 32,
                     "damage_reduction": 8,
                     "move": 20,
@@ -576,7 +576,7 @@
             "units": [
                 {
                     "name": "Angron",
-                    "points_per_model": 400,
+                    "requisition_per_model": 400,
                     "health_per_model": 64,
                     "damage_reduction": 2,
                     "move": 40,
@@ -593,7 +593,7 @@
                 },
                 {
                     "name": "Lord Invocatus",
-                    "points_per_model": 125,
+                    "requisition_per_model": 125,
                     "health_per_model": 32,
                     "damage_reduction": 2,
                     "move": 40,
@@ -610,7 +610,7 @@
                 },
                 {
                     "name": "Slaughterbound",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 32,
                     "damage_reduction": 2,
                     "move": 20,
@@ -627,7 +627,7 @@
                 },
                 {
                     "name": "Exalted Eightbound",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 16,
                     "damage_reduction": 1,
                     "move": 20,
@@ -650,7 +650,7 @@
                 },
                 {
                     "name": "Eightbound",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 16,
                     "damage_reduction": 1,
                     "move": 20,
@@ -667,7 +667,7 @@
                 },
                 {
                     "name": "Khorne Berzerkers",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 1,
                     "move": 20,
@@ -690,7 +690,7 @@
                 },
                 {
                     "name": "Jakhals",
-                    "points_per_model": 5,
+                    "requisition_per_model": 5,
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
@@ -712,7 +712,7 @@
             "units": [
                 {
                     "name": "Fulgrim",
-                    "points_per_model": 400,
+                    "requisition_per_model": 400,
                     "health_per_model": 32,
                     "damage_reduction": 4,
                     "move": 40,
@@ -735,7 +735,7 @@
                 },
                 {
                     "name": "Lucius the eternal",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -758,7 +758,7 @@
                 },
                 {
                     "name": "Flawless blades",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -781,7 +781,7 @@
                 },
                 {
                     "name": "Infractors",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -804,7 +804,7 @@
                 },
                 {
                     "name": "Noise marines",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 8,
                     "damage_reduction": 2,
                     "move": 20,
@@ -826,7 +826,7 @@
             "units": [
                 {
                     "name": "Nekrosor Ammentar",
-                    "points_per_model": 200,
+                    "requisition_per_model": 200,
                     "health_per_model": 32,
                     "damage_reduction": 4,
                     "move": 40,
@@ -849,7 +849,7 @@
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 16,
                     "damage_reduction": 4,
                     "move": 20,
@@ -866,7 +866,7 @@
                 },
                 {
                     "name": "Skorpekh destroyers",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 16,
                     "damage_reduction": 4,
                     "move": 20,
@@ -883,7 +883,7 @@
                 },
                 {
                     "name": "Ophydian destroyers",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 40,
@@ -900,7 +900,7 @@
                 },
                 {
                     "name": "Heavy lokhust destroyer [gauss]",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 16,
                     "damage_reduction": 4,
                     "move": 20,
@@ -917,7 +917,7 @@
                 },
                 {
                     "name": "Heavy lokhust destroyer [enmitic]",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 16,
                     "damage_reduction": 4,
                     "move": 20,
@@ -939,7 +939,7 @@
             "units": [
                 {
                     "name": "Prime with lash whip",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 16,
                     "damage_reduction": 2,
                     "move": 20,
@@ -962,7 +962,7 @@
                 },
                 {
                     "name": "Winged prime",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 16,
                     "damage_reduction": 2,
                     "move": 40,
@@ -979,7 +979,7 @@
                 },
                 {
                     "name": "Deathleaper",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 8,
                     "damage_reduction": 4,
                     "move": 20,
@@ -1002,7 +1002,7 @@
                 },
                 {
                     "name": "Lictor",
-                    "points_per_model": 75,
+                    "requisition_per_model": 75,
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 20,
@@ -1025,7 +1025,7 @@
                 },
                 {
                     "name": "Von Ryans leapers",
-                    "points_per_model": 25,
+                    "requisition_per_model": 25,
                     "health_per_model": 2,
                     "damage_reduction": 2,
                     "move": 20,
@@ -1042,7 +1042,7 @@
                 },
                 {
                     "name": "Hormagaunts",
-                    "points_per_model": 10,
+                    "requisition_per_model": 10,
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 20,
@@ -1059,7 +1059,7 @@
                 },
                 {
                     "name": "Biovore",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 32,
                     "damage_reduction": 2,
                     "move": 20,
@@ -1076,7 +1076,7 @@
                 },
                 {
                     "name": "Pyrovore",
-                    "points_per_model": 100,
+                    "requisition_per_model": 100,
                     "health_per_model": 32,
                     "damage_reduction": 2,
                     "move": 20,
@@ -1093,7 +1093,7 @@
                 },
                 {
                     "name": "Norn Assimilator",
-                    "points_per_model": 250,
+                    "requisition_per_model": 250,
                     "health_per_model": 64,
                     "damage_reduction": 4,
                     "move": 20,
@@ -1116,7 +1116,7 @@
                 },
                 {
                     "name": "Raveners",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 8,
                     "damage_reduction": 1,
                     "move": 40,
@@ -1133,7 +1133,7 @@
                 },
                 {
                     "name": "The red terror",
-                    "points_per_model": 200,
+                    "requisition_per_model": 200,
                     "health_per_model": 32,
                     "damage_reduction": 4,
                     "move": 40,
@@ -1155,7 +1155,7 @@
             "units": [
                 {
                     "name": "Scatterflare",
-                    "points_per_model": 150,
+                    "requisition_per_model": 150,
                     "health_per_model": 12,
                     "damage_reduction": 8,
                     "move": 40,
@@ -1172,7 +1172,7 @@
                 },
                 {
                     "name": "Sunsear",
-                    "points_per_model": 150,
+                    "requisition_per_model": 150,
                     "health_per_model": 12,
                     "damage_reduction": 8,
                     "move": 40,
@@ -1195,7 +1195,7 @@
                 },
                 {
                     "name": "Stealth suits [r]",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 10,
@@ -1212,7 +1212,7 @@
                 },
                 {
                     "name": "Stealth suits [f]",
-                    "points_per_model": 50,
+                    "requisition_per_model": 50,
                     "health_per_model": 4,
                     "damage_reduction": 4,
                     "move": 10,

@@ -104,32 +104,32 @@ function get_int_count_models(
 }
 
 
-function update_points_total(
+function update_requisition_total(
     text_side) {
 
-    function get_int_points_cost_unit(
+    function get_int_requisition_unit(
         element_unit){
 
         return get_int_count_models(element_unit)
             * parseInt(
                 element_unit
-                    .getAttribute("points_per_model"))
+                    .getAttribute("requisition_per_model"))
     }
 
     const element_faction = document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
 
-    const int_points_total = Array.from(element_faction
+    const int_requisition_total = Array.from(element_faction
         .getElementsByClassName("unit_faction"))
-        .map(get_int_points_cost_unit)
+        .map(get_int_requisition_unit)
         .reduce((a, b) => a + b)
 
     element_faction
-        .getElementsByClassName("points_total")[0]
-        .textContent = int_points_total
+        .getElementsByClassName("requisition_total")[0]
+        .textContent = int_requisition_total
             .toString()
-            + " points"
+            + " requisition"
 }
 
 
@@ -190,7 +190,7 @@ function modify_count_models(
         .textContent = int_count_new
             .toString()
 
-    update_points_total(text_side)
+    update_requisition_total(text_side)
 }
 
 
@@ -564,6 +564,6 @@ function apply_preview(
 
     hide_preview_attack()
 
-    update_points_total(text_side)
+    update_requisition_total(text_side)
 }
 
