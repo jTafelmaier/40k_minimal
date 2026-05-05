@@ -317,11 +317,11 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit) {
 
-        int_health_initial = get_int_attribute(
+        const int_health_initial = get_int_attribute(
                 element_unit,
                 "maximum_health")
 
-        int_health_current = get_int_attribute(
+        const int_health_current = get_int_attribute(
                 element_unit,
                 "current_health")
 
