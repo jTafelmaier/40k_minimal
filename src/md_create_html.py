@@ -98,7 +98,10 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ", -1)\">-1</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" health_per_model=\"" \
+                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"models\">" \
+                    + ("<div />" \
+                        * 20) \
+                    + "</div><div class=\"coordinates\"><div class=\"coordinate remaining\" health_per_model=\"" \
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \

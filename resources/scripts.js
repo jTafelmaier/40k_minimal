@@ -46,20 +46,46 @@ function return_to_faction_selection(
 }
 
 
-function set_value_coordinate(
+function display_unit_state(
     element_unit,
     int_health_new) {
 
     const element_coordinate = element_unit
         .getElementsByClassName("coordinate remaining")[0]
 
+    const int_health_per_model = get_int_attribute(
+            element_coordinate,
+            "health_per_model")
+
+    const int_count_models = Math.ceil(
+            int_health_new
+                / int_health_per_model)
+
+    const int_health_model_remaining = int_health_new
+        - ((int_count_models
+            - 1)
+            * int_health_per_model)
+
+    set_height_bar(
+            element_coordinate,
+            int_health_model_remaining,
+            int_health_per_model)
+
     element_coordinate
         .getElementsByClassName("value")[0]
-        .textContent = (int_health_new
-            / get_int_attribute(
-                element_coordinate,
-                "health_per_model"))
-            .toFixed(2)
+        .textContent = int_health_model_remaining
+
+    const array_elements_models = Array.from(element_unit
+        .getElementsByClassName("models")[0]
+        .children)
+
+    array_elements_models
+        .slice(0, int_count_models)
+        .forEach(element => element.classList.add("active"))
+
+    array_elements_models
+        .slice(int_count_models)
+        .forEach(element => element.classList.remove("active"))
 }
 
 
@@ -69,12 +95,6 @@ function toggle_mode_list(
     const element_list = document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
-
-    if (element_list.classList.contains("constructor")) {
-        Array.from(element_list
-            .querySelectorAll(".unit_faction"))
-            .forEach(element => set_value_coordinate(element, get_int_attribute(element.getElementsByClassName("coordinate remaining")[0], "health_per_model") * parseInt(element.querySelectorAll(".count_models")[0].textContent.trim())))
-    }
 
     element_list
         .classList
@@ -89,12 +109,10 @@ function toggle_mode_list(
 function get_int_count_models(
     element_unit) {
 
-    return Math.ceil(
-        parseFloat(element_unit
-            .getElementsByClassName("coordinate remaining")[0]
-            .getElementsByClassName("value")[0]
-            .textContent
-            .trim()))
+    return element_unit
+        .getElementsByClassName("models")[0]
+        .getElementsByClassName("active")
+        .length
 }
 
 
@@ -148,12 +166,27 @@ function modify_count_models(
                 .textContent)
             + int_change
 
-    set_value_coordinate(
-        element_unit,
-        int_count_new
-            * get_int_attribute(
-                element_unit.getElementsByClassName("coordinate remaining")[0],
-                "health_per_model"))
+    const int_health_full = int_count_new
+        * get_int_attribute(
+            element_unit
+                .getElementsByClassName("coordinate remaining")[0],
+            "health_per_model")
+
+    element_unit
+        .setAttribute(
+            "maximum_health",
+            int_health_full
+                .toString())
+
+    element_unit
+        .setAttribute(
+            "current_health",
+            int_health_full
+                .toString())
+
+    display_unit_state(
+            element_unit,
+            int_health_full)
 
     if (int_count_new < 0) {
        return
@@ -169,26 +202,9 @@ function modify_count_models(
             .remove("unselected")
     }
 
-    const int_health_per_model = get_int_attribute(
-        element_unit
-            .getElementsByClassName("coordinate remaining")[0],
-        "health_per_model")
-
     element_count
         .textContent = int_count_new
             .toString()
-
-    element_unit
-        .setAttribute(
-            "maximum_health",
-            int_count_new
-                * int_health_per_model)
-
-    element_unit
-        .setAttribute(
-            "current_health",
-            int_count_new
-                * int_health_per_model)
 
     update_points_total(text_side)
 }
@@ -331,13 +347,7 @@ function hide_preview_attack() {
                 int_health_current,
                 int_health_initial)
 
-        set_height_bar(
-                element_unit
-                    .getElementsByClassName("coordinate remaining")[0],
-                int_health_current,
-                int_health_initial)
-
-        set_value_coordinate(
+        display_unit_state(
                 element_unit,
                 int_health_current)
 
@@ -462,14 +472,7 @@ function toggle_select_attack(
                         * int_health_per_model),
                 int_health_per_model)
 
-        set_height_bar(
-                element_unit_attacked
-                    .getElementsByClassName("coordinate remaining")[0],
-                int_health_current
-                    - int_damage_added,
-                int_health_initial)
-
-        set_value_coordinate(
+        display_unit_state(
                 element_unit_attacked,
                 int_health_current
                     - int_damage_added)
@@ -535,25 +538,13 @@ function apply_preview(
                 .getElementsByClassName("section difference")[0],
             "value")
 
-    element_unit
-        .setAttribute(
-            "current_health",
-            int_health_points_new
-                .toString())
-
     set_height_bar(
             element_unit
                 .getElementsByClassName("section remaining")[0],
             int_health_points_new,
             int_health_initial)
 
-    set_height_bar(
-            element_unit
-                .getElementsByClassName("coordinate remaining")[0],
-            int_health_points_new,
-            int_health_initial)
-
-    set_value_coordinate(
+    display_unit_state(
             element_unit,
             int_health_points_new)
 
@@ -564,11 +555,17 @@ function apply_preview(
 
     element_unit
         .setAttribute(
+            "current_health",
+            int_health_points_new
+                .toString())
+
+    element_unit
+        .setAttribute(
             "maximum_health",
             (Math.ceil(int_health_points_new
-            / int_health_per_model)
-            * int_health_per_model)
-                .toString())
+                / int_health_per_model)
+                * int_health_per_model)
+                    .toString())
 
     if (int_health_points_new <= 0) {
         element_unit

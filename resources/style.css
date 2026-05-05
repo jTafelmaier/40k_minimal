@@ -232,6 +232,13 @@ body {
         0 0);
 }
 
+.models > div.active {
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    background-color: var(--grey_text);
+}
+
 .unit_count_modifier {
     flex: 1;
     padding: 10px 4px;
