@@ -63,19 +63,6 @@ function display_unit_state(
             - 1)
             * int_health_per_model)
 
-    const element_coordinate = element_unit
-        .getElementsByClassName("coordinate remaining")[0]
-
-    set_height_bar(
-            element_coordinate,
-            int_health_model_remaining,
-            int_health_per_model)
-
-    element_coordinate
-        .getElementsByClassName("value")[0]
-        .textContent = int_health_model_remaining
-            .toString()
-
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
         .children)
