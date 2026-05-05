@@ -199,7 +199,7 @@ body {
 }
 
 .toggle_mode_list {
-    width: 100px;
+    width: 20px;
 }
 
 .constructor_state {
@@ -214,7 +214,7 @@ body {
     margin-right: 10px;
 }
 
-.text_select_unit_instances {
+.spacing_select_unit_instances {
     flex: 1;
 }
 
@@ -348,7 +348,7 @@ body {
     float: right;
 }
 
-.match .text_select_unit_instances {
+.match .spacing_select_unit_instances {
     opacity: 0.0;
 }
 

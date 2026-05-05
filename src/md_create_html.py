@@ -170,9 +170,9 @@ def generate_htmls():
                 + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
                     .upper() \
-                + "</div></div></div><div class=\"constructor_state\"><div class=\"text_select_unit_instances\">Select unit instances:</div><div class=\"requisition_total\">0 requisition</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
+                + "</div></div></div><div class=\"constructor_state\"><div class=\"spacing_select_unit_instances\"></div><div class=\"requisition_total\">0 requisition</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
                 + text_side \
-                + "')\">switch mode</div></div></div><div class=\"units_faction\">" \
+                + "')\">⮀</div></div></div><div class=\"units_faction\">" \
                 + "" \
                     .join(
                         map(
