@@ -61,7 +61,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
@@ -84,7 +84,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
@@ -388,7 +388,7 @@
                         {
                             "range": "⯐",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
@@ -490,7 +490,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": "static"
                         }
                     ]
@@ -743,12 +743,6 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⛶",
-                            "type": "single",
-                            "damage": 5,
-                            "restrictions": ""
-                        },
-                        {
                             "range": "⚔",
                             "type": "single",
                             "damage": 40,
@@ -947,12 +941,6 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⛶",
-                            "type": "single",
-                            "damage": 5,
-                            "restrictions": ""
-                        },
-                        {
                             "range": "⚔",
                             "type": "",
                             "damage": 20,
@@ -1012,7 +1000,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
@@ -1035,7 +1023,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -1103,7 +1091,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
@@ -1205,7 +1193,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 5,
+                            "damage": 10,
                             "restrictions": "heavy"
                         }
                     ]
@@ -1222,7 +1210,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 10,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
