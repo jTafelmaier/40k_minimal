@@ -209,8 +209,9 @@ body {
 }
 
 .requisition_total {
-    width: 80px;
-    text-align: center;
+    width: 110px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .text_select_unit_instances {
