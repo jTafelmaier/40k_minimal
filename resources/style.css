@@ -185,8 +185,8 @@ body {
 }
 
 .interactive:hover {
-    color: white;
-    background-color: var(--grey_darkest);
+    color: var(--grey_darkest);
+    background-color: white;
 }
 
 .return_to_faction_selection {
