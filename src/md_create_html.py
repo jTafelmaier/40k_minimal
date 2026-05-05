@@ -98,10 +98,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ", -1)\">-1</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"models\">" \
-                    + ("<div />" \
-                        * 20) \
-                    + "</div><div class=\"coordinates\"><div class=\"coordinate remaining\" health_per_model=\"" \
+                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" health_per_model=\"" \
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
@@ -111,7 +108,10 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"value\">0.0</div></div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\" title=\"[" \
+                    + ")\"><div class=\"value\">0.0</div></div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div><div class=\"models\">" \
+                    + ("<div />" \
+                        * 20) \
+                    + "</div></div><div class=\"model\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
                     + "], " \

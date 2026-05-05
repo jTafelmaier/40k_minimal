@@ -277,7 +277,7 @@ body {
 }
 
 .model {
-    width: 515px;
+    width: 525px;
     height: 165px;
     background-image: url("background.png");
     background-size: cover;
@@ -353,6 +353,11 @@ body {
     min-height: 12px;
     padding-right: 2px;
     text-align: right;
+    color: transparent;
+}
+
+.unit_faction:hover .coordinate {
+    color: white;
 }
 
 .match .text_select_unit_instances {
