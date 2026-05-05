@@ -151,7 +151,7 @@ def generate_htmls():
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div>" \
+                    + "</div></div><br/>" \
                     + "" \
                         .join(
                             map(
