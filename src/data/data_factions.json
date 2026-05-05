@@ -107,7 +107,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -130,7 +130,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -216,7 +216,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -319,7 +319,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -342,7 +342,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -439,7 +439,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 1,
+                            "damage": 5,
                             "restrictions": "heavy"
                         }
                     ]
@@ -456,7 +456,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 1,
+                            "damage": 5,
                             "restrictions": "heavy"
                         }
                     ]
@@ -473,7 +473,7 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         }
                     ]
@@ -677,7 +677,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -700,7 +700,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 1,
+                            "damage": 5,
                             "restrictions": ""
                         }
                     ]
@@ -791,7 +791,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -1052,7 +1052,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 1,
+                            "damage": 5,
                             "restrictions": ""
                         }
                     ]
@@ -1205,7 +1205,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 2,
+                            "damage": 5,
                             "restrictions": "heavy"
                         }
                     ]
