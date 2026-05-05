@@ -141,15 +141,15 @@ def generate_htmls():
                     + " " \
                     + dict_unit \
                         ["type_armor"] \
-                    + "</div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
+                    + dict_unit \
+                        ["damage_reduction"] \
+                        .__str__() \
+                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
-                        .__str__() \
-                    + "</div></div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
-                    + dict_unit \
-                        ["damage_reduction"] \
                         .__str__() \
                     + "</div></div>" \
                     + "" \
