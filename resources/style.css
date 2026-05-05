@@ -182,8 +182,6 @@ body {
     text-align: center;
     user-select: none;
     border-radius: 2px;
-    color: var(--grey_darkest);
-    background-color: white;
 }
 
 .interactive:hover {
