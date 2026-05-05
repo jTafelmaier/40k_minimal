@@ -446,11 +446,9 @@ function toggle_select_attack(
                             + int_damage_reduction)
                     * int_count_models_attacking)
 
-        const element_difference = element_unit_attacked
-            .getElementsByClassName("section difference")[0]
-
         set_height_bar(
-                element_difference,
+                element_unit_attacked
+                    .getElementsByClassName("section difference")[0],
                 int_damage_added,
                 int_health_initial)
 
