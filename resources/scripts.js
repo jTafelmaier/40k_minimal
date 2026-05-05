@@ -450,14 +450,17 @@ function toggle_select_attack(
                 element_unit_attacked
                     .getElementsByClassName("section difference")[0],
                 int_damage_added,
-                int_health_initial)
+                int_health_per_model)
 
         set_height_bar(
                 element_unit_attacked
                     .getElementsByClassName("section remaining")[0],
                 int_health_current
-                    - int_damage_added,
-                int_health_initial)
+                    - int_damage_added
+                    - ((int_count_models_attacked
+                        - 1)
+                        * int_health_per_model),
+                int_health_per_model)
 
         set_height_bar(
                 element_unit_attacked
