@@ -106,13 +106,13 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ", -1)\">-1</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
+                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\"><div class=\"value\">0.0</div></div></div><div class=\"health_bar\"><div class=\"section difference\" onmouseenter=\"mouseenter_attack(" \
                     + text_parameters_functions \
                     + ")\" onmouseleave=\"mouseleave_attack(" \
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"value\">0.0</div></div></div><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div><div class=\"models\">" \
+                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div><div class=\"models\">" \
                     + ("<div />" \
                         * 20) \
                     + "</div></div><div class=\"model\" title=\"[" \
