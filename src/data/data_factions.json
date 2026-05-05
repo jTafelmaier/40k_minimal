@@ -849,7 +849,7 @@
                 },
                 {
                     "name": "Hexmark destroyer",
-                    "requisition_per_model": 100,
+                    "requisition_per_model": 150,
                     "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
@@ -866,7 +866,7 @@
                 },
                 {
                     "name": "Skorpekh destroyers",
-                    "requisition_per_model": 50,
+                    "requisition_per_model": 75,
                     "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
