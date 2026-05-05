@@ -6,7 +6,7 @@
                 {
                     "name": "Captain Titus",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 20,
                     "type_armor": "",
@@ -15,13 +15,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -29,7 +29,7 @@
                 {
                     "name": "Terminator captain",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 10,
                     "type_armor": "",
@@ -38,13 +38,13 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -52,7 +52,7 @@
                 {
                     "name": "Terminator squad",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
@@ -61,13 +61,13 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -75,7 +75,7 @@
                 {
                     "name": "Captain with jump pack",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
@@ -84,13 +84,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -98,7 +98,7 @@
                 {
                     "name": "Jump pack intercessors",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
@@ -113,7 +113,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -121,7 +121,7 @@
                 {
                     "name": "Bladeguard veterans",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -136,7 +136,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -144,7 +144,7 @@
                 {
                     "name": "Sternguard veterans",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -153,13 +153,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⊹",
                             "type": "single",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -167,7 +167,7 @@
                 {
                     "name": "Captain in gravis armour",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -182,7 +182,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -190,7 +190,7 @@
                 {
                     "name": "Heavy intercessors",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -207,7 +207,7 @@
                 {
                     "name": "Eradicators",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -222,7 +222,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "heavy"
                         }
                     ]
@@ -230,7 +230,7 @@
                 {
                     "name": "Gladiator lancer",
                     "requisition_per_model": 400,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
@@ -239,13 +239,13 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⯐",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": "heavy"
                         }
                     ]
@@ -253,7 +253,7 @@
                 {
                     "name": "Belial",
                     "requisition_per_model": 125,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
@@ -262,13 +262,13 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -276,7 +276,7 @@
                 {
                     "name": "Deathwing strikemaster",
                     "requisition_per_model": 125,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 10,
                     "type_armor": "",
@@ -285,7 +285,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -293,7 +293,7 @@
                 {
                     "name": "Deathwing knights",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
@@ -302,7 +302,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -310,7 +310,7 @@
                 {
                     "name": "Castellan",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -325,7 +325,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -333,7 +333,7 @@
                 {
                     "name": "Sword brethren",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -348,7 +348,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -356,7 +356,7 @@
                 {
                     "name": "Crusader squad",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -365,13 +365,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -379,7 +379,7 @@
                 {
                     "name": "Aethon Shaan",
                     "requisition_per_model": 150,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "[stealth]",
@@ -388,13 +388,13 @@
                         {
                             "range": "⯐",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -402,7 +402,7 @@
                 {
                     "name": "Castellan Crowe",
                     "requisition_per_model": 125,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -411,13 +411,13 @@
                         {
                             "range": "⛶",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -490,7 +490,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": "static"
                         }
                     ]
@@ -498,7 +498,7 @@
                 {
                     "name": "Artillery team [siege]",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
@@ -507,7 +507,7 @@
                         {
                             "range": "⊹",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": "static"
                         }
                     ]
@@ -515,7 +515,7 @@
                 {
                     "name": "Artillery team [mortar]",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
@@ -524,7 +524,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "static"
                         }
                     ]
@@ -532,7 +532,7 @@
                 {
                     "name": "Artillery team [quad]",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
@@ -541,7 +541,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "static"
                         }
                     ]
@@ -549,7 +549,7 @@
                 {
                     "name": "Rogal Dorn battle tank",
                     "requisition_per_model": 250,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 8,
                     "move": 20,
                     "type_armor": "",
@@ -558,13 +558,13 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "heavy"
                         },
                         {
                             "range": "⊹",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": "heavy"
                         }
                     ]
@@ -577,7 +577,7 @@
                 {
                     "name": "Angron",
                     "requisition_per_model": 400,
-                    "health_per_model": 64,
+                    "health_per_model": 100,
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
@@ -586,7 +586,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 64,
+                            "damage": 100,
                             "restrictions": ""
                         }
                     ]
@@ -594,7 +594,7 @@
                 {
                     "name": "Lord Invocatus",
                     "requisition_per_model": 125,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
@@ -603,7 +603,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -611,7 +611,7 @@
                 {
                     "name": "Slaughterbound",
                     "requisition_per_model": 100,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -620,7 +620,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -628,7 +628,7 @@
                 {
                     "name": "Exalted Eightbound",
                     "requisition_per_model": 75,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
@@ -637,13 +637,13 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -651,7 +651,7 @@
                 {
                     "name": "Eightbound",
                     "requisition_per_model": 75,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
@@ -660,7 +660,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -668,7 +668,7 @@
                 {
                     "name": "Khorne Berzerkers",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
@@ -683,7 +683,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -713,7 +713,7 @@
                 {
                     "name": "Fulgrim",
                     "requisition_per_model": 400,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
@@ -722,13 +722,13 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 64,
+                            "damage": 100,
                             "restrictions": ""
                         }
                     ]
@@ -736,7 +736,7 @@
                 {
                     "name": "Lucius the eternal",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -745,13 +745,13 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -759,7 +759,7 @@
                 {
                     "name": "Flawless blades",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -768,13 +768,13 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -782,7 +782,7 @@
                 {
                     "name": "Infractors",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -797,7 +797,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -805,7 +805,7 @@
                 {
                     "name": "Noise marines",
                     "requisition_per_model": 75,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -814,7 +814,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": "static"
                         }
                     ]
@@ -827,7 +827,7 @@
                 {
                     "name": "Nekrosor Ammentar",
                     "requisition_per_model": 200,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
@@ -836,13 +836,13 @@
                         {
                             "range": "⯐",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -850,7 +850,7 @@
                 {
                     "name": "Hexmark destroyer",
                     "requisition_per_model": 100,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "[stealth]",
@@ -867,7 +867,7 @@
                 {
                     "name": "Skorpekh destroyers",
                     "requisition_per_model": 50,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -876,7 +876,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -884,7 +884,7 @@
                 {
                     "name": "Ophydian destroyers",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
@@ -893,7 +893,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -901,7 +901,7 @@
                 {
                     "name": "Heavy lokhust destroyer [gauss]",
                     "requisition_per_model": 100,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -910,7 +910,7 @@
                         {
                             "range": "⯐",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": "heavy"
                         }
                     ]
@@ -918,7 +918,7 @@
                 {
                     "name": "Heavy lokhust destroyer [enmitic]",
                     "requisition_per_model": 100,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -927,7 +927,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "heavy"
                         }
                     ]
@@ -940,7 +940,7 @@
                 {
                     "name": "Prime with lash whip",
                     "requisition_per_model": 75,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -949,13 +949,13 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -963,7 +963,7 @@
                 {
                     "name": "Winged prime",
                     "requisition_per_model": 75,
-                    "health_per_model": 16,
+                    "health_per_model": 20,
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
@@ -972,7 +972,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -980,7 +980,7 @@
                 {
                     "name": "Deathleaper",
                     "requisition_per_model": 100,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "[stealth]",
@@ -989,13 +989,13 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -1003,7 +1003,7 @@
                 {
                     "name": "Lictor",
                     "requisition_per_model": 75,
-                    "health_per_model": 4,
+                    "health_per_model": 5,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "[stealth]",
@@ -1012,13 +1012,13 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -1035,7 +1035,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         }
                     ]
@@ -1060,7 +1060,7 @@
                 {
                     "name": "Biovore",
                     "requisition_per_model": 100,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -1069,7 +1069,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": "static"
                         }
                     ]
@@ -1077,7 +1077,7 @@
                 {
                     "name": "Pyrovore",
                     "requisition_per_model": 100,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
@@ -1086,7 +1086,7 @@
                         {
                             "range": "⛶",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": "static"
                         }
                     ]
@@ -1094,7 +1094,7 @@
                 {
                     "name": "Norn Assimilator",
                     "requisition_per_model": 250,
-                    "health_per_model": 64,
+                    "health_per_model": 100,
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
@@ -1103,13 +1103,13 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 4,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -1117,7 +1117,7 @@
                 {
                     "name": "Raveners",
                     "requisition_per_model": 50,
-                    "health_per_model": 8,
+                    "health_per_model": 10,
                     "damage_reduction": 1,
                     "move": 40,
                     "type_armor": "",
@@ -1126,7 +1126,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -1134,7 +1134,7 @@
                 {
                     "name": "The red terror",
                     "requisition_per_model": 200,
-                    "health_per_model": 32,
+                    "health_per_model": 50,
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
@@ -1143,7 +1143,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -1156,7 +1156,7 @@
                 {
                     "name": "Scatterflare",
                     "requisition_per_model": 150,
-                    "health_per_model": 12,
+                    "health_per_model": 10,
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
@@ -1165,7 +1165,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 16,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -1173,7 +1173,7 @@
                 {
                     "name": "Sunsear",
                     "requisition_per_model": 150,
-                    "health_per_model": 12,
+                    "health_per_model": 10,
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
@@ -1182,13 +1182,13 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         },
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 32,
+                            "damage": 50,
                             "restrictions": ""
                         }
                     ]
@@ -1196,7 +1196,7 @@
                 {
                     "name": "Stealth suits [r]",
                     "requisition_per_model": 50,
-                    "health_per_model": 4,
+                    "health_per_model": 5,
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "[stealth]",
@@ -1213,7 +1213,7 @@
                 {
                     "name": "Stealth suits [f]",
                     "requisition_per_model": 50,
-                    "health_per_model": 4,
+                    "health_per_model": 5,
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "[stealth]",
@@ -1222,7 +1222,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 8,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
