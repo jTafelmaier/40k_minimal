@@ -74,6 +74,10 @@ function display_unit_state(
     element_coordinate
         .getElementsByClassName("value")[0]
         .textContent = int_health_model_remaining
+            .toString()
+            + "\n/"
+            + int_health_per_model
+                .toString()
 
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
