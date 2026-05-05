@@ -236,11 +236,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 2px 0px;
+    width: 7px;
+    margin: 2px 0px;
 }
 
 .models > div.active {
-    width: 5px;
     height: 5px;
     margin: 1px;
     background-color: var(--grey_text);
