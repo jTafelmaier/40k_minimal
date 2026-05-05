@@ -90,7 +90,15 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" maximum_health=\"0\" current_health=\"0\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
+                return "<div class=\"unit_faction unselected\" health_per_model=\"" \
+                    + dict_unit \
+                        ["health_per_model"] \
+                        .__str__() \
+                    + "\" maximum_health=\"0\" current_health=\"0\" points_per_model=\"" \
+                    + dict_unit \
+                        ["points_per_model"] \
+                        .__str__() \
+                    + "\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
                     + ", +5)\">+5</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
@@ -98,11 +106,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ", -1)\">-1</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" health_per_model=\"" \
-                    + dict_unit \
-                        ["health_per_model"] \
-                        .__str__() \
-                    + "\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
+                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"coordinates\"><div class=\"coordinate remaining\" style=\"height: 100%;\" onmouseenter=\"mouseenter_attack(" \
                     + text_parameters_functions \
                     + ")\" onmouseleave=\"mouseleave_attack(" \
                     + text_parameters_functions \
@@ -114,11 +118,15 @@ def generate_htmls():
                     + "</div></div><div class=\"model\" title=\"[" \
                     + dict_unit \
                         ["type_unit"] \
-                    + "], " \
+                    + "]\n" \
+                    + dict_unit \
+                        ["health_per_model"] \
+                        .__str__() \
+                    + " health\n" \
                     + dict_unit \
                         ["points_per_model"] \
                         .__str__() \
-                    + " points per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + " points cost\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [

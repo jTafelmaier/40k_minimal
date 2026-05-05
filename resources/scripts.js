@@ -50,11 +50,8 @@ function display_unit_state(
     element_unit,
     int_health_new) {
 
-    const element_coordinate = element_unit
-        .getElementsByClassName("coordinate remaining")[0]
-
     const int_health_per_model = get_int_attribute(
-            element_coordinate,
+            element_unit,
             "health_per_model")
 
     const int_count_models = Math.ceil(
@@ -66,6 +63,9 @@ function display_unit_state(
             - 1)
             * int_health_per_model)
 
+    const element_coordinate = element_unit
+        .getElementsByClassName("coordinate remaining")[0]
+
     set_height_bar(
             element_coordinate,
             int_health_model_remaining,
@@ -75,9 +75,6 @@ function display_unit_state(
         .getElementsByClassName("value")[0]
         .textContent = int_health_model_remaining
             .toString()
-            + "\n/"
-            + int_health_per_model
-                .toString()
 
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
@@ -129,10 +126,7 @@ function update_points_total(
         return get_int_count_models(element_unit)
             * parseInt(
                 element_unit
-                    .getElementsByClassName("model")[0]
-                    .getAttribute("title")
-                    .split(" ")
-                    .at(1))
+                    .getAttribute("points_per_model"))
     }
 
     const element_faction = document
@@ -172,8 +166,7 @@ function modify_count_models(
 
     const int_health_full = int_count_new
         * get_int_attribute(
-            element_unit
-                .getElementsByClassName("coordinate remaining")[0],
+            element_unit,
             "health_per_model")
 
     element_unit
@@ -415,8 +408,7 @@ function toggle_select_attack(
             .trim()
 
         const int_health_per_model = get_int_attribute(
-            element_unit_attacked
-                .getElementsByClassName("coordinate remaining")[0],
+            element_unit_attacked,
             "health_per_model")
 
         const int_damage_reduction = parseInt(element_unit_attacked
@@ -553,8 +545,7 @@ function apply_preview(
             int_health_points_new)
 
     const int_health_per_model = get_int_attribute(
-            element_unit
-                .getElementsByClassName("coordinate remaining")[0],
+            element_unit,
             "health_per_model")
 
     element_unit
