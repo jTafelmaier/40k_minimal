@@ -108,11 +108,9 @@ function display_unit_state(
 function toggle_mode_list(
     text_side) {
 
-    const element_list = document
+    document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
-
-    element_list
         .classList
         .toggle("match")
 }
