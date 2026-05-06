@@ -143,14 +143,12 @@ function update_requisition_total(
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
 
-    const int_requisition_total = Array.from(element_faction
-        .getElementsByClassName("unit_faction"))
-        .map(get_int_requisition_unit)
-        .reduce((a, b) => a + b)
-
     element_faction
         .getElementsByClassName("requisition_total")[0]
-        .textContent = int_requisition_total
+        .textContent = Array.from(element_faction
+            .getElementsByClassName("unit_faction"))
+            .map(get_int_requisition_unit)
+            .reduce((a, b) => a + b)
             .toString()
             + " requisition"
 }
