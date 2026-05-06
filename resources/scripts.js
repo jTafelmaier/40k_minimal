@@ -46,6 +46,29 @@ function return_to_faction_selection(
 }
 
 
+function set_height_bar(
+    element_bar,
+    int_steps,
+    int_steps_total) {
+
+    element_bar
+        .setAttribute(
+            "value",
+            int_steps
+                .toString())
+
+    element_bar
+        .setAttribute(
+            "style",
+            "height: "
+                + Math.floor((100
+                    * int_steps)
+                    / int_steps_total)
+                    .toString()
+                + "%;")
+}
+
+
 function display_unit_state(
     element_unit,
     int_health_new) {
@@ -53,6 +76,10 @@ function display_unit_state(
     const int_health_per_model = get_int_attribute(
             element_unit,
             "health_per_model")
+
+    const int_health_initial = get_int_attribute(
+            element_unit,
+            "maximum_health")
 
     const int_count_models = Math.ceil(
             int_health_new
@@ -74,6 +101,12 @@ function display_unit_state(
     array_elements_models
         .slice(int_count_models)
         .forEach(element => element.classList.remove("active"))
+
+    set_height_bar(
+            element_unit
+                .getElementsByClassName("section remaining")[0],
+            int_health_new,
+            int_health_initial)
 }
 
 
@@ -252,29 +285,6 @@ function set_inactive(
 }
 
 
-function set_height_bar(
-    element_bar,
-    int_steps,
-    int_steps_total) {
-
-    element_bar
-        .setAttribute(
-            "value",
-            int_steps
-                .toString())
-
-    element_bar
-        .setAttribute(
-            "style",
-            "height: "
-                + Math.floor((100
-                    * int_steps)
-                    / int_steps_total)
-                    .toString()
-                + "%;")
-}
-
-
 function hide_preview_attack() {
 
     const element_army_lists = document
@@ -291,23 +301,11 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit) {
 
-        const int_health_initial = get_int_attribute(
-                element_unit,
-                "maximum_health")
-
-        const int_health_current = get_int_attribute(
-                element_unit,
-                "current_health")
-
-        set_height_bar(
-                element_unit
-                    .getElementsByClassName("section remaining")[0],
-                int_health_current,
-                int_health_initial)
-
         display_unit_state(
                 element_unit,
-                int_health_current)
+                get_int_attribute(
+                    element_unit,
+                    "current_health"))
 
         element_unit
             .classList
@@ -419,13 +417,6 @@ function toggle_select_attack(
                 int_damage_added,
                 int_health_initial)
 
-        set_height_bar(
-                element_unit_attacked
-                    .getElementsByClassName("section remaining")[0],
-                int_health_current
-                    - int_damage_added,
-                int_health_initial)
-
         display_unit_state(
                 element_unit_attacked,
                 int_health_current
@@ -491,12 +482,6 @@ function apply_preview(
             element_unit
                 .getElementsByClassName("section difference")[0],
             "value")
-
-    set_height_bar(
-            element_unit
-                .getElementsByClassName("section remaining")[0],
-            int_health_points_new,
-            int_health_initial)
 
     display_unit_state(
             element_unit,
