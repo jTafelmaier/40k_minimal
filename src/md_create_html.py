@@ -120,11 +120,7 @@ def generate_htmls():
                     + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"models\">" \
                     + ("<div />" \
                         * 20) \
-                    + "</div><div class=\"health_bar\"><div class=\"section difference\" onmouseenter=\"mouseenter_attack(" \
-                    + text_parameters_functions \
-                    + ")\" onmouseleave=\"mouseleave_attack(" \
-                    + text_parameters_functions \
-                    + ")\" onclick=\"apply_preview(" \
+                    + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \

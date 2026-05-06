@@ -205,32 +205,6 @@ function get_element_unit(
 }
 
 
-function mouseenter_attack(
-    text_side,
-    index_unit) {
-
-    get_element_unit(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section difference")[0]
-        .classList
-        .add("invisible")
-}
-
-
-function mouseleave_attack(
-    text_side,
-    index_unit) {
-
-    get_element_unit(
-            text_side,
-            index_unit)
-        .getElementsByClassName("section difference")[0]
-        .classList
-        .remove("invisible")
-}
-
-
 function finish_action(
     text_side) {
 
