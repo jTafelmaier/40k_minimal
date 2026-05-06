@@ -430,7 +430,7 @@
                 {
                     "name": "Command squad",
                     "requisition_per_model": 10,
-                    "health_per_model": 1,
+                    "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
@@ -447,7 +447,7 @@
                 {
                     "name": "Shock troops",
                     "requisition_per_model": 10,
-                    "health_per_model": 1,
+                    "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
@@ -464,7 +464,7 @@
                 {
                     "name": "Combat engineers",
                     "requisition_per_model": 10,
-                    "health_per_model": 1,
+                    "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
@@ -481,7 +481,7 @@
                 {
                     "name": "Heavy weapon squad [autocannon]",
                     "requisition_per_model": 25,
-                    "health_per_model": 2,
+                    "health_per_model": 5,
                     "damage_reduction": 2,
                     "move": 10,
                     "type_armor": "",
@@ -1031,7 +1031,7 @@
                 {
                     "name": "Hormagaunts",
                     "requisition_per_model": 10,
-                    "health_per_model": 2,
+                    "health_per_model": 5,
                     "damage_reduction": 0,
                     "move": 20,
                     "type_armor": "",
