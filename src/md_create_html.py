@@ -126,7 +126,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
@@ -159,7 +159,7 @@ def generate_htmls():
                                 enumerate(
                                     dict_unit
                                         ["attacks"]))) \
-                    + "</div></div></div></div></div>"
+                    + "</div></div></div></div>"
 
             return "<div class=\"faction constructor invisible " \
                 + name_faction \

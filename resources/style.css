@@ -223,7 +223,8 @@ body {
     margin: 5px 4px;
     border: 2px solid var(--grey_main);
     border-radius: 4px;
-    background-color: var(--grey_dark_blue);
+    background-image: url("background.png");
+    background-size: cover;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -280,24 +281,19 @@ body {
 }
 
 .unit_state {
-    flex: 1;
     display: none;
+    flex: 1;
     padding: 10px 2px;
+    user-select: none;
 }
 
 .unit_faction:not(.unselected) .count_models {
     border: 2px solid white;
 }
 
-.model {
-    width: 525px;
-    height: 165px;
-    background-image: url("background.png");
-    background-size: cover;
-}
-
 .image_unit {
-    height: 100%;
+    width: 515px;
+    height: 165px;
     padding: 5px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -365,8 +361,6 @@ body {
 
 .match .unit_state {
     display: flex;
-    user-select: none;
-    background-color: var(--grey_dark_blue);
 }
 
 .match .unit_count_modifier {
