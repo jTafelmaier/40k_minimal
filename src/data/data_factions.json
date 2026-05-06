@@ -644,7 +644,7 @@
                             "range": "⚔",
                             "type": "single",
                             "damage": 40,
-                            "restrictions": ""
+                            "restrictions": "static"
                         }
                     ]
                 },
