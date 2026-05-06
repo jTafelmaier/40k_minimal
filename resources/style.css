@@ -303,12 +303,12 @@ body {
 
 .data_unit {
     display: flex;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 5px;
+    margin-top: 10px;
 }
 
 .model_characteristic {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 2px 4px;
     border-radius: 2px;
     text-align: center;
