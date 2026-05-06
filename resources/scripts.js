@@ -114,10 +114,6 @@ function toggle_mode_list(
 
     element_list
         .classList
-        .toggle("constructor")
-
-    element_list
-        .classList
         .toggle("match")
 }
 
@@ -168,7 +164,7 @@ function modify_count_models(
 
     const element_unit = document
         .getElementById(text_side)
-        .querySelectorAll(".constructor:not(.invisible)")[0]
+        .querySelectorAll(".faction:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
 
     const element_count = element_unit
@@ -268,7 +264,7 @@ function set_inactive(
             text_side,
             index_unit)
     
-    if (element_unit.parentElement.parentElement.classList.contains("constructor")) {
+    if (!element_unit.parentElement.parentElement.classList.contains("match")) {
         return
     }
 
@@ -339,7 +335,7 @@ function toggle_select_attack(
             text_side_unit_attacking,
             index_unit_attacking)
 
-    if (element_unit_attacking.parentElement.parentElement.classList.contains("constructor")) {
+    if (!element_unit_attacking.parentElement.parentElement.classList.contains("match")) {
         return
     }
 

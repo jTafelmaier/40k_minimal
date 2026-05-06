@@ -157,7 +157,7 @@ def generate_htmls():
                                         ["attacks"]))) \
                     + "</div></div></div></div>"
 
-            return "<div class=\"faction constructor invisible " \
+            return "<div class=\"faction invisible " \
                 + name_faction \
                 + "\"><div class=\"header_list\"><div class=\"image_faction\" style=\"background-image: url('" \
                 + path_image_faction \
