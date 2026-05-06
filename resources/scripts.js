@@ -33,10 +33,11 @@ function display_faction(
 function return_to_faction_selection(
     text_side) {
 
-    Array.from(document
+    document
         .getElementById(text_side)
-        .getElementsByClassName("faction"))
-        .forEach(element => element.classList.add("invisible"))
+        .querySelectorAll(".faction:not(.invisible)")[0]
+        .classList
+        .add("invisible")
 
     document
         .getElementById(text_side)
