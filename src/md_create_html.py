@@ -98,7 +98,18 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \
-                    + "\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
+                    + "\" title=\"[" \
+                    + dict_unit \
+                        ["type_unit"] \
+                    + "]\n" \
+                    + dict_unit \
+                        ["health_per_model"] \
+                        .__str__() \
+                    + " health\n" \
+                    + dict_unit \
+                        ["requisition_per_model"] \
+                        .__str__() \
+                    + " requisition\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
                     + ", +5)\">+5</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
                     + text_parameters_functions \
@@ -115,18 +126,7 @@ def generate_htmls():
                     + text_parameters_functions \
                     + ")\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\" title=\"[" \
-                    + dict_unit \
-                        ["type_unit"] \
-                    + "]\n" \
-                    + dict_unit \
-                        ["health_per_model"] \
-                        .__str__() \
-                    + " health\n" \
-                    + dict_unit \
-                        ["requisition_per_model"] \
-                        .__str__() \
-                    + " requisition\"><div class=\"image_unit\" style=\"background-image: url('" \
+                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"model\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
