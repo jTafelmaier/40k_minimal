@@ -85,11 +85,6 @@ function display_unit_state(
             int_health_new
                 / int_health_per_model)
 
-    const int_health_model_remaining = int_health_new
-        - ((int_count_models
-            - 1)
-            * int_health_per_model)
-
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
         .children)
