@@ -341,7 +341,7 @@ function hide_preview_attack() {
     }
 
     Array.from(element_army_lists
-        .getElementsByClassName("unit_faction"))
+        .getElementsByClassName("attacked"))
         .forEach(unset_attacked)
 
     const element_unit_attacking = element_army_lists
