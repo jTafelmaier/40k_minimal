@@ -80,10 +80,10 @@ def generate_htmls():
                             ["range"] \
                         + " " \
                         + dict_attack \
-                            ["type"] \
+                            ["restrictions"] \
                         + " " \
                         + dict_attack \
-                            ["restrictions"] \
+                            ["type"] \
                         + "</div><div class=\"value\">" \
                         + dict_attack \
                             ["damage"] \
