@@ -292,9 +292,9 @@ body {
 }
 
 .image_unit {
-    width: 515px;
+    width: 525px;
     height: 165px;
-    padding: 5px;
+    padding: 10px 0px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
