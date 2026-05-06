@@ -798,7 +798,7 @@
                 },
                 {
                     "name": "Noise marines",
-                    "requisition_per_model": 75,
+                    "requisition_per_model": 50,
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
@@ -904,7 +904,7 @@
                         {
                             "range": "⯐",
                             "type": "single",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": "heavy"
                         }
                     ]
