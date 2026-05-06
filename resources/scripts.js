@@ -417,17 +417,14 @@ function toggle_select_attack(
                 element_unit_attacked
                     .getElementsByClassName("section difference")[0],
                 int_damage_added,
-                int_health_per_model)
+                int_health_initial)
 
         set_height_bar(
                 element_unit_attacked
                     .getElementsByClassName("section remaining")[0],
                 int_health_current
-                    - int_damage_added
-                    - ((int_count_models_attacked
-                        - 1)
-                        * int_health_per_model),
-                int_health_per_model)
+                    - int_damage_added,
+                int_health_initial)
 
         display_unit_state(
                 element_unit_attacked,
@@ -514,14 +511,6 @@ function apply_preview(
             "current_health",
             int_health_points_new
                 .toString())
-
-    element_unit
-        .setAttribute(
-            "maximum_health",
-            (Math.ceil(int_health_points_new
-                / int_health_per_model)
-                * int_health_per_model)
-                    .toString())
 
     if (int_health_points_new <= 0) {
         element_unit
