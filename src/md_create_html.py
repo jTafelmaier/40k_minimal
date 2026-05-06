@@ -135,23 +135,23 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"data_unit\"><div class=\"model_property name\">" \
+                    + "')\"><div class=\"name\">" \
                     + dict_unit \
                         ["name"] \
                     + " " \
                     + dict_unit \
                         ["type_armor"] \
-                    + "</div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
+                    + "</div><div class=\"data_unit\"><div class=\"model_characteristics\"><div class=\"model_characteristic damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div></div><div class=\"model_characteristic movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div><br/>" \
+                    + "</div></div></div><div class=\"model_properties\">" \
                     + "" \
                         .join(
                             map(
@@ -159,7 +159,7 @@ def generate_htmls():
                                 enumerate(
                                     dict_unit
                                         ["attacks"]))) \
-                    + "</div></div></div></div>"
+                    + "</div></div></div></div></div>"
 
             return "<div class=\"faction constructor invisible " \
                 + name_faction \

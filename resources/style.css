@@ -304,22 +304,18 @@ body {
 }
 
 .data_unit {
+    display: flex;
+    gap: 10px;
     padding: 5px;
     font-size: 16px;
 }
 
-.model_characteristics {
-    display: flex;
-    gap: 10px;
-    padding: 0px 2px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
 .model_characteristic {
+    margin-bottom: 10px;
     padding: 2px 4px;
     border-radius: 2px;
     background-color: #626b846b;
+    text-align: center;
 }
 
 .model_characteristic .type {
@@ -330,7 +326,10 @@ body {
     display: flex;
     width: fit-content;
     padding: 0px 2px;
+    margin-bottom: 5px;
     border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: #626b846b;
 }
 
 .model_property > div {
@@ -346,7 +345,7 @@ body {
 }
 
 .model_property .type {
-    width: 120px;
+    width: 100px;
 }
 
 #turn_information {
