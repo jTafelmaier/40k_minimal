@@ -303,7 +303,7 @@ body {
 
 .data_unit {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 15px;
 }
 
@@ -312,6 +312,7 @@ body {
     padding: 2px 4px;
     border-radius: 2px;
     text-align: center;
+    background-color: #626b846b;
 }
 
 .model_characteristic .type {
@@ -377,10 +378,6 @@ body {
 .match .attack.selected {
     border: 2px solid var(--grey_blue);
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
-}
-
-.attack_in_progress .model_property:not(.selected) {
-    background: none;
 }
 
 .health_bar {
