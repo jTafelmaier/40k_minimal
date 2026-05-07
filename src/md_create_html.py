@@ -116,10 +116,16 @@ def generate_htmls():
                                 lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
                                     + text_parameters_functions \
                                     + ", "
-                                    + int_index
+                                    + (int_index
+                                       + 1)
                                         .__str__() \
                                     + ")\"/>",
-                                range(20))) \
+                                range({
+                                    "C": 1,
+                                    "E": 10,
+                                    "H": 20}
+                                    [dict_unit
+                                        ["type_unit"]]))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"image_unit\" style=\"background-image: url('" \
