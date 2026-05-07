@@ -144,7 +144,7 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div></div><div class=\"model_properties\"><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
                     + dict_unit \
