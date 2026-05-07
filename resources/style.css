@@ -277,16 +277,22 @@ body {
 }
 
 .model_characteristic {
+    display: flex;
     margin-bottom: 5px;
     padding: 2px 4px;
     border-radius: 2px;
-    text-align: center;
     background-color: #626b846b;
+    text-align: right;
 }
 
 .model_characteristic .type {
+    margin-right: 5px;
     font-size: 8px;
     color: var(--grey_text);
+}
+
+.model_characteristic .value {
+    flex: 1;
 }
 
 .model_property {
