@@ -98,10 +98,7 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \
-                    + "\" title=\"[" \
-                    + dict_unit \
-                        ["type_unit"] \
-                    + "]\n" \
+                    + "\" title=\"" \
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
