@@ -276,8 +276,9 @@ body {
     margin-top: 10px;
 }
 
-.model_characteristic {
+.model_property {
     display: flex;
+    width: fit-content;
     padding: 0px 2px;
     margin-bottom: 5px;
     border: 2px solid transparent;
@@ -286,38 +287,18 @@ body {
     text-align: right;
 }
 
-.model_characteristic .type {
-    margin-right: 5px;
-    font-size: 8px;
+.model_property .type {
+    font-size: 10px;
     color: var(--grey_text);
 }
 
-.model_characteristic .value {
-    flex: 1;
-}
-
-.model_property {
-    display: flex;
-    width: fit-content;
-    margin-bottom: 5px;
-    border: 2px solid transparent;
-    border-radius: 2px;
-    background-color: #626b846b;
-}
-
-.model_property > div {
-    margin-right: 5px;
-    text-align: right;
+.attack .type {
+    width: 80px;
 }
 
 .model_property .value {
     width: 20px;
-    margin-left: 2px;
-    margin-right: 5px;
-}
-
-.model_property .type {
-    width: 120px;
+    margin-left: 5px;
 }
 
 #turn_information {
