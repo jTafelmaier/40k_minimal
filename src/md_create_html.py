@@ -121,7 +121,10 @@ def generate_htmls():
                                         ["type_unit"]]))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"image_unit\" style=\"background-image: url('" \
+                    + ")\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"set_count_models(" \
+                    + text_parameters_functions \
+                    + ", 0)\""\
+                    + "style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [
@@ -141,7 +144,7 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property type_armor\"><div class=\"type\">KW</div><div class=\"value\">" \
+                    + "</div></div><div class=\"model_property type_armor\"><div class=\"type\"></div><div class=\"value\">" \
                     + dict_unit \
                         ["type_armor"] \
                         .__str__() \
