@@ -109,17 +109,17 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \
-                    + " requisition\"><div class=\"unit_count_modifier\"><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
-                    + text_parameters_functions \
-                    + ", +5)\">+5</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
-                    + text_parameters_functions \
-                    + ", 1)\">+1</div><div class=\"count_models\">0</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
-                    + text_parameters_functions \
-                    + ", -1)\">-1</div><div class=\"interactive modify_count\" onclick=\"modify_count_models(" \
-                    + text_parameters_functions \
-                    + ", -5)\">-5</div></div><div class=\"unit_state\"><div class=\"models\">" \
-                    + ("<div />" \
-                        * 20) \
+                    + " requisition\"><div class=\"unit_state\"><div class=\"models\">" \
+                    +  "" \
+                        .join(
+                            map(
+                                lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
+                                    + text_parameters_functions \
+                                    + ", "
+                                    + int_index
+                                        .__str__() \
+                                    + ")\"/>",
+                                range(20))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ")\"></div><div class=\"section remaining\" style=\"height: 100%;\"></div></div></div><div class=\"image_unit\" style=\"background-image: url('" \

@@ -235,53 +235,22 @@ body {
 }
 
 .models {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     width: 7px;
     margin: 2px;
 }
 
-.models > div.active {
+.models > div {
     height: 5px;
     margin: 1px;
-    background-color: transparent;
-}
-
-.unit_faction:hover .models > div.active,
-.attacked .models > div.active {
-    background-color: var(--grey_text);
-}
-
-.unit_count_modifier {
-    flex: 1;
-    padding: 10px 4px;
-}
-
-.unit_count_modifier > div {
-    padding: 2px 2px;
-    user-select: none;
-    text-align: center;
-}
-
-.modify_count {
-    opacity: 0.0;
-    font-size: 14px;
-    margin: 4px;
-}
-
-.unit_faction:hover .modify_count {
-    opacity: 1.0;
-}
-
-.count_models {
-    border: 2px solid var(--grey_blue);
-    border-radius: 4px;
     background-color: var(--grey_dark);
 }
 
+.models > div.active {
+    background-color: var(--grey_text);
+}
+
 .unit_state {
-    display: none;
+    display: flex;
     flex: 1;
     padding: 10px 2px;
     user-select: none;
@@ -360,13 +329,6 @@ body {
     display: none;
 }
 
-.match .unit_state {
-    display: flex;
-}
-
-.match .unit_count_modifier {
-    display: none;
-}
 
 .match .attack:hover,
 .match .selected  {

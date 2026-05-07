@@ -154,25 +154,31 @@ function update_requisition_total(
 }
 
 
-function modify_count_models(
+function get_element_unit(
     text_side,
-    index_unit,
-    int_change) {
+    index_unit) {
 
-    const element_unit = document
+    return document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
         .getElementsByClassName("unit_faction")[index_unit]
+}
 
-    const element_count = element_unit
-        .getElementsByClassName("count_models")[0]
 
-    const int_count_new = parseInt(
-            element_count
-                .textContent)
-            + int_change
+function set_count_models(
+    text_side,
+    index_unit,
+    int_count_models) {
 
-    const int_health_full = int_count_new
+    const element_unit = get_element_unit(
+            text_side,
+            index_unit)
+
+    if (element_unit.parentElement.parentElement.classList.contains("match")) {
+        return
+    }
+
+    const int_health_full = int_count_models
         * get_int_attribute(
             element_unit,
             "health_per_model")
@@ -193,11 +199,7 @@ function modify_count_models(
             element_unit,
             int_health_full)
 
-    if (int_count_new < 0) {
-       return
-    }
-
-    if (int_count_new == 0) {
+    if (int_count_models == 0) {
         element_unit
             .classList
             .add("unselected")
@@ -207,22 +209,7 @@ function modify_count_models(
             .remove("unselected")
     }
 
-    element_count
-        .textContent = int_count_new
-            .toString()
-
     update_requisition_total(text_side)
-}
-
-
-function get_element_unit(
-    text_side,
-    index_unit) {
-
-    return document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("unit_faction")[index_unit]
 }
 
 
@@ -260,7 +247,7 @@ function set_inactive(
     const element_unit = get_element_unit(
             text_side,
             index_unit)
-    
+
     if (!element_unit.parentElement.parentElement.classList.contains("match")) {
         return
     }
