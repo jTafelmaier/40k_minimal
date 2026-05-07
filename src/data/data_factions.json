@@ -959,7 +959,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "",
+                            "type": "single",
                             "damage": 20,
                             "restrictions": ""
                         }
