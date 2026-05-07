@@ -100,13 +100,9 @@ def generate_htmls():
                         .__str__() \
                     + "\" title=\"" \
                     + dict_unit \
-                        ["health_per_model"] \
-                        .__str__() \
-                    + " health\n" \
-                    + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \
-                    + " requisition\"><div class=\"unit_state\"><div class=\"models\">" \
+                    + " requisition per model.\"><div class=\"unit_state\"><div class=\"models\">" \
                     +  "" \
                         .join(
                             map(
@@ -140,7 +136,11 @@ def generate_htmls():
                     + " " \
                     + dict_unit \
                         ["type_armor"] \
-                    + "</div><div class=\"data_unit\"><div class=\"model_characteristics\"><div class=\"model_characteristic damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
+                    + "</div><div class=\"data_unit\"><div class=\"model_characteristics\"><div class=\"model_characteristic health_per_model\"><div class=\"type\">HP</div><div class=\"value\">" \
+                    + dict_unit \
+                        ["health_per_model"] \
+                        .__str__() \
+                    + "</div></div><div class=\"model_characteristic damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
