@@ -278,8 +278,9 @@ body {
 
 .model_characteristic {
     display: flex;
+    padding: 0px 2px;
     margin-bottom: 5px;
-    padding: 2px 4px;
+    border: 2px solid transparent;
     border-radius: 2px;
     background-color: #626b846b;
     text-align: right;
