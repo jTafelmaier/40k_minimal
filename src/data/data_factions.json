@@ -1029,6 +1029,23 @@
                     ]
                 },
                 {
+                    "name": "Raveners",
+                    "requisition_per_model": 50,
+                    "health_per_model": 10,
+                    "damage_reduction": 1,
+                    "move": 40,
+                    "type_armor": "",
+                    "type_unit": "E",
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "damage": 20,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
                     "name": "Hormagaunts",
                     "requisition_per_model": 10,
                     "health_per_model": 5,
@@ -1098,23 +1115,6 @@
                             "range": "⚔",
                             "type": "",
                             "damage": 40,
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Raveners",
-                    "requisition_per_model": 50,
-                    "health_per_model": 10,
-                    "damage_reduction": 1,
-                    "move": 40,
-                    "type_armor": "",
-                    "type_unit": "E",
-                    "attacks": [
-                        {
-                            "range": "⚔",
-                            "type": "volume",
-                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
