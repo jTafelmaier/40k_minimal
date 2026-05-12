@@ -251,8 +251,8 @@ body {
 
 .unit_state {
     display: flex;
-    flex: 1;
-    padding: 10px 2px;
+    width: 28px;
+    padding: 5px 2px;
     user-select: none;
 }
 
@@ -261,9 +261,9 @@ body {
 }
 
 .image_unit {
-    width: 525px;
-    height: 165px;
-    padding: 10px 0px;
+    flex: 1;
+    height: 155px;
+    padding: 5px 0px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
