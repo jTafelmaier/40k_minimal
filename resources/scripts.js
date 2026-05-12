@@ -336,8 +336,8 @@ function toggle_select_attack(
             .innerText
             .trim())
 
-        const text_type_attack = element_attack
-            .getElementsByClassName("name")[0]
+        const text_keywords_attack = element_attack
+            .getElementsByClassName("keywords")[0]
             .innerText
             .trim()
 
@@ -356,12 +356,12 @@ function toggle_select_attack(
         function get_int_damage_type_attack(
             int_damage_new) {
 
-            if (text_type_attack.includes("single")) {
+            if (text_keywords_attack.includes("single")) {
                 return Math.min(
                     int_damage_new,
                     int_health_per_model
                         - int_damage_reduction)
-            } else if (text_type_attack.includes("volume") && int_count_models_attacked == 1) {
+            } else if (text_keywords_attack.includes("volume") && int_count_models_attacked == 1) {
                 return Math.floor(
                     int_damage_new
                         / 2)

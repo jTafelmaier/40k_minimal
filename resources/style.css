@@ -293,7 +293,7 @@ body {
     color: var(--grey_text);
 }
 
-.attack .name {
+.attack .keywords {
     width: 80px;
 }
 

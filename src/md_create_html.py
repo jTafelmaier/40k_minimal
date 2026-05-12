@@ -78,7 +78,7 @@ def generate_htmls():
                         + ")\"><div class=\"name\">" \
                         + dict_attack \
                             ["range"] \
-                        + " " \
+                        + "</div><div class=\"keywords\">" \
                         + dict_attack \
                             ["restrictions"] \
                         + " " \
