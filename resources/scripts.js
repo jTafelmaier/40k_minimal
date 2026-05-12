@@ -92,13 +92,11 @@ function display_unit_state(
     element_unit,
     int_health_new) {
 
-    const int_health_per_model = get_int_unit_property(
-            element_unit,
-            "health_per_model")
-
     const int_count_models = Math.ceil(
             int_health_new
-                / int_health_per_model)
+                / get_int_unit_property(
+                    element_unit,
+                    "health_per_model"))
 
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
@@ -447,10 +445,6 @@ function apply_preview(
     display_unit_state(
             element_unit,
             int_health_points_new)
-
-    const int_health_per_model = get_int_unit_property(
-            element_unit,
-            "health_per_model")
 
     element_unit
         .setAttribute(
