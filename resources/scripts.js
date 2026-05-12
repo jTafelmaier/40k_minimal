@@ -336,11 +336,6 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        const text_keywords_attack = element_attack
-            .getElementsByClassName("keywords")[0]
-            .innerText
-            .trim()
-
         function get_int_damage_type_attack() {
 
             const int_damage = Math.max(
@@ -352,6 +347,11 @@ function toggle_select_attack(
                         + get_int_unit_property(
                             element_unit_attacked,
                             "damage_reduction"))
+
+            const text_keywords_attack = element_attack
+                .getElementsByClassName("keywords")[0]
+                .innerText
+                .trim()
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
