@@ -337,7 +337,7 @@ function toggle_select_attack(
             .trim())
 
         const text_type_attack = element_attack
-            .getElementsByClassName("type")[0]
+            .getElementsByClassName("name")[0]
             .innerText
             .trim()
 
