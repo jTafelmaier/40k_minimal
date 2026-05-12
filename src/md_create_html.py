@@ -94,7 +94,7 @@ def generate_htmls():
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
-                    + "\" maximum_health=\"0\" current_health=\"0\" requisition_per_model=\"" \
+                    + "\" current_health=\"0\" requisition_per_model=\"" \
                     + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \

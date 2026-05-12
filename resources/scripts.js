@@ -51,10 +51,15 @@ function set_height_bar(
     element_bar,
     int_steps) {
 
-    const int_steps_total = get_int_attribute(
+    const int_health_total = parseInt(
             element_bar
-                .parentElement,
-            "maximum_health")
+                .parentElement
+                .parentElement
+                .parentElement
+                .getElementsByClassName("health_per_model")[0]
+                .getElementsByClassName("value")[0]
+                .innerText
+                .trim())
 
     element_bar
         .setAttribute(
@@ -68,7 +73,7 @@ function set_height_bar(
             "height: "
                 + Math.floor((100
                     * int_steps)
-                    / int_steps_total)
+                    / int_health_total)
                     .toString()
                 + "%;")
 }
@@ -181,13 +186,6 @@ function set_count_models(
         * get_int_attribute(
             element_unit,
             "health_per_model")
-
-    element_unit
-        .getElementsByClassName("health_bar")[0]
-        .setAttribute(
-            "maximum_health",
-            int_health_full
-                .toString())
 
     element_unit
         .setAttribute(
