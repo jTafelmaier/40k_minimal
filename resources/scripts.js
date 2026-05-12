@@ -349,11 +349,9 @@ function toggle_select_attack(
                         .getElementsByClassName("value")[0]
                         .innerText
                         .trim())
-                        + parseInt(element_unit_attacked
-                            .getElementsByClassName("damage_reduction")[0]
-                            .getElementsByClassName("value")[0]
-                            .innerText
-                            .trim()))
+                        + get_int_unit_property(
+                            element_unit_attacked,
+                            "damage_reduction"))
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
