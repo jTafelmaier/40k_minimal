@@ -78,10 +78,6 @@ function display_unit_state(
             element_unit,
             "health_per_model")
 
-    const int_health_initial = get_int_attribute(
-            element_unit,
-            "maximum_health")
-
     const int_count_models = Math.ceil(
             int_health_new
                 / int_health_per_model)
@@ -102,7 +98,9 @@ function display_unit_state(
             element_unit
                 .getElementsByClassName("section remaining")[0],
             int_health_new,
-            int_health_initial)
+            get_int_attribute(
+                element_unit,
+                "maximum_health"))
 }
 
 
@@ -363,10 +361,6 @@ function toggle_select_attack(
             }
         }
 
-        const int_health_initial = get_int_attribute(
-                element_unit_attacked,
-                "maximum_health")
-
         const int_health_current = get_int_attribute(
                 element_unit_attacked,
                 "current_health")
@@ -380,7 +374,9 @@ function toggle_select_attack(
                 element_unit_attacked
                     .getElementsByClassName("section difference")[0],
                 int_damage_added,
-                int_health_initial)
+                get_int_attribute(
+                    element_unit_attacked,
+                    "maximum_health"))
 
         display_unit_state(
                 element_unit_attacked,
@@ -435,10 +431,6 @@ function apply_preview(
     const element_unit = get_element_unit(
             text_side,
             index_unit)
-
-    const int_health_initial = get_int_attribute(
-            element_unit,
-            "maximum_health")
 
     const int_health_points_new = get_int_attribute(
             element_unit,
