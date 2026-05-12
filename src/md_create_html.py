@@ -75,7 +75,7 @@ def generate_htmls():
                         + ", " \
                         + int_index_attack \
                             .__str__() \
-                        + ")\"><div class=\"type\">" \
+                        + ")\"><div class=\"name\">" \
                         + dict_attack \
                             ["range"] \
                         + " " \
@@ -136,21 +136,21 @@ def generate_htmls():
                     + "')\"><div class=\"name\">" \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"data_unit\"><div class=\"model_properties\"><div class=\"model_property health_per_model\"><div class=\"type\">HP</div><div class=\"value\">" \
+                    + "</div><div class=\"data_unit\"><div class=\"model_properties\"><div class=\"model_property health_per_model\"><div class=\"name\">HP</div><div class=\"value\">" \
                     + dict_unit \
                         ["health_per_model"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property damage_reduction\"><div class=\"type\">DR</div><div class=\"value\">-" \
+                    + "</div></div><div class=\"model_property damage_reduction\"><div class=\"name\">DR</div><div class=\"value\">-" \
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property type_armor\"><div class=\"type\"></div><div class=\"value\">" \
+                    + "</div></div><div class=\"model_property type_armor\"><div class=\"name\"></div><div class=\"value\">" \
                     + dict_unit \
                         ["type_armor"] \
                         .__str__() \
                     + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"type\">MV</div><div class=\"value\">" \
+                    + ")\"><div class=\"name\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
