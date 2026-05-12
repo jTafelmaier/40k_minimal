@@ -329,21 +329,10 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        const int_count_models_attacking = get_int_count_models(element_unit_attacking)
-
-        const int_damage = parseInt(element_attack
-            .getElementsByClassName("value")[0]
-            .innerText
-            .trim())
-
         const text_keywords_attack = element_attack
             .getElementsByClassName("keywords")[0]
             .innerText
             .trim()
-
-        const int_health_per_model = get_int_attribute(
-            element_unit_attacked,
-            "health_per_model")
 
         const int_damage_reduction = parseInt(element_unit_attacked
             .getElementsByClassName("damage_reduction")[0]
@@ -351,22 +340,26 @@ function toggle_select_attack(
             .innerText
             .trim())
 
-        const int_count_models_attacked = get_int_count_models(element_unit_attacked)
+        function get_int_damage_type_attack() {
 
-        function get_int_damage_type_attack(
-            int_damage_new) {
+            const int_damage = parseInt(element_attack
+                .getElementsByClassName("value")[0]
+                .innerText
+                .trim())
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
-                    int_damage_new,
-                    int_health_per_model
-                        - int_damage_reduction)
-            } else if (text_keywords_attack.includes("volume") && int_count_models_attacked == 1) {
+                        int_damage,
+                        get_int_attribute(
+                            element_unit_attacked,
+                            "health_per_model")
+                            - int_damage_reduction)
+            } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
                 return Math.floor(
-                    int_damage_new
-                        / 2)
+                        int_damage
+                            / 2)
             } else {
-                return int_damage_new
+                return int_damage
             }
         }
 
@@ -382,9 +375,9 @@ function toggle_select_attack(
                 int_health_current,
                 Math.max(
                         0,
-                        get_int_damage_type_attack(int_damage)
+                        get_int_damage_type_attack()
                             + int_damage_reduction)
-                    * int_count_models_attacking)
+                    * get_int_count_models(element_unit_attacking))
 
         set_height_bar(
                 element_unit_attacked
