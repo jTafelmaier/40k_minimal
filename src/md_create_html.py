@@ -90,11 +90,7 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
-                return "<div class=\"unit_faction unselected\" health_per_model=\"" \
-                    + dict_unit \
-                        ["health_per_model"] \
-                        .__str__() \
-                    + "\" current_health=\"0\" requisition_per_model=\"" \
+                return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition_per_model=\"" \
                     + dict_unit \
                         ["requisition_per_model"] \
                         .__str__() \

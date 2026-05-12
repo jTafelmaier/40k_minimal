@@ -12,6 +12,18 @@ function get_int_attribute(
 }
 
 
+function get_int_unit_property(
+    element,
+    text_property) {
+
+    return parseInt(element
+            .getElementsByClassName(text_property)[0]
+            .getElementsByClassName("value")[0]
+            .innerText
+            .trim())
+}
+
+
 function display_faction(
     text_side,
     name_faction){
@@ -51,15 +63,12 @@ function set_height_bar(
     element_bar,
     int_steps) {
 
-    const int_health_total = parseInt(
+    const int_health_total = get_int_unit_property(
             element_bar
                 .parentElement
                 .parentElement
-                .parentElement
-                .getElementsByClassName("health_per_model")[0]
-                .getElementsByClassName("value")[0]
-                .innerText
-                .trim())
+                .parentElement,
+            "health_per_model")
 
     element_bar
         .setAttribute(
@@ -83,7 +92,7 @@ function display_unit_state(
     element_unit,
     int_health_new) {
 
-    const int_health_per_model = get_int_attribute(
+    const int_health_per_model = get_int_unit_property(
             element_unit,
             "health_per_model")
 
@@ -183,7 +192,7 @@ function set_count_models(
     }
 
     const int_health_full = int_count_models
-        * get_int_attribute(
+        * get_int_unit_property(
             element_unit,
             "health_per_model")
 
@@ -349,7 +358,7 @@ function toggle_select_attack(
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
                         int_damage,
-                        get_int_attribute(
+                        get_int_unit_property(
                             element_unit_attacked,
                             "health_per_model"))
             } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
@@ -441,7 +450,7 @@ function apply_preview(
             element_unit,
             int_health_points_new)
 
-    const int_health_per_model = get_int_attribute(
+    const int_health_per_model = get_int_unit_property(
             element_unit,
             "health_per_model")
 
