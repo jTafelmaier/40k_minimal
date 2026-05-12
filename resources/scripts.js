@@ -49,8 +49,14 @@ function return_to_faction_selection(
 
 function set_height_bar(
     element_bar,
-    int_steps,
-    int_steps_total) {
+    int_steps) {
+
+    const int_steps_total = get_int_attribute(
+            element_bar
+                .parentElement
+                .parentElement
+                .parentElement,
+            "maximum_health")
 
     element_bar
         .setAttribute(
@@ -97,10 +103,7 @@ function display_unit_state(
     set_height_bar(
             element_unit
                 .getElementsByClassName("section remaining")[0],
-            int_health_new,
-            get_int_attribute(
-                element_unit,
-                "maximum_health"))
+            int_health_new)
 }
 
 
@@ -373,10 +376,7 @@ function toggle_select_attack(
         set_height_bar(
                 element_unit_attacked
                     .getElementsByClassName("section difference")[0],
-                int_damage_added,
-                get_int_attribute(
-                    element_unit_attacked,
-                    "maximum_health"))
+                int_damage_added)
 
         display_unit_state(
                 element_unit_attacked,
