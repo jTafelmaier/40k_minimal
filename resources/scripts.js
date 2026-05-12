@@ -334,26 +334,26 @@ function toggle_select_attack(
             .innerText
             .trim()
 
-        const int_damage_reduction = parseInt(element_unit_attacked
-            .getElementsByClassName("damage_reduction")[0]
-            .getElementsByClassName("value")[0]
-            .innerText
-            .trim())
-
         function get_int_damage_type_attack() {
 
-            const int_damage = parseInt(element_attack
-                .getElementsByClassName("value")[0]
-                .innerText
-                .trim())
+            const int_damage = Math.max(
+                    0,
+                    parseInt(element_attack
+                        .getElementsByClassName("value")[0]
+                        .innerText
+                        .trim())
+                        + parseInt(element_unit_attacked
+                            .getElementsByClassName("damage_reduction")[0]
+                            .getElementsByClassName("value")[0]
+                            .innerText
+                            .trim()))
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
                         int_damage,
                         get_int_attribute(
                             element_unit_attacked,
-                            "health_per_model")
-                            - int_damage_reduction)
+                            "health_per_model"))
             } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
                 return Math.floor(
                         int_damage
@@ -373,10 +373,7 @@ function toggle_select_attack(
 
         const int_damage_added = Math.min(
                 int_health_current,
-                Math.max(
-                        0,
-                        get_int_damage_type_attack()
-                            + int_damage_reduction)
+                get_int_damage_type_attack()
                     * get_int_count_models(element_unit_attacking))
 
         set_height_bar(
