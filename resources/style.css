@@ -281,9 +281,7 @@ body {
     width: fit-content;
     padding: 0px 2px;
     margin-bottom: 5px;
-    border: 2px solid transparent;
-    border-radius: 2px;
-    background-color: #626b846b;
+    border-top: 1px solid var(--grey_text);
     text-align: right;
 }
 
@@ -294,7 +292,7 @@ body {
 }
 
 .attack .keywords {
-    width: 80px;
+    width: 100px;
 }
 
 .model_property .value {
