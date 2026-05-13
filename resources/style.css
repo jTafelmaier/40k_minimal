@@ -262,7 +262,7 @@ body {
 
 .image_unit {
     flex: 1;
-    height: 155px;
+    height: 160px;
     padding: 5px 0px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -272,16 +272,21 @@ body {
 
 .data_unit {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
+}
+
+.model_properties {
+    border-top: 2px solid var(--grey_text);
+    border-left: 2px solid var(--grey_text);
+    border-top-left-radius: 2px;
 }
 
 .model_property {
     display: flex;
     width: fit-content;
     padding: 0px 2px;
-    margin-bottom: 5px;
-    border-top: 1px solid var(--grey_text);
+    margin-bottom: 12px;
     text-align: right;
 }
 
