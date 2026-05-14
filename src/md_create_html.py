@@ -75,10 +75,10 @@ def generate_htmls():
                         + ", " \
                         + int_index_attack \
                             .__str__() \
-                        + ")\"><div>" \
+                        + ")\"><div class=\"keywords\"><div class=\"range\">" \
                         + dict_attack \
                             ["range"] \
-                        + "</div><div class=\"keywords\">" \
+                        + "</div>" \
                         + dict_attack \
                             ["restrictions"] \
                         + " " \

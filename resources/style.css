@@ -263,7 +263,7 @@ body {
 .image_unit {
     flex: 1;
     height: 160px;
-    padding: 5px 0px;
+    padding: 5px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -272,22 +272,22 @@ body {
 
 .data_unit {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     margin-top: 5px;
-}
-
-.model_properties {
-    border-top: 2px solid var(--grey_text);
-    border-left: 2px solid var(--grey_text);
-    border-top-left-radius: 2px;
 }
 
 .model_property {
     display: flex;
     width: fit-content;
-    padding: 0px 2px;
-    margin-bottom: 12px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
     text-align: right;
+    background-color: #5f687f71;
+}
+
+.model_property.attack {
+    background-color: #dc11144e;
 }
 
 .model_property .name {
@@ -297,7 +297,12 @@ body {
 }
 
 .attack .keywords {
-    width: 100px;
+    width: 120px;
+}
+
+.attack .range {
+    display: inline-block;
+    font-size: 14px;
 }
 
 .model_property .value {
