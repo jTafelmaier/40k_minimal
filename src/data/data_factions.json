@@ -401,7 +401,7 @@
                 },
                 {
                     "name": "Castellan Crowe",
-                    "requisition_per_model": 125,
+                    "requisition_per_model": 150,
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
