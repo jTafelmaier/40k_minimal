@@ -115,9 +115,17 @@ def generate_htmls():
                                         ["type_unit"]]))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"set_count_models(" \
+                    + ")\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
-                    + ", 0)\""\
+                    + ", " \
+                    + {
+                        "C": 1,
+                        "E": 10,
+                        "H": 20} \
+                        [dict_unit \
+                            ["type_unit"]] \
+                        .__str__() \
+                    + ")\""\
                     + "style=\"background-image: url('" \
                     + "/" \
                         .join(

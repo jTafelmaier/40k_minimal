@@ -218,6 +218,22 @@ function set_count_models(
 }
 
 
+function toggle_count_models(
+    text_side,
+    index_unit,
+    int_count_models_full) {
+
+    const element_unit = get_element_unit(
+            text_side,
+            index_unit)
+
+    set_count_models(
+            text_side,
+            index_unit,
+            get_int_count_models(element_unit) > 0 ? 0 : int_count_models_full)
+}
+
+
 function finish_action(
     text_side) {
 
