@@ -244,8 +244,9 @@ body {
 }
 
 .models > div {
-    height: 7px;
-    margin: 1px;
+    height: 14px;
+    margin: 2px;
+    border-radius: 1px;
     background-color: var(--grey_dark);
 }
 

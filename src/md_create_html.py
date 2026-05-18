@@ -111,8 +111,8 @@ def generate_htmls():
                                     + ")\"/>",
                                 range({
                                     "C": 1,
-                                    "E": 10,
-                                    "H": 20}
+                                    "E": 5,
+                                    "H": 10}
                                     [dict_unit
                                         ["type_unit"]]))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
@@ -122,8 +122,8 @@ def generate_htmls():
                     + ", " \
                     + {
                         "C": 1,
-                        "E": 10,
-                        "H": 20} \
+                        "E": 5,
+                        "H": 10} \
                         [dict_unit \
                             ["type_unit"]] \
                         .__str__() \
