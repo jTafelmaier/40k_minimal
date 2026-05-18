@@ -5,7 +5,7 @@
             "units": [
                 {
                     "name": "Captain Titus",
-                    "requisition_per_model": 100,
+                    "requisition_per_model": 125,
                     "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 20,
@@ -13,7 +13,7 @@
                     "type_unit": "C",
                     "attacks": [
                         {
-                            "range": "⊹",
+                            "range": "⛶",
                             "type": "",
                             "damage": 10,
                             "restrictions": ""
