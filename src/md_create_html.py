@@ -177,9 +177,7 @@ def generate_htmls():
                 + "')\">✖</div></div><div class=\"image_lower\"><div class=\"name\">" \
                 + name_faction \
                     .upper() \
-                + "</div></div></div><div class=\"constructor_state\"><div class=\"spacing_select_unit_instances\"></div><div class=\"requisition_total\">0 requisition</div><div class=\"interactive toggle_mode_list\" onclick=\"toggle_mode_list('" \
-                + text_side \
-                + "')\">⮀</div></div></div><div class=\"units_faction\">" \
+                + "</div></div></div><div class=\"constructor_state\"><div class=\"spacing_select_unit_instances\"></div><div class=\"requisition_total\">0 requisition</div></div></div><div class=\"units_faction\">" \
                 + "" \
                     .join(
                         map(
@@ -219,6 +217,7 @@ def generate_htmls():
         .replace_with(
             md_shared.get_soup("<div class=\"army_constructors\">"
                 + get_text_html_faction_rules("left")
+                + "<div id=\"match_state\"><div onclick=\"toggle_mode_list()\"><div id=\"start_match\">Start match</div><div id=\"turn_information\">turn<span id=\"turn_counter\">1</span></div></div></div>"
                 + get_text_html_faction_rules("right")
                 + "</div>"))
 

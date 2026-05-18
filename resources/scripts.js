@@ -117,12 +117,10 @@ function display_unit_state(
 }
 
 
-function toggle_mode_list(
-    text_side) {
+function toggle_mode_list() {
 
     document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
+        .getElementById("factions")
         .classList
         .toggle("match")
 }
@@ -185,7 +183,7 @@ function set_count_models(
             text_side,
             index_unit)
 
-    if (element_unit.parentElement.parentElement.classList.contains("match")) {
+    if (document.getElementById("factions").classList.contains("match")) {
         return
     }
 
@@ -269,7 +267,7 @@ function set_inactive(
             text_side,
             index_unit)
 
-    if (!element_unit.parentElement.parentElement.classList.contains("match")) {
+    if (!document.getElementById("factions").classList.contains("match")) {
         return
     }
 
@@ -340,7 +338,7 @@ function toggle_select_attack(
             text_side_unit_attacking,
             index_unit_attacking)
 
-    if (!element_unit_attacking.parentElement.parentElement.classList.contains("match")) {
+    if (!document.getElementById("factions").classList.contains("match")) {
         return
     }
 

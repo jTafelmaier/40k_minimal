@@ -94,9 +94,26 @@ body {
     background-color: #212632;
 }
 
+#match_state {
+    width: 100px;
+}
+
+#match_state > div {
+    position: sticky;
+    top: 20px;
+    height: 50px;
+    background-color: #212632;
+    text-align: center;
+}
+
+#start_match:hover {
+    color: #212632;
+    background-color: white;
+}
+
 .army_constructors {
     display: flex;
-    gap: 0px 80px;
+    gap: 0px 20px;
 }
 
 .army_constructors > div {
@@ -299,7 +316,15 @@ body {
 }
 
 #turn_information {
-    float: right;
+    display: none;
+}
+
+.match #turn_information {
+    display: block;
+}
+
+.match #start_match {
+    display: none;
 }
 
 .match .spacing_select_unit_instances {
