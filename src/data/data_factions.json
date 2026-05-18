@@ -1014,7 +1014,7 @@
                 {
                     "name": "Von Ryans leapers",
                     "requisition_per_model": 25,
-                    "health_per_model": 2,
+                    "health_per_model": 5,
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "st",
