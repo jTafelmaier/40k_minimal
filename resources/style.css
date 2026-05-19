@@ -233,13 +233,15 @@ body {
 }
 
 .models {
+    display: flex;
+    flex-direction: column-reverse;
     width: 9px;
     margin: 2px;
 }
 
 .models > div {
-    height: 10px;
-    margin: 2px;
+    flex: 1;
+    margin: 1px;
     border-radius: 1px;
     background-color: var(--grey_dark);
 }

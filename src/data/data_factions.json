@@ -943,7 +943,7 @@
                 {
                     "name": "Lictor",
                     "requisition": 75,
-                    "health_per_model": 10,
+                    "health_per_model": 20,
                     "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
@@ -965,14 +965,14 @@
                 {
                     "name": "Von Ryans leapers",
                     "requisition": 25,
-                    "health_per_model": 5,
+                    "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "",
+                            "type": "single",
                             "damage": 10,
                             "restrictions": ""
                         }
@@ -981,15 +981,15 @@
                 {
                     "name": "Raveners",
                     "requisition": 50,
-                    "health_per_model": 10,
+                    "health_per_model": 20,
                     "damage_reduction": 1,
                     "move": 40,
                     "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "volume",
-                            "damage": 20,
+                            "type": "",
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
