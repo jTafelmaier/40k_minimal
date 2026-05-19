@@ -145,7 +145,7 @@ function update_requisition_total(
         return get_int_count_models(element_unit)
             * parseInt(
                 element_unit
-                    .getAttribute("requisition_per_model"))
+                    .getAttribute("requisition"))
     }
 
     document

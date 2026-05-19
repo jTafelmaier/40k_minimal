@@ -98,13 +98,13 @@ def generate_htmls():
                     [dict_unit
                         ["type_unit"]]
 
-                return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition_per_model=\"" \
+                return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition=\"" \
                     + dict_unit \
-                        ["requisition_per_model"] \
+                        ["requisition"] \
                         .__str__() \
                     + "\" title=\"" \
                     + dict_unit \
-                        ["requisition_per_model"] \
+                        ["requisition"] \
                         .__str__() \
                     + " requisition per model.\"><div class=\"unit_state\"><div class=\"models\">" \
                     +  "" \
