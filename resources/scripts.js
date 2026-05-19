@@ -446,6 +446,10 @@ function apply_preview(
             text_side,
             index_unit)
 
+    if (!element_unit.classList.contains("attacked")) {
+        return
+    }
+
     const int_health_points_new = get_int_attribute(
             element_unit,
             "current_health")
@@ -453,6 +457,11 @@ function apply_preview(
             element_unit
                 .getElementsByClassName("section difference")[0],
             "value")
+
+    set_height_bar(
+            element_unit
+                .getElementsByClassName("section difference")[0],
+            0)
 
     display_unit_state(
             element_unit,

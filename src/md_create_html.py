@@ -118,9 +118,9 @@ def generate_htmls():
                                         .__str__() \
                                     + ")\"/>",
                                 range(int_number_models_max))) \
-                    + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
+                    + "</div><div class=\"health_bar\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
+                    + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
                     + ", " \
                     + int_number_models_max \
