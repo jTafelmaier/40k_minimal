@@ -10,7 +10,7 @@
                     "damage_reduction": 5,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -33,7 +33,7 @@
                     "damage_reduction": 5,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -56,7 +56,7 @@
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -79,7 +79,7 @@
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -102,7 +102,7 @@
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -125,7 +125,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -148,7 +148,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -171,7 +171,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -194,7 +194,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -211,7 +211,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -234,7 +234,7 @@
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -257,7 +257,7 @@
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -280,7 +280,7 @@
                     "damage_reduction": 5,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -297,7 +297,7 @@
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -314,7 +314,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -337,7 +337,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -360,7 +360,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -383,7 +383,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "st",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -406,7 +406,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -434,7 +434,7 @@
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -451,7 +451,7 @@
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "H",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -468,7 +468,7 @@
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -485,7 +485,7 @@
                     "damage_reduction": 2,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -502,7 +502,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -519,7 +519,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -536,7 +536,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -553,7 +553,7 @@
                     "damage_reduction": 8,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -581,7 +581,7 @@
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -598,7 +598,7 @@
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -615,7 +615,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -632,7 +632,7 @@
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -655,7 +655,7 @@
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -672,7 +672,7 @@
                     "damage_reduction": 1,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -695,7 +695,7 @@
                     "damage_reduction": 0,
                     "move": 10,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -717,7 +717,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -740,7 +740,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -757,7 +757,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 6,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -780,7 +780,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -803,7 +803,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 6,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -825,7 +825,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -848,7 +848,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "st",
-                    "type_unit": "E",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -865,7 +865,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -882,7 +882,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -899,7 +899,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -916,7 +916,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -938,7 +938,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -955,7 +955,7 @@
                     "damage_reduction": 2,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -972,7 +972,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "st",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -995,7 +995,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "st",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1018,7 +1018,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "st",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1035,7 +1035,7 @@
                     "damage_reduction": 1,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1052,7 +1052,7 @@
                     "damage_reduction": 0,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "H",
+                    "number_models_max": 10,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1069,7 +1069,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⯐",
@@ -1086,7 +1086,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -1103,7 +1103,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -1126,7 +1126,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "L",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -1148,7 +1148,7 @@
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -1165,7 +1165,7 @@
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -1188,7 +1188,7 @@
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "st",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -1205,7 +1205,7 @@
                     "damage_reduction": 4,
                     "move": 10,
                     "type_armor": "st",
-                    "type_unit": "E",
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⛶",

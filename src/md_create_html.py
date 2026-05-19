@@ -90,13 +90,8 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
-                int_number_models_max = {
-                    "C": 1,
-                    "L": 1,
-                    "E": 5,
-                    "H": 10} \
-                    [dict_unit
-                        ["type_unit"]]
+                int_number_models_max = dict_unit \
+                    ["number_models_max"]
 
                 return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition=\"" \
                     + dict_unit \
