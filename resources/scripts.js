@@ -148,18 +148,16 @@ function update_requisition_total(
                     .getAttribute("requisition_per_model"))
     }
 
-    const element_faction = document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-
-    element_faction
-        .getElementsByClassName("requisition_total")[0]
-        .textContent = Array.from(element_faction
+    document
+        .getElementById("requisition_total")
+        .getElementsByClassName(text_side)[0]
+        .textContent = Array.from(document
+            .getElementById(text_side)
+            .querySelectorAll(".faction:not(.invisible)")[0]
             .getElementsByClassName("unit_faction"))
             .map(get_int_requisition_unit)
             .reduce((a, b) => a + b)
             .toString()
-            + " requisition"
 }
 
 

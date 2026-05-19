@@ -111,6 +111,16 @@ body {
     background-color: white;
 }
 
+#requisition_total {
+    display: flex;
+    gap: 10px;
+}
+
+#requisition_total > div {
+    width: 45px;
+    text-align: center;
+}
+
 .army_constructors {
     display: flex;
     gap: 0px 20px;
@@ -204,22 +214,6 @@ body {
 
 .toggle_mode_list {
     width: 20px;
-}
-
-.constructor_state {
-    display: flex;
-    margin-top: 15px;
-    padding: 0px 2px;
-}
-
-.requisition_total {
-    width: 110px;
-    text-align: right;
-    margin-right: 10px;
-}
-
-.spacing_select_unit_instances {
-    flex: 1;
 }
 
 .unit_faction {
@@ -326,10 +320,6 @@ body {
 
 .match #start_match {
     display: none;
-}
-
-.match .spacing_select_unit_instances {
-    opacity: 0.0;
 }
 
 .match .unselected {
