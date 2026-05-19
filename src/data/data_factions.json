@@ -9,7 +9,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -32,7 +31,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -55,7 +53,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -78,7 +75,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -101,7 +97,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -124,7 +119,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -147,7 +141,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -170,7 +163,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -193,7 +185,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -210,7 +201,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -233,7 +223,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 8,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -256,7 +245,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -279,7 +267,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 5,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -296,7 +283,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -313,7 +299,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -336,7 +321,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -359,7 +343,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -380,9 +363,8 @@
                     "name": "Aethon Shaan",
                     "requisition": 150,
                     "health_per_model": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 40,
-                    "type_armor": "st",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -405,7 +387,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -433,7 +414,6 @@
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -450,7 +430,6 @@
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -467,7 +446,6 @@
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -484,7 +462,6 @@
                     "health_per_model": 5,
                     "damage_reduction": 2,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -501,7 +478,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -518,7 +494,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -535,7 +510,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 0,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -552,7 +526,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 8,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -580,7 +553,6 @@
                     "health_per_model": 80,
                     "damage_reduction": 2,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -597,7 +569,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 2,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -614,7 +585,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -631,7 +601,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 1,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -654,7 +623,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 1,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -671,7 +639,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 1,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -694,7 +661,6 @@
                     "health_per_model": 2,
                     "damage_reduction": 0,
                     "move": 10,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -716,7 +682,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 4,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -739,7 +704,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -756,7 +720,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 6,
                     "attacks": [
                         {
@@ -779,7 +742,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -802,7 +764,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 6,
                     "attacks": [
                         {
@@ -824,7 +785,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 4,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -845,9 +805,8 @@
                     "name": "Hexmark destroyer",
                     "requisition": 150,
                     "health_per_model": 20,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
-                    "type_armor": "st",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -864,7 +823,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -881,7 +839,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 4,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -898,7 +855,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -915,7 +871,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -935,14 +890,13 @@
                     "name": "Prime with lash whip",
                     "requisition": 75,
                     "health_per_model": 20,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "",
+                            "type": "single",
                             "damage": 20,
                             "restrictions": ""
                         }
@@ -954,7 +908,6 @@
                     "health_per_model": 20,
                     "damage_reduction": 2,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -968,10 +921,9 @@
                 {
                     "name": "Deathleaper",
                     "requisition": 100,
-                    "health_per_model": 10,
-                    "damage_reduction": 4,
+                    "health_per_model": 20,
+                    "damage_reduction": 6,
                     "move": 20,
-                    "type_armor": "st",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -991,10 +943,9 @@
                 {
                     "name": "Lictor",
                     "requisition": 75,
-                    "health_per_model": 5,
-                    "damage_reduction": 4,
+                    "health_per_model": 10,
+                    "damage_reduction": 6,
                     "move": 20,
-                    "type_armor": "st",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1015,9 +966,8 @@
                     "name": "Von Ryans leapers",
                     "requisition": 25,
                     "health_per_model": 5,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "st",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1034,7 +984,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 1,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1051,7 +1000,6 @@
                     "health_per_model": 5,
                     "damage_reduction": 0,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -1068,7 +1016,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1085,7 +1032,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 2,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1102,7 +1048,6 @@
                     "health_per_model": 80,
                     "damage_reduction": 4,
                     "move": 20,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1125,7 +1070,6 @@
                     "health_per_model": 40,
                     "damage_reduction": 4,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1147,7 +1091,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 8,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1164,7 +1107,6 @@
                     "health_per_model": 10,
                     "damage_reduction": 8,
                     "move": 40,
-                    "type_armor": "",
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1185,9 +1127,8 @@
                     "name": "Stealth suits [r]",
                     "requisition": 50,
                     "health_per_model": 5,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 10,
-                    "type_armor": "st",
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1202,9 +1143,8 @@
                     "name": "Stealth suits [f]",
                     "requisition": 50,
                     "health_per_model": 5,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 10,
-                    "type_armor": "st",
                     "number_models_max": 5,
                     "attacks": [
                         {
