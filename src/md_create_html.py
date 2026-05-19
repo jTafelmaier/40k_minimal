@@ -90,6 +90,14 @@ def generate_htmls():
                             .__str__() \
                         + "</div></div>"
 
+                int_number_models_max = {
+                    "C": 1,
+                    "L": 1,
+                    "E": 5,
+                    "H": 10} \
+                    [dict_unit
+                        ["type_unit"]]
+
                 return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition_per_model=\"" \
                     + dict_unit \
                         ["requisition_per_model"] \
@@ -109,23 +117,13 @@ def generate_htmls():
                                        + 1)
                                         .__str__() \
                                     + ")\"/>",
-                                range({
-                                    "C": 1,
-                                    "E": 5,
-                                    "H": 10}
-                                    [dict_unit
-                                        ["type_unit"]]))) \
+                                range(int_number_models_max))) \
                     + "</div><div class=\"health_bar\"><div class=\"section difference\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ")\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
                     + ", " \
-                    + {
-                        "C": 1,
-                        "E": 5,
-                        "H": 10} \
-                        [dict_unit \
-                            ["type_unit"]] \
+                    + int_number_models_max \
                         .__str__() \
                     + ")\""\
                     + "style=\"background-image: url('" \

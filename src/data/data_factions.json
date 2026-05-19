@@ -234,7 +234,7 @@
                     "damage_reduction": 8,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -502,7 +502,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -519,7 +519,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⯐",
@@ -536,7 +536,7 @@
                     "damage_reduction": 4,
                     "move": 0,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -553,7 +553,7 @@
                     "damage_reduction": 8,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⊹",
@@ -1069,7 +1069,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⯐",
@@ -1086,7 +1086,7 @@
                     "damage_reduction": 2,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⛶",
@@ -1103,7 +1103,7 @@
                     "damage_reduction": 4,
                     "move": 20,
                     "type_armor": "",
-                    "type_unit": "E",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⛶",
@@ -1126,7 +1126,7 @@
                     "damage_reduction": 4,
                     "move": 40,
                     "type_armor": "",
-                    "type_unit": "C",
+                    "type_unit": "L",
                     "attacks": [
                         {
                             "range": "⚔",
