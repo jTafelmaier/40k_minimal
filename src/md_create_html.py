@@ -93,7 +93,12 @@ def generate_htmls():
                 int_number_models_max = dict_unit \
                     ["number_models_max"]
 
-                return "<div class=\"unit_faction unselected\" current_health=\"0\" requisition=\"" \
+                return "<div class=\"unit_faction unselected\" current_health=\"" \
+                    + (int_number_models_max \
+                        * dict_unit \
+                            ["health_max"]) \
+                        .__str__() \
+                    + "\" requisition=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
@@ -113,7 +118,12 @@ def generate_htmls():
                                         .__str__() \
                                     + ")\"/>",
                                 range(int_number_models_max))) \
-                    + "</div><div class=\"health_bar\" onclick=\"apply_preview(" \
+                    + "</div><div class=\"health_bar\" health_total=\"" \
+                    + (int_number_models_max \
+                        * dict_unit \
+                            ["health_max"]) \
+                        .__str__() \
+                    + "\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
                     + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
@@ -133,9 +143,9 @@ def generate_htmls():
                     + "')\"><div class=\"name\">" \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"data_unit\"><div class=\"model_properties\"><div class=\"model_property health_per_model\"><div class=\"name\">HP</div><div class=\"value\">" \
+                    + "</div><div class=\"data_unit\"><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
                     + dict_unit \
-                        ["health_per_model"] \
+                        ["health_max"] \
                         .__str__() \
                     + "</div></div><div class=\"model_property damage_reduction\"><div class=\"name\">DR</div><div class=\"value\">-" \
                     + dict_unit \

@@ -63,12 +63,10 @@ function set_height_bar(
     element_bar,
     int_steps) {
 
-    const int_health_total = get_int_unit_property(
+    const int_health_maximum = parseInt(
             element_bar
                 .parentElement
-                .parentElement
-                .parentElement,
-            "health_per_model")
+                .getAttribute("health_total"))
 
     element_bar
         .setAttribute(
@@ -82,7 +80,7 @@ function set_height_bar(
             "height: "
                 + Math.floor((100
                     * int_steps)
-                    / int_health_total)
+                    / int_health_maximum)
                     .toString()
                 + "%;")
 }
@@ -96,7 +94,7 @@ function display_unit_state(
             int_health_new
                 / get_int_unit_property(
                     element_unit,
-                    "health_per_model"))
+                    "health_max"))
 
     const array_elements_models = Array.from(element_unit
         .getElementsByClassName("models")[0]
@@ -188,7 +186,7 @@ function set_count_models(
     const int_health_full = int_count_models
         * get_int_unit_property(
             element_unit,
-            "health_per_model")
+            "health_max")
 
     element_unit
         .setAttribute(
@@ -368,7 +366,7 @@ function toggle_select_attack(
                         int_damage,
                         get_int_unit_property(
                             element_unit_attacked,
-                            "health_per_model"))
+                            "health_max"))
             } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
                 return Math.floor(
                         int_damage
