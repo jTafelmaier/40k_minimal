@@ -102,11 +102,11 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + "\" title=\"" \
+                    + "\"><div class=\"unit_state\" title=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + " requisition per model.\"><div class=\"unit_state\"><div class=\"models\">" \
+                    + " requisition per model.\"><div class=\"models\">" \
                     +  "" \
                         .join(
                             map(

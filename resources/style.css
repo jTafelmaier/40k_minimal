@@ -235,13 +235,12 @@ body {
 .models {
     display: flex;
     flex-direction: column-reverse;
-    width: 9px;
-    margin: 2px;
 }
 
 .models > div {
     flex: 1;
-    margin: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     border-radius: 1px;
     background-color: var(--grey_dark);
 }
@@ -252,8 +251,7 @@ body {
 
 .unit_state {
     display: flex;
-    width: 28px;
-    padding: 5px 2px;
+    padding: 5px 4px;
     user-select: none;
 }
 
@@ -345,15 +343,26 @@ body {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
-.health_bar {
-    display: flex;
+.health_bar, .models {
     width: 5px;
-    justify-content: flex-end;
-    flex-direction: column;
     padding: 2px;
     background-color: var(--grey_dark);
     border: 1px solid var(--grey_main);
     border-radius: 1px;
+}
+
+.health_bar {
+    display: none;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.match .models {
+    display: none;
+}
+
+.match .health_bar {
+    display: flex;
 }
 
 .section.difference {

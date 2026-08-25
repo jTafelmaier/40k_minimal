@@ -112,6 +112,13 @@ function display_unit_state(
             element_unit
                 .getElementsByClassName("section remaining")[0],
             int_health_new)
+
+    element_unit
+        .setAttribute(
+            "title",
+            int_health_new
+                .toString() 
+                + " health points")
 }
 
 
