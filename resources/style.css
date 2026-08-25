@@ -261,12 +261,12 @@ body {
 
 .image_unit {
     flex: 1;
-    height: 140px;
+    height: 150px;
     padding: 5px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .data_unit {
@@ -285,13 +285,17 @@ body {
     background-color: #5f687f71;
 }
 
+.model_property.movement {
+    background-color: #6f30f84e;
+}
+
 .model_property.attack {
     background-color: #dc11144e;
 }
 
 .model_property .name {
     width: 15px;
-    font-size: 10px;
+    font-size: 14px;
     color: var(--grey_text);
 }
 
@@ -305,8 +309,8 @@ body {
 }
 
 .model_property .value {
-    width: 25px;
-    height: 20px;
+    width: 35px;
+    height: 26px;
     margin-left: 2px;
 }
 
