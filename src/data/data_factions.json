@@ -819,7 +819,7 @@
                 },
                 {
                     "name": "Skorpekh destroyers",
-                    "requisition": 75,
+                    "requisition": 100,
                     "health_max": 20,
                     "damage_reduction": 4,
                     "move": 20,
