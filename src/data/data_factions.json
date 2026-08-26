@@ -680,7 +680,7 @@
                     "name": "Fulgrim",
                     "requisition": 400,
                     "health_max": 40,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
