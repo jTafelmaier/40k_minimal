@@ -243,7 +243,7 @@
                     "name": "Belial",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 5,
                     "move": 10,
                     "number_models_max": 1,
                     "attacks": [
@@ -253,22 +253,6 @@
                             "damage": 10,
                             "restrictions": ""
                         },
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "damage": 20,
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Deathwing strikemaster",
-                    "requisition": 125,
-                    "health_max": 10,
-                    "damage_reduction": 6,
-                    "move": 10,
-                    "number_models_max": 1,
-                    "attacks": [
                         {
                             "range": "⚔",
                             "type": "",
@@ -288,7 +272,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 10,
+                            "damage": 12,
                             "restrictions": ""
                         }
                     ]
