@@ -384,7 +384,7 @@ body {
     background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
 }
 
-.inactive .attack {
+.inactive .model_actions {
     display: none;
 }
 
