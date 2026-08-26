@@ -275,7 +275,29 @@ body {
     margin-top: 5px;
 }
 
+.model_properties {
+    display: flex;
+    gap: 4px;
+}
+
 .model_property {
+    display: flex;
+    padding: 0px 4px;
+    border-radius: 2px;
+    background-color: #a3adc871;
+}
+
+.model_property .name {
+    margin-right: 6px;
+    font-size: 14px;
+    color: var(--grey_text);
+}
+
+.model_actions {
+    margin-top: 5px;
+}
+
+.model_action {
     display: flex;
     width: fit-content;
     padding: 0px 5px;
@@ -285,21 +307,7 @@ body {
     background-color: #5f687f71;
 }
 
-.model_property.movement {
-    background-color: #6f30f84e;
-}
-
-.model_property.attack {
-    background-color: #dc11144e;
-}
-
-.model_property .name {
-    width: 15px;
-    font-size: 14px;
-    color: var(--grey_text);
-}
-
-.attack .keywords {
+.model_action .keywords {
     width: 120px;
 }
 
@@ -308,9 +316,8 @@ body {
     font-size: 14px;
 }
 
-.model_property .value {
-    width: 35px;
-    height: 26px;
+.model_action .value {
+    width: 25px;
     margin-left: 2px;
 }
 
@@ -343,7 +350,6 @@ body {
 
 .match .attack:hover,
 .match .attack.selected {
-    border: 2px solid var(--grey_blue);
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 

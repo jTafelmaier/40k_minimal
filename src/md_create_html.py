@@ -70,7 +70,7 @@ def generate_htmls():
                     int_index_attack, \
                     dict_attack = pair_dict_attack
 
-                    return "<div class=\"model_property attack\" onclick=\"toggle_select_attack(" \
+                    return "<div class=\"model_action attack\" onclick=\"toggle_select_attack(" \
                         + text_parameters_functions \
                         + ", " \
                         + int_index_attack \
@@ -140,10 +140,7 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"name\">" \
-                    + dict_unit \
-                        ["name"] \
-                    + "</div><div class=\"data_unit\"><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
+                    + "')\"><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
                     + dict_unit \
                         ["health_max"] \
                         .__str__() \
@@ -151,13 +148,16 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + "</div></div><div class=\"name\">" \
+                    + dict_unit \
+                        ["name"] \
+                    + "</div></div><div class=\"data_unit\"><div class=\"model_actions\"><div class=\"model_action movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"name\">MV</div><div class=\"value\">" \
+                    + ")\"><div class=\"keywords\">move</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div></div><div class=\"model_properties\">" \
+                    + "</div></div>" \
                     + "" \
                         .join(
                             map(
