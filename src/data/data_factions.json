@@ -20,7 +20,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -42,7 +42,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -64,7 +64,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -86,7 +86,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -130,7 +130,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 10,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -174,7 +174,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -294,7 +294,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -316,7 +316,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -382,7 +382,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 25,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
