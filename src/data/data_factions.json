@@ -369,7 +369,7 @@
                     "name": "Castellan Crowe",
                     "requisition": 150,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -382,7 +382,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 40,
+                            "damage": 25,
                             "restrictions": ""
                         }
                     ]
