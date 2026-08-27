@@ -7,7 +7,7 @@
                     "name": "Captain Titus",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 8,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -29,7 +29,7 @@
                     "name": "Terminator captain",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 8,
                     "move": 10,
                     "number_models_max": 1,
                     "attacks": [
@@ -51,7 +51,7 @@
                     "name": "Terminator squad",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 10,
                     "number_models_max": 5,
                     "attacks": [
@@ -73,7 +73,7 @@
                     "name": "Captain with jump pack",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -95,7 +95,7 @@
                     "name": "Jump pack intercessors",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 40,
                     "number_models_max": 5,
                     "attacks": [
@@ -117,7 +117,7 @@
                     "name": "Bladeguard veterans",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -139,7 +139,7 @@
                     "name": "Sternguard veterans",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
@@ -161,7 +161,7 @@
                     "name": "Captain in gravis armour",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -183,7 +183,7 @@
                     "name": "Heavy intercessors",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
@@ -199,7 +199,7 @@
                     "name": "Eradicators",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -221,7 +221,7 @@
                     "name": "Gladiator lancer",
                     "requisition": 400,
                     "health_max": 40,
-                    "damage_reduction": 8,
+                    "damage_reduction": 10,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -243,7 +243,7 @@
                     "name": "Belial",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 8,
                     "move": 10,
                     "number_models_max": 1,
                     "attacks": [
@@ -265,7 +265,7 @@
                     "name": "Deathwing knights",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 7,
                     "move": 10,
                     "number_models_max": 5,
                     "attacks": [
@@ -281,7 +281,7 @@
                     "name": "Castellan",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -303,7 +303,7 @@
                     "name": "Sword brethren",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
@@ -325,7 +325,7 @@
                     "name": "Crusader squad",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 10,
                     "attacks": [
@@ -347,7 +347,7 @@
                     "name": "Aethon Shaan",
                     "requisition": 150,
                     "health_max": 10,
-                    "damage_reduction": 6,
+                    "damage_reduction": 8,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -369,7 +369,7 @@
                     "name": "Castellan Crowe",
                     "requisition": 150,
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 7,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
