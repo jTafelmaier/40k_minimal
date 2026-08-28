@@ -7,7 +7,7 @@
                     "name": "Captain Titus",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 7,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
