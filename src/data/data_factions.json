@@ -844,7 +844,7 @@
                         {
                             "range": "⯐",
                             "type": "single",
-                            "damage": 20,
+                            "damage": 25,
                             "restrictions": "heavy"
                         }
                     ]
