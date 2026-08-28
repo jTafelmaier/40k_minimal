@@ -303,7 +303,7 @@
                     "name": "Sword brethren",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
@@ -347,7 +347,7 @@
                     "name": "Aethon Shaan",
                     "requisition": 150,
                     "health_max": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -369,7 +369,7 @@
                     "name": "Castellan Crowe",
                     "requisition": 150,
                     "health_max": 10,
-                    "damage_reduction": 7,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
