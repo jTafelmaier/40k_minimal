@@ -535,7 +535,7 @@
                     "name": "Angron",
                     "requisition": 400,
                     "health_max": 80,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -551,7 +551,7 @@
                     "name": "Lord Invocatus",
                     "requisition": 125,
                     "health_max": 40,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
@@ -567,7 +567,7 @@
                     "name": "Slaughterbound",
                     "requisition": 100,
                     "health_max": 40,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -583,7 +583,7 @@
                     "name": "Exalted Eightbound",
                     "requisition": 75,
                     "health_max": 20,
-                    "damage_reduction": 1,
+                    "damage_reduction": 2,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -605,7 +605,7 @@
                     "name": "Eightbound",
                     "requisition": 75,
                     "health_max": 20,
-                    "damage_reduction": 1,
+                    "damage_reduction": 2,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -621,7 +621,7 @@
                     "name": "Khorne Berzerkers",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 10,
                     "attacks": [
@@ -686,7 +686,7 @@
                     "name": "Lucius the eternal",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -702,7 +702,7 @@
                     "name": "Flawless blades",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 6,
                     "attacks": [
@@ -724,7 +724,7 @@
                     "name": "Infractors",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 10,
                     "attacks": [
@@ -746,7 +746,7 @@
                     "name": "Noise marines",
                     "requisition": 50,
                     "health_max": 10,
-                    "damage_reduction": 2,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 6,
                     "attacks": [
