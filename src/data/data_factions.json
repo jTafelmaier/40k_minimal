@@ -73,7 +73,7 @@
                     "name": "Captain with jump pack",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
