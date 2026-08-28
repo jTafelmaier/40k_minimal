@@ -1071,7 +1071,7 @@
             "units": [
                 {
                     "name": "Scatterflare",
-                    "requisition": 150,
+                    "requisition": 200,
                     "health_max": 15,
                     "damage_reduction": 10,
                     "move": "fast",
@@ -1087,7 +1087,7 @@
                 },
                 {
                     "name": "Sunsear",
-                    "requisition": 150,
+                    "requisition": 200,
                     "health_max": 15,
                     "damage_reduction": 10,
                     "move": "fast",
