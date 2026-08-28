@@ -308,7 +308,7 @@ body {
 }
 
 .model_action .keywords {
-    width: 140px;
+    width: 50px;
 }
 
 .attack .range {
@@ -317,7 +317,7 @@ body {
 }
 
 .model_action .value {
-    width: 25px;
+    width: 140px;
     margin-left: 2px;
 }
 

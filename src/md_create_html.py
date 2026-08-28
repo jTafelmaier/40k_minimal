@@ -78,13 +78,13 @@ def generate_htmls():
                         + ")\"><div class=\"keywords\"><div class=\"range\">" \
                         + dict_attack \
                             ["range"] \
-                        + "</div>" \
+                        + "</div></div><div class=\"value\">" \
                         + dict_attack \
                             ["restrictions"] \
                         + " " \
                         + dict_attack \
                             ["type"] \
-                        + "</div><div class=\"value\">" \
+                        + " " \
                         + dict_attack \
                             ["damage"] \
                             .__str__() \
@@ -153,10 +153,9 @@ def generate_htmls():
                         ["name"] \
                     + "</div></div><div class=\"data_unit\"><div class=\"model_actions\"><div class=\"model_action movement\" onclick=\"set_inactive(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"keywords\">move</div><div class=\"value\">" \
+                    + ")\"><div class=\"keywords\">move:</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
-                        .__str__() \
                     + "</div></div>" \
                     + "" \
                         .join(
