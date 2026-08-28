@@ -7,7 +7,7 @@
                     "name": "Captain Titus",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -29,7 +29,7 @@
                     "name": "Terminator captain",
                     "requisition": 100,
                     "health_max": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 10,
                     "number_models_max": 1,
                     "attacks": [
@@ -243,7 +243,7 @@
                     "name": "Belial",
                     "requisition": 125,
                     "health_max": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 10,
                     "number_models_max": 1,
                     "attacks": [
