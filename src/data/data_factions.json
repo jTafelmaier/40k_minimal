@@ -1072,8 +1072,8 @@
                 {
                     "name": "Scatterflare",
                     "requisition": 150,
-                    "health_max": 10,
-                    "damage_reduction": 8,
+                    "health_max": 15,
+                    "damage_reduction": 10,
                     "move": "fast",
                     "number_models_max": 1,
                     "attacks": [
@@ -1088,8 +1088,8 @@
                 {
                     "name": "Sunsear",
                     "requisition": 150,
-                    "health_max": 10,
-                    "damage_reduction": 8,
+                    "health_max": 15,
+                    "damage_reduction": 10,
                     "move": "fast",
                     "number_models_max": 1,
                     "attacks": [

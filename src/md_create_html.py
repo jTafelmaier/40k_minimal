@@ -78,13 +78,13 @@ def generate_htmls():
                         + ")\"><div class=\"keywords\"><div class=\"range\">" \
                         + dict_attack \
                             ["range"] \
-                        + "</div></div><div class=\"value\">" \
+                        + " " \
                         + dict_attack \
                             ["restrictions"] \
                         + " " \
                         + dict_attack \
                             ["type"] \
-                        + " " \
+                        + "</div></div><div class=\"value\">" \
                         + dict_attack \
                             ["damage"] \
                             .__str__() \
