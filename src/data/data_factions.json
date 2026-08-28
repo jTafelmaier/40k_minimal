@@ -1080,7 +1080,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -1102,7 +1102,7 @@
                         {
                             "range": "⛶",
                             "type": "single",
-                            "damage": 40,
+                            "damage": 25,
                             "restrictions": ""
                         }
                     ]
