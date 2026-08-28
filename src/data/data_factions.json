@@ -139,7 +139,7 @@
                     "name": "Sternguard veterans",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
