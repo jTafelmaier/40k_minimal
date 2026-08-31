@@ -139,7 +139,7 @@
                     "name": "Bladeguard veterans",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 6,
+                    "damage_reduction": 7,
                     "move": "normal",
                     "number_models_max": 3,
                     "attacks": [
@@ -309,7 +309,7 @@
                     "name": "Deathwing knights",
                     "requisition": 75,
                     "health_max": 10,
-                    "damage_reduction": 7,
+                    "damage_reduction": 8,
                     "move": "slow",
                     "number_models_max": 5,
                     "attacks": [
@@ -376,7 +376,7 @@
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 5,
+                            "damage": 8,
                             "restrictions": ""
                         },
                         {
