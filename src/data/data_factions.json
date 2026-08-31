@@ -917,7 +917,7 @@
                 {
                     "name": "Prime with lash whip",
                     "requisition": 75,
-                    "health_max": 20,
+                    "health_max": 25,
                     "damage_reduction": 4,
                     "move": "normal",
                     "number_models_max": 1,
@@ -933,7 +933,7 @@
                 {
                     "name": "Winged prime",
                     "requisition": 75,
-                    "health_max": 20,
+                    "health_max": 25,
                     "damage_reduction": 2,
                     "move": "fast",
                     "number_models_max": 1,
@@ -950,7 +950,7 @@
                     "name": "Deathleaper",
                     "requisition": 100,
                     "health_max": 20,
-                    "damage_reduction": 6,
+                    "damage_reduction": 8,
                     "move": "normal",
                     "number_models_max": 1,
                     "attacks": [
@@ -963,7 +963,7 @@
                         {
                             "range": "⚔",
                             "type": "single",
-                            "damage": 40,
+                            "damage": 25,
                             "restrictions": ""
                         }
                     ]
@@ -1010,7 +1010,7 @@
                     "name": "Raveners",
                     "requisition": 50,
                     "health_max": 20,
-                    "damage_reduction": 1,
+                    "damage_reduction": 2,
                     "move": "fast",
                     "number_models_max": 5,
                     "attacks": [
@@ -1042,7 +1042,7 @@
                     "name": "Biovore",
                     "requisition": 100,
                     "health_max": 40,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": "normal",
                     "number_models_max": 1,
                     "attacks": [
@@ -1058,7 +1058,7 @@
                     "name": "Pyrovore",
                     "requisition": 100,
                     "health_max": 40,
-                    "damage_reduction": 2,
+                    "damage_reduction": 4,
                     "move": "normal",
                     "number_models_max": 1,
                     "attacks": [
