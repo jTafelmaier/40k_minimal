@@ -114,6 +114,28 @@
                     ]
                 },
                 {
+                    "name": "Vanguard veterans",
+                    "requisition": 75,
+                    "health_max": 10,
+                    "damage_reduction": 5,
+                    "move": "fast",
+                    "number_models_max": 5,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 5,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 15,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
                     "name": "Bladeguard veterans",
                     "requisition": 75,
                     "health_max": 10,
@@ -131,6 +153,28 @@
                             "range": "⚔",
                             "type": "",
                             "damage": 15,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Intercessor squad",
+                    "requisition": 50,
+                    "health_max": 10,
+                    "damage_reduction": 4,
+                    "move": "normal",
+                    "number_models_max": 10,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 8,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
