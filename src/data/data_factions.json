@@ -8,7 +8,7 @@
                     "requisition": 125,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -30,7 +30,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 7,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -52,7 +52,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -74,7 +74,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -96,7 +96,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -118,7 +118,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 5,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -140,7 +140,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 7,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -162,7 +162,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -184,7 +184,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 5,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -206,7 +206,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -228,7 +228,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -244,7 +244,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -266,7 +266,7 @@
                     "requisition": 400,
                     "health_max": 40,
                     "damage_reduction": 10,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -288,7 +288,7 @@
                     "requisition": 125,
                     "health_max": 10,
                     "damage_reduction": 7,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -310,7 +310,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 8,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -326,7 +326,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -348,7 +348,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 5,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -370,7 +370,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -392,7 +392,7 @@
                     "requisition": 150,
                     "health_max": 10,
                     "damage_reduction": 7,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -414,7 +414,7 @@
                     "requisition": 150,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -441,7 +441,7 @@
                     "requisition": 10,
                     "health_max": 2,
                     "damage_reduction": 0,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -457,7 +457,7 @@
                     "requisition": 10,
                     "health_max": 2,
                     "damage_reduction": 0,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -473,7 +473,7 @@
                     "requisition": 10,
                     "health_max": 2,
                     "damage_reduction": 0,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -489,7 +489,7 @@
                     "requisition": 25,
                     "health_max": 5,
                     "damage_reduction": 2,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -505,7 +505,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "zero",
+                    "move": 0,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -521,7 +521,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "zero",
+                    "move": 0,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -537,7 +537,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "zero",
+                    "move": 0,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -553,7 +553,7 @@
                     "requisition": 250,
                     "health_max": 40,
                     "damage_reduction": 8,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -580,7 +580,7 @@
                     "requisition": 400,
                     "health_max": 80,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -596,7 +596,7 @@
                     "requisition": 125,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -612,7 +612,7 @@
                     "requisition": 100,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -628,7 +628,7 @@
                     "requisition": 75,
                     "health_max": 20,
                     "damage_reduction": 2,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -650,7 +650,7 @@
                     "requisition": 75,
                     "health_max": 20,
                     "damage_reduction": 2,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -666,7 +666,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -688,7 +688,7 @@
                     "requisition": 5,
                     "health_max": 2,
                     "damage_reduction": 0,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -709,7 +709,7 @@
                     "requisition": 400,
                     "health_max": 40,
                     "damage_reduction": 6,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -731,7 +731,7 @@
                     "requisition": 100,
                     "health_max": 10,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -747,7 +747,7 @@
                     "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 6,
                     "attacks": [
                         {
@@ -769,7 +769,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -791,7 +791,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 5,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 6,
                     "attacks": [
                         {
@@ -812,7 +812,7 @@
                     "requisition": 200,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -834,7 +834,7 @@
                     "requisition": 150,
                     "health_max": 15,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -850,7 +850,7 @@
                     "requisition": 100,
                     "health_max": 15,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -866,7 +866,7 @@
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -882,7 +882,7 @@
                     "requisition": 100,
                     "health_max": 20,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -898,7 +898,7 @@
                     "requisition": 100,
                     "health_max": 20,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 3,
                     "attacks": [
                         {
@@ -919,7 +919,7 @@
                     "requisition": 75,
                     "health_max": 25,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -935,7 +935,7 @@
                     "requisition": 75,
                     "health_max": 25,
                     "damage_reduction": 2,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -951,7 +951,7 @@
                     "requisition": 100,
                     "health_max": 20,
                     "damage_reduction": 8,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -973,7 +973,7 @@
                     "requisition": 75,
                     "health_max": 20,
                     "damage_reduction": 6,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -995,7 +995,7 @@
                     "requisition": 25,
                     "health_max": 10,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1011,7 +1011,7 @@
                     "requisition": 50,
                     "health_max": 20,
                     "damage_reduction": 2,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1027,7 +1027,7 @@
                     "requisition": 10,
                     "health_max": 5,
                     "damage_reduction": 0,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 10,
                     "attacks": [
                         {
@@ -1043,7 +1043,7 @@
                     "requisition": 100,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1059,7 +1059,7 @@
                     "requisition": 100,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1075,7 +1075,7 @@
                     "requisition": 250,
                     "health_max": 80,
                     "damage_reduction": 4,
-                    "move": "normal",
+                    "move": 20,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1097,7 +1097,7 @@
                     "requisition": 200,
                     "health_max": 40,
                     "damage_reduction": 4,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1118,7 +1118,7 @@
                     "requisition": 200,
                     "health_max": 15,
                     "damage_reduction": 10,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1134,7 +1134,7 @@
                     "requisition": 200,
                     "health_max": 15,
                     "damage_reduction": 10,
-                    "move": "fast",
+                    "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
@@ -1156,7 +1156,7 @@
                     "requisition": 50,
                     "health_max": 5,
                     "damage_reduction": 6,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 5,
                     "attacks": [
                         {
@@ -1172,7 +1172,7 @@
                     "requisition": 50,
                     "health_max": 5,
                     "damage_reduction": 6,
-                    "move": "slow",
+                    "move": 10,
                     "number_models_max": 5,
                     "attacks": [
                         {

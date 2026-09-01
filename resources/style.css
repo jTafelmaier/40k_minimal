@@ -287,14 +287,14 @@ body {
     background-color: #a3adc871;
 }
 
-.model_property .name, .move {
-    margin-right: 6px;
+.name {
+    margin-right: 5px;
     font-size: 14px;
     color: var(--grey_text);
 }
 
 .model_actions {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .model_action {
@@ -317,7 +317,7 @@ body {
 }
 
 .model_action .value {
-    width: 60px;
+    width: 25px;
     margin-left: 2px;
 }
 
