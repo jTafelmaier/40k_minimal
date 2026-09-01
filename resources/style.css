@@ -287,7 +287,7 @@ body {
     background-color: #a3adc871;
 }
 
-.model_property .name {
+.model_property .name, .move {
     margin-right: 6px;
     font-size: 14px;
     color: var(--grey_text);
