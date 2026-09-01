@@ -788,14 +788,14 @@
                 },
                 {
                     "name": "Noise marines",
-                    "requisition": 50,
+                    "requisition": 75,
                     "health_max": 10,
                     "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 6,
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "volume",
                             "damage": 10,
                             "restrictions": "static"
