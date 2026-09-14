@@ -351,7 +351,7 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        function get_int_damage_type_attack() {
+        function get_int_damage_per_attack() {
 
             const int_damage = Math.max(
                     0,
@@ -389,7 +389,7 @@ function toggle_select_attack(
 
         const int_damage_added = Math.min(
                 int_health_current,
-                get_int_damage_type_attack()
+                get_int_damage_per_attack()
                     * get_int_count_models(element_unit_attacking))
 
         set_height_bar(
