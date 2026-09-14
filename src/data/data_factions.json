@@ -234,13 +234,41 @@
                         {
                             "range": "⊹",
                             "type": "",
+                            "damage": 5,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "",
                             "damage": 10,
                             "restrictions": "heavy"
                         }
                     ]
                 },
                 {
-                    "name": "Eradicators",
+                    "name": "Eradicators with heavy bolters",
+                    "requisition": 50,
+                    "health_max": 10,
+                    "damage_reduction": 4,
+                    "move": 20,
+                    "number_models_max": 3,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 5,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 20,
+                            "restrictions": "heavy"
+                        }
+                    ]
+                },
+                {
+                    "name": "Eradicators with meltas",
                     "requisition": 50,
                     "health_max": 10,
                     "damage_reduction": 4,
