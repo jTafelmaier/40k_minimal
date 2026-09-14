@@ -353,15 +353,14 @@ function toggle_select_attack(
 
         function get_int_damage_per_attack() {
 
-            const int_damage = Math.max(
-                    0,
-                    parseInt(element_attack
-                        .getElementsByClassName("value")[0]
-                        .innerText
-                        .trim())
-                        + get_int_unit_property(
-                            element_unit_attacked,
-                            "damage_reduction"))
+            const int_damage_reduction = get_int_unit_property(
+                    element_unit_attacked,
+                    "damage_reduction")
+
+            const int_damage = parseInt(element_attack
+                .getElementsByClassName("value")[0]
+                .innerText
+                .trim())
 
             const text_keywords_attack = element_attack
                 .getElementsByClassName("keywords")[0]
@@ -370,16 +369,25 @@ function toggle_select_attack(
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
-                        int_damage,
+                        Math.max(
+                            0,
+                            int_damage
+                                + int_damage_reduction),
                         get_int_unit_property(
                             element_unit_attacked,
                             "health_max"))
             } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
-                return Math.floor(
-                        int_damage
-                            / 2)
+                return Math.max(
+                        0,
+                        Math.floor(
+                            int_damage
+                                / 2)
+                            + int_damage_reduction)
             } else {
-                return int_damage
+                return Math.max(
+                        0,
+                        int_damage
+                            + int_damage_reduction)
             }
         }
 
