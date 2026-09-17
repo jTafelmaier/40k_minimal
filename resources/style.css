@@ -272,7 +272,9 @@ body {
 .name_unit {
     width: fit-content;
     padding: 0px 5px;
-    border: 1px solid #8d97b05d;
+    border: 1px solid #8d97b033;
+    border-right: none;
+    border-bottom: none;
     border-radius: 2px;
 }
 
@@ -290,7 +292,9 @@ body {
 
 .model_property {
     padding: 0px 5px;
-    border: 1px solid #8d97b05d;
+    border: 1px solid #8d97b033;
+    border-right: none;
+    border-bottom: none;
     border-radius: 2px;
 }
 
@@ -305,7 +309,9 @@ body {
     width: fit-content;
     padding: 0px 5px;
     margin-bottom: 5px;
-    border: 1px solid #8d97b05d;
+    border: 1px solid #8d97b033;
+    border-right: none;
+    border-bottom: none;
     border-radius: 2px;
     text-align: right;
 }
