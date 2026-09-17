@@ -313,12 +313,11 @@ body {
 }
 
 .model_action .keywords {
-    width: 110px;
+    width: 120px;
 }
 
 .attack .range {
     display: inline-block;
-    font-size: 14px;
 }
 
 .model_action .value {
