@@ -269,6 +269,13 @@ body {
     font-size: 18px;
 }
 
+.name_unit {
+    width: fit-content;
+    padding: 0px 5px;
+    border: 1px solid #8d97b05d;
+    border-radius: 2px;
+}
+
 .data_unit {
     display: flex;
     gap: 20px;
@@ -277,25 +284,20 @@ body {
 
 .model_properties {
     display: flex;
-    gap: 4px;
+    gap: 5px;
+    margin-top: 5px;
 }
 
 .model_property {
-    display: flex;
-    padding: 0px 4px;
-    border: 1px solid var(--grey_text);
+    padding: 0px 5px;
+    border: 1px solid #8d97b05d;
     border-radius: 2px;
-    background-color: #a3adc871;
 }
 
-.name {
+.model_property .name {
     margin-right: 5px;
     font-size: 14px;
     color: var(--grey_text);
-}
-
-.model_actions {
-    margin-top: 10px;
 }
 
 .model_action {
@@ -303,13 +305,9 @@ body {
     width: fit-content;
     padding: 0px 5px;
     margin-bottom: 5px;
+    border: 1px solid #8d97b05d;
     border-radius: 2px;
     text-align: right;
-    background-color: #5f687f71;
-}
-
-.model_action.attack {
-    background: linear-gradient(to right, #f60f0f6e, #b10d0d66 100px);
 }
 
 .model_action .keywords {

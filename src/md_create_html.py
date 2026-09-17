@@ -140,7 +140,10 @@ def generate_htmls():
                                 dict_unit \
                                     ["name"] \
                                     + ".png"]) \
-                    + "')\"><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
+                    + "')\"><div class=\"name_unit\">" \
+                    + dict_unit \
+                        ["name"] \
+                    + "</div><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
                     + dict_unit \
                         ["health_max"] \
                         .__str__() \
@@ -148,16 +151,11 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
-                    + "</div></div><div class=\"name\">" \
-                    + dict_unit \
-                        ["name"] \
-                    + "</div></div><div class=\"data_unit\"><div class=\"model_actions\"><div class=\"model_action movement\" onclick=\"set_inactive(" \
-                    + text_parameters_functions \
-                    + ")\"><div class=\"name\">MV</div><div class=\"value\">" \
+                    + "</div></div><div class=\"model_property movement\"><div class=\"name\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div>" \
+                    + "</div></div></div><div class=\"data_unit\"><div class=\"model_actions\">" \
                     + "" \
                         .join(
                             map(
