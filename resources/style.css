@@ -283,6 +283,7 @@ body {
 .model_property {
     display: flex;
     padding: 0px 4px;
+    border: 1px solid var(--grey_text);
     border-radius: 2px;
     background-color: #a3adc871;
 }
@@ -305,6 +306,10 @@ body {
     border-radius: 2px;
     text-align: right;
     background-color: #5f687f71;
+}
+
+.model_action.attack {
+    background: linear-gradient(to right, #f60f0f6e, #b10d0d66 100px);
 }
 
 .model_action .keywords {
@@ -344,7 +349,6 @@ body {
 
 .match .attack:hover,
 .match .selected  {
-    border-radius: 4px;
     user-select: none;
 }
 
