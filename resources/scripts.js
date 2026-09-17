@@ -363,7 +363,7 @@ function toggle_select_attack(
                 .innerText
                 .trim())
 
-            if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) >= 1) {
+            if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) > 1) {
                 return int_strength
                     * 2}
             else {
