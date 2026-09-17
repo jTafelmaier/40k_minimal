@@ -462,7 +462,7 @@
                     "number_models_max": 1,
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "",
                             "damage": 10,
                             "restrictions": ""
