@@ -262,7 +262,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": "heavy"
                         }
                     ]
@@ -300,7 +300,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 10,
+                            "damage": 5,
                             "restrictions": ""
                         },
                         {
@@ -470,7 +470,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -593,7 +593,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": "static"
                         }
                     ]
@@ -625,7 +625,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": "heavy"
                         },
                         {
@@ -652,7 +652,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 80,
+                            "damage": 40,
                             "restrictions": ""
                         }
                     ]
@@ -668,7 +668,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -684,7 +684,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -722,7 +722,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -760,7 +760,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 5,
+                            "damage": 2,
                             "restrictions": ""
                         }
                     ]
@@ -863,7 +863,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 10,
+                            "damage": 5,
                             "restrictions": "static"
                         }
                     ]
@@ -890,7 +890,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
@@ -922,7 +922,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
@@ -938,7 +938,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 10,
+                            "damage": 5,
                             "restrictions": ""
                         }
                     ]
@@ -970,7 +970,7 @@
                         {
                             "range": "⊹",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": "heavy"
                         }
                     ]
@@ -1115,7 +1115,7 @@
                         {
                             "range": "⯐",
                             "type": "volume",
-                            "damage": 10,
+                            "damage": 5,
                             "restrictions": "static"
                         }
                     ]
@@ -1131,7 +1131,7 @@
                         {
                             "range": "⛶",
                             "type": "volume",
-                            "damage": 20,
+                            "damage": 10,
                             "restrictions": "static"
                         }
                     ]
@@ -1169,7 +1169,7 @@
                         {
                             "range": "⚔",
                             "type": "volume",
-                            "damage": 40,
+                            "damage": 20,
                             "restrictions": ""
                         }
                     ]
