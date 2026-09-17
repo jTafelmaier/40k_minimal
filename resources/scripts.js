@@ -351,43 +351,44 @@ function toggle_select_attack(
     function show_preview_attack(
         element_unit_attacked) {
 
-        function get_int_damage_per_attack() {
+        const text_keywords_attack = element_attack
+            .getElementsByClassName("keywords")[0]
+            .innerText
+            .trim()
 
-            const int_damage_reduction = get_int_unit_property(
-                    element_unit_attacked,
-                    "damage_reduction")
+        function get_int_damage_consider_volume() {
 
-            const int_damage = parseInt(element_attack
+            const int_strength = parseInt(element_attack
                 .getElementsByClassName("value")[0]
                 .innerText
                 .trim())
 
-            const text_keywords_attack = element_attack
-                .getElementsByClassName("keywords")[0]
-                .innerText
-                .trim()
+            if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
+                return Math.floor(
+                        int_strength
+                            / 2)}
+            else {
+                return int_strength
+            }
+        }
+
+        function get_int_damage_per_attack() {
+
+            int_damage = Math.max(
+                    0,
+                    get_int_damage_consider_volume()
+                        + get_int_unit_property(
+                            element_unit_attacked,
+                            "damage_reduction"))
 
             if (text_keywords_attack.includes("single")) {
                 return Math.min(
-                        Math.max(
-                            0,
-                            int_damage
-                                + int_damage_reduction),
+                        int_damage,
                         get_int_unit_property(
                             element_unit_attacked,
                             "health_max"))
-            } else if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) == 1) {
-                return Math.max(
-                        0,
-                        Math.floor(
-                            int_damage
-                                / 2)
-                            + int_damage_reduction)
             } else {
-                return Math.max(
-                        0,
-                        int_damage
-                            + int_damage_reduction)
+                return int_damage
             }
         }
 

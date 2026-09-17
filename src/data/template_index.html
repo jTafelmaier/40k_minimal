@@ -15,22 +15,22 @@
             </h2>
             <div id="core_rules">
                 <div class="turn_structure">
-                    To start a match, players agree on:
+                    Before starting a match, players agree on:
                     <ul>
                         <li>
-                            the board space (including special zones like cover)
+                            the board space (including special zones like cover, no-teleport zones)
                         </li>
                         <li>
                             a starting player
                         </li>
                         <li>
-                            a total army cost limit (example: 1000 requisition)
+                            a requisition limit
                         </li>
                         <li>
                             a game duration limit (number of turns).
                         </li>
                     </ul>
-                    Then, every player chooses unit instances of one faction, with a total requisition not exceeding the agreed limit.
+                    Then, every player chooses unit instances of one faction, with their requisition sum not exceeding the agreed limit.
                     Only one unit per unit type can include less models than its model count limit.
                     <br/>
                     <br/>
@@ -38,59 +38,61 @@
                     Every turn, each unit can once sequentially spend 2 AT to perform different actions, alternating between sides.
                     <br/>
                     <br/>
-                    At the end of all turns, a winning player is determined by the total requisition of units on the board space.
+                    At the end of all turns, a winning player is determined by the total remaining requisition value of their units on the board space.
                     <br/>
                     <br/>
-                    <div class="definition">
-                        <div class="name">
-                            Action [2AT]
-                            <br/>
-                            Deploy
+                    <div class="actions_reserve">
+                        <div class="definition">
+                            <div class="name">
+                                Action [2AT]
+                                <br/>
+                                Deploy
+                            </div>
+                            <div class="description">
+                                This unit may be placed anywhere in the owner's deployment zone.
+                            </div>
                         </div>
-                        <div class="description">
-                            This action can only be performed when this unit is in reserves.
-                            <br/>
-                            This unit may be placed anywhere in the owner's deployment zone.
-                        </div>
-                    </div>
-                    <div class="definition">
-                        <div class="name">
-                            Action [2AT]
-                            <br/>
-                            Setup deepstrike
-                        </div>
-                        <div class="description">
-                            Set up a deepstrike token on the board space.
-                            <br/>
-                            When this unit performs the "Deploy" action: May place the unit as close as possible to the placed deepstrike token, and then remove that token.
-                        </div>
-                    </div>
-                    <div class="definition">
-                        <div class="name">
-                            Action [1AT]
-                            <br/>
-                            Move
-                        </div>
-                        <div class="description">
-                            Every model in the unit may move up to its movement characteristic in centimeters, without moving over enemy models.
+                        <div class="definition">
+                            <div class="name">
+                                Action [2AT]
+                                <br/>
+                                Setup deepstrike
+                            </div>
+                            <div class="description">
+                                Set up a deepstrike token on the board space.
+                                <br/>
+                                When this unit performs the "Deploy" action: May place the unit as close as possible to the placed deepstrike token, and then remove that token.
+                            </div>
                         </div>
                     </div>
-                    <div class="definition">
-                        <div class="name">
-                            Action [1AT]
-                            <br/>
-                            Attack
+                    <div class="actions_on_board">
+                        <div class="definition">
+                            <div class="name">
+                                Action [1AT]
+                                <br/>
+                                Move
+                            </div>
+                            <div class="description">
+                                Every model in the unit may move up to its movement characteristic in centimeters, without moving over enemy models.
+                            </div>
                         </div>
-                        <div class="description">
-                            If possible, select one attack and one visible elegible enemy unit as "target unit", otherwise end the action.
-                            <br/>
-                            <br/>
-                            Target unit: <b>health points total</b> are reduced by:
-                            <br/>
-                            <b>#models</b> * max(0, (<b>damage</b> - <b>damage reduction</b>)).
-                            <br/>
-                            <br/>
-                            Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).
+                        <div class="definition">
+                            <div class="name">
+                                Action [1AT]
+                                <br/>
+                                Attack
+                            </div>
+                            <div class="description">
+                                If possible, select one attack and one visible elegible enemy unit as "target unit", otherwise end the action.
+                                <br/>
+                                <br/>
+                                Target unit: <b>health points total</b> are reduced by:
+                                <br/>
+                                <b>#models</b> * max(0, (<b>damage</b> - <b>damage reduction</b>)).
+                                <br/>
+                                <br/>
+                                Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).
+                            </div>
                         </div>
                     </div>
                 </div>
