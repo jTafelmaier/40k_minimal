@@ -270,12 +270,7 @@ body {
 }
 
 .name_unit {
-    width: fit-content;
-    padding: 0px 5px;
-    border: 1px solid #8d97b033;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 2px;
+    color: var(--grey_text);
 }
 
 .data_unit {
@@ -290,7 +285,8 @@ body {
     margin-top: 5px;
 }
 
-.model_property {
+.model_property,
+.model_action {
     padding: 0px 5px;
     border: 1px solid #8d97b033;
     border-right: none;
@@ -300,19 +296,14 @@ body {
 
 .model_property .name {
     margin-right: 5px;
-    font-size: 14px;
+    font-size: 10px;
     color: var(--grey_text);
 }
 
 .model_action {
     display: flex;
     width: fit-content;
-    padding: 0px 5px;
     margin-bottom: 5px;
-    border: 1px solid #8d97b033;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 2px;
     text-align: right;
 }
 
@@ -360,7 +351,8 @@ body {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
-.health_bar, .models {
+.health_bar,
+.models {
     width: 5px;
     padding: 2px;
     background-color: var(--grey_dark);
