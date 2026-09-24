@@ -151,6 +151,9 @@ def generate_htmls():
                     + dict_unit \
                         ["damage_reduction"] \
                         .__str__() \
+                    + "</div></div><div class=\"model_property take_cover\"><div class=\"name\">TC</div><div class=\"value\">" \
+                    + dict_unit \
+                        ["take_cover"] \
                     + "</div></div><div class=\"model_property movement\"><div class=\"name\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
