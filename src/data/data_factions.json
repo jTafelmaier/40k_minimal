@@ -318,7 +318,7 @@
                             "restrictions": ""
                         },
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "single",
                             "damage": 40,
                             "restrictions": "heavy"
@@ -620,8 +620,8 @@
                     "number_models_max": 1,
                     "attacks": [
                         {
-                            "range": "⯐",
-                            "type": "volume",
+                            "range": "⊹",
+                            "type": "blast",
                             "damage": 10,
                             "restrictions": "static"
                         }
@@ -655,7 +655,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "type": "volume",
+                            "type": "blast",
                             "damage": 10,
                             "restrictions": "heavy"
                         },
@@ -926,7 +926,7 @@
                     "number_models_max": 1,
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "",
                             "damage": 10,
                             "restrictions": ""
@@ -949,7 +949,7 @@
                     "number_models_max": 1,
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "",
                             "damage": 10,
                             "restrictions": ""
@@ -1000,7 +1000,7 @@
                     "number_models_max": 3,
                     "attacks": [
                         {
-                            "range": "⯐",
+                            "range": "⊹",
                             "type": "single",
                             "damage": 25,
                             "restrictions": "heavy"
@@ -1170,8 +1170,8 @@
                     "number_models_max": 1,
                     "attacks": [
                         {
-                            "range": "⯐",
-                            "type": "volume",
+                            "range": "⊹",
+                            "type": "blast",
                             "damage": 5,
                             "restrictions": "static"
                         }
@@ -1188,7 +1188,7 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "type": "volume",
+                            "type": "blast",
                             "damage": 10,
                             "restrictions": "static"
                         }
