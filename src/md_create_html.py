@@ -103,7 +103,7 @@ def generate_htmls():
                                         + text_parameters_functions \
                                         + ", "
                                         + (int_index
-                                        + 1)
+                                            + 1)
                                             .__str__() \
                                         + ")\"/>",
                                     range(int_number_models_max))) \
@@ -125,13 +125,13 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + "\" title=\"" \
+                    + "\"><div class=\"unit_instances\">" \
+                    + get_text_html_unit_instance() \
+                    + "</div><div class=\"unit_data\" title=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + " requisition per model.\"><div class=\"unit_instances\">" \
-                    + get_text_html_unit_instance() \
-                    + "</div><div class=\"unit_data\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
+                    + " requisition per model.\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
                     + ", " \
                     + int_number_models_max \
