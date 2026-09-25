@@ -1190,7 +1190,7 @@
                             "range": "⛶",
                             "type": "blast",
                             "damage": 10,
-                            "restrictions": "static"
+                            "restrictions": "heavy"
                         }
                     ]
                 },
