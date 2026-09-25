@@ -93,6 +93,29 @@ def generate_htmls():
                 int_number_models_max = dict_unit \
                     ["number_models_max"]
 
+                def get_text_html_unit_instance():
+
+                    return "<div class=\"unit_instance\">" \
+                        +  "" \
+                            .join(
+                                map(
+                                    lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
+                                        + text_parameters_functions \
+                                        + ", "
+                                        + (int_index
+                                        + 1)
+                                            .__str__() \
+                                        + ")\"/>",
+                                    range(int_number_models_max))) \
+                        + "</div><div class=\"health_bar\" health_total=\"" \
+                        + (int_number_models_max \
+                            * dict_unit \
+                                ["health_max"]) \
+                            .__str__() \
+                        + "\" onclick=\"apply_preview(" \
+                        + text_parameters_functions \
+                        + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div>"
+
                 return "<div class=\"unit_type unselected\" current_health=\"" \
                     + (int_number_models_max \
                         * dict_unit \
@@ -102,30 +125,13 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + "\"><div class=\"unit_instances\" title=\"" \
+                    + "\" title=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + " requisition per model.\"><div class=\"models\">" \
-                    +  "" \
-                        .join(
-                            map(
-                                lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
-                                    + text_parameters_functions \
-                                    + ", "
-                                    + (int_index
-                                       + 1)
-                                        .__str__() \
-                                    + ")\"/>",
-                                range(int_number_models_max))) \
-                    + "</div><div class=\"health_bar\" health_total=\"" \
-                    + (int_number_models_max \
-                        * dict_unit \
-                            ["health_max"]) \
-                        .__str__() \
-                    + "\" onclick=\"apply_preview(" \
-                    + text_parameters_functions \
-                    + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"unit_data\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
+                    + " requisition per model.\"><div class=\"unit_instances\">" \
+                    + get_text_html_unit_instance() \
+                    + "</div><div class=\"unit_data\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
                     + ", " \
                     + int_number_models_max \
