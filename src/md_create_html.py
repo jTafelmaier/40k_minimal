@@ -112,16 +112,16 @@ def generate_htmls():
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
+                        + "\"  health_current=\"" \
+                        + (int_number_models_max \
+                            * dict_unit \
+                                ["health_max"]) \
+                            .__str__() \
                         + "\" onclick=\"apply_preview(" \
                         + text_parameters_functions \
                         + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div>"
 
-                return "<div class=\"unit_type unselected\" current_health=\"" \
-                    + (int_number_models_max \
-                        * dict_unit \
-                            ["health_max"]) \
-                        .__str__() \
-                    + "\" requisition=\"" \
+                return "<div class=\"unit_type unselected\" requisition=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \

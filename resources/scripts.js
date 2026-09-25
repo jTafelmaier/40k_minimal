@@ -197,8 +197,9 @@ function set_count_models(
             "health_max")
 
     element_unit
+        .getElementsByClassName("health_bar")[0]
         .setAttribute(
-            "current_health",
+            "health_current",
             int_health_full
                 .toString())
 
@@ -302,8 +303,9 @@ function hide_preview_attack() {
         display_unit_state(
                 element_unit,
                 get_int_attribute(
-                    element_unit,
-                    "current_health"))
+                    element_unit
+                        .getElementsByClassName("health_bar")[0],
+                    "health_current"))
 
         element_unit
             .classList
@@ -393,8 +395,9 @@ function toggle_select_attack(
         }
 
         const int_health_current = get_int_attribute(
-                element_unit_attacked,
-                "current_health")
+                element_unit_attacked
+                    .getElementsByClassName("health_bar")[0],
+                "health_current")
 
         const int_damage_added = Math.min(
                 int_health_current,
@@ -465,8 +468,9 @@ function apply_preview(
     }
 
     const int_health_points_new = get_int_attribute(
-            element_unit,
-            "current_health")
+            element_unit
+                .getElementsByClassName("health_bar")[0],
+            "health_current")
         - get_int_attribute(
             element_unit
                 .getElementsByClassName("section difference")[0],
@@ -482,8 +486,9 @@ function apply_preview(
             int_health_points_new)
 
     element_unit
+        .getElementsByClassName("health_bar")[0]
         .setAttribute(
-            "current_health",
+            "health_current",
             int_health_points_new
                 .toString())
 
