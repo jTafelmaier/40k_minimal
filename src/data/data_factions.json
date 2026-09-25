@@ -1031,7 +1031,7 @@
             "units": [
                 {
                     "name": "Prime with lash whip",
-                    "requisition": 75,
+                    "requisition": 100,
                     "take_cover": "y",
                     "health_max": 25,
                     "damage_reduction": 4,
@@ -1040,7 +1040,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "single",
+                            "type": "",
                             "damage": 20,
                             "restrictions": ""
                         }
@@ -1048,16 +1048,16 @@
                 },
                 {
                     "name": "Winged prime",
-                    "requisition": 75,
+                    "requisition": 100,
                     "take_cover": "y",
-                    "health_max": 25,
+                    "health_max": 20,
                     "damage_reduction": 2,
                     "move": 40,
                     "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⚔",
-                            "type": "single",
+                            "type": "",
                             "damage": 20,
                             "restrictions": ""
                         }
