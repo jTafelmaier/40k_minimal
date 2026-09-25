@@ -369,6 +369,7 @@ body {
 }
 
 .health_bar {
+    flex: 1;
     display: none;
     justify-content: flex-end;
     flex-direction: column;
