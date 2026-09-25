@@ -125,7 +125,7 @@ def generate_htmls():
                         .__str__() \
                     + "\" onclick=\"apply_preview(" \
                     + text_parameters_functions \
-                    + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"image_unit\" onclick=\"toggle_count_models(" \
+                    + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div><div class=\"unit_data\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
                     + text_parameters_functions \
                     + ", " \
                     + int_number_models_max \
@@ -158,7 +158,7 @@ def generate_htmls():
                     + dict_unit \
                         ["move"] \
                         .__str__() \
-                    + "</div></div></div><div class=\"data_unit\"><div class=\"model_actions\">" \
+                    + "</div></div></div><div>" \
                     + "" \
                         .join(
                             map(

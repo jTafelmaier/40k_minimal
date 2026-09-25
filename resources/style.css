@@ -218,11 +218,16 @@ body {
 
 .unit_type {
     display: flex;
+    height: 150px;
     margin: 5px 4px;
-    border: 2px solid var(--grey_main);
-    border-radius: 4px;
+}
+
+.unit_data {
+    flex: 1;
     background-image: url("background.png");
     background-size: cover;
+    border: 1.5px solid var(--grey_main);
+    border-radius: 4px;
     clip-path: polygon(
         0 0,
         calc(100% - 15px) 0,
@@ -260,9 +265,9 @@ body {
 }
 
 .image_unit {
-    flex: 1;
-    height: 150px;
-    padding: 5px;
+    height: 100%;
+    padding-left: 8px;
+    padding-top: 2px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -282,7 +287,7 @@ body {
 .model_properties {
     display: flex;
     gap: 5px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .model_property,
@@ -303,7 +308,7 @@ body {
 .model_action {
     display: flex;
     width: fit-content;
-    margin-bottom: 5px;
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -381,10 +386,6 @@ body {
 
 .section.remaining {
     background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
-}
-
-.inactive .model_actions {
-    display: none;
 }
 
 .attacking_side .unit_type:not(.attacking),
