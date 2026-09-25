@@ -93,7 +93,7 @@ def generate_htmls():
                 int_number_models_max = dict_unit \
                     ["number_models_max"]
 
-                return "<div class=\"unit_faction unselected\" current_health=\"" \
+                return "<div class=\"unit_type unselected\" current_health=\"" \
                     + (int_number_models_max \
                         * dict_unit \
                             ["health_max"]) \
@@ -102,7 +102,7 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + "\"><div class=\"unit_state\" title=\"" \
+                    + "\"><div class=\"unit_instances\" title=\"" \
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \

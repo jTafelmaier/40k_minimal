@@ -159,7 +159,7 @@ function update_requisition_total(
         .textContent = Array.from(document
             .getElementById(text_side)
             .querySelectorAll(".faction:not(.invisible)")[0]
-            .getElementsByClassName("unit_faction"))
+            .getElementsByClassName("unit_type"))
             .map(get_int_requisition_unit)
             .reduce((a, b) => a + b)
             .toString()
@@ -173,7 +173,7 @@ function get_element_unit(
     return document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("unit_faction")[index_unit]
+        .getElementsByClassName("unit_type")[index_unit]
 }
 
 
@@ -239,7 +239,7 @@ function finish_action(
     text_side) {
 
     const array_elements_units = Array.from(document
-        .querySelectorAll(".unit_faction:not(.unselected)"))
+        .querySelectorAll(".unit_type:not(.unselected)"))
 
     if (!array_elements_units.every(element => element.classList.contains("inactive")))
         return
@@ -446,7 +446,7 @@ function toggle_select_attack(
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
         .querySelectorAll(".faction:not(.invisible)")[0]
-        .querySelectorAll(".unit_faction:not(.unselected)"))
+        .querySelectorAll(".unit_type:not(.unselected)"))
         .forEach(show_preview_attack)
 }
 

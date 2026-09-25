@@ -216,7 +216,7 @@ body {
     width: 20px;
 }
 
-.unit_faction {
+.unit_type {
     display: flex;
     margin: 5px 4px;
     border: 2px solid var(--grey_main);
@@ -249,13 +249,13 @@ body {
     background-color: var(--grey_text);
 }
 
-.unit_state {
+.unit_instances {
     display: flex;
     padding: 5px 4px;
     user-select: none;
 }
 
-.unit_faction:not(.unselected) .count_models {
+.unit_type:not(.unselected) .count_models {
     border: 2px solid white;
 }
 
@@ -387,7 +387,7 @@ body {
     display: none;
 }
 
-.attacking_side .unit_faction:not(.attacking),
+.attacking_side .unit_type:not(.attacking),
 .attacking_side .attacking .attack:not(.selected) {
     opacity: 0.15;
 }
