@@ -961,7 +961,7 @@
                     "requisition": 100,
                     "take_cover": "y",
                     "health_max": 15,
-                    "damage_reduction": 4,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
