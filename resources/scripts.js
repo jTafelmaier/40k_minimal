@@ -114,6 +114,7 @@ function display_unit_state(
             int_health_new)
 
     element_unit
+        .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "title",
             int_health_new
