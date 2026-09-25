@@ -1041,7 +1041,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -1058,7 +1058,7 @@
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 20,
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
