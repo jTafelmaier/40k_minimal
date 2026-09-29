@@ -311,13 +311,15 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit_type) {
 
-        set_instance_state(
+        ["a"]
+            .forEach(text_id_instance => set_instance_state(
                 element_unit_type,
-                "a",
+                text_id_instance,
                 get_int_attribute(
                     element_unit_type
+                        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
                         .getElementsByClassName("health_bar")[0],
-                    "health_current"))
+                    "health_current")))
 
         element_unit_type
             .classList
