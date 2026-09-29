@@ -108,7 +108,9 @@ def generate_htmls():
                                 map(
                                     lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
                                         + text_parameters_unit_type \
-                                        + ", "
+                                        + ", '" \
+                                        + text_id_instance \
+                                        + "', "
                                         + (int_index
                                             + 1)
                                             .__str__() \

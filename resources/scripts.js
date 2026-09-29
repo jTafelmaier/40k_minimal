@@ -86,9 +86,13 @@ function set_height_bar(
 }
 
 
-function display_unit_state(
+function set_instance_state(
     element_unit_type,
+    text_id_instance,
     int_health_new) {
+
+    const element_unit_instance = element_unit_type
+        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
     const int_count_models = Math.ceil(
             int_health_new
@@ -96,7 +100,7 @@ function display_unit_state(
                     element_unit_type,
                     "health_max"))
 
-    const array_elements_models = Array.from(element_unit_type
+    const array_elements_models = Array.from(element_unit_instance
         .getElementsByClassName("models")[0]
         .children)
 
@@ -109,11 +113,11 @@ function display_unit_state(
         .forEach(element => element.classList.remove("alive"))
 
     set_height_bar(
-            element_unit_type
+            element_unit_instance
                 .getElementsByClassName("section remaining")[0],
             int_health_new)
 
-    element_unit_type
+    element_unit_instance
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "title",
@@ -184,15 +188,16 @@ function get_element_unit_type(
 function set_count_models(
     text_side,
     index_unit,
+    text_id_instance,
     int_count_models) {
-
-    const element_unit_type = get_element_unit_type(
-            text_side,
-            index_unit)
 
     if (document.getElementById("factions").classList.contains("match")) {
         return
     }
+
+    const element_unit_type = get_element_unit_type(
+            text_side,
+            index_unit)
 
     const int_health_full = int_count_models
         * get_int_unit_property(
@@ -200,14 +205,16 @@ function set_count_models(
             "health_max")
 
     element_unit_type
+        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "health_current",
             int_health_full
                 .toString())
 
-    display_unit_state(
+    set_instance_state(
             element_unit_type,
+            text_id_instance,
             int_health_full)
 
     if (int_count_models == 0) {
@@ -236,6 +243,7 @@ function toggle_count_models(
     set_count_models(
             text_side,
             index_unit,
+            "a",
             get_int_count_models(element_unit_type) > 0 ? 0 : int_count_models_full)
 }
 
@@ -303,8 +311,9 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit_type) {
 
-        display_unit_state(
+        set_instance_state(
                 element_unit_type,
+                "a",
                 get_int_attribute(
                     element_unit_type
                         .getElementsByClassName("health_bar")[0],
@@ -442,8 +451,9 @@ function toggle_select_attack(
                     .getElementsByClassName("section difference")[0],
                 int_damage_added)
 
-        display_unit_state(
+        set_instance_state(
                 element_unit_attacked,
+                "a",
                 int_health_current
                     - int_damage_added)
 
@@ -504,8 +514,9 @@ function apply_preview(
                 .getElementsByClassName("section difference")[0],
             0)
 
-    display_unit_state(
+    set_instance_state(
             element_unit_type,
+            "a",
             int_health_points_new)
 
     element_unit_type
