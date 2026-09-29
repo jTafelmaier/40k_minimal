@@ -93,9 +93,12 @@ def generate_htmls():
                 int_number_models_max = dict_unit \
                     ["number_models_max"]
 
-                def get_text_html_unit_instance():
+                def get_text_html_unit_instance(
+                    text_id_instance:str):
 
-                    return "<div class=\"unit_instance\"><div class=\"models\">" \
+                    return "<div class=\"unit_instance instance_" \
+                        + text_id_instance \
+                        + "\"><div class=\"models\">" \
                         +  "" \
                             .join(
                                 map(
@@ -126,7 +129,7 @@ def generate_htmls():
                         ["requisition"] \
                         .__str__() \
                     + "\"><div class=\"unit_instances\">" \
-                    + get_text_html_unit_instance() \
+                    + get_text_html_unit_instance("a") \
                     + "</div><div class=\"unit_data\" title=\"" \
                     + dict_unit \
                         ["requisition"] \
