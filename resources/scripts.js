@@ -148,21 +148,13 @@ function update_requisition_total(
     function get_int_requisition_unit_type(
         element_unit_type){
 
-        const int_requisition_unit_type = parseInt(
-                element_unit_type
-                    .getAttribute("requisition"))
-
-        function get_int_requisition_unit_instance(
-            element_unit_instance){
-
-            return get_int_count_models(element_unit_instance)
-                * int_requisition_unit_type
-        }
-
         return Array.from(element_unit_type
             .querySelectorAll(".unit_instance"))
-            .map(get_int_requisition_unit_instance)
+            .map(get_int_count_models)
             .reduce((a, b) => a + b)
+            * parseInt(
+                element_unit_type
+                    .getAttribute("requisition"))
     }
 
     document
