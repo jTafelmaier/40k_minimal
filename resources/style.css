@@ -262,7 +262,7 @@ body {
     background-color: var(--grey_text);
 }
 
-.inactive .unit_instance {
+.already_activated .unit_instance {
     background-color: var(--grey_dark_blue);
 }
 
@@ -364,12 +364,12 @@ body {
 
 
 .match .attack:hover,
-.match .selected  {
+.match .activated  {
     user-select: none;
 }
 
 .match .attack:hover,
-.match .attack.selected {
+.match .attack.activated {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
@@ -406,7 +406,7 @@ body {
 }
 
 .attacking_side .unit_type:not(.attacking),
-.attacking_side .attacking .attack:not(.selected) {
+.attacking_side .attacking .attack:not(.activated) {
     opacity: 0.15;
 }
 

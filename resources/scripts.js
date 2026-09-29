@@ -245,11 +245,11 @@ function test_new_turn() {
     const array_elements_unit_types = Array.from(document
         .querySelectorAll(".unit_type:not(.unpicked)"))
 
-    if (!array_elements_unit_types.every(element => element.classList.contains("inactive")))
+    if (!array_elements_unit_types.every(element => element.classList.contains("already_activated")))
         return
 
     array_elements_unit_types
-        .forEach(element => element.classList.remove("inactive"))
+        .forEach(element => element.classList.remove("already_activated"))
 
     const element_turn_counter = document
         .getElementById("turn_counter")
@@ -281,7 +281,7 @@ function set_inactive(
 
     element_unit_type
         .classList
-        .add("inactive")
+        .add("already_activated")
 
     test_new_turn()
 }
@@ -323,9 +323,9 @@ function hide_preview_attack() {
         .getElementsByClassName("attacking")[0]
 
     element_unit_attacking
-        .getElementsByClassName("selected")[0]
+        .getElementsByClassName("activated")[0]
         .classList
-        .remove("selected")
+        .remove("activated")
 
     element_unit_attacking
         .classList
@@ -354,13 +354,13 @@ function toggle_select_attack(
     const element_attack = element_unit_attacking
         .getElementsByClassName("attack")[index_attack]
 
-    const bool_already_selected = element_attack
+    const bool_currently_activated = element_attack
         .classList
-        .contains("selected")
+        .contains("activated")
 
     hide_preview_attack()
 
-    if (bool_already_selected) {
+    if (bool_currently_activated) {
         return
     }
 
@@ -448,7 +448,7 @@ function toggle_select_attack(
 
     element_attack
         .classList
-        .add("selected")
+        .add("activated")
 
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
@@ -504,7 +504,7 @@ function apply_preview(
     document
         .getElementsByClassName("attacking")[0]
         .classList
-        .add("inactive")
+        .add("already_activated")
 
     update_requisition_total(text_side)
 
