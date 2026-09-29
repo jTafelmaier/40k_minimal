@@ -262,6 +262,10 @@ body {
     background-color: var(--grey_text);
 }
 
+.unit_instance.selected {
+    border-right: 1px solid white;
+}
+
 .already_activated .unit_instance {
     background-color: var(--grey_dark_blue);
 }

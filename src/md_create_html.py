@@ -98,7 +98,7 @@ def generate_htmls():
 
                     return "<div class=\"unit_instance instance_" \
                         + text_id_instance \
-                        + "\"><div class=\"models\">" \
+                        + " selected\"><div class=\"models\">" \
                         +  "" \
                             .join(
                                 map(
