@@ -98,7 +98,11 @@ def generate_htmls():
 
                     return "<div class=\"unit_instance instance_" \
                         + text_id_instance \
-                        + " selected\"><div class=\"models\">" \
+                        + "\" onclick=\"select_instance(" \
+                        + text_parameters_unit_type \
+                        + ", '" \
+                        + text_id_instance \
+                        + "')\"><div class=\"models\">" \
                         +  "" \
                             .join(
                                 map(

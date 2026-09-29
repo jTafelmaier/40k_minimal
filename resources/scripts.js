@@ -338,6 +338,26 @@ function hide_preview_attack() {
 }
 
 
+function select_instance(
+    text_side,
+    index_unit,
+    text_class_instance) {
+
+    const element_unit_type = get_element_unit_type(
+            text_side,
+            index_unit)
+
+    Array.from(element_unit_type
+        .querySelectorAll(".unit_instance.selected"))
+        .forEach(element => element.classList.remove("selected"))
+
+    element_unit_type
+        .getElementsByClassName("instance_" + text_class_instance)[0]
+        .classList
+        .add("selected")
+}
+
+
 function toggle_select_attack(
     text_side_unit_attacking,
     index_unit_attacking,
