@@ -87,16 +87,16 @@ function set_height_bar(
 
 
 function display_unit_state(
-    element_unit,
+    element_unit_type,
     int_health_new) {
 
     const int_count_models = Math.ceil(
             int_health_new
                 / get_int_unit_property(
-                    element_unit,
+                    element_unit_type,
                     "health_max"))
 
-    const array_elements_models = Array.from(element_unit
+    const array_elements_models = Array.from(element_unit_type
         .getElementsByClassName("models")[0]
         .children)
 
@@ -109,11 +109,11 @@ function display_unit_state(
         .forEach(element => element.classList.remove("alive"))
 
     set_height_bar(
-            element_unit
+            element_unit_type
                 .getElementsByClassName("section remaining")[0],
             int_health_new)
 
-    element_unit
+    element_unit_type
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "title",
@@ -133,9 +133,9 @@ function toggle_mode_list() {
 
 
 function get_int_count_models(
-    element_unit) {
+    element_unit_type) {
 
-    return element_unit
+    return element_unit_type
         .getElementsByClassName("models")[0]
         .getElementsByClassName("alive")
         .length
@@ -186,7 +186,7 @@ function set_count_models(
     index_unit,
     int_count_models) {
 
-    const element_unit = get_element_unit_type(
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
@@ -196,10 +196,10 @@ function set_count_models(
 
     const int_health_full = int_count_models
         * get_int_unit_property(
-            element_unit,
+            element_unit_type,
             "health_max")
 
-    element_unit
+    element_unit_type
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "health_current",
@@ -207,15 +207,15 @@ function set_count_models(
                 .toString())
 
     display_unit_state(
-            element_unit,
+            element_unit_type,
             int_health_full)
 
     if (int_count_models == 0) {
-        element_unit
+        element_unit_type
             .classList
             .add("unselected")
     } else {
-        element_unit
+        element_unit_type
             .classList
             .remove("unselected")
     }
@@ -229,26 +229,26 @@ function toggle_count_models(
     index_unit,
     int_count_models_full) {
 
-    const element_unit = get_element_unit_type(
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
     set_count_models(
             text_side,
             index_unit,
-            get_int_count_models(element_unit) > 0 ? 0 : int_count_models_full)
+            get_int_count_models(element_unit_type) > 0 ? 0 : int_count_models_full)
 }
 
 
 function test_new_turn() {
 
-    const array_elements_units = Array.from(document
-        .querySelectorAll(".unit_type:not(.unselected)"))
+    const array_elements_unit_instances = Array.from(document
+        .querySelectorAll(".unit_type:not(.unselected) .unit_instance"))
 
-    if (!array_elements_units.every(element => element.classList.contains("inactive")))
+    if (!array_elements_unit_instances.every(element => element.classList.contains("inactive")))
         return
 
-    array_elements_units
+    array_elements_unit_instances
         .forEach(element => element.classList.remove("inactive"))
 
     const element_turn_counter = document
@@ -271,7 +271,7 @@ function set_inactive(
         return
     }
 
-    const element_unit = get_element_unit_type(
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
@@ -279,7 +279,7 @@ function set_inactive(
         return
     }
 
-    element_unit
+    element_unit_type
         .classList
         .add("inactive")
 
@@ -301,16 +301,16 @@ function hide_preview_attack() {
         .remove("attack_in_progress")
 
     function unset_attacked(
-        element_unit) {
+        element_unit_type) {
 
         display_unit_state(
-                element_unit,
+                element_unit_type,
                 get_int_attribute(
-                    element_unit
+                    element_unit_type
                         .getElementsByClassName("health_bar")[0],
                     "health_current"))
 
-        element_unit
+        element_unit_type
             .classList
             .remove("attacked")
     }
@@ -462,33 +462,33 @@ function apply_preview(
     text_side,
     index_unit) {
 
-    const element_unit = get_element_unit_type(
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
-    if (!element_unit.classList.contains("attacked")) {
+    if (!element_unit_type.classList.contains("attacked")) {
         return
     }
 
     const int_health_points_new = get_int_attribute(
-            element_unit
+            element_unit_type
                 .getElementsByClassName("health_bar")[0],
             "health_current")
         - get_int_attribute(
-            element_unit
+            element_unit_type
                 .getElementsByClassName("section difference")[0],
             "value")
 
     set_height_bar(
-            element_unit
+            element_unit_type
                 .getElementsByClassName("section difference")[0],
             0)
 
     display_unit_state(
-            element_unit,
+            element_unit_type,
             int_health_points_new)
 
-    element_unit
+    element_unit_type
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "health_current",
@@ -496,7 +496,7 @@ function apply_preview(
                 .toString())
 
     if (int_health_points_new <= 0) {
-        element_unit
+        element_unit_type
             .classList
             .add("unselected")
     }
