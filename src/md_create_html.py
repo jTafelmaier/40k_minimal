@@ -58,7 +58,7 @@ def generate_htmls():
                 int_index_unit, \
                 dict_unit = pair_dict_unit
 
-                text_parameters_functions = "'" \
+                text_parameters_unit_type = "'" \
                     + text_side \
                     + "', " \
                     + int_index_unit \
@@ -71,7 +71,7 @@ def generate_htmls():
                     dict_attack = pair_dict_attack
 
                     return "<div class=\"model_action attack\" onclick=\"toggle_select_attack(" \
-                        + text_parameters_functions \
+                        + text_parameters_unit_type \
                         + ", " \
                         + int_index_attack \
                             .__str__() \
@@ -100,7 +100,7 @@ def generate_htmls():
                             .join(
                                 map(
                                     lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
-                                        + text_parameters_functions \
+                                        + text_parameters_unit_type \
                                         + ", "
                                         + (int_index
                                             + 1)
@@ -118,7 +118,7 @@ def generate_htmls():
                                 ["health_max"]) \
                             .__str__() \
                         + "\" onclick=\"apply_preview(" \
-                        + text_parameters_functions \
+                        + text_parameters_unit_type \
                         + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
 
                 return "<div class=\"unit_type unselected\" requisition=\"" \
@@ -132,7 +132,7 @@ def generate_htmls():
                         ["requisition"] \
                         .__str__() \
                     + " requisition per model.\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
-                    + text_parameters_functions \
+                    + text_parameters_unit_type \
                     + ", " \
                     + int_number_models_max \
                         .__str__() \
