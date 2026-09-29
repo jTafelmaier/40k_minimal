@@ -240,8 +240,7 @@ function toggle_count_models(
 }
 
 
-function finish_action(
-    text_side) {
+function test_new_turn() {
 
     const array_elements_units = Array.from(document
         .querySelectorAll(".unit_type:not(.unselected)"))
@@ -284,7 +283,7 @@ function set_inactive(
         .classList
         .add("inactive")
 
-    finish_action(text_side)
+    test_new_turn()
 }
 
 
@@ -507,10 +506,10 @@ function apply_preview(
         .classList
         .add("inactive")
 
-    finish_action(text_side === "left" ? "right" : "left")
+    update_requisition_total(text_side)
 
     hide_preview_attack()
 
-    update_requisition_total(text_side)
+    test_new_turn()
 }
 
