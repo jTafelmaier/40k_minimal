@@ -226,7 +226,7 @@ body {
     display: flex;
     gap: 2px;
     flex-direction: column;
-    padding: 5px 4px;
+    padding: 4px 0px;
     user-select: none;
 }
 
@@ -234,9 +234,23 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column-reverse;
+    padding: 2px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--grey_blue);
 }
 
-.unit_instance > div {
+.models {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 5px;
+    height: 100%;
+    padding: 1px 2px;
+    border-radius: 1px;
+    background-color: var(--grey_dark);
+}
+
+.models > div {
     flex: 1;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -244,8 +258,12 @@ body {
     background-color: var(--grey_dark);
 }
 
-.unit_instance > div.active {
+.models > div.alive {
     background-color: var(--grey_text);
+}
+
+.inactive .unit_instance {
+    background-color: var(--grey_dark_blue);
 }
 
 .unit_data {
@@ -359,8 +377,7 @@ body {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
-.health_bar,
-.unit_instance {
+.health_bar {
     width: 5px;
     padding: 2px;
     background-color: var(--grey_dark);
@@ -375,7 +392,7 @@ body {
     flex-direction: column;
 }
 
-.match .unit_instance {
+.match .models {
     display: none;
 }
 

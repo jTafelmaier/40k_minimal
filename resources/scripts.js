@@ -97,16 +97,16 @@ function display_unit_state(
                     "health_max"))
 
     const array_elements_models = Array.from(element_unit
-        .getElementsByClassName("unit_instance")[0]
+        .getElementsByClassName("models")[0]
         .children)
 
     array_elements_models
         .slice(0, int_count_models)
-        .forEach(element => element.classList.add("active"))
+        .forEach(element => element.classList.add("alive"))
 
     array_elements_models
         .slice(int_count_models)
-        .forEach(element => element.classList.remove("active"))
+        .forEach(element => element.classList.remove("alive"))
 
     set_height_bar(
             element_unit
@@ -136,8 +136,8 @@ function get_int_count_models(
     element_unit) {
 
     return element_unit
-        .getElementsByClassName("unit_instance")[0]
-        .getElementsByClassName("active")
+        .getElementsByClassName("models")[0]
+        .getElementsByClassName("alive")
         .length
 }
 

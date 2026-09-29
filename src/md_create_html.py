@@ -95,7 +95,7 @@ def generate_htmls():
 
                 def get_text_html_unit_instance():
 
-                    return "<div class=\"unit_instance\">" \
+                    return "<div class=\"unit_instance\"><div class=\"models\">" \
                         +  "" \
                             .join(
                                 map(
@@ -119,7 +119,7 @@ def generate_htmls():
                             .__str__() \
                         + "\" onclick=\"apply_preview(" \
                         + text_parameters_functions \
-                        + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div>"
+                        + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
 
                 return "<div class=\"unit_type unselected\" requisition=\"" \
                     + dict_unit \
