@@ -170,7 +170,7 @@ function update_requisition_total(
 }
 
 
-function get_element_unit(
+function get_element_unit_type(
     text_side,
     index_unit) {
 
@@ -186,7 +186,7 @@ function set_count_models(
     index_unit,
     int_count_models) {
 
-    const element_unit = get_element_unit(
+    const element_unit = get_element_unit_type(
             text_side,
             index_unit)
 
@@ -229,7 +229,7 @@ function toggle_count_models(
     index_unit,
     int_count_models_full) {
 
-    const element_unit = get_element_unit(
+    const element_unit = get_element_unit_type(
             text_side,
             index_unit)
 
@@ -272,7 +272,7 @@ function set_inactive(
         return
     }
 
-    const element_unit = get_element_unit(
+    const element_unit = get_element_unit_type(
             text_side,
             index_unit)
 
@@ -344,7 +344,7 @@ function toggle_select_attack(
     index_unit_attacking,
     index_attack) {
 
-    const element_unit_attacking = get_element_unit(
+    const element_unit_attacking = get_element_unit_type(
             text_side_unit_attacking,
             index_unit_attacking)
 
@@ -463,7 +463,7 @@ function apply_preview(
     text_side,
     index_unit) {
 
-    const element_unit = get_element_unit(
+    const element_unit = get_element_unit_type(
             text_side,
             index_unit)
 
