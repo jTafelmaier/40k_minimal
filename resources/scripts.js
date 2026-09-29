@@ -213,11 +213,11 @@ function set_count_models(
     if (int_count_models == 0) {
         element_unit_type
             .classList
-            .add("unselected")
+            .add("unpicked")
     } else {
         element_unit_type
             .classList
-            .remove("unselected")
+            .remove("unpicked")
     }
 
     update_requisition_total(text_side)
@@ -242,13 +242,13 @@ function toggle_count_models(
 
 function test_new_turn() {
 
-    const array_elements_unit_instances = Array.from(document
-        .querySelectorAll(".unit_type:not(.unselected) .unit_instance"))
+    const array_elements_unit_types = Array.from(document
+        .querySelectorAll(".unit_type:not(.unpicked)"))
 
-    if (!array_elements_unit_instances.every(element => element.classList.contains("inactive")))
+    if (!array_elements_unit_types.every(element => element.classList.contains("inactive")))
         return
 
-    array_elements_unit_instances
+    array_elements_unit_types
         .forEach(element => element.classList.remove("inactive"))
 
     const element_turn_counter = document
@@ -354,6 +354,16 @@ function toggle_select_attack(
     const element_attack = element_unit_attacking
         .getElementsByClassName("attack")[index_attack]
 
+    const bool_already_selected = element_attack
+        .classList
+        .contains("selected")
+
+    hide_preview_attack()
+
+    if (bool_already_selected) {
+        return
+    }
+
     function show_preview_attack(
         element_unit_attacked) {
 
@@ -422,16 +432,6 @@ function toggle_select_attack(
             .add("attacked")
     }
 
-    const bool_already_selected = element_attack
-        .classList
-        .contains("selected")
-
-    hide_preview_attack()
-
-    if (bool_already_selected) {
-        return
-    }
-
     document
         .getElementById("factions")
         .classList
@@ -453,7 +453,7 @@ function toggle_select_attack(
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
         .querySelectorAll(".faction:not(.invisible)")[0]
-        .querySelectorAll(".unit_type:not(.unselected)"))
+        .querySelectorAll(".unit_type:not(.unpicked)"))
         .forEach(show_preview_attack)
 }
 
@@ -498,7 +498,7 @@ function apply_preview(
     if (int_health_points_new <= 0) {
         element_unit_type
             .classList
-            .add("unselected")
+            .add("unpicked")
     }
 
     document

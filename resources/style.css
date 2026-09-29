@@ -281,10 +281,6 @@ body {
         0 0);
 }
 
-.unit_type:not(.unselected) .count_models {
-    border: 2px solid white;
-}
-
 .image_unit {
     height: 100%;
     padding-left: 8px;
@@ -358,7 +354,7 @@ body {
     display: none;
 }
 
-.match .unselected {
+.match .unpicked {
     display: none;
 }
 
