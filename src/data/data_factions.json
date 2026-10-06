@@ -1174,6 +1174,12 @@
                             "type": "blast",
                             "damage": 5,
                             "restrictions": "static"
+                        },
+                        {
+                            "range": "⛶",
+                            "type": "blast",
+                            "damage": 5,
+                            "restrictions": "heavy"
                         }
                     ]
                 },
