@@ -338,7 +338,7 @@ body {
 }
 
 .attack .range {
-    display: inline-block;
+    width: 15px;
 }
 
 .model_action .value {
