@@ -50,29 +50,6 @@
                     ]
                 },
                 {
-                    "name": "Terminator squad",
-                    "requisition": 75,
-                    "take_cover": "y",
-                    "health_max": 10,
-                    "damage_reduction": 6,
-                    "move": 10,
-                    "number_models_max": 5,
-                    "attacks": [
-                        {
-                            "range": "⛶",
-                            "type": "",
-                            "damage": 10,
-                            "restrictions": ""
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "single",
-                            "damage": 15,
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
                     "name": "Captain with jump pack",
                     "requisition": 100,
                     "take_cover": "y",
@@ -96,24 +73,47 @@
                     ]
                 },
                 {
-                    "name": "Jump pack intercessors",
-                    "requisition": 50,
+                    "name": "Captain in gravis armour",
+                    "requisition": 100,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 4,
-                    "move": 40,
-                    "number_models_max": 5,
+                    "damage_reduction": 6,
+                    "move": 20,
+                    "number_models_max": 1,
                     "attacks": [
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 5,
-                            "restrictions": ""
+                            "damage": 10,
+                            "restrictions": "heavy"
                         },
                         {
                             "range": "⚔",
                             "type": "",
+                            "damage": 15,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Terminator squad",
+                    "requisition": 75,
+                    "take_cover": "y",
+                    "health_max": 10,
+                    "damage_reduction": 6,
+                    "move": 10,
+                    "number_models_max": 5,
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
                             "damage": 10,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "damage": 15,
                             "restrictions": ""
                         }
                     ]
@@ -165,29 +165,6 @@
                     ]
                 },
                 {
-                    "name": "Intercessor squad",
-                    "requisition": 50,
-                    "take_cover": "y",
-                    "health_max": 10,
-                    "damage_reduction": 4,
-                    "move": 20,
-                    "number_models_max": 10,
-                    "attacks": [
-                        {
-                            "range": "⊹",
-                            "type": "",
-                            "damage": 8,
-                            "restrictions": ""
-                        },
-                        {
-                            "range": "⚔",
-                            "type": "",
-                            "damage": 10,
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
                     "name": "Sternguard veterans",
                     "requisition": 75,
                     "take_cover": "y",
@@ -211,24 +188,47 @@
                     ]
                 },
                 {
-                    "name": "Captain in gravis armour",
-                    "requisition": 100,
+                    "name": "Jump pack intercessors",
+                    "requisition": 50,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 6,
-                    "move": 20,
-                    "number_models_max": 1,
+                    "damage_reduction": 4,
+                    "move": 40,
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
                             "type": "",
-                            "damage": 10,
-                            "restrictions": "heavy"
+                            "damage": 5,
+                            "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "type": "",
-                            "damage": 15,
+                            "damage": 10,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Intercessor squad",
+                    "requisition": 50,
+                    "take_cover": "y",
+                    "health_max": 10,
+                    "damage_reduction": 4,
+                    "move": 20,
+                    "number_models_max": 10,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 8,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
