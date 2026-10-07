@@ -119,13 +119,13 @@
                     ]
                 },
                 {
-                    "name": "Vanguard veterans",
+                    "name": "Bladeguard veterans",
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 5,
-                    "move": 40,
-                    "number_models_max": 5,
+                    "damage_reduction": 6,
+                    "move": 20,
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -142,13 +142,13 @@
                     ]
                 },
                 {
-                    "name": "Bladeguard veterans",
+                    "name": "Vanguard veterans",
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 7,
-                    "move": 20,
-                    "number_models_max": 3,
+                    "damage_reduction": 4,
+                    "move": 40,
+                    "number_models_max": 5,
                     "attacks": [
                         {
                             "range": "⊹",
@@ -169,7 +169,7 @@
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
@@ -353,7 +353,7 @@
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 6,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -393,7 +393,7 @@
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 10,
                     "number_models_max": 5,
                     "attacks": [
@@ -433,7 +433,7 @@
                     "requisition": 50,
                     "take_cover": "y",
                     "health_max": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 4,
                     "move": 20,
                     "number_models_max": 5,
                     "attacks": [
