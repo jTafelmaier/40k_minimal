@@ -670,6 +670,240 @@
             ]
         },
         {
+            "name": "Adeptus custodes",
+            "units": [
+                {
+                    "name": "Shield-captain",
+                    "requisition": 250,
+                    "take_cover": "y",
+                    "health_max": 20,
+                    "damage_reduction": 10,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 40,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Custodian guard",
+                    "requisition": 125,
+                    "take_cover": "y",
+                    "health_max": 20,
+                    "damage_reduction": 8,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 30,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Aquilon terminators",
+                    "requisition": 200,
+                    "take_cover": "y",
+                    "health_max": 20,
+                    "damage_reduction": 10,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "damage": 15,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "",
+                            "damage": 30,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Venatari",
+                    "requisition": 125,
+                    "take_cover": "y",
+                    "health_max": 20,
+                    "damage_reduction": 8,
+                    "move": 40,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "single",
+                            "damage": 10,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Achillus dreadnought",
+                    "requisition": 250,
+                    "take_cover": "❌",
+                    "health_max": 20,
+                    "damage_reduction": 12,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 20,
+                            "restrictions": "heavy"
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "damage": 40,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Telemon dreadnought",
+                    "requisition": 400,
+                    "take_cover": "❌",
+                    "health_max": 40,
+                    "damage_reduction": 12,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 40,
+                            "restrictions": "heavy"
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "damage": 70,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Gyrfalcon jetbikes",
+                    "requisition": 200,
+                    "take_cover": "❌",
+                    "health_max": 20,
+                    "damage_reduction": 12,
+                    "move": 40,
+                    "number_models_max": 2,
+                    "attacks": [
+                        {
+                            "range": "⛶",
+                            "type": "",
+                            "damage": 15,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "damage": 30,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Pallas grav-attack",
+                    "requisition": 250,
+                    "take_cover": "❌",
+                    "health_max": 40,
+                    "damage_reduction": 12,
+                    "move": 40,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 20,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Calladius grav-tank",
+                    "requisition": 500,
+                    "take_cover": "❌",
+                    "health_max": 50,
+                    "damage_reduction": 15,
+                    "move": 40,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 10,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "",
+                            "damage": 40,
+                            "restrictions": "heavy"
+                        }
+                    ]
+                },
+                {
+                    "name": "Calladius annihilator",
+                    "requisition": 500,
+                    "take_cover": "❌",
+                    "health_max": 50,
+                    "damage_reduction": 15,
+                    "move": 40,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 10,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 25,
+                            "restrictions": "heavy"
+                        }
+                    ]
+                },
+                {
+                    "name": "Coronus grav-carrier",
+                    "requisition": 500,
+                    "take_cover": "❌",
+                    "health_max": 80,
+                    "damage_reduction": 15,
+                    "move": 40,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 10,
+                            "restrictions": ""
+                        },
+                        {
+                            "range": "⊹",
+                            "type": "volume",
+                            "damage": 20,
+                            "restrictions": "heavy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "World Eaters",
             "units": [
                 {
