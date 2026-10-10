@@ -696,7 +696,7 @@
                     "health_max": 15,
                     "damage_reduction": 8,
                     "move": 20,
-                    "number_models_max": 1,
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⚔",
@@ -713,7 +713,7 @@
                     "health_max": 15,
                     "damage_reduction": 10,
                     "move": 20,
-                    "number_models_max": 1,
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⛶",
@@ -736,7 +736,7 @@
                     "health_max": 15,
                     "damage_reduction": 8,
                     "move": 40,
-                    "number_models_max": 1,
+                    "number_models_max": 3,
                     "attacks": [
                         {
                             "range": "⛶",
