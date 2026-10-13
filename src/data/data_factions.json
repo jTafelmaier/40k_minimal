@@ -797,7 +797,7 @@
                     "requisition": 200,
                     "take_cover": "❌",
                     "health_max": 20,
-                    "damage_reduction": 12,
+                    "damage_reduction": 10,
                     "move": 40,
                     "number_models_max": 2,
                     "attacks": [
