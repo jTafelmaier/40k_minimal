@@ -136,10 +136,21 @@ function toggle_mode_list() {
 }
 
 
-function get_int_count_models(
-    element_unit_type) {
+function get_element_unit_type(
+    text_side,
+    index_unit) {
 
-    return element_unit_type
+    return document
+        .getElementById(text_side)
+        .querySelectorAll(".faction:not(.invisible)")[0]
+        .getElementsByClassName("unit_type")[index_unit]
+}
+
+
+function get_int_count_models(
+    element_unit_instance) {
+
+    return element_unit_instance
         .getElementsByClassName("models")[0]
         .getElementsByClassName("alive")
         .length
@@ -171,17 +182,6 @@ function update_requisition_total(
             .map(get_int_requisition_unit_type)
             .reduce((a, b) => a + b)
             .toString()
-}
-
-
-function get_element_unit_type(
-    text_side,
-    index_unit) {
-
-    return document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("unit_type")[index_unit]
 }
 
 
@@ -232,15 +232,25 @@ function toggle_count_models(
     index_unit,
     int_count_models_full) {
 
+    if (document.getElementById("factions").classList.contains("match")) {
+        return
+    }
+
     const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
+
+    const bool_already_picked = element_unit_type
+        .getElementsByClassName("unit_instances")[0]
+        .getElementsByClassName("alive")
+        .length
+        > 0
 
     set_count_models(
             text_side,
             index_unit,
             "a",
-            get_int_count_models(element_unit_type) > 0 ? 0 : int_count_models_full)
+            bool_already_picked ? 0 : int_count_models_full)
 }
 
 
@@ -365,18 +375,22 @@ function select_instance(
 }
 
 
-function toggle_select_attack(
+function toggle_attack(
     text_side_unit_attacking,
     index_unit_attacking,
     index_attack) {
+
+    if (!document.getElementById("factions").classList.contains("match")) {
+        return
+    }
 
     const element_unit_attacking = get_element_unit_type(
             text_side_unit_attacking,
             index_unit_attacking)
 
-    if (!document.getElementById("factions").classList.contains("match")) {
-        return
-    }
+    // TODO test
+    const element_unit_instance_attacking = element_unit_attacking
+        .getElementsByClassName("selected")[0]
 
     const element_attack = element_unit_attacking
         .getElementsByClassName("attack")[index_attack]
@@ -392,70 +406,79 @@ function toggle_select_attack(
     }
 
     function show_preview_attack(
-        element_unit_attacked) {
+        element_unit_type_attacked) {
 
         const text_keywords_attack = element_attack
             .getElementsByClassName("keywords")[0]
             .innerText
             .trim()
 
-        function get_int_damage_consider_volume() {
+        function show_preview_damage_instance(
+            text_id_instance) {
 
-            const int_strength = parseInt(element_attack
-                .getElementsByClassName("value")[0]
-                .innerText
-                .trim())
+            const element_unit_instance_attacked = element_unit_type_attacked
+                .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
-            if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_attacked) > 1) {
-                return int_strength
-                    * 2}
-            else {
-                return int_strength
+            function get_int_damage_consider_volume() {
+
+                const int_strength = parseInt(element_attack
+                    .getElementsByClassName("value")[0]
+                    .innerText
+                    .trim())
+
+                if (text_keywords_attack.includes("volume") && get_int_count_models(element_unit_instance_attacked) > 1) {
+                    return int_strength
+                        * 2}
+                else {
+                    return int_strength
+                }
             }
+
+            function get_int_damage_per_attack() {
+
+                int_damage = Math.max(
+                        0,
+                        get_int_damage_consider_volume()
+                            + get_int_unit_property(
+                                element_unit_type_attacked,
+                                "damage_reduction"))
+
+                if (text_keywords_attack.includes("single")) {
+                    return Math.min(
+                            int_damage,
+                            get_int_unit_property(
+                                element_unit_type_attacked,
+                                "health_max"))
+                } else {
+                    return int_damage
+                }
+            }
+
+            const int_health_current = get_int_attribute(
+                    element_unit_instance_attacked
+                        .getElementsByClassName("health_bar")[0],
+                    "health_current")
+
+            const int_damage_added = Math.min(
+                    int_health_current,
+                    get_int_damage_per_attack()
+                        * get_int_count_models(element_unit_instance_attacking))
+
+            set_height_bar(
+                    element_unit_instance_attacked
+                        .getElementsByClassName("section difference")[0],
+                    int_damage_added)
+
+            set_instance_state(
+                    element_unit_type_attacked,
+                    text_id_instance,
+                    int_health_current
+                        - int_damage_added)
         }
 
-        function get_int_damage_per_attack() {
+        show_preview_damage_instance("a")
 
-            int_damage = Math.max(
-                    0,
-                    get_int_damage_consider_volume()
-                        + get_int_unit_property(
-                            element_unit_attacked,
-                            "damage_reduction"))
-
-            if (text_keywords_attack.includes("single")) {
-                return Math.min(
-                        int_damage,
-                        get_int_unit_property(
-                            element_unit_attacked,
-                            "health_max"))
-            } else {
-                return int_damage
-            }
-        }
-
-        const int_health_current = get_int_attribute(
-                element_unit_attacked
-                    .getElementsByClassName("health_bar")[0],
-                "health_current")
-
-        const int_damage_added = Math.min(
-                int_health_current,
-                get_int_damage_per_attack()
-                    * get_int_count_models(element_unit_attacking))
-
-        set_height_bar(
-                element_unit_attacked
-                    .getElementsByClassName("section difference")[0],
-                int_damage_added)
-
-        set_instance_state(
-                element_unit_attacked,
-                "a",
-                int_health_current
-                    - int_damage_added)
-
-        element_unit_attacked
+        element_unit_type_attacked
             .classList
             .add("attacked")
     }
@@ -488,7 +511,8 @@ function toggle_select_attack(
 
 function apply_preview(
     text_side,
-    index_unit) {
+    index_unit,
+    text_id_instance) {
 
     const element_unit_type = get_element_unit_type(
             text_side,
@@ -498,38 +522,36 @@ function apply_preview(
         return
     }
 
+    const element_unit_instance = element_unit_type
+        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+
     const int_health_points_new = get_int_attribute(
-            element_unit_type
+            element_unit_instance
                 .getElementsByClassName("health_bar")[0],
             "health_current")
         - get_int_attribute(
-            element_unit_type
+            element_unit_instance
                 .getElementsByClassName("section difference")[0],
             "value")
 
     set_height_bar(
-            element_unit_type
+            element_unit_instance
                 .getElementsByClassName("section difference")[0],
             0)
 
     set_instance_state(
             element_unit_type,
-            "a",
+            text_id_instance,
             int_health_points_new)
 
-    element_unit_type
+    element_unit_instance
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "health_current",
             int_health_points_new
                 .toString())
 
-    if (int_health_points_new <= 0) {
-        element_unit_type
-            .classList
-            .add("unpicked")
-    }
-
+    // TODO apply to instance
     document
         .getElementsByClassName("attacking")[0]
         .classList

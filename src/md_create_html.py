@@ -70,7 +70,7 @@ def generate_htmls():
                     int_index_attack, \
                     dict_attack = pair_dict_attack
 
-                    return "<div class=\"model_action attack\" onclick=\"toggle_select_attack(" \
+                    return "<div class=\"model_action attack\" onclick=\"toggle_attack(" \
                         + text_parameters_unit_type \
                         + ", " \
                         + int_index_attack \
@@ -128,6 +128,8 @@ def generate_htmls():
                             .__str__() \
                         + "\" onclick=\"apply_preview(" \
                         + text_parameters_unit_type \
+                        + ", '" \
+                        + text_id_instance \
                         + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
 
                 return "<div class=\"unit_type unpicked\" requisition=\"" \
