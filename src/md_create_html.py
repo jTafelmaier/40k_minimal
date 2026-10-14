@@ -98,6 +98,8 @@ def generate_htmls():
 
                     return "<div class=\"unit_instance instance_" \
                         + text_id_instance \
+                        + " " \
+                        + ("selected" if text_id_instance == "a" else "") \
                         + "\" onclick=\"select_instance(" \
                         + text_parameters_unit_type \
                         + ", '" \

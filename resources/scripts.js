@@ -388,7 +388,6 @@ function toggle_attack(
             text_side_unit_attacking,
             index_unit_attacking)
 
-    // TODO test
     const element_unit_instance_attacking = element_unit_attacking
         .getElementsByClassName("selected")[0]
 
