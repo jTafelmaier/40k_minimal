@@ -157,16 +157,23 @@ function get_int_count_models(
 }
 
 
+function get_int_count_models_unit_type(
+    element_unit_type) {
+
+    return Array.from(element_unit_type
+        .querySelectorAll(".unit_instance"))
+        .map(get_int_count_models)
+        .reduce((a, b) => a + b)
+}
+
+
 function update_requisition_total(
     text_side) {
 
     function get_int_requisition_unit_type(
         element_unit_type){
 
-        return Array.from(element_unit_type
-            .querySelectorAll(".unit_instance"))
-            .map(get_int_count_models)
-            .reduce((a, b) => a + b)
+        return get_int_count_models_unit_type(element_unit_type)
             * parseInt(
                 element_unit_type
                     .getAttribute("requisition"))
