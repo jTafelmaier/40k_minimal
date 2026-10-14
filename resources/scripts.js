@@ -191,10 +191,6 @@ function set_count_models(
     text_id_instance,
     int_count_models) {
 
-    if (document.getElementById("factions").classList.contains("match")) {
-        return
-    }
-
     const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
