@@ -281,19 +281,15 @@ function set_inactive(
     text_side,
     index_unit) {
 
-    if (document.getElementById("factions").classList.contains("attack_in_progress")) {
+    const classlist_factions = document.getElementById("factions").classList
+
+    if ((!classlist_factions.contains("match")) || classlist_factions.contains("attack_in_progress")) {
         return
     }
 
-    const element_unit_type = get_element_unit_type(
+    get_element_unit_type(
             text_side,
             index_unit)
-
-    if (!document.getElementById("factions").classList.contains("match")) {
-        return
-    }
-
-    element_unit_type
         .classList
         .add("already_activated")
 
