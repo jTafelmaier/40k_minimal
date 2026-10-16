@@ -236,7 +236,7 @@ body {
     flex-direction: column-reverse;
     padding: 1px;
     padding-right: 2px;
-    border: 1px solid var(--grey_dark);
+    border: 1px solid var(--grey_main);
     border-right: none;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
