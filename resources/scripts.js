@@ -263,6 +263,18 @@ function toggle_count_models(
             index_unit,
             "a",
             bool_already_picked ? 0 : int_count_models_full)
+
+    set_count_models(
+            text_side,
+            index_unit,
+            "b",
+            0)
+
+    set_count_models(
+            text_side,
+            index_unit,
+            "c",
+            0)
 }
 
 
