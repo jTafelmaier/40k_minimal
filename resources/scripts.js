@@ -417,10 +417,7 @@ function toggle_attack(
             .trim()
 
         function show_preview_damage_instance(
-            text_id_instance) {
-
-            const element_unit_instance_attacked = element_unit_type_attacked
-                .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+            element_unit_instance_attacked) {
 
             function get_int_damage_consider_volume() {
 
@@ -479,7 +476,9 @@ function toggle_attack(
                         - int_damage_added)
         }
 
-        show_preview_damage_instance("a")
+        Array.from(element_unit_type_attacked
+            .querySelectorAll(".unit_instance"))
+            .forEach(show_preview_damage_instance)
 
         element_unit_type_attacked
             .classList
