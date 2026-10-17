@@ -353,7 +353,7 @@ body {
     display: none;
 }
 
-.match .unpicked {
+.match .unit_type.unpicked {
     display: none;
 }
 
