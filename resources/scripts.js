@@ -379,7 +379,7 @@ function hide_preview_attack() {
 }
 
 
-function select_instance(
+function activate_instance(
     text_side,
     index_unit,
     text_id_instance) {

@@ -98,7 +98,7 @@ def generate_htmls():
 
                     return "<div class=\"unit_instance unpicked instance_" \
                         + text_id_instance \
-                        + "\" onclick=\"select_instance(" \
+                        + "\" onclick=\"activate_instance(" \
                         + text_parameters_unit_type \
                         + ", '" \
                         + text_id_instance \
