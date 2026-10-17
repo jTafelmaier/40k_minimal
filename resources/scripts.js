@@ -297,7 +297,7 @@ function set_inactive(
     get_element_unit_type(
             text_side,
             index_unit)
-        .querySelectorAll(".unit_instance")[0]
+        .querySelectorAll(".unit_instance.selected")[0]
         .classList
         .add("already_activated")
 
@@ -555,7 +555,7 @@ function apply_preview(
                 .toString())
 
     document
-        .querySelectorAll(".attacking .unit_instance")[0]
+        .querySelectorAll(".attacking .unit_instance.selected")[0]
         .classList
         .add("already_activated")
 
