@@ -96,7 +96,7 @@ def generate_htmls():
                 def get_text_html_unit_instance(
                     text_id_instance:str):
 
-                    return "<div class=\"unit_instance instance_" \
+                    return "<div class=\"unit_instance unpicked instance_" \
                         + text_id_instance \
                         + " " \
                         + ("selected" if text_id_instance == "a" else "") \
@@ -140,6 +140,8 @@ def generate_htmls():
                         .__str__() \
                     + "\"><div class=\"unit_instances\">" \
                     + get_text_html_unit_instance("a") \
+                    + get_text_html_unit_instance("b") \
+                    + get_text_html_unit_instance("c") \
                     + "</div><div class=\"unit_data\" title=\"" \
                     + dict_unit \
                         ["requisition"] \

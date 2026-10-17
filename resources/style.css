@@ -357,6 +357,10 @@ body {
     display: none;
 }
 
+.match .unit_instance.unpicked {
+    display: none;
+}
+
 .match .return_to_faction_selection .interactive {
     display: none;
 }

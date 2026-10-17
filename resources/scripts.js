@@ -223,8 +223,14 @@ function set_count_models(
         element_unit_type
             .classList
             .add("unpicked")
+        element_unit_instance
+            .classList
+            .add("unpicked")
     } else {
         element_unit_type
+            .classList
+            .remove("unpicked")
+        element_unit_instance
             .classList
             .remove("unpicked")
     }
@@ -263,7 +269,7 @@ function toggle_count_models(
 function test_new_turn() {
 
     const array_elements_unit_instances = Array.from(document
-        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance"))
+        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance:not(.unpicked)"))
 
     if (!array_elements_unit_instances.every(element => element.classList.contains("already_activated")))
         return
@@ -321,7 +327,7 @@ function hide_preview_attack() {
         element_unit_type) {
 
         Array.from(element_unit_type
-            .querySelectorAll(".unit_instance"))
+            .querySelectorAll(".unit_instance:not(.unpicked)"))
             .forEach(element_unit_instance => set_instance_state(
                 element_unit_type,
                 element_unit_instance,
@@ -477,7 +483,7 @@ function toggle_attack(
         }
 
         Array.from(element_unit_type_attacked
-            .querySelectorAll(".unit_instance"))
+            .querySelectorAll(".unit_instance:not(.unpicked)"))
             .forEach(show_preview_damage_instance)
 
         element_unit_type_attacked
