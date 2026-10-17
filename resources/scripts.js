@@ -368,9 +368,10 @@ function select_instance(
             text_side,
             index_unit)
 
-    Array.from(element_unit_type
-        .querySelectorAll(".unit_instance.selected"))
-        .forEach(element => element.classList.remove("selected"))
+    element_unit_type
+        .querySelectorAll(".unit_instance.selected")[0]
+        .classList
+        .remove("selected")
 
     element_unit_type
         .getElementsByClassName("instance_" + text_class_instance)[0]
