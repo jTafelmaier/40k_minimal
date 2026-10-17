@@ -381,23 +381,26 @@ function hide_preview_attack() {
 function select_instance(
     text_side,
     index_unit,
-    text_class_instance) {
+    text_id_instance) {
 
     if (!document.getElementById("factions").classList.contains("match")) {
         return
     }
 
-    const element_unit_type = get_element_unit_type(
+    const element_unit_instance = get_element_unit_type(
             text_side,
             index_unit)
+        .getElementsByClassName("instance_" + text_id_instance)[0]
 
-    element_unit_type
-        .querySelectorAll(".unit_instance.selected")[0]
-        .classList
-        .remove("selected")
+    if (element_unit_instance.classList.contains("already_activated")) {
+        return
+    }
 
-    element_unit_type
-        .getElementsByClassName("instance_" + text_class_instance)[0]
+    Array.from(document
+        .querySelectorAll("#factions .unit_instance.selected"))
+        .forEach(element => element.classList.remove("selected"))
+
+    element_unit_instance
         .classList
         .add("selected")
 }
