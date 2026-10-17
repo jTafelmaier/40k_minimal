@@ -98,7 +98,7 @@ def generate_htmls():
 
                     return "<div class=\"unit_instance unpicked instance_" \
                         + text_id_instance \
-                        + "\" onclick=\"activate_instance(" \
+                        + "\" onclick=\"click_on_instance(" \
                         + text_parameters_unit_type \
                         + ", '" \
                         + text_id_instance \
@@ -126,11 +126,7 @@ def generate_htmls():
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\" onclick=\"apply_preview(" \
-                        + text_parameters_unit_type \
-                        + ", '" \
-                        + text_id_instance \
-                        + "')\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
+                        + "\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
 
                 return "<div class=\"unit_type unpicked\" requisition=\"" \
                     + dict_unit \

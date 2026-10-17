@@ -330,10 +330,6 @@ function hide_preview_attack() {
     const element_army_lists = document
         .getElementById("factions")
 
-    if (!element_army_lists.classList.contains("attack_in_progress")) {
-        return
-    }
-
     element_army_lists
         .classList
         .remove("attack_in_progress")
@@ -360,26 +356,13 @@ function hide_preview_attack() {
         .getElementsByClassName("attacked"))
         .forEach(unset_attacked)
 
-    const element_unit_type_attacking = element_army_lists
-        .querySelectorAll(".unit_type.activated")[0]
-
-    element_unit_type_attacking
-        .getElementsByClassName("highlighted")[0]
-        .classList
-        .remove("highlighted")
-
-    element_unit_type_attacking
-        .classList
-        .remove("activated")
-
-    element_unit_type_attacking
-        .parentElement
-        .classList
-        .remove("activated_side")
+    Array.from(element_army_lists
+        .querySelectorAll(".unit_type.activated .highlighted"))
+        .forEach(element => element.classList.remove("highlighted"))
 }
 
 
-function activate_instance(
+function click_on_instance(
     text_side,
     index_unit,
     text_id_instance) {
@@ -388,22 +371,125 @@ function activate_instance(
         return
     }
 
-    const element_unit_instance = get_element_unit_type(
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
-        .getElementsByClassName("instance_" + text_id_instance)[0]
 
-    if (element_unit_instance.classList.contains("already_activated")) {
-        return
+    const element_unit_instance = element_unit_type
+        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+
+    function apply_preview() {
+
+        const int_health_points_new = get_int_attribute(
+                element_unit_instance
+                    .getElementsByClassName("health_bar")[0],
+                "health_current")
+            - get_int_attribute(
+                element_unit_instance
+                    .getElementsByClassName("section difference")[0],
+                "value")
+
+        set_height_bar(
+                element_unit_instance
+                    .getElementsByClassName("section difference")[0],
+                0)
+
+        set_instance_state(
+                element_unit_type,
+                element_unit_instance,
+                int_health_points_new)
+
+        // TODO simplify
+        if (int_health_points_new <= 0) {
+            if (get_int_count_models_unit_type(element_unit_type) == 0) {
+                element_unit_type
+                    .classList
+                    .add("unpicked")
+            }
+            element_unit_instance
+                .classList
+                .add("unpicked")
+        }
+
+        element_unit_instance
+            .getElementsByClassName("health_bar")[0]
+            .setAttribute(
+                "health_current",
+                int_health_points_new
+                    .toString())
+
+        const element_unit_type_attacking = document
+            .querySelectorAll("#factions .unit_type.activated")[0]
+
+        const element_unit_instance_attacking = element_unit_type_attacking
+            .querySelectorAll(".unit_instance.activated")[0]
+
+        element_unit_instance_attacking
+            .classList
+            .add("already_activated")
+
+        element_unit_type_attacking
+            .parentElement
+            .classList
+            .remove("activated_side")
+
+        element_unit_type_attacking
+            .classList
+            .remove("activated")
+
+        element_unit_instance_attacking
+            .classList
+            .remove("activated")
+
+        update_requisition_total(text_side)
+
+        hide_preview_attack()
+
+        test_new_turn()
     }
 
-    Array.from(document
-        .querySelectorAll("#factions .unit_instance.activated"))
-        .forEach(element => element.classList.remove("activated"))
+    function activate_instance() {
 
-    element_unit_instance
-        .classList
-        .add("activated")
+        if (element_unit_instance.classList.contains("already_activated")) {
+            return
+        }
+
+        Array.from(document
+            .querySelectorAll("#factions .activated_side"))
+            .forEach(element => element.classList.remove("activated_side"))
+
+        Array.from(document
+            .querySelectorAll("#factions .unit_type.activated"))
+            .forEach(element => element.classList.remove("activated"))
+
+        Array.from(document
+            .querySelectorAll("#factions .unit_instance.activated"))
+            .forEach(element => element.classList.remove("activated"))
+
+        document
+            .getElementById("factions")
+            .classList
+            .add("attack_in_progress")
+
+        element_unit_type
+            .parentElement
+            .classList
+            .add("activated_side")
+
+        element_unit_type
+            .classList
+            .add("activated")
+
+        element_unit_instance
+            .classList
+            .add("activated")
+    }
+
+    if (element_unit_type.classList.contains("attacked")) {
+        apply_preview()
+    } else {
+        activate_instance()
+    }
 }
 
 
@@ -420,19 +506,23 @@ function toggle_attack(
             text_side_unit_attacking,
             index_unit_attacking)
 
+    if (!element_unit_type_attacking.classList.contains("activated")) {
+        return
+    }
+
     const element_unit_instance_attacking = element_unit_type_attacking
-        .getElementsByClassName("activated")[0]
+        .querySelectorAll(".unit_instance.activated")[0]
 
     const element_attack = element_unit_type_attacking
         .getElementsByClassName("attack")[index_attack]
 
-    const bool_currently_activated = element_attack
+    const bool_currently_highlighted = element_attack
         .classList
         .contains("highlighted")
 
     hide_preview_attack()
 
-    if (bool_currently_activated) {
+    if (bool_currently_highlighted) {
         return
     }
 
@@ -513,19 +603,9 @@ function toggle_attack(
             .add("attacked")
     }
 
-    document
-        .getElementById("factions")
-        .classList
-        .add("attack_in_progress")
-
-    element_unit_type_attacking
-        .parentElement
-        .classList
-        .add("activated_side")
-
-    element_unit_type_attacking
-        .classList
-        .add("activated")
+    Array.from(element_unit_type_attacking
+        .querySelectorAll(".highlighted"))
+        .forEach(element => element.classList.remove("highlighted"))
 
     element_attack
         .classList
@@ -536,72 +616,5 @@ function toggle_attack(
         .querySelectorAll(".faction:not(.invisible)")[0]
         .querySelectorAll(".unit_type:not(.unpicked)"))
         .forEach(show_preview_attack)
-}
-
-
-function apply_preview(
-    text_side,
-    index_unit,
-    text_id_instance) {
-
-    const element_unit_type = get_element_unit_type(
-            text_side,
-            index_unit)
-
-    if (!element_unit_type.classList.contains("attacked")) {
-        return
-    }
-
-    const element_unit_instance = element_unit_type
-        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
-
-    const int_health_points_new = get_int_attribute(
-            element_unit_instance
-                .getElementsByClassName("health_bar")[0],
-            "health_current")
-        - get_int_attribute(
-            element_unit_instance
-                .getElementsByClassName("section difference")[0],
-            "value")
-
-    set_height_bar(
-            element_unit_instance
-                .getElementsByClassName("section difference")[0],
-            0)
-
-    set_instance_state(
-            element_unit_type,
-            element_unit_instance,
-            int_health_points_new)
-
-    // TODO simplify
-    if (int_health_points_new <= 0) {
-        if (get_int_count_models_unit_type(element_unit_type) == 0) {
-            element_unit_type
-                .classList
-                .add("unpicked")
-        }
-        element_unit_instance
-            .classList
-            .add("unpicked")
-    }
-
-    element_unit_instance
-        .getElementsByClassName("health_bar")[0]
-        .setAttribute(
-            "health_current",
-            int_health_points_new
-                .toString())
-
-    document
-        .querySelectorAll(".unit_type.activated .unit_instance.activated")[0]
-        .classList
-        .add("already_activated")
-
-    update_requisition_total(text_side)
-
-    hide_preview_attack()
-
-    test_new_turn()
 }
 

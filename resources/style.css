@@ -379,8 +379,8 @@ body {
     user-select: none;
 }
 
-.match .attack:hover,
-.match .attack.highlighted {
+.match .unit_type.activated .attack:hover,
+.match .unit_type.activated .attack.highlighted {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
@@ -415,8 +415,7 @@ body {
     background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
 }
 
-.activated_side .unit_type:not(.activated),
-.activated_side .unit_type.activated .attack:not(.highlighted) {
+.activated_side .unit_type:not(.activated) {
     opacity: 0.15;
 }
 
