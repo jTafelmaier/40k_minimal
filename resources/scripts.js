@@ -260,6 +260,7 @@ function toggle_count_models(
         .length
         > 0
 
+    // TODO simplify
     set_count_models(
             text_side,
             index_unit,
@@ -572,6 +573,18 @@ function apply_preview(
             element_unit_type,
             element_unit_instance,
             int_health_points_new)
+
+    // TODO simplify
+    if (int_health_points_new <= 0) {
+        if (get_int_count_models_unit_type(element_unit_type) == 0) {
+            element_unit_type
+                .classList
+                .add("unpicked")
+        }
+        element_unit_instance
+            .classList
+            .add("unpicked")
+    }
 
     element_unit_instance
         .getElementsByClassName("health_bar")[0]
