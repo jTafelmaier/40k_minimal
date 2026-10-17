@@ -555,8 +555,7 @@ function apply_preview(
                 .toString())
 
     document
-        .getElementsByClassName("attacking")[0]
-        .querySelectorAll(".unit_instance")[0]
+        .querySelectorAll(".attacking .unit_instance")[0]
         .classList
         .add("already_activated")
 
