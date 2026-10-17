@@ -369,6 +369,10 @@ function select_instance(
     index_unit,
     text_class_instance) {
 
+    if (!document.getElementById("factions").classList.contains("match")) {
+        return
+    }
+
     const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
