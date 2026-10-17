@@ -339,19 +339,19 @@ function hide_preview_attack() {
         .getElementsByClassName("attacked"))
         .forEach(unset_attacked)
 
-    const element_unit_attacking = element_army_lists
+    const element_unit_type_attacking = element_army_lists
         .getElementsByClassName("attacking")[0]
 
-    element_unit_attacking
+    element_unit_type_attacking
         .getElementsByClassName("activated")[0]
         .classList
         .remove("activated")
 
-    element_unit_attacking
+    element_unit_type_attacking
         .classList
         .remove("attacking")
 
-    element_unit_attacking
+    element_unit_type_attacking
         .parentElement
         .classList
         .remove("attacking_side")
@@ -387,14 +387,14 @@ function toggle_attack(
         return
     }
 
-    const element_unit_attacking = get_element_unit_type(
+    const element_unit_type_attacking = get_element_unit_type(
             text_side_unit_attacking,
             index_unit_attacking)
 
-    const element_unit_instance_attacking = element_unit_attacking
+    const element_unit_instance_attacking = element_unit_type_attacking
         .getElementsByClassName("selected")[0]
 
-    const element_attack = element_unit_attacking
+    const element_attack = element_unit_type_attacking
         .getElementsByClassName("attack")[index_attack]
 
     const bool_currently_activated = element_attack
@@ -490,12 +490,12 @@ function toggle_attack(
         .classList
         .add("attack_in_progress")
 
-    element_unit_attacking
+    element_unit_type_attacking
         .parentElement
         .classList
         .add("attacking_side")
 
-    element_unit_attacking
+    element_unit_type_attacking
         .classList
         .add("attacking")
 
