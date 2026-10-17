@@ -265,10 +265,6 @@ body {
     background-color: var(--grey_text);
 }
 
-.already_activated .unit_instance {
-    background-color: var(--grey_dark_blue);
-}
-
 .unit_data {
     flex: 1;
     background-image: url("background.png");
@@ -367,6 +363,11 @@ body {
 
 .match .unit_instance.selected {
     border: 1px solid white;
+    border-right: none;
+}
+
+.match .unit_instance.already_activated {
+    border: 1px solid #6f30f8;
     border-right: none;
 }
 
