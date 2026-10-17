@@ -317,7 +317,7 @@ function set_inactive(
     get_element_unit_type(
             text_side,
             index_unit)
-        .querySelectorAll(".unit_instance.selected")[0]
+        .querySelectorAll(".unit_instance.activated")[0]
         .classList
         .add("already_activated")
 
@@ -361,7 +361,7 @@ function hide_preview_attack() {
         .forEach(unset_attacked)
 
     const element_unit_type_attacking = element_army_lists
-        .getElementsByClassName("attacking")[0]
+        .querySelectorAll(".unit_type.activated")[0]
 
     element_unit_type_attacking
         .getElementsByClassName("highlighted")[0]
@@ -370,12 +370,12 @@ function hide_preview_attack() {
 
     element_unit_type_attacking
         .classList
-        .remove("attacking")
+        .remove("activated")
 
     element_unit_type_attacking
         .parentElement
         .classList
-        .remove("attacking_side")
+        .remove("activated_side")
 }
 
 
@@ -398,12 +398,12 @@ function select_instance(
     }
 
     Array.from(document
-        .querySelectorAll("#factions .unit_instance.selected"))
-        .forEach(element => element.classList.remove("selected"))
+        .querySelectorAll("#factions .unit_instance.activated"))
+        .forEach(element => element.classList.remove("activated"))
 
     element_unit_instance
         .classList
-        .add("selected")
+        .add("activated")
 }
 
 
@@ -421,7 +421,7 @@ function toggle_attack(
             index_unit_attacking)
 
     const element_unit_instance_attacking = element_unit_type_attacking
-        .getElementsByClassName("selected")[0]
+        .getElementsByClassName("activated")[0]
 
     const element_attack = element_unit_type_attacking
         .getElementsByClassName("attack")[index_attack]
@@ -521,11 +521,11 @@ function toggle_attack(
     element_unit_type_attacking
         .parentElement
         .classList
-        .add("attacking_side")
+        .add("activated_side")
 
     element_unit_type_attacking
         .classList
-        .add("attacking")
+        .add("activated")
 
     element_attack
         .classList
@@ -594,7 +594,7 @@ function apply_preview(
                 .toString())
 
     document
-        .querySelectorAll(".attacking .unit_instance.selected")[0]
+        .querySelectorAll(".unit_type.activated .unit_instance.activated")[0]
         .classList
         .add("already_activated")
 

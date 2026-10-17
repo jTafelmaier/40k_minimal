@@ -365,7 +365,7 @@ body {
     display: none;
 }
 
-.match .unit_instance.selected {
+.match .unit_instance.activated {
     border: 1px solid white;
     border-right: none;
 }
@@ -415,8 +415,8 @@ body {
     background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
 }
 
-.attacking_side .unit_type:not(.attacking),
-.attacking_side .attacking .attack:not(.highlighted) {
+.activated_side .unit_type:not(.activated),
+.activated_side .unit_type.activated .attack:not(.highlighted) {
     opacity: 0.15;
 }
 
