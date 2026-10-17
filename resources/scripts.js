@@ -344,9 +344,9 @@ function hide_preview_attack() {
         .getElementsByClassName("attacking")[0]
 
     element_unit_type_attacking
-        .getElementsByClassName("activated")[0]
+        .getElementsByClassName("highlighted")[0]
         .classList
-        .remove("activated")
+        .remove("highlighted")
 
     element_unit_type_attacking
         .classList
@@ -400,7 +400,7 @@ function toggle_attack(
 
     const bool_currently_activated = element_attack
         .classList
-        .contains("activated")
+        .contains("highlighted")
 
     hide_preview_attack()
 
@@ -502,7 +502,7 @@ function toggle_attack(
 
     element_attack
         .classList
-        .add("activated")
+        .add("highlighted")
 
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")

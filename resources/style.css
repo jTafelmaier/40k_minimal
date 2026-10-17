@@ -371,12 +371,12 @@ body {
 }
 
 .match .attack:hover,
-.match .activated  {
+.match .highlighted  {
     user-select: none;
 }
 
 .match .attack:hover,
-.match .attack.activated {
+.match .attack.highlighted {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
 }
 
@@ -412,7 +412,7 @@ body {
 }
 
 .attacking_side .unit_type:not(.attacking),
-.attacking_side .attacking .attack:not(.activated) {
+.attacking_side .attacking .attack:not(.highlighted) {
     opacity: 0.15;
 }
 
