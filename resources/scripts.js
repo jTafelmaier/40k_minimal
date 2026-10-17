@@ -294,7 +294,6 @@ function set_inactive(
         return
     }
 
-    // TODO test
     get_element_unit_type(
             text_side,
             index_unit)
@@ -555,7 +554,6 @@ function apply_preview(
             int_health_points_new
                 .toString())
 
-    // TODO test
     document
         .getElementsByClassName("attacking")[0]
         .querySelectorAll(".unit_instance")[0]
