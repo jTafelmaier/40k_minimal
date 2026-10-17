@@ -371,8 +371,7 @@ body {
 }
 
 .match .unit_instance.already_activated {
-    border: 1px solid #6f30f8;
-    border-right: none;
+    opacity: 0.2;
 }
 
 .match .attack:hover,

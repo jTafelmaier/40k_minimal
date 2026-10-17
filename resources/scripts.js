@@ -220,9 +220,11 @@ function set_count_models(
             int_health_full)
 
     if (int_count_models == 0) {
-        element_unit_type
-            .classList
-            .add("unpicked")
+        if (get_int_count_models_unit_type(element_unit_type) == 0) {
+            element_unit_type
+                .classList
+                .add("unpicked")
+        }
         element_unit_instance
             .classList
             .add("unpicked")
