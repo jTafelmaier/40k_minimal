@@ -263,13 +263,13 @@ function toggle_count_models(
 
 function test_new_turn() {
 
-    const array_elements_unit_types = Array.from(document
-        .querySelectorAll(".unit_type:not(.unpicked)"))
+    const array_elements_unit_instances = Array.from(document
+        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance"))
 
-    if (!array_elements_unit_types.every(element => element.classList.contains("already_activated")))
+    if (!array_elements_unit_instances.every(element => element.classList.contains("already_activated")))
         return
 
-    array_elements_unit_types
+    array_elements_unit_instances
         .forEach(element => element.classList.remove("already_activated"))
 
     const element_turn_counter = document
@@ -294,9 +294,11 @@ function set_inactive(
         return
     }
 
+    // TODO test
     get_element_unit_type(
             text_side,
             index_unit)
+        .querySelectorAll(".unit_instance")[0]
         .classList
         .add("already_activated")
 
@@ -553,9 +555,10 @@ function apply_preview(
             int_health_points_new
                 .toString())
 
-    // TODO apply to instance
+    // TODO test
     document
         .getElementsByClassName("attacking")[0]
+        .querySelectorAll(".unit_instance")[0]
         .classList
         .add("already_activated")
 
