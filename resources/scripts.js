@@ -88,11 +88,8 @@ function set_height_bar(
 
 function set_instance_state(
     element_unit_type,
-    text_id_instance,
+    element_unit_instance,
     int_health_new) {
-
-    const element_unit_instance = element_unit_type
-        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
     const int_count_models = Math.ceil(
             int_health_new
@@ -207,8 +204,10 @@ function set_count_models(
             element_unit_type,
             "health_max")
 
-    element_unit_type
+    const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+
+    element_unit_instance
         .getElementsByClassName("health_bar")[0]
         .setAttribute(
             "health_current",
@@ -217,7 +216,7 @@ function set_count_models(
 
     set_instance_state(
             element_unit_type,
-            text_id_instance,
+            element_unit_instance,
             int_health_full)
 
     if (int_count_models == 0) {
@@ -321,13 +320,13 @@ function hide_preview_attack() {
     function unset_attacked(
         element_unit_type) {
 
-        ["a"]
-            .forEach(text_id_instance => set_instance_state(
+        Array.from(element_unit_type
+            .querySelectorAll(".unit_instance"))
+            .forEach(element_unit_instance => set_instance_state(
                 element_unit_type,
-                text_id_instance,
+                element_unit_instance,
                 get_int_attribute(
-                    element_unit_type
-                        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+                    element_unit_instance
                         .getElementsByClassName("health_bar")[0],
                     "health_current")))
 
@@ -475,7 +474,7 @@ function toggle_attack(
 
             set_instance_state(
                     element_unit_type_attacked,
-                    text_id_instance,
+                    element_unit_instance_attacked,
                     int_health_current
                         - int_damage_added)
         }
@@ -545,7 +544,7 @@ function apply_preview(
 
     set_instance_state(
             element_unit_type,
-            text_id_instance,
+            element_unit_instance,
             int_health_points_new)
 
     element_unit_instance
