@@ -132,7 +132,7 @@ def generate_htmls():
                         + text_parameters_unit_type \
                         + ", '" \
                         + text_id_instance \
-                        + ")\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
+                        + "')\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
 
                 return "<div class=\"unit_type unpicked\" requisition=\"" \
                     + dict_unit \
