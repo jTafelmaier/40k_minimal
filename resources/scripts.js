@@ -158,7 +158,7 @@ function get_int_count_models_unit_type(
     element_unit_type) {
 
     return Array.from(element_unit_type
-        .querySelectorAll(".unit_instance"))
+        .querySelectorAll(".unit_instance:not(.unpicked)"))
         .map(get_int_count_models)
         .reduce((a, b) => a + b)
 }
@@ -182,7 +182,7 @@ function update_requisition_total(
         .textContent = Array.from(document
             .getElementById(text_side)
             .querySelectorAll(".faction:not(.invisible)")[0]
-            .getElementsByClassName("unit_type"))
+            .querySelectorAll(".unit_type:not(.unpicked)"))
             .map(get_int_requisition_unit_type)
             .reduce((a, b) => a + b)
             .toString()
