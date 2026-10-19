@@ -160,7 +160,9 @@ function get_int_count_models_unit_type(
     return Array.from(element_unit_type
         .querySelectorAll(".unit_instance:not(.unpicked)"))
         .map(get_int_count_models)
-        .reduce((a, b) => a + b)
+        .reduce(
+            (a, b) => a + b,
+            0)
 }
 
 
@@ -184,7 +186,9 @@ function update_requisition_total(
             .querySelectorAll(".faction:not(.invisible)")[0]
             .querySelectorAll(".unit_type:not(.unpicked)"))
             .map(get_int_requisition_unit_type)
-            .reduce((a, b) => a + b)
+            .reduce(
+                (a, b) => a + b,
+                0)
             .toString()
 }
 
