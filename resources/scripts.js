@@ -18,7 +18,7 @@ function get_int_unit_property(
 
     return parseInt(element
             .getElementsByClassName(text_property)[0]
-            .getElementsByClassName("value")[0]
+            .querySelectorAll(".value")[0]
             .innerText
             .trim())
 }
@@ -30,7 +30,7 @@ function display_faction(
 
     document
         .getElementById(text_side)
-        .getElementsByClassName("selection_factions")[0]
+        .querySelectorAll(".selection_factions")[0]
         .classList
         .add("invisible")
 
@@ -53,7 +53,7 @@ function return_to_faction_selection(
 
     document
         .getElementById(text_side)
-        .getElementsByClassName("selection_factions")[0]
+        .querySelectorAll(".selection_factions")[0]
         .classList
         .remove("invisible")
 }
@@ -98,7 +98,7 @@ function set_instance_state(
                     "health_max"))
 
     const array_elements_models = Array.from(element_unit_instance
-        .getElementsByClassName("models")[0]
+        .querySelectorAll(".models")[0]
         .children)
 
     array_elements_models
@@ -111,11 +111,11 @@ function set_instance_state(
 
     set_height_bar(
             element_unit_instance
-                .getElementsByClassName("section remaining")[0],
+                .querySelectorAll(".section.remaining")[0],
             int_health_new)
 
     element_unit_instance
-        .getElementsByClassName("health_bar")[0]
+        .querySelectorAll(".health_bar")[0]
         .setAttribute(
             "title",
             int_health_new
@@ -140,7 +140,7 @@ function get_element_unit_type(
     return document
         .getElementById(text_side)
         .querySelectorAll(".faction:not(.invisible)")[0]
-        .getElementsByClassName("unit_type")[index_unit]
+        .querySelectorAll(".unit_type")[index_unit]
 }
 
 
@@ -148,8 +148,8 @@ function get_int_count_models(
     element_unit_instance) {
 
     return element_unit_instance
-        .getElementsByClassName("models")[0]
-        .getElementsByClassName("alive")
+        .querySelectorAll(".models")[0]
+        .querySelectorAll(".alive")
         .length
 }
 
@@ -212,7 +212,7 @@ function set_count_models(
         .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
     element_unit_instance
-        .getElementsByClassName("health_bar")[0]
+        .querySelectorAll(".health_bar")[0]
         .setAttribute(
             "health_current",
             int_health_full
@@ -259,8 +259,8 @@ function toggle_count_models(
             index_unit)
 
     const bool_already_picked = element_unit_type
-        .getElementsByClassName("unit_instances")[0]
-        .getElementsByClassName("alive")
+        .querySelectorAll(".unit_instances")[0]
+        .querySelectorAll(".alive")
         .length
         > 0
 
@@ -348,7 +348,7 @@ function hide_preview_attack() {
                 element_unit_instance,
                 get_int_attribute(
                     element_unit_instance
-                        .getElementsByClassName("health_bar")[0],
+                        .querySelectorAll(".health_bar")[0],
                     "health_current")))
 
         element_unit_type
@@ -357,7 +357,7 @@ function hide_preview_attack() {
     }
 
     Array.from(element_army_lists
-        .getElementsByClassName("attacked"))
+        .querySelectorAll(".attacked"))
         .forEach(unset_attacked)
 
     Array.from(element_army_lists
@@ -386,16 +386,16 @@ function click_on_instance(
 
         const int_health_points_new = get_int_attribute(
                 element_unit_instance
-                    .getElementsByClassName("health_bar")[0],
+                    .querySelectorAll(".health_bar")[0],
                 "health_current")
             - get_int_attribute(
                 element_unit_instance
-                    .getElementsByClassName("section difference")[0],
+                    .querySelectorAll(".section.difference")[0],
                 "value")
 
         set_height_bar(
                 element_unit_instance
-                    .getElementsByClassName("section difference")[0],
+                    .querySelectorAll(".section.difference")[0],
                 0)
 
         set_instance_state(
@@ -418,7 +418,7 @@ function click_on_instance(
         }
 
         element_unit_instance
-            .getElementsByClassName("health_bar")[0]
+            .querySelectorAll(".health_bar")[0]
             .setAttribute(
                 "health_current",
                 int_health_points_new
@@ -518,7 +518,7 @@ function toggle_attack(
         .querySelectorAll(".unit_instance.activated")[0]
 
     const element_attack = element_unit_type_attacking
-        .getElementsByClassName("attack")[index_attack]
+        .querySelectorAll(".attack")[index_attack]
 
     const bool_currently_highlighted = element_attack
         .classList
@@ -534,7 +534,7 @@ function toggle_attack(
         element_unit_type_attacked) {
 
         const text_keywords_attack = element_attack
-            .getElementsByClassName("keywords")[0]
+            .querySelectorAll(".keywords")[0]
             .innerText
             .trim()
 
@@ -544,7 +544,7 @@ function toggle_attack(
             function get_int_damage_consider_volume() {
 
                 const int_strength = parseInt(element_attack
-                    .getElementsByClassName("value")[0]
+                    .querySelectorAll(".value")[0]
                     .innerText
                     .trim())
 
@@ -578,7 +578,7 @@ function toggle_attack(
 
             const int_health_current = get_int_attribute(
                     element_unit_instance_attacked
-                        .getElementsByClassName("health_bar")[0],
+                        .querySelectorAll(".health_bar")[0],
                     "health_current")
 
             const int_damage_added = Math.min(
@@ -588,7 +588,7 @@ function toggle_attack(
 
             set_height_bar(
                     element_unit_instance_attacked
-                        .getElementsByClassName("section difference")[0],
+                        .querySelectorAll(".section.difference")[0],
                     int_damage_added)
 
             set_instance_state(
