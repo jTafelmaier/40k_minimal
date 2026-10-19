@@ -441,11 +441,11 @@ function click_on_instance(
             .classList
             .remove("activated")
 
-        update_requisition_total(text_side)
-
         hide_preview_attack()
 
         test_new_turn()
+
+        update_requisition_total(text_side)
     }
 
     function activate_instance() {
