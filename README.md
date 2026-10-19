@@ -2,8 +2,6 @@
 
 
 ### A custom minimalistic, digital, interactive ruleset for the Warhammer 40.000 tabletop board game.
-Run "md_create_documents.py" with Python 3.11 or higher to generate HTML documents, then open "index.html".
-(all other data under "resources" must be present to work properly)
 
 ## Faction list construction example
 ![Missing image](resources/screenshots/faction_example_1.png "List construction example 1")
@@ -16,6 +14,8 @@ Run "md_create_documents.py" with Python 3.11 or higher to generate HTML documen
 ![Missing image](resources/screenshots/match_data_2.png "Match data 2")
 ![Missing image](resources/screenshots/match_data_3.png "Match data 3")
 
+Run "md_create_documents.py" with Python 3.11 or higher to generate HTML documents, then open "index.html".
+(all other data under "resources" must be present to work properly)
 
 All original images ©Games Workshop.
 
