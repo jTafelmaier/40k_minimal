@@ -399,6 +399,8 @@ function click_on_instance(
                 element_unit_instance,
                 int_health_points_new)
 
+        hide_preview_attack()
+
         // TODO simplify
         if (int_health_points_new <= 0) {
             if (get_int_count_models_unit_type(element_unit_type) == 0) {
@@ -440,8 +442,6 @@ function click_on_instance(
         element_unit_instance_attacking
             .classList
             .remove("activated")
-
-        hide_preview_attack()
 
         test_new_turn()
 
