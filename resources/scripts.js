@@ -291,23 +291,42 @@ function test_new_turn() {
 }
 
 
-// TODO use
 function set_inactive(
     text_side,
     index_unit) {
 
-    const classlist_factions = document.getElementById("factions").classList
+    const classlist_factions = document
+        .getElementById("factions")
+        .classList
 
     if ((!classlist_factions.contains("match")) || classlist_factions.contains("attack_in_progress")) {
         return
     }
 
-    get_element_unit_type(
+    // TODO simplify
+    const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
+
+    const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.activated")[0]
+
+    element_unit_instance
         .classList
         .add("already_activated")
+
+    element_unit_instance
+        .classList
+        .remove("activated")
+
+    element_unit_type
+        .parentElement
+        .classList
+        .remove("activated_side")
+
+    element_unit_type
+        .classList
+        .remove("activated")
 
     test_new_turn()
 }
@@ -454,11 +473,6 @@ function click_on_instance(
             .querySelectorAll("#factions .unit_instance.activated"))
             .forEach(element => element.classList.remove("activated"))
 
-        document
-            .getElementById("factions")
-            .classList
-            .add("attack_in_progress")
-
         element_unit_type
             .parentElement
             .classList
@@ -590,6 +604,11 @@ function toggle_attack(
             .classList
             .add("attacked")
     }
+
+    document
+        .getElementById("factions")
+        .classList
+        .add("attack_in_progress")
 
     Array.from(element_unit_type_attacking
         .querySelectorAll(".highlighted"))

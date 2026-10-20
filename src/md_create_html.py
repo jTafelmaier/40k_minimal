@@ -169,7 +169,9 @@ def generate_htmls():
                     + "</div></div><div class=\"model_property take_cover\"><div class=\"name\">TC</div><div class=\"value\">" \
                     + dict_unit \
                         ["take_cover"] \
-                    + "</div></div><div class=\"model_property movement\"><div class=\"name\">MV</div><div class=\"value\">" \
+                    + "</div></div><div class=\"model_property movement\" onclick=\"set_inactive(" \
+                    + text_parameters_unit_type \
+                    + ")\"><div class=\"name\">MV</div><div class=\"value\">" \
                     + dict_unit \
                         ["move"] \
                         .__str__() \
