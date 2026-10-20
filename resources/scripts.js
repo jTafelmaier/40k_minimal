@@ -291,9 +291,7 @@ function test_new_turn() {
 }
 
 
-function set_inactive(
-    text_side,
-    index_unit) {
+function set_active_instance_inactive() {
 
     const classlist_factions = document
         .getElementById("factions")
@@ -303,15 +301,9 @@ function set_inactive(
         return
     }
 
-    const element_unit_type = get_element_unit_type(
-            text_side,
-            index_unit)
+    const element_unit_type = document
+        .querySelectorAll(".army_constructors .unit_type.activated")[0]
 
-    if (!element_unit_type.classList.contains("activated")) {
-        return
-    }
-
-    // TODO simplify
     const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.activated")[0]
 
@@ -431,28 +423,7 @@ function click_on_instance(
 
         hide_preview_attack()
 
-        const element_unit_type_attacking = document
-            .querySelectorAll("#factions .unit_type.activated")[0]
-
-        const element_unit_instance_attacking = element_unit_type_attacking
-            .querySelectorAll(".unit_instance.activated")[0]
-
-        element_unit_instance_attacking
-            .classList
-            .add("already_activated")
-
-        element_unit_type_attacking
-            .parentElement
-            .classList
-            .remove("activated_side")
-
-        element_unit_type_attacking
-            .classList
-            .remove("activated")
-
-        element_unit_instance_attacking
-            .classList
-            .remove("activated")
+        set_active_instance_inactive()
 
         test_new_turn()
 
