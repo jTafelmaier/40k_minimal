@@ -387,10 +387,7 @@ function click_on_instance(
                 element_unit_instance,
                 int_health_points_new)
 
-        hide_preview_attack()
-
         // TODO simplify
-        // TODO remove "alive" from models
         if (int_health_points_new <= 0) {
             if (get_int_count_models_unit_type(element_unit_type) == 0) {
                 element_unit_type
@@ -408,6 +405,8 @@ function click_on_instance(
                 "health_current",
                 int_health_points_new
                     .toString())
+
+        hide_preview_attack()
 
         const element_unit_type_attacking = document
             .querySelectorAll("#factions .unit_type.activated")[0]
