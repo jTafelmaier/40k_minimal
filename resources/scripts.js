@@ -180,8 +180,7 @@ function update_requisition_total(
         .getElementsByClassName(text_side)[0]
         .textContent = Array.from(document
             .getElementById(text_side)
-            .querySelectorAll(".faction:not(.invisible)")[0]
-            .querySelectorAll(".unit_type:not(.unpicked)"))
+            .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked)"))
             .map(get_int_requisition_unit_type)
             .reduce(
                 (a, b) => a + b,
