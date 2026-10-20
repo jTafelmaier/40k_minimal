@@ -425,8 +425,6 @@ function click_on_instance(
 
         set_active_instance_inactive()
 
-        test_new_turn()
-
         update_requisition_total(text_side)
     }
 
