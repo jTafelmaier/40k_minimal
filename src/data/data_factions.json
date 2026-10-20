@@ -96,7 +96,7 @@
                     ]
                 },
                 {
-                    "name": "Terminator squad",
+                    "name": "Terminators (ranged)",
                     "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
@@ -114,6 +114,40 @@
                             "range": "⚔",
                             "type": "single",
                             "damage": 15,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Terminators (shields)",
+                    "requisition": 75,
+                    "take_cover": "y",
+                    "health_max": 10,
+                    "damage_reduction": 8,
+                    "move": 10,
+                    "number_models_max": 5,
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "single",
+                            "damage": 15,
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Terminators (lightning claws)",
+                    "requisition": 75,
+                    "take_cover": "y",
+                    "health_max": 10,
+                    "damage_reduction": 6,
+                    "move": 10,
+                    "number_models_max": 5,
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "type": "volume",
+                            "damage": 10,
                             "restrictions": ""
                         }
                     ]
