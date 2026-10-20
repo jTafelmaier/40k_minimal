@@ -103,19 +103,9 @@ def generate_htmls():
                         + ", '" \
                         + text_id_instance \
                         + "')\"><div class=\"models\">" \
-                        +  "" \
-                            .join(
-                                map(
-                                    lambda int_index: "<div class=\"model\" onclick=\"set_count_models(" \
-                                        + text_parameters_unit_type \
-                                        + ", '" \
-                                        + text_id_instance \
-                                        + "', "
-                                        + (int_index
-                                            + 1)
-                                            .__str__() \
-                                        + ")\"/>",
-                                    range(int_number_models_max))) \
+                        + (
+                            "<div class=\"model\"/>"
+                                * int_number_models_max) \
                         + "</div><div class=\"health_bar\" health_total=\"" \
                         + (int_number_models_max \
                             * dict_unit \
@@ -140,13 +130,7 @@ def generate_htmls():
                     + dict_unit \
                         ["requisition"] \
                         .__str__() \
-                    + " requisition per model.\"><div class=\"image_unit\" onclick=\"toggle_count_models(" \
-                    + text_parameters_unit_type \
-                    + ", " \
-                    + int_number_models_max \
-                        .__str__() \
-                    + ")\""\
-                    + "style=\"background-image: url('" \
+                    + " requisition per model.\"><div class=\"image_unit\" style=\"background-image: url('" \
                     + "/" \
                         .join(
                             [

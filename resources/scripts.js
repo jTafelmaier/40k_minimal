@@ -189,86 +189,6 @@ function update_requisition_total(
 }
 
 
-function set_count_models(
-    text_side,
-    index_unit,
-    text_id_instance,
-    int_count_models) {
-
-    const element_unit_type = get_element_unit_type(
-            text_side,
-            index_unit)
-
-    const int_health_full = int_count_models
-        * get_int_unit_property(
-            element_unit_type,
-            "health_max")
-
-    const element_unit_instance = element_unit_type
-        .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
-
-    element_unit_instance
-        .querySelectorAll(".health_bar")[0]
-        .setAttribute(
-            "health_current",
-            int_health_full
-                .toString())
-
-    set_instance_state(
-            element_unit_type,
-            element_unit_instance,
-            int_health_full)
-
-    if (int_count_models == 0) {
-        if (get_int_count_models_unit_type(element_unit_type) == 0) {
-            element_unit_type
-                .classList
-                .add("unpicked")
-        }
-        element_unit_instance
-            .classList
-            .add("unpicked")
-    } else {
-        element_unit_type
-            .classList
-            .remove("unpicked")
-        element_unit_instance
-            .classList
-            .remove("unpicked")
-    }
-
-    update_requisition_total(text_side)
-}
-
-
-function toggle_count_models(
-    text_side,
-    index_unit,
-    int_count_models_full) {
-
-    if (document.getElementById("factions").classList.contains("match")) {
-        return
-    }
-
-    const count_models_a = (get_int_count_models_unit_type(
-            get_element_unit_type(
-                text_side,
-                index_unit))
-        > 0)
-        ? 0 : int_count_models_full
-
-    Array.from([
-        "a",
-        "b",
-        "c"])
-        .forEach(text_id_instance => set_count_models(
-            text_side,
-            index_unit,
-            text_id_instance,
-            text_id_instance == "a" ? count_models_a : 0))
-}
-
-
 function test_new_turn() {
 
     const array_elements_unit_instances = Array.from(document
@@ -370,16 +290,63 @@ function click_on_instance(
     index_unit,
     text_id_instance) {
 
-    if (!document.getElementById("factions").classList.contains("match")) {
-        return
-    }
-
     const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
     const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+
+    function toggle_instance() {
+
+        const element_unit_instance = element_unit_type
+            .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
+
+        const int_count_models_alive = element_unit_instance
+            .querySelectorAll(".model.alive")
+            .length
+
+        const int_count_models_new = int_count_models_alive > 0 ? 0 : element_unit_instance
+            .querySelectorAll(".model")
+            .length
+
+        const int_health_new = int_count_models_new
+            * get_int_unit_property(
+                    element_unit_type,
+                    "health_max")
+
+        element_unit_instance
+            .querySelectorAll(".health_bar")[0]
+            .setAttribute(
+                "health_current",
+                int_health_new
+                    .toString())
+
+        set_instance_state(
+                element_unit_type,
+                element_unit_instance,
+                int_health_new)
+
+        if (int_count_models_new == 0) {
+            if (get_int_count_models_unit_type(element_unit_type) == 0) {
+                element_unit_type
+                    .classList
+                    .add("unpicked")
+            }
+            element_unit_instance
+                .classList
+                .add("unpicked")
+        } else {
+            element_unit_type
+                .classList
+                .remove("unpicked")
+            element_unit_instance
+                .classList
+                .remove("unpicked")
+        }
+
+        update_requisition_total(text_side)
+    }
 
     function apply_preview() {
 
@@ -460,7 +427,9 @@ function click_on_instance(
             .add("activated")
     }
 
-    if (element_unit_type.classList.contains("attacked")) {
+    if (!document.getElementById("factions").classList.contains("match")) {
+        toggle_instance()
+    } else if (element_unit_type.classList.contains("attacked")) {
         apply_preview()
     } else {
         activate_instance()
