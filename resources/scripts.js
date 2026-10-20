@@ -364,10 +364,19 @@ function click_on_instance(
                     .querySelectorAll(".section.difference")[0],
                 0)
 
+        hide_preview_attack()
+
         set_instance_state(
                 element_unit_type,
                 element_unit_instance,
                 int_health_points_new)
+
+        element_unit_instance
+            .querySelectorAll(".health_bar")[0]
+            .setAttribute(
+                "health_current",
+                int_health_points_new
+                    .toString())
 
         // TODO simplify
         if (int_health_points_new <= 0) {
@@ -380,15 +389,6 @@ function click_on_instance(
                 .classList
                 .add("unpicked")
         }
-
-        element_unit_instance
-            .querySelectorAll(".health_bar")[0]
-            .setAttribute(
-                "health_current",
-                int_health_points_new
-                    .toString())
-
-        hide_preview_attack()
 
         set_active_instance_inactive()
 
