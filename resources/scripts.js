@@ -303,11 +303,15 @@ function set_inactive(
         return
     }
 
-    // TODO simplify
     const element_unit_type = get_element_unit_type(
             text_side,
             index_unit)
 
+    if (!element_unit_type.classList.contains("activated")) {
+        return
+    }
+
+    // TODO simplify
     const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.activated")[0]
 
