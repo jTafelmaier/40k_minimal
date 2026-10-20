@@ -138,9 +138,7 @@ function get_element_unit_type(
     index_unit) {
 
     return document
-        .getElementById(text_side)
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .querySelectorAll(".unit_type")[index_unit]
+        .querySelectorAll("#" + text_side + " .faction:not(.invisible) .unit_type")[index_unit]
 }
 
 
@@ -148,8 +146,7 @@ function get_int_count_models(
     element_unit_instance) {
 
     return element_unit_instance
-        .querySelectorAll(".models")[0]
-        .querySelectorAll(".alive")
+        .querySelectorAll(".models .alive")
         .length
 }
 
@@ -254,11 +251,10 @@ function toggle_count_models(
         return
     }
 
-    const count_models_a = (get_element_unit_type(
-            text_side,
-            index_unit)
-        .querySelectorAll(".unit_instances .alive")
-        .length
+    const count_models_a = (get_int_count_models_unit_type(
+            get_element_unit_type(
+                text_side,
+                index_unit))
         > 0)
         ? 0 : int_count_models_full
 
