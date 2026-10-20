@@ -254,34 +254,23 @@ function toggle_count_models(
         return
     }
 
-    const element_unit_type = get_element_unit_type(
+    const count_models_a = (get_element_unit_type(
             text_side,
             index_unit)
-
-    const bool_already_picked = element_unit_type
-        .querySelectorAll(".unit_instances")[0]
-        .querySelectorAll(".alive")
+        .querySelectorAll(".unit_instances .alive")
         .length
-        > 0
+        > 0)
+        ? 0 : int_count_models_full
 
-    // TODO simplify
-    set_count_models(
+    Array.from([
+        "a",
+        "b",
+        "c"])
+        .forEach(text_id_instance => set_count_models(
             text_side,
             index_unit,
-            "a",
-            bool_already_picked ? 0 : int_count_models_full)
-
-    set_count_models(
-            text_side,
-            index_unit,
-            "b",
-            0)
-
-    set_count_models(
-            text_side,
-            index_unit,
-            "c",
-            0)
+            text_id_instance,
+            text_id_instance == "a" ? count_models_a : 0))
 }
 
 
@@ -406,6 +395,7 @@ function click_on_instance(
         hide_preview_attack()
 
         // TODO simplify
+        // TODO remove "alive" from models
         if (int_health_points_new <= 0) {
             if (get_int_count_models_unit_type(element_unit_type) == 0) {
                 element_unit_type
