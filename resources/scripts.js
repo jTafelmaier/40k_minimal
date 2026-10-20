@@ -603,8 +603,7 @@ function toggle_attack(
 
     Array.from(document
         .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
-        .querySelectorAll(".faction:not(.invisible)")[0]
-        .querySelectorAll(".unit_type:not(.unpicked)"))
+        .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked)"))
         .forEach(show_preview_attack)
 }
 
