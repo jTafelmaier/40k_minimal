@@ -416,9 +416,6 @@ function toggle_attack(
         return
     }
 
-    const element_unit_instance_attacking = element_unit_type_attacking
-        .querySelectorAll(".unit_instance.activated")[0]
-
     const element_attack = element_unit_type_attacking
         .querySelectorAll(".attack")[index_attack]
 
@@ -485,7 +482,8 @@ function toggle_attack(
             const int_damage_added = Math.min(
                     int_health_current,
                     get_int_damage_per_attack()
-                        * get_int_count_models(element_unit_instance_attacking))
+                        * get_int_count_models(element_unit_type_attacking
+                            .querySelectorAll(".unit_instance.activated")[0]))
 
             show_state_instance(
                     element_unit_type_attacked,
