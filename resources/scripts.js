@@ -424,18 +424,14 @@ function toggle_attack(
         function show_preview_damage_instance(
             element_unit_instance_attacked) {
 
-            function get_int_damage_consider_volume() {
+            function get_int_multiplier_volume() {
 
-                const int_strength = parseInt(element_attack
-                    .querySelectorAll(".value")[0]
-                    .innerText
-                    .trim())
-
-                if ((text_keywords_attack.includes("volume") || text_keywords_attack.includes("blast")) && get_int_count_models(element_unit_instance_attacked) > 1) {
-                    return int_strength
-                        * 2}
-                else {
-                    return int_strength
+                if ((text_keywords_attack.includes("volume")
+                    || text_keywords_attack.includes("blast"))
+                    && get_int_count_models(element_unit_instance_attacked) > 1) {
+                    return 2
+                } else {
+                    return 1
                 }
             }
 
@@ -443,7 +439,11 @@ function toggle_attack(
 
                 int_damage = Math.max(
                         0,
-                        get_int_damage_consider_volume()
+                        parseInt(element_attack
+                            .querySelectorAll(".value")[0]
+                            .innerText
+                            .trim())
+                            * get_int_multiplier_volume()
                             + get_int_unit_property(
                                 element_unit_type_attacked,
                                 "damage_reduction"))
