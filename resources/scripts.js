@@ -59,6 +59,15 @@ function return_to_faction_selection(
 }
 
 
+function toggle_mode_list() {
+
+    document
+        .getElementById("factions")
+        .classList
+        .toggle("match")
+}
+
+
 function get_element_unit_type(
     text_side,
     index_unit) {
@@ -198,15 +207,6 @@ function update_state_instance(
                 (a, b) => a + b,
                 0)
             .toString()
-}
-
-
-function toggle_mode_list() {
-
-    document
-        .getElementById("factions")
-        .classList
-        .toggle("match")
 }
 
 
