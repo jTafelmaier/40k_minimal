@@ -1079,7 +1079,7 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 8,
                             "type": "",
                             "restrictions": ""
                         },
@@ -1104,7 +1104,7 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 8,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1121,15 +1121,15 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 2,
+                            "hits": 2,
+                            "damage": 5,
                             "type": "",
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 8,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1146,8 +1146,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
-                            "damage": 1,
+                            "hits": 1,
+                            "damage": 6,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1177,7 +1177,7 @@
                         {
                             "range": "⚔",
                             "hits": 1,
-                            "damage": 80,
+                            "damage": 65,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1194,8 +1194,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 1,
-                            "damage": 40,
+                            "hits": 2,
+                            "damage": 14,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1213,14 +1213,14 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 10,
                             "type": "",
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "hits": 1,
-                            "damage": 20,
+                            "damage": 18,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1237,15 +1237,15 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 2,
+                            "hits": 2,
+                            "damage": 5,
                             "type": "",
                             "restrictions": ""
                         },
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 8,
                             "type": "",
                             "restrictions": ""
                         }
