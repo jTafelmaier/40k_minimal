@@ -1310,8 +1310,8 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 10,
+                            "hits": 6,
+                            "damage": 8,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1347,7 +1347,7 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 10,
+                            "damage": 8,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1383,7 +1383,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 8,
+                            "damage": 10,
                             "type": "volume",
                             "restrictions": "heavy"
                         }
