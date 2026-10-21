@@ -59,38 +59,37 @@ function return_to_faction_selection(
 }
 
 
-function set_height_bar(
-    element_bar,
-    int_steps) {
-
-    const int_health_maximum = parseInt(
-            element_bar
-                .parentElement
-                .getAttribute("health_total"))
-
-    element_bar
-        .setAttribute(
-            "value",
-            int_steps
-                .toString())
-
-    element_bar
-        .setAttribute(
-            "style",
-            "height: "
-                + Math.floor((100
-                    * int_steps)
-                    / int_health_maximum)
-                    .toString()
-                + "%;")
-}
-
-
 function show_state_instance(
     element_unit_type,
     element_unit_instance,
     int_health_new,
     int_damage) {
+
+    function set_height_bar(
+        element_bar,
+        int_steps) {
+
+        const int_health_maximum = parseInt(
+                element_bar
+                    .parentElement
+                    .getAttribute("health_total"))
+
+        element_bar
+            .setAttribute(
+                "value",
+                int_steps
+                    .toString())
+
+        element_bar
+            .setAttribute(
+                "style",
+                "height: "
+                    + Math.floor((100
+                        * int_steps)
+                        / int_health_maximum)
+                        .toString()
+                    + "%;")
+    }
 
     const int_count_models = Math.ceil(
             int_health_new
