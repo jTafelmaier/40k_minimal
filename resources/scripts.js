@@ -124,6 +124,7 @@ function show_state_instance(
 
 
 function update_state_instance(
+    text_side,
     element_unit_type,
     element_unit_instance,
     int_health_new) {
@@ -156,6 +157,27 @@ function update_state_instance(
             element_unit_type,
             element_unit_instance,
             int_health_new)
+
+    function get_int_requisition_unit_type(
+        element_unit_type){
+
+        return get_int_count_models_unit_type(element_unit_type)
+            * parseInt(
+                element_unit_type
+                    .getAttribute("requisition"))
+    }
+
+    document
+        .getElementById("requisition_total")
+        .getElementsByClassName(text_side)[0]
+        .textContent = Array.from(document
+            .getElementById(text_side)
+            .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked)"))
+            .map(get_int_requisition_unit_type)
+            .reduce(
+                (a, b) => a + b,
+                0)
+            .toString()
 }
 
 
@@ -195,32 +217,6 @@ function get_int_count_models_unit_type(
         .reduce(
             (a, b) => a + b,
             0)
-}
-
-
-function update_requisition_total(
-    text_side) {
-
-    function get_int_requisition_unit_type(
-        element_unit_type){
-
-        return get_int_count_models_unit_type(element_unit_type)
-            * parseInt(
-                element_unit_type
-                    .getAttribute("requisition"))
-    }
-
-    document
-        .getElementById("requisition_total")
-        .getElementsByClassName(text_side)[0]
-        .textContent = Array.from(document
-            .getElementById(text_side)
-            .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked)"))
-            .map(get_int_requisition_unit_type)
-            .reduce(
-                (a, b) => a + b,
-                0)
-            .toString()
 }
 
 
@@ -333,26 +329,16 @@ function click_on_instance(
 
     function toggle_instance() {
 
-        const element_unit_instance = element_unit_type
-            .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
-
-        const int_count_models_alive = get_int_count_models(element_unit_instance)
-
-        const int_count_models_new = int_count_models_alive > 0 ? 0 : element_unit_instance
-            .querySelectorAll(".model")
-            .length
-
-        const int_health_new = int_count_models_new
-            * get_int_unit_property(
-                    element_unit_type,
-                    "health_max")
-
         update_state_instance(
+                text_side,
                 element_unit_type,
                 element_unit_instance,
-                int_health_new)
-
-        update_requisition_total(text_side)
+                get_int_count_models(element_unit_instance) > 0 ? 0 : element_unit_instance
+                    .querySelectorAll(".model")
+                    .length
+                    * get_int_unit_property(
+                            element_unit_type,
+                            "health_max"))
     }
 
     function apply_preview() {
@@ -374,13 +360,12 @@ function click_on_instance(
         hide_preview_attack()
 
         update_state_instance(
+                text_side,
                 element_unit_type,
                 element_unit_instance,
                 int_health_points_new)
 
         set_active_instance_inactive()
-
-        update_requisition_total(text_side)
     }
 
     function activate_instance() {
