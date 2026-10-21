@@ -266,8 +266,7 @@ function hide_preview_attack() {
                 element_unit_type,
                 element_unit_instance,
                 get_int_attribute(
-                    element_unit_instance
-                        .querySelectorAll(".health_bar")[0],
+                    element_unit_instance,
                     "health_current")))
 
         element_unit_type
@@ -314,7 +313,6 @@ function click_on_instance(
                     "health_max")
 
         element_unit_instance
-            .querySelectorAll(".health_bar")[0]
             .setAttribute(
                 "health_current",
                 int_health_new
@@ -349,8 +347,7 @@ function click_on_instance(
     function apply_preview() {
 
         const int_health_points_new = get_int_attribute(
-                element_unit_instance
-                    .querySelectorAll(".health_bar")[0],
+                element_unit_instance,
                 "health_current")
             - get_int_attribute(
                 element_unit_instance
@@ -370,7 +367,6 @@ function click_on_instance(
                 int_health_points_new)
 
         element_unit_instance
-            .querySelectorAll(".health_bar")[0]
             .setAttribute(
                 "health_current",
                 int_health_points_new
@@ -515,8 +511,7 @@ function toggle_attack(
             }
 
             const int_health_current = get_int_attribute(
-                    element_unit_instance_attacked
-                        .querySelectorAll(".health_bar")[0],
+                    element_unit_instance_attacked,
                     "health_current")
 
             const int_damage_added = Math.min(

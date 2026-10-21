@@ -102,16 +102,16 @@ def generate_htmls():
                         + text_parameters_unit_type \
                         + ", '" \
                         + text_id_instance \
-                        + "')\"><div class=\"models\">" \
-                        + (
-                            "<div class=\"model\"/>"
-                                * int_number_models_max) \
-                        + "</div><div class=\"health_bar\" health_total=\"" \
+                        + "')\" health_current=\"" \
                         + (int_number_models_max \
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\"  health_current=\"" \
+                        + "\"><div class=\"models\">" \
+                        + (
+                            "<div class=\"model\"/>"
+                                * int_number_models_max) \
+                        + "</div><div class=\"health_bar\" health_total=\"" \
                         + (int_number_models_max \
                             * dict_unit \
                                 ["health_max"]) \
