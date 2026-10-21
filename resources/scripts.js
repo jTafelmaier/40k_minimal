@@ -327,20 +327,6 @@ function click_on_instance(
     const element_unit_instance = element_unit_type
         .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
-    function toggle_instance() {
-
-        update_state_instance(
-                text_side,
-                element_unit_type,
-                element_unit_instance,
-                get_int_count_models(element_unit_instance) > 0 ? 0 : element_unit_instance
-                    .querySelectorAll(".model")
-                    .length
-                    * get_int_unit_property(
-                            element_unit_type,
-                            "health_max"))
-    }
-
     function apply_preview() {
 
         const int_health_points_new = get_int_attribute(
@@ -401,7 +387,16 @@ function click_on_instance(
     }
 
     if (!document.getElementById("factions").classList.contains("match")) {
-        toggle_instance()
+        update_state_instance(
+                text_side,
+                element_unit_type,
+                element_unit_instance,
+                get_int_count_models(element_unit_instance) > 0 ? 0 : element_unit_instance
+                    .querySelectorAll(".model")
+                    .length
+                    * get_int_unit_property(
+                            element_unit_type,
+                            "health_max"))
     } else if (element_unit_type.classList.contains("attacked")) {
         apply_preview()
     } else {
