@@ -94,8 +94,7 @@ function show_state_instance(
         int_steps) {
 
         const int_health_maximum = parseInt(
-                element_bar
-                    .parentElement
+                element_unit_instance
                     .getAttribute("health_total"))
 
         element_bar

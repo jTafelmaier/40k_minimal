@@ -102,17 +102,17 @@ def generate_htmls():
                         + text_parameters_unit_type \
                         + ", '" \
                         + text_id_instance \
-                        + "')\" health_current=\"" \
+                        + "')\" health_total=\"" \
                         + (int_number_models_max \
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\"><div class=\"health_bar\" health_total=\"" \
+                        + "\" health_current=\"" \
                         + (int_number_models_max \
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
+                        + "\"><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
                         + (
                             "<div class=\"model\"/>"
                                 * int_number_models_max) \
