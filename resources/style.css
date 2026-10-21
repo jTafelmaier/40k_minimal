@@ -233,7 +233,7 @@ body {
 .unit_instance {
     flex: 1;
     position: relative;
-    width: 5px;
+    width: 8px;
     padding: 2px;
     border: 1px solid var(--grey_main);
     border-right: none;
