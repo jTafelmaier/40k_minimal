@@ -111,12 +111,7 @@ def generate_htmls():
                             * dict_unit \
                                 ["health_per_model"]) \
                             .__str__() \
-                        + "\" health_current=\"" \
-                        + (int_number_models_max \
-                            * dict_unit \
-                                ["health_per_model"]) \
-                            .__str__() \
-                        + "\"><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
+                        + "\" health_current=\"0\"><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
                         + (
                             "<div class=\"model\"/>"
                                 * int_number_models_max) \
