@@ -123,6 +123,42 @@ function show_state_instance(
 }
 
 
+function update_state_instance(
+    element_unit_type,
+    element_unit_instance,
+    int_health_new) {
+
+    element_unit_instance
+        .setAttribute(
+            "health_current",
+            int_health_new
+                .toString())
+
+    if (int_health_new <= 0) {
+        if (get_int_count_models_unit_type(element_unit_type) == 0) {
+            element_unit_type
+                .classList
+                .add("unpicked")
+        }
+        element_unit_instance
+            .classList
+            .add("unpicked")
+    } else {
+        element_unit_type
+            .classList
+            .remove("unpicked")
+        element_unit_instance
+            .classList
+            .remove("unpicked")
+    }
+
+    show_state_instance(
+            element_unit_type,
+            element_unit_instance,
+            int_health_new)
+}
+
+
 function toggle_mode_list() {
 
     document
@@ -311,34 +347,10 @@ function click_on_instance(
                     element_unit_type,
                     "health_max")
 
-        element_unit_instance
-            .setAttribute(
-                "health_current",
-                int_health_new
-                    .toString())
-
-        show_state_instance(
+        update_state_instance(
                 element_unit_type,
                 element_unit_instance,
                 int_health_new)
-
-        if (int_count_models_new == 0) {
-            if (get_int_count_models_unit_type(element_unit_type) == 0) {
-                element_unit_type
-                    .classList
-                    .add("unpicked")
-            }
-            element_unit_instance
-                .classList
-                .add("unpicked")
-        } else {
-            element_unit_type
-                .classList
-                .remove("unpicked")
-            element_unit_instance
-                .classList
-                .remove("unpicked")
-        }
 
         update_requisition_total(text_side)
     }
@@ -353,6 +365,7 @@ function click_on_instance(
                     .querySelectorAll(".section.difference")[0],
                 "value")
 
+        // TODO necessary?
         set_height_bar(
                 element_unit_instance
                     .querySelectorAll(".section.difference")[0],
@@ -360,28 +373,10 @@ function click_on_instance(
 
         hide_preview_attack()
 
-        show_state_instance(
+        update_state_instance(
                 element_unit_type,
                 element_unit_instance,
                 int_health_points_new)
-
-        element_unit_instance
-            .setAttribute(
-                "health_current",
-                int_health_points_new
-                    .toString())
-
-        // TODO simplify
-        if (int_health_points_new <= 0) {
-            if (get_int_count_models_unit_type(element_unit_type) == 0) {
-                element_unit_type
-                    .classList
-                    .add("unpicked")
-            }
-            element_unit_instance
-                .classList
-                .add("unpicked")
-        }
 
         set_active_instance_inactive()
 
