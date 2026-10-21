@@ -867,7 +867,7 @@
                     ]
                 },
                 {
-                    "name": "Calladius grav-tank",
+                    "name": "Calladius grav-tank (Iliastus)",
                     "requisition": 500,
                     "take_cover": "❌",
                     "health_max": 50,
@@ -890,7 +890,7 @@
                     ]
                 },
                 {
-                    "name": "Calladius annihilator",
+                    "name": "Calladius grav-tank (Annihilator)",
                     "requisition": 500,
                     "take_cover": "❌",
                     "health_max": 50,
