@@ -233,7 +233,6 @@ body {
 .unit_instance {
     flex: 1;
     display: flex;
-    flex-direction: column-reverse;
     padding: 1px;
     padding-right: 2px;
     border: 1px solid var(--grey_main);
