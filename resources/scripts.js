@@ -516,8 +516,9 @@ function toggle_attack(
         .add("highlighted")
 
     Array.from(document
-        .getElementById(text_side_unit_attacking === "left" ? "right" : "left")
-        .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked)"))
+        .querySelectorAll("#" 
+            + (text_side_unit_attacking === "left" ? "right" : "left")
+            + " .faction:not(.invisible) .unit_type:not(.unpicked)"))
         .forEach(show_preview_attack)
 }
 
