@@ -1086,7 +1086,7 @@
                         {
                             "range": "⚔",
                             "hits": 1,
-                            "damage": 40,
+                            "damage": 25,
                             "type": "",
                             "restrictions": "static"
                         }
@@ -1292,8 +1292,8 @@
                         },
                         {
                             "range": "⚔",
-                            "hits": 4,
-                            "damage": 10,
+                            "hits": 2,
+                            "damage": 18,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1311,7 +1311,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 7,
+                            "damage": 10,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1328,8 +1328,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
-                            "damage": 5,
+                            "hits": 2,
+                            "damage": 15,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1347,7 +1347,7 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 2,
+                            "damage": 10,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1383,7 +1383,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 5,
+                            "damage": 8,
                             "type": "volume",
                             "restrictions": "heavy"
                         }
