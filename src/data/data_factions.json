@@ -1329,7 +1329,7 @@
                         {
                             "range": "⚔",
                             "hits": 2,
-                            "damage": 15,
+                            "damage": 12,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1337,7 +1337,7 @@
                 },
                 {
                     "name": "Ophydian destroyers",
-                    "requisition": 50,
+                    "requisition": 75,
                     "take_cover": "y",
                     "health_max": 10,
                     "damage_reduction": 4,
@@ -1347,7 +1347,7 @@
                         {
                             "range": "⚔",
                             "hits": 4,
-                            "damage": 8,
+                            "damage": 9,
                             "type": "volume",
                             "restrictions": ""
                         }
