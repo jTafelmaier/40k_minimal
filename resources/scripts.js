@@ -59,6 +59,24 @@ function return_to_faction_selection(
 }
 
 
+function get_element_unit_type(
+    text_side,
+    index_unit) {
+
+    return document
+        .querySelectorAll("#" + text_side + " .faction:not(.invisible) .unit_type")[index_unit]
+}
+
+
+function get_int_count_models(
+    element_unit_instance) {
+
+    return element_unit_instance
+        .querySelectorAll(".models .alive")
+        .length
+}
+
+
 function show_state_instance(
     element_unit_type,
     element_unit_instance,
@@ -134,6 +152,17 @@ function update_state_instance(
     element_unit_instance,
     int_health_new) {
 
+    function get_int_count_models_unit_type(
+        element_unit_type_other) {
+
+        return Array.from(element_unit_type_other
+            .querySelectorAll(".unit_instance:not(.unpicked)"))
+            .map(get_int_count_models)
+            .reduce(
+                (a, b) => a + b,
+                0)
+    }
+
     element_unit_instance
         .setAttribute(
             "health_current",
@@ -193,36 +222,6 @@ function toggle_mode_list() {
         .getElementById("factions")
         .classList
         .toggle("match")
-}
-
-
-function get_element_unit_type(
-    text_side,
-    index_unit) {
-
-    return document
-        .querySelectorAll("#" + text_side + " .faction:not(.invisible) .unit_type")[index_unit]
-}
-
-
-function get_int_count_models(
-    element_unit_instance) {
-
-    return element_unit_instance
-        .querySelectorAll(".models .alive")
-        .length
-}
-
-
-function get_int_count_models_unit_type(
-    element_unit_type) {
-
-    return Array.from(element_unit_type
-        .querySelectorAll(".unit_instance:not(.unpicked)"))
-        .map(get_int_count_models)
-        .reduce(
-            (a, b) => a + b,
-            0)
 }
 
 
