@@ -88,9 +88,10 @@
                                 <br/>
                                 Target unit: <b>health points total</b> are reduced by:
                                 <br/>
-                                <b>#models</b> * max(0, (<b>damage</b> - <b>damage reduction</b>)).
+                                <b>#models</b> * <b>hits</b> * max(0, (<b>damage</b> - <b>damage reduction</b>)).
                                 <br/>
                                 <br/>
+                                The maximum final damage of an attack is the enemy unit health per model * weapon hits * number of models in the attacking unit.
                                 Models in the target unit have to be destroyed until their count is equal to ceil(<b>health points total</b> / <b>health points per model</b>).
                             </div>
                         </div>
@@ -155,7 +156,7 @@
                             <b>volume</b>
                         </div>
                         <div class="description">
-                            While targeting a unit including more than one model, the weapon damage characteristic is doubled.
+                            While targeting a unit including more than one model, the weapon hits characteristic is doubled.
                         </div>
                     </div>
                     <div class="definition">
@@ -166,14 +167,6 @@
                             This weapon has <b>volume</b> and can attack units in cover.
                             <br/>
                             This weapon cannot be used against units within 5 cm.
-                        </div>
-                    </div>
-                    <div class="definition">
-                        <div class="name">
-                            <b>single</b>
-                        </div>
-                        <div class="description">
-                            The maximum final damage of an attack is the enemy unit health per model * number of models in the attacking unit.
                         </div>
                     </div>
                     <div class="definition">

@@ -435,38 +435,33 @@ function toggle_attack(
                 }
             }
 
-            function get_int_damage_per_attack() {
-
-                int_damage = Math.max(
-                        0,
-                        parseInt(element_attack
-                            .querySelectorAll(".value")[0]
-                            .innerText
-                            .trim())
-                            * get_int_multiplier_volume()
-                            + get_int_unit_property(
-                                element_unit_type_attacked,
-                                "damage_reduction"))
-
-                if (text_keywords_attack.includes("single")) {
-                    return Math.min(
-                            int_damage,
-                            get_int_unit_property(
-                                element_unit_type_attacked,
-                                "health_max"))
-                } else {
-                    return int_damage
-                }
-            }
-
             const int_health_current = get_int_attribute(
                     element_unit_instance_attacked,
                     "health_current")
 
             const int_damage_added = Math.min(
                     int_health_current,
-                    get_int_damage_per_attack()
-                        * get_int_count_models(element_unit_type_attacking
+                    Math.min(
+                        (Math.max(
+                            0,
+                            parseInt(element_attack
+                                .querySelectorAll(".damage")[0]
+                                .innerText
+                                .trim())
+                                + get_int_unit_property(
+                                    element_unit_type_attacked,
+                                    "damage_reduction"))),
+                        get_int_unit_property(
+                            element_unit_type_attacked,
+                            "health_max"))
+                    * parseInt(
+                        element_attack
+                            .querySelectorAll(".hits")[0]
+                            .innerText
+                            .trim())
+                    * get_int_multiplier_volume()
+                    * get_int_count_models(
+                        element_unit_type_attacking
                             .querySelectorAll(".unit_instance.activated")[0]))
 
             show_state_instance(
