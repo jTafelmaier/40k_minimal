@@ -88,7 +88,7 @@ function get_int_count_models(
                 element_unit_instance
                     .parentElement
                     .parentElement,
-                "health_max"))
+                "health_per_model"))
 }
 
 
@@ -137,7 +137,20 @@ function show_state_instance(
             "title",
             int_health_new
                 .toString() 
-                + " health points")
+                + " health points, "
+                + (int_damage 
+                    * parseInt(
+                        element_unit_instance
+                            .parentElement
+                            .parentElement
+                            .getAttribute("requisition")
+                    / get_int_unit_property(
+                        element_unit_instance
+                            .parentElement
+                            .parentElement,
+                        "health_per_model"))
+                    .toString()
+                + " requisition damage."))
 }
 
 
@@ -374,7 +387,7 @@ function click_on_instance(
                     .length
                     * get_int_unit_property(
                             element_unit_type,
-                            "health_max"))
+                            "health_per_model"))
     } else if (element_unit_type.classList.contains("attacked")) {
         apply_preview()
     } else {
@@ -453,7 +466,7 @@ function toggle_attack(
                                     "damage_reduction"))),
                         get_int_unit_property(
                             element_unit_type_attacked,
-                            "health_max"))
+                            "health_per_model"))
                     * parseInt(
                         element_attack
                             .querySelectorAll(".hits")[0]

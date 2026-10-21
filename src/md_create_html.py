@@ -109,12 +109,12 @@ def generate_htmls():
                         + "')\" health_total=\"" \
                         + (int_number_models_max \
                             * dict_unit \
-                                ["health_max"]) \
+                                ["health_per_model"]) \
                             .__str__() \
                         + "\" health_current=\"" \
                         + (int_number_models_max \
                             * dict_unit \
-                                ["health_max"]) \
+                                ["health_per_model"]) \
                             .__str__() \
                         + "\"><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
                         + (
@@ -146,9 +146,9 @@ def generate_htmls():
                     + "')\"><div class=\"name_unit\">" \
                     + dict_unit \
                         ["name"] \
-                    + "</div><div class=\"model_properties\"><div class=\"model_property health_max\"><div class=\"name\">HP</div><div class=\"value\">" \
+                    + "</div><div class=\"model_properties\"><div class=\"model_property health_per_model\"><div class=\"name\">HP</div><div class=\"value\">" \
                     + dict_unit \
-                        ["health_max"] \
+                        ["health_per_model"] \
                         .__str__() \
                     + "</div></div><div class=\"model_property damage_reduction\"><div class=\"name\">DR</div><div class=\"value\">-" \
                     + dict_unit \
