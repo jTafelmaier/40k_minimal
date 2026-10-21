@@ -89,7 +89,8 @@ function set_height_bar(
 function show_state_instance(
     element_unit_type,
     element_unit_instance,
-    int_health_new) {
+    int_health_new,
+    int_damage) {
 
     const int_count_models = Math.ceil(
             int_health_new
@@ -113,6 +114,11 @@ function show_state_instance(
             element_unit_instance
                 .querySelectorAll(".section.remaining")[0],
             int_health_new)
+
+    set_height_bar(
+            element_unit_instance
+                .querySelectorAll(".section.difference")[0],
+            int_damage)
 
     element_unit_instance
         .setAttribute(
@@ -156,7 +162,8 @@ function update_state_instance(
     show_state_instance(
             element_unit_type,
             element_unit_instance,
-            int_health_new)
+            int_health_new,
+            0)
 
     function get_int_requisition_unit_type(
         element_unit_type){
@@ -298,7 +305,8 @@ function hide_preview_attack() {
                 element_unit_instance,
                 get_int_attribute(
                     element_unit_instance,
-                    "health_current")))
+                    "health_current"),
+                0))
 
         element_unit_type
             .classList
@@ -336,12 +344,6 @@ function click_on_instance(
                 element_unit_instance
                     .querySelectorAll(".section.difference")[0],
                 "value")
-
-        // TODO necessary?
-        set_height_bar(
-                element_unit_instance
-                    .querySelectorAll(".section.difference")[0],
-                0)
 
         hide_preview_attack()
 
@@ -493,16 +495,12 @@ function toggle_attack(
                     get_int_damage_per_attack()
                         * get_int_count_models(element_unit_instance_attacking))
 
-            set_height_bar(
-                    element_unit_instance_attacked
-                        .querySelectorAll(".section.difference")[0],
-                    int_damage_added)
-
             show_state_instance(
                     element_unit_type_attacked,
                     element_unit_instance_attacked,
                     int_health_current
-                        - int_damage_added)
+                        - int_damage_added,
+                    int_damage_added)
         }
 
         Array.from(element_unit_type_attacked
