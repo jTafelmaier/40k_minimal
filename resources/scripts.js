@@ -84,7 +84,6 @@ function get_int_count_models(
 
 
 function show_state_instance(
-    element_unit_type,
     element_unit_instance,
     int_health_new,
     int_damage) {
@@ -175,7 +174,6 @@ function update_state_instance(
     }
 
     show_state_instance(
-            element_unit_type,
             element_unit_instance,
             int_health_new,
             0)
@@ -280,7 +278,6 @@ function hide_preview_attack() {
         Array.from(element_unit_type
             .querySelectorAll(".unit_instance:not(.unpicked)"))
             .forEach(element_unit_instance => show_state_instance(
-                element_unit_type,
                 element_unit_instance,
                 get_int_attribute(
                     element_unit_instance,
@@ -473,7 +470,6 @@ function toggle_attack(
                             .querySelectorAll(".unit_instance.activated")[0]))
 
             show_state_instance(
-                    element_unit_type_attacked,
                     element_unit_instance_attacked,
                     int_health_current
                         - int_damage_added,
