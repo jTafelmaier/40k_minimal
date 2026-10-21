@@ -384,17 +384,14 @@ body {
 }
 
 .health_bar {
-    width: 5px;
-    padding: 2px;
-    background-color: var(--grey_dark);
-    border-radius: 1px;
-}
-
-.health_bar {
     flex: 1;
     display: none;
     justify-content: flex-end;
     flex-direction: column;
+    width: 5px;
+    padding: 2px;
+    background-color: var(--grey_dark);
+    border-radius: 1px;
 }
 
 .match .models {
