@@ -86,7 +86,7 @@ function set_height_bar(
 }
 
 
-function show_instance_state(
+function show_state_instance(
     element_unit_type,
     element_unit_instance,
     int_health_new) {
@@ -261,7 +261,7 @@ function hide_preview_attack() {
 
         Array.from(element_unit_type
             .querySelectorAll(".unit_instance:not(.unpicked)"))
-            .forEach(element_unit_instance => show_instance_state(
+            .forEach(element_unit_instance => show_state_instance(
                 element_unit_type,
                 element_unit_instance,
                 get_int_attribute(
@@ -317,7 +317,7 @@ function click_on_instance(
                 int_health_new
                     .toString())
 
-        show_instance_state(
+        show_state_instance(
                 element_unit_type,
                 element_unit_instance,
                 int_health_new)
@@ -360,7 +360,7 @@ function click_on_instance(
 
         hide_preview_attack()
 
-        show_instance_state(
+        show_state_instance(
                 element_unit_type,
                 element_unit_instance,
                 int_health_points_new)
@@ -523,7 +523,7 @@ function toggle_attack(
                         .querySelectorAll(".section.difference")[0],
                     int_damage_added)
 
-            show_instance_state(
+            show_state_instance(
                     element_unit_type_attacked,
                     element_unit_instance_attacked,
                     int_health_current
