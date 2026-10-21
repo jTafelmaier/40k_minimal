@@ -226,28 +226,6 @@ function get_int_count_models_unit_type(
 }
 
 
-function test_new_turn() {
-
-    const array_elements_unit_instances = Array.from(document
-        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance:not(.unpicked)"))
-
-    if (!array_elements_unit_instances.every(element => element.classList.contains("already_activated")))
-        return
-
-    array_elements_unit_instances
-        .forEach(element => element.classList.remove("already_activated"))
-
-    const element_turn_counter = document
-        .getElementById("turn_counter")
-
-    element_turn_counter.textContent = (parseInt(
-            element_turn_counter
-                .textContent)
-            + 1)
-            .toString()
-}
-
-
 function set_active_instance_inactive() {
 
     const classlist_factions = document
@@ -281,7 +259,23 @@ function set_active_instance_inactive() {
         .classList
         .remove("activated")
 
-    test_new_turn()
+    const array_elements_unit_instances = Array.from(document
+        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance:not(.unpicked)"))
+
+    if (!array_elements_unit_instances.every(element => element.classList.contains("already_activated")))
+        return
+
+    array_elements_unit_instances
+        .forEach(element => element.classList.remove("already_activated"))
+
+    const element_turn_counter = document
+        .getElementById("turn_counter")
+
+    element_turn_counter.textContent = (parseInt(
+            element_turn_counter
+                .textContent)
+            + 1)
+            .toString()
 }
 
 
