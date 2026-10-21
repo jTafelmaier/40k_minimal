@@ -115,7 +115,6 @@ function show_instance_state(
             int_health_new)
 
     element_unit_instance
-        .querySelectorAll(".health_bar")[0]
         .setAttribute(
             "title",
             int_health_new
