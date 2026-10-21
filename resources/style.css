@@ -245,6 +245,7 @@ body {
 .models {
     position: absolute;
     display: flex;
+    flex-direction: column;
     width: 5px;
     height: calc(100% - 2px);
 }
