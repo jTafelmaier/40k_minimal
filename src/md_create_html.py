@@ -84,11 +84,11 @@ def generate_htmls():
                         + " " \
                         + dict_attack \
                             ["type"] \
-                        + "</div><div class=\"hits\">" \
+                        + "</div><div class=\"value hits\">" \
                         + dict_attack \
                             ["hits"] \
                             .__str__() \
-                        + "</div> x <div class=\"damage\">" \
+                        + "</div> x <div class=\"value damage\">" \
                         + dict_attack \
                             ["damage"] \
                             .__str__() \
