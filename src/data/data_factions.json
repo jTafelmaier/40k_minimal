@@ -616,8 +616,8 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 2,
+                            "hits": 2,
+                            "damage": 4,
                             "type": "",
                             "restrictions": "heavy"
                         }
@@ -634,8 +634,8 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 2,
+                            "hits": 2,
+                            "damage": 4,
                             "type": "",
                             "restrictions": "heavy"
                         }
@@ -652,8 +652,8 @@
                     "attacks": [
                         {
                             "range": "⛶",
-                            "hits": 4,
-                            "damage": 2,
+                            "hits": 1,
+                            "damage": 6,
                             "type": "",
                             "restrictions": ""
                         }
