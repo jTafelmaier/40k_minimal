@@ -232,9 +232,9 @@ body {
 
 .unit_instance {
     flex: 1;
-    display: flex;
-    padding: 1px;
-    padding-right: 2px;
+    position: relative;
+    width: 5px;
+    padding: 2px;
     border: 1px solid var(--grey_main);
     border-right: none;
     border-top-left-radius: 2px;
@@ -243,25 +243,18 @@ body {
 }
 
 .models {
+    position: absolute;
     display: flex;
     flex-direction: column-reverse;
     width: 5px;
-    height: 100%;
-    padding: 1px 2px;
+    height: calc(100% - 2px);
     border-radius: 1px;
-    background-color: var(--grey_dark);
 }
 
 .models > div {
     flex: 1;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    border-radius: 1px;
-    background-color: var(--grey_dark);
-}
-
-.models > div.alive {
-    background-color: var(--grey_text);
+    border-top: 1px solid var(--grey_dark);
+    border-bottom: 1px solid var(--grey_dark);
 }
 
 .unit_data {
@@ -384,22 +377,14 @@ body {
 }
 
 .health_bar {
+    position: absolute;
     flex: 1;
-    display: none;
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    width: 5px;
-    padding: 2px;
-    background-color: var(--grey_dark);
     border-radius: 1px;
-}
-
-.match .models {
-    display: none;
-}
-
-.match .health_bar {
-    display: flex;
+    width: 5px;
+    height: calc(100% - 4px);
 }
 
 .section.difference {
@@ -408,7 +393,7 @@ body {
 }
 
 .section.remaining {
-    background: linear-gradient(to top, var(--grey_main), var(--grey_bright) 185px);
+    background-color: var(--grey_text);
 }
 
 .activated_side .unit_type:not(.activated) {

@@ -107,16 +107,16 @@ def generate_htmls():
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\"><div class=\"models\">" \
-                        + (
-                            "<div class=\"model\"/>"
-                                * int_number_models_max) \
-                        + "</div><div class=\"health_bar\" health_total=\"" \
+                        + "\"><div class=\"health_bar\" health_total=\"" \
                         + (int_number_models_max \
                             * dict_unit \
                                 ["health_max"]) \
                             .__str__() \
-                        + "\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div></div>"
+                        + "\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
+                        + (
+                            "<div class=\"model\"/>"
+                                * int_number_models_max) \
+                        + "</div></div>"
 
                 return "<div class=\"unit_type unpicked\" requisition=\"" \
                     + dict_unit \
