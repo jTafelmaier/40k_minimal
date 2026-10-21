@@ -71,9 +71,15 @@ function get_element_unit_type(
 function get_int_count_models(
     element_unit_instance) {
 
-    return element_unit_instance
-        .querySelectorAll(".models .alive")
-        .length
+    return Math.ceil(
+            get_int_attribute(
+                element_unit_instance,
+                "health_current")
+            / get_int_unit_property(
+                element_unit_instance
+                    .parentElement
+                    .parentElement,
+                "health_max"))
 }
 
 
@@ -108,24 +114,6 @@ function show_state_instance(
                         .toString()
                     + "%;")
     }
-
-    const int_count_models = Math.ceil(
-            int_health_new
-                / get_int_unit_property(
-                    element_unit_type,
-                    "health_max"))
-
-    const array_elements_models = Array.from(element_unit_instance
-        .querySelectorAll(".models")[0]
-        .children)
-
-    array_elements_models
-        .slice(0, int_count_models)
-        .forEach(element => element.classList.add("alive"))
-
-    array_elements_models
-        .slice(int_count_models)
-        .forEach(element => element.classList.remove("alive"))
 
     set_height_bar(
             element_unit_instance

@@ -245,10 +245,8 @@ body {
 .models {
     position: absolute;
     display: flex;
-    flex-direction: column-reverse;
     width: 5px;
     height: calc(100% - 2px);
-    border-radius: 1px;
 }
 
 .models > div {
