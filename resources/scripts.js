@@ -302,9 +302,7 @@ function click_on_instance(
         const element_unit_instance = element_unit_type
             .querySelectorAll(".unit_instance.instance_" + text_id_instance)[0]
 
-        const int_count_models_alive = element_unit_instance
-            .querySelectorAll(".model.alive")
-            .length
+        const int_count_models_alive = get_int_count_models(element_unit_instance)
 
         const int_count_models_new = int_count_models_alive > 0 ? 0 : element_unit_instance
             .querySelectorAll(".model")
