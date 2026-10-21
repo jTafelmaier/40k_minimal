@@ -133,7 +133,7 @@
                     "requisition": 75,
                     "take_cover": "y",
                     "health_per_model": 10,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 10,
                     "number_models_max": 5,
                     "attacks": [
