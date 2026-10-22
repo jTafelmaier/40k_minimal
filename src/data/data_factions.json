@@ -157,7 +157,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 8,
                             "type": "volume",
                             "restrictions": ""
@@ -325,7 +325,7 @@
                         },
                         {
                             "range": "⊹",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 8,
                             "type": "volume",
                             "restrictions": "static"
@@ -561,7 +561,7 @@
                         },
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 10,
                             "type": "volume",
                             "restrictions": ""
@@ -937,7 +937,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 7,
                             "type": "volume",
                             "restrictions": ""
@@ -945,7 +945,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 25,
+                            "damage": 28,
                             "type": "",
                             "restrictions": "heavy"
                         }
@@ -962,7 +962,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 7,
                             "type": "volume",
                             "restrictions": ""
@@ -987,7 +987,7 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 7,
                             "type": "volume",
                             "restrictions": ""
@@ -1017,7 +1017,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 20,
                             "type": "volume",
                             "restrictions": ""
@@ -1035,7 +1035,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 10,
                             "type": "volume",
                             "restrictions": ""
@@ -1053,7 +1053,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 10,
                             "type": "volume",
                             "restrictions": ""
@@ -1071,7 +1071,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 8,
                             "type": "",
                             "restrictions": ""
@@ -1096,7 +1096,7 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 8,
                             "type": "volume",
                             "restrictions": ""
@@ -1121,7 +1121,7 @@
                         },
                         {
                             "range": "⚔",
-                            "hits": 4,
+                            "hits": 2,
                             "damage": 8,
                             "type": "",
                             "restrictions": ""
@@ -1256,7 +1256,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 2,
+                            "damage": 6,
                             "type": "volume",
                             "restrictions": "static"
                         }
@@ -1330,7 +1330,7 @@
                 },
                 {
                     "name": "Ophydian destroyers",
-                    "requisition": 75,
+                    "requisition": 100,
                     "take_cover": "y",
                     "health_per_model": 10,
                     "damage_reduction": 4,
@@ -1339,8 +1339,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
-                            "damage": 9,
+                            "hits": 2,
+                            "damage": 12,
                             "type": "volume",
                             "restrictions": ""
                         }
@@ -1606,8 +1606,8 @@
                     "attacks": [
                         {
                             "range": "⚔",
-                            "hits": 4,
-                            "damage": 10,
+                            "hits": 2,
+                            "damage": 15,
                             "type": "volume",
                             "restrictions": ""
                         }
