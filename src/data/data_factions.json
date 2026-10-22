@@ -674,24 +674,6 @@
                     ]
                 },
                 {
-                    "name": "Wolf guard battle leader",
-                    "requisition": 75,
-                    "take_cover": "y",
-                    "health_per_model": 10,
-                    "damage_reduction": 5,
-                    "move": 20,
-                    "number_models_max": 1,
-                    "attacks": [
-                        {
-                            "range": "⚔",
-                            "hits": 2,
-                            "damage": 11,
-                            "type": "",
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
                     "name": "Wolf priest",
                     "requisition": 75,
                     "take_cover": "y",
@@ -711,6 +693,24 @@
                             "range": "⚔",
                             "hits": 2,
                             "damage": 10,
+                            "type": "",
+                            "restrictions": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Wolf guard battle leader",
+                    "requisition": 75,
+                    "take_cover": "y",
+                    "health_per_model": 10,
+                    "damage_reduction": 5,
+                    "move": 20,
+                    "number_models_max": 1,
+                    "attacks": [
+                        {
+                            "range": "⚔",
+                            "hits": 2,
+                            "damage": 11,
                             "type": "",
                             "restrictions": ""
                         }
