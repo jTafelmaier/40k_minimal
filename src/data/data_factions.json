@@ -957,7 +957,7 @@
                     "requisition": 250,
                     "take_cover": "y",
                     "health_per_model": 15,
-                    "damage_reduction": 10,
+                    "damage_reduction": 9,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -975,7 +975,7 @@
                     "requisition": 125,
                     "take_cover": "y",
                     "health_per_model": 15,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -993,7 +993,7 @@
                     "requisition": 200,
                     "take_cover": "y",
                     "health_per_model": 15,
-                    "damage_reduction": 10,
+                    "damage_reduction": 9,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -1018,7 +1018,7 @@
                     "requisition": 125,
                     "take_cover": "y",
                     "health_per_model": 15,
-                    "damage_reduction": 8,
+                    "damage_reduction": 7,
                     "move": 40,
                     "number_models_max": 3,
                     "attacks": [
@@ -1036,7 +1036,7 @@
                     "requisition": 250,
                     "take_cover": "❌",
                     "health_per_model": 20,
-                    "damage_reduction": 12,
+                    "damage_reduction": 11,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
