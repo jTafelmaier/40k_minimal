@@ -718,7 +718,7 @@
                 },
                 {
                     "name": "Wolf priest",
-                    "requisition": 75,
+                    "requisition": 100,
                     "take_cover": "y",
                     "health_per_model": 10,
                     "damage_reduction": 5,
@@ -753,7 +753,7 @@
                         {
                             "range": "⊹",
                             "hits": 2,
-                            "damage": 7,
+                            "damage": 5,
                             "type": "",
                             "restrictions": ""
                         },
