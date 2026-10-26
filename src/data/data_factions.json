@@ -1835,7 +1835,7 @@
                         {
                             "range": "⊹",
                             "hits": 4,
-                            "damage": 9,
+                            "damage": 10,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1852,15 +1852,15 @@
                     "attacks": [
                         {
                             "range": "⊹",
-                            "hits": 4,
-                            "damage": 5,
+                            "hits": 2,
+                            "damage": 9,
                             "type": "",
                             "restrictions": ""
                         },
                         {
                             "range": "⛶",
                             "hits": 1,
-                            "damage": 25,
+                            "damage": 24,
                             "type": "",
                             "restrictions": ""
                         }
@@ -1896,7 +1896,7 @@
                         {
                             "range": "⛶",
                             "hits": 1,
-                            "damage": 20,
+                            "damage": 18,
                             "type": "",
                             "restrictions": ""
                         }
