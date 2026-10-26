@@ -869,7 +869,7 @@
                     "requisition": 100,
                     "take_cover": "y",
                     "health_per_model": 10,
-                    "damage_reduction": 5,
+                    "damage_reduction": 6,
                     "move": 20,
                     "number_models_max": 1,
                     "attacks": [
@@ -883,7 +883,7 @@
                         {
                             "range": "⚔",
                             "hits": 2,
-                            "damage": 10,
+                            "damage": 11,
                             "type": "",
                             "restrictions": ""
                         }
@@ -894,7 +894,7 @@
                     "requisition": 75,
                     "take_cover": "y",
                     "health_per_model": 10,
-                    "damage_reduction": 4,
+                    "damage_reduction": 5,
                     "move": 20,
                     "number_models_max": 3,
                     "attacks": [
@@ -908,7 +908,7 @@
                         {
                             "range": "⚔",
                             "hits": 2,
-                            "damage": 9,
+                            "damage": 10,
                             "type": "",
                             "restrictions": ""
                         }
