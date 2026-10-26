@@ -1910,7 +1910,7 @@
                     ]
                 },
                 {
-                    "name": "Stealth suits [r]",
+                    "name": "Stealth suits (burst cannons)",
                     "requisition": 50,
                     "take_cover": "y",
                     "health_per_model": 5,
@@ -1928,7 +1928,7 @@
                     ]
                 },
                 {
-                    "name": "Stealth suits [f]",
+                    "name": "Stealth suits (fusion blasters)",
                     "requisition": 50,
                     "take_cover": "y",
                     "health_per_model": 5,
