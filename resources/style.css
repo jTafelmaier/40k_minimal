@@ -250,10 +250,13 @@ body {
     height: calc(100% - 2px);
 }
 
-.models > div {
+.model {
     flex: 1;
-    border-top: 1px solid var(--grey_dark);
-    border-bottom: 1px solid var(--grey_dark);
+}
+
+.model > div {
+    height: 2px;
+    background-color: var(--grey_dark);
 }
 
 .health_bar {

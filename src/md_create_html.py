@@ -113,7 +113,7 @@ def generate_htmls():
                             .__str__() \
                         + "\" health_current=\"0\"><div class=\"health_bar\"><div class=\"section difference\"></div><div class=\"section remaining\" style=\"height: 0%;\"></div></div><div class=\"models\">" \
                         + (
-                            "<div class=\"model\"/>"
+                            "<div class=\"model\"><div/></div>"
                                 * int_number_models_max) \
                         + "</div></div>"
 
