@@ -256,6 +256,26 @@ body {
     border-bottom: 1px solid var(--grey_dark);
 }
 
+.health_bar {
+    position: absolute;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 1px;
+    width: 5px;
+    height: calc(100% - 4px);
+}
+
+.section.difference {
+    display: none;
+    background: linear-gradient(to right, #8b4dfe, #6f30f8);
+}
+
+.section.remaining {
+    background-color: var(--grey_text);
+}
+
 .unit_data {
     flex: 1;
     background-image: url("background.png");
@@ -373,26 +393,6 @@ body {
 .match .unit_type.activated .attack:hover,
 .match .unit_type.activated .attack.highlighted {
     background: linear-gradient(to right, #f60f0fe5, #b10d0de5 100px);
-}
-
-.health_bar {
-    position: absolute;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    border-radius: 1px;
-    width: 5px;
-    height: calc(100% - 4px);
-}
-
-.section.difference {
-    display: none;
-    background: linear-gradient(to right, #8b4dfe, #6f30f8);
-}
-
-.section.remaining {
-    background-color: var(--grey_text);
 }
 
 .activated_side .unit_type:not(.activated) {
