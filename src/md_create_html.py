@@ -137,6 +137,9 @@ def generate_htmls():
                                 "units",
                                 dict_unit \
                                     ["name"] \
+                                    .replace(
+                                        "'",
+                                        "\\'") \
                                     + ".png"]) \
                     + "')\"><div class=\"name_unit\">" \
                     + dict_unit \
