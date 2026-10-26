@@ -710,31 +710,6 @@
                     ]
                 },
                 {
-                    "name": "Deathwing terminators",
-                    "requisition": 75,
-                    "take_cover": "y",
-                    "health_per_model": 10,
-                    "damage_reduction": 6,
-                    "move": 10,
-                    "number_models_max": 5,
-                    "attacks": [
-                        {
-                            "range": "⛶",
-                            "hits": 4,
-                            "damage": 5,
-                            "type": "",
-                            "restrictions": ""
-                        },
-                        {
-                            "range": "⚔",
-                            "hits": 1,
-                            "damage": 15,
-                            "type": "",
-                            "restrictions": ""
-                        }
-                    ]
-                },
-                {
                     "name": "Inner circle companions",
                     "requisition": 75,
                     "take_cover": "y",
