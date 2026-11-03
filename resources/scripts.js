@@ -257,7 +257,7 @@ function set_active_instance_inactive() {
         .remove("activated")
 
     const array_elements_unit_instances = Array.from(document
-        .querySelectorAll(".unit_type:not(.unpicked) .unit_instance:not(.unpicked)"))
+        .querySelectorAll(".faction:not(.invisible) .unit_type:not(.unpicked) .unit_instance:not(.unpicked)"))
 
     if (!array_elements_unit_instances.every(element => element.classList.contains("already_activated")))
         return
