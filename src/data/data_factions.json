@@ -1432,7 +1432,7 @@
                         {
                             "range": "⚔",
                             "hits": 1,
-                            "damage": 25,
+                            "damage": 18,
                             "type": "",
                             "restrictions": "static"
                         }
